@@ -52,9 +52,28 @@ Working rule: do not remove `[exact quote needed]` unless the quote has a source
   - Page used: https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/
   - Quote used: "make lies sound truthful and murder respectable"
 
+- John Maynard Keynes, `A Tract on Monetary Reform`, Project Gutenberg:
+  - Page used: https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm
+  - Quote used: "In the long run we are all dead."
+
+- Friedrich Hayek, `The Use of Knowledge in Society`, Econlib:
+  - Page used: https://www.econlib.org/library/Essays/hykKnw.html
+  - Quote used: "the knowledge of the particular circumstances of time and place"
+
+- Milton Friedman, `Inflation: True and False`, Hoover Institution:
+  - Page used: https://www.hoover.org/research/inflation-true-and-false
+  - Quote used: "Inflation is always and everywhere a monetary phenomenon."
+
+- Robert Nozick, `Anarchy, State, and Utopia`, quoted in Stanford Encyclopedia of Philosophy:
+  - Page used: https://plato.stanford.edu/entries/nozick-political/index.html
+  - Quote used: "Individuals have rights"
+
+- Bernie Sanders, `It's time to guarantee healthcare to all Americans as a human right`, official Senate site:
+  - Page used: https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/
+  - Quote used: "provide quality care for all as a human right"
+
 ## Next Verification Targets
 
 - Antonio Gramsci: verify a short quote from `Prison Notebooks` or a reputable translated source before adding a card.
-- Bernie Sanders: verify a short quote from an official Senate or campaign source before adding a card.
 - Fidel Castro and Che Guevara: use primary speeches where possible, not quote aggregators.
-- Hayek, Keynes, Friedman, Nozick: use books/speeches with reliable public excerpts or official archives.
+- Thomas Piketty, Amartya Sen, Angela Davis, Frantz Fanon, and Thomas Paine: use stable primary or institutional sources before adding cards.
