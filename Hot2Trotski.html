@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hot2Trotski — Truth-First Political Study Hall</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; font-src 'self' https: data:;">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --black:#050608;
+      --charcoal:#0b0f16;
+      --panel:#111722;
+      --panel2:#171d29;
+      --line:#2b3444;
+      --text:#f1efe8;
+      --muted:#c3bcae;
+      --soft:#9b9488;
+      --red:#d33a32;
+      --red2:#761d22;
+      --blue:#2f74d0;
+      --blue2:#173e7c;
+      --gold:#d8af55;
+      --gold2:#7f6428;
+      --ivory:#efe4cc;
+      --shadow:0 20px 60px rgba(0,0,0,.42);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:radial-gradient(circle at top left, rgba(211,58,50,.18), transparent 34rem), radial-gradient(circle at top right, rgba(47,116,208,.16), transparent 35rem), var(--black);
+      color:var(--text);
+      font-family:"Source Serif 4", Georgia, serif;
+      font-size:18px;
+      line-height:1.58;
+    }
+    a{color:inherit}
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(5,6,8,.92);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(216,175,85,.35);
+    }
+    .topbar-inner{
+      max-width:1480px;
+      margin:0 auto;
+      padding:10px 18px;
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .brand{
+      font-family:Cinzel, serif;
+      color:var(--gold);
+      font-weight:800;
+      letter-spacing:.08em;
+      white-space:nowrap;
+      text-decoration:none;
+      font-size:17px;
+    }
+    nav{
+      display:flex;
+      gap:7px;
+      flex-wrap:wrap;
+      margin-left:auto;
+    }
+    nav a,.tiny-btn{
+      font-family:Inter, sans-serif;
+      font-size:12px;
+      text-decoration:none;
+      color:var(--muted);
+      border:1px solid transparent;
+      padding:7px 9px;
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+    }
+    nav a:hover,.tiny-btn:hover{border-color:rgba(216,175,85,.55);color:var(--text)}
+    .hero{
+      min-height:82vh;
+      display:grid;
+      place-items:end center;
+      border-bottom:1px solid rgba(216,175,85,.24);
+      background:linear-gradient(180deg, rgba(5,6,8,.25), rgba(5,6,8,.94)), repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 90px);
+    }
+    .hero-inner{
+      width:min(1480px,100%);
+      padding:76px 18px 42px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 390px;
+      gap:34px;
+      align-items:end;
+    }
+    h1,h2,h3{font-family:Cinzel, serif;line-height:1.05;margin:0;color:#fff}
+    h1{font-size:clamp(48px,8vw,118px);letter-spacing:.02em}
+    h2{font-size:clamp(28px,4vw,54px)}
+    h3{font-size:24px}
+    .subtitle{font-size:clamp(20px,2.4vw,31px);max-width:980px;color:var(--ivory);margin:18px 0 12px}
+    .promise{font-family:Inter,sans-serif;color:var(--muted);font-size:17px;max-width:760px}
+    .truth-banner{
+      margin-top:22px;
+      display:inline-flex;
+      gap:12px;
+      align-items:center;
+      padding:12px 14px;
+      border:1px solid rgba(216,175,85,.55);
+      background:rgba(216,175,85,.08);
+      color:var(--ivory);
+      font-family:Inter,sans-serif;
+      font-weight:700;
+    }
+    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .action{
+      font-family:Inter,sans-serif;
+      text-decoration:none;
+      border:1px solid var(--line);
+      background:rgba(17,23,34,.86);
+      color:var(--text);
+      padding:11px 13px;
+      border-radius:8px;
+      font-weight:800;
+    }
+    .action.red{border-color:rgba(211,58,50,.65);box-shadow:inset 4px 0 var(--red)}
+    .action.blue{border-color:rgba(47,116,208,.65);box-shadow:inset 4px 0 var(--blue)}
+    .action.gold{border-color:rgba(216,175,85,.72);box-shadow:inset 4px 0 var(--gold)}
+    .profile-card,.panel,.card,.test-card,.truth-card{
+      background:linear-gradient(180deg, rgba(23,29,41,.97), rgba(10,14,21,.97));
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .profile-card{padding:18px;border-radius:10px}
+    .kicker{font-family:Inter,sans-serif;color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}
+    .profile-name{font-family:Cinzel,serif;font-size:25px;color:#fff;margin:8px 0 2px}
+    .meter{height:10px;background:#07090d;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:9px 0 14px}
+    .meter span{display:block;height:100%;width:18%;background:linear-gradient(90deg,var(--red),var(--gold),var(--blue))}
+    .shell{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr) 270px;gap:18px;padding:18px}
+    aside{position:sticky;top:62px;align-self:start;max-height:calc(100vh - 82px);overflow:auto}
+    .sidebox{background:rgba(17,23,34,.9);border:1px solid var(--line);padding:14px;border-radius:10px;margin-bottom:14px}
+    .sidebox h3{font-size:17px;color:var(--gold);margin-bottom:10px}
+    .path,.tracker-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);font-family:Inter,sans-serif;font-size:13px;color:var(--muted)}
+    .path:last-child,.tracker-row:last-child{border-bottom:0}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--gold);flex:none}
+    .dot.red{background:var(--red)}.dot.blue{background:var(--blue)}.dot.black{background:#222}.dot.gold{background:var(--gold)}
+    section{scroll-margin-top:82px;margin-bottom:26px}
+    .section-head{padding:28px 0 14px;border-top:1px solid rgba(216,175,85,.28)}
+    .section-head p{max-width:900px;color:var(--muted);margin:10px 0 0}
+    .link-cloud{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
+    .pill{
+      display:inline-flex;align-items:center;gap:6px;
+      text-decoration:none;
+      font-family:Inter,sans-serif;
+      font-size:13px;
+      font-weight:800;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#0a0e15;
+      cursor:pointer;
+    }
+    .pill.idea{border-color:rgba(216,175,85,.42);color:#f4d891}
+    .pill.figure{border-color:rgba(47,116,208,.55);color:#b9d7ff}
+    .pill.date{border-color:rgba(216,175,85,.7);color:var(--gold)}
+    .pill.source{text-decoration:underline;border-color:rgba(255,255,255,.22);color:var(--ivory)}
+    .pill.test{border-color:rgba(211,58,50,.55);color:#ffc3bd}
+    .pill.discuss{border-color:rgba(255,255,255,.28);color:#e5e7eb;background:#151515}
+    .pill:hover{transform:translateY(-1px);filter:brightness(1.1)}
+    .timeline-road{display:grid;gap:13px}
+    .stop{display:grid;grid-template-columns:92px 150px minmax(0,1fr);gap:14px;align-items:stretch;background:rgba(17,23,34,.92);border:1px solid var(--line);border-left:6px solid var(--gold);padding:12px;border-radius:10px}
+    .stop.red{border-left-color:var(--red)}.stop.blue{border-left-color:var(--blue)}.stop.black{border-left-color:#111}
+    .date-medal{font-family:Cinzel,serif;color:var(--gold);font-size:22px;display:grid;place-items:center;text-align:center;border:1px solid rgba(216,175,85,.38);background:#080a0f;border-radius:8px;padding:10px}
+    .photo{
+      min-height:116px;
+      border:1px solid rgba(255,255,255,.16);
+      background:linear-gradient(135deg,#111,#333 46%,#090909);
+      display:grid;place-items:center;
+      color:#cfc8b8;
+      font-family:Inter,sans-serif;
+      font-size:12px;
+      text-align:center;
+      overflow:hidden;
+      filter:grayscale(1);
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.06)}
+    .stop h3{font-size:22px;margin-bottom:6px}
+    .stop p{margin:0 0 8px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .card{border-radius:10px;overflow:hidden;border-left:5px solid var(--blue)}
+    .card.red{border-left-color:var(--red)}.card.gold{border-left-color:var(--gold)}
+    .card .photo{height:180px;border-width:0 0 1px 0}
+    .card-body{padding:14px}
+    .card h3{font-size:23px;margin-bottom:5px}.meta{font-family:Inter,sans-serif;color:var(--soft);font-size:13px;font-weight:700}.hook{color:var(--ivory);font-style:italic;margin:8px 0}
+    .quote-needed{border-left:3px solid var(--gold);padding-left:10px;color:var(--muted);font-style:italic;margin:10px 0}
+    .atlas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .panel{border-radius:10px;padding:16px}
+    .panel.red{border-left:5px solid var(--red)}.panel.blue{border-left:5px solid var(--blue)}.panel.gold{border-left:5px solid var(--gold)}.panel.black{border-left:5px solid #050505}
+    .truth-grid,.tests,.badges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .truth-card,.test-card{border-radius:10px;padding:16px;border-top:4px solid var(--gold)}
+    .truth-card.red{border-top-color:var(--red)}.truth-card.blue{border-top-color:var(--blue)}.truth-card.black{border-top-color:#111}
+    .truth-card dl{margin:8px 0 0}.truth-card dt{font-family:Inter,sans-serif;font-weight:800;color:var(--gold);font-size:13px}.truth-card dd{margin:0 0 8px;color:var(--muted)}
+    .badge-case{background:linear-gradient(135deg,#0a0d12,#17120a);border:1px solid rgba(216,175,85,.35);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+    .medals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+    .medal{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--gold) 48%,var(--gold2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medal.locked{filter:grayscale(1);opacity:.45;color:#111}
+    .test-card button,.profile-card button{font-family:Inter,sans-serif;border:1px solid rgba(216,175,85,.45);background:#0a0e15;color:var(--text);border-radius:8px;padding:9px 10px;font-weight:800;cursor:pointer;margin:4px 4px 0 0}
+    .test-card button:hover,.profile-card button:hover{border-color:var(--gold)}
+    .result{font-family:Inter,sans-serif;color:var(--gold);font-size:13px;margin-top:9px;min-height:20px}
+    .discussion{background:linear-gradient(180deg,#10151f,#07090d);border:1px solid var(--line);border-radius:12px;padding:18px}
+    .comment-row{border-top:1px solid rgba(255,255,255,.09);padding:12px 0;color:var(--muted)}
+    .present-mirror{background:linear-gradient(90deg,rgba(211,58,50,.12),rgba(47,116,208,.12));border:1px solid rgba(216,175,85,.28);border-radius:12px;padding:18px}
+    .mirror-questions{columns:2;column-gap:28px;color:var(--muted)}
+    footer{border-top:1px solid rgba(216,175,85,.3);padding:28px 18px 40px;text-align:center;color:var(--muted)}
+    @media (max-width:1180px){.shell{grid-template-columns:1fr}.leftbar,.rightbar{position:static;max-height:none}.sidebox{display:block}.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges{grid-template-columns:1fr}.medals{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Hot2Trotski</a>
+      <nav aria-label="Study hall navigation">
+        <a href="#timeline">Timeline</a><a href="#figures">Figures</a><a href="#ideas">Ideas</a><a href="#truth">Truth Checks</a><a href="#tests">Tests</a><a href="#badges">Badges</a><a href="#discussion">Comments</a><a href="#profile">Profile</a>
+      </nav>
+    </div>
+  </div>
+
+  <header id="top" class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">Red / Blue / Black Political Study Hall</div>
+        <h1>Hot2Trotski</h1>
+        <p class="subtitle">A visual study guide to socialism, communism, capitalism, labor, markets, reform, revolution, and the modern political world.</p>
+        <p class="promise">Follow the timeline. Collect the ideas. Test your judgment. Understand how we got here without lying for any side.</p>
+        <div class="truth-banner">Truth First: No system gets a halo. No system gets a cartoon devil mask.</div>
+        <div class="hero-actions">
+          <a class="action red" href="#timeline">Start Timeline</a>
+          <a class="action blue" href="#figures">Browse Figures</a>
+          <a class="action gold" href="#ideas">Browse Ideas</a>
+          <a class="action" href="#tests">Take Tests</a>
+          <a class="action" href="#discussion">Join Discussion</a>
+        </div>
+      </div>
+      <div id="profile" class="profile-card">
+        <div class="kicker">Future Account Layer</div>
+        <div class="profile-name" id="scholarName">Guest Scholar</div>
+        <div class="meta">Rank: Apprentice of the Timeline</div>
+        <div class="meter"><span id="progressMeter"></span></div>
+        <div class="tracker-row"><span>Badges collected</span><b id="badgeCount">0</b></div>
+        <div class="tracker-row"><span>Ideas clicked</span><b id="ideaCount">0</b></div>
+        <div class="tracker-row"><span>Expertise areas</span><b>Locked</b></div>
+        <button type="button" onclick="setScholarName()">Set Local Name</button>
+        <button type="button" disabled title="Real login comes later">Future Login</button>
+        <p class="meta">This profile is local-browser only for now. Real shared profiles need a host with auth and a database.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="leftbar">
+      <div class="sidebox">
+        <h3>Learning Paths</h3>
+        <div class="path"><span><span class="dot blue"></span> Reform Road</span></div>
+        <div class="path"><span><span class="dot red"></span> Revolution Road</span></div>
+        <div class="path"><span><span class="dot gold"></span> Labor Road</span></div>
+        <div class="path"><span><span class="dot blue"></span> Market Road</span></div>
+        <div class="path"><span><span class="dot black"></span> State Power Road</span></div>
+        <div class="path"><span><span class="dot gold"></span> Anti-Authoritarian Road</span></div>
+        <div class="path"><span><span class="dot red"></span> American Socialism Road</span></div>
+      </div>
+      <div class="sidebox">
+        <h3>Link Map</h3>
+        <a class="pill idea" href="#ideas">Idea</a>
+        <a class="pill figure" href="#figures">Figure</a>
+        <a class="pill date" href="#timeline">Date</a>
+        <a class="pill source" href="#texts">Source</a>
+        <a class="pill test" href="#tests">Test</a>
+        <a class="pill discuss" href="#discussion">Discuss</a>
+      </div>
+    </aside>
+
+    <main>
+      <section id="timeline">
+        <div class="section-head">
+          <div class="kicker">Documentary Spine</div>
+          <h2>Timeline Road</h2>
+          <p>Each stop should eventually carry exact dates, black-and-white source images, idea badges, truth checks, tests, and a discussion thread.</p>
+        </div>
+        <div class="timeline-road">
+          <article class="stop black"><div class="date-medal">1760s</div><div class="photo">Industrial photo space<br>Wiki / public source needed</div><div><h3>Industrial Revolution</h3><p>Factories, wage labor, urban poverty, productivity, and the modern labor question intensify.</p><div class="link-cloud"><button class="pill idea" data-idea="labor">Labor</button><button class="pill idea" data-idea="market">Market</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="stop red"><div class="date-medal">1848</div><div class="photo" data-wiki="The_Communist_Manifesto">Loading Wiki image</div><div><h3>Marx, Engels, and the Manifesto</h3><p>A radical critique of class power turns into one of the most influential political texts in history.</p><div class="link-cloud"><button class="pill idea" data-idea="class struggle">Class Struggle</button><button class="pill source">Primary Source</button><button class="pill test">Subject Test</button></div></div></article>
+          <article class="stop blue"><div class="date-medal">1890s</div><div class="photo">Reform movement photo space</div><div><h3>Reform or Revolution?</h3><p>Socialists argue over elections, unions, parliament, parties, and whether capitalism can be transformed without rupture.</p><div class="link-cloud"><button class="pill idea" data-idea="revisionism">Revisionism</button><button class="pill idea" data-idea="social democracy">Social Democracy</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="stop red"><div class="date-medal">1917</div><div class="photo" data-wiki="Russian_Revolution">Loading Wiki image</div><div><h3>Revolution Becomes Government</h3><p>The Bolshevik victory makes the central problem concrete: what happens when revolutionary theory becomes state power?</p><div class="link-cloud"><button class="pill idea" data-idea="vanguard party">Vanguard Party</button><button class="pill idea" data-idea="state power">State Power</button><button class="pill test">1917 Test</button></div></div></article>
+          <article class="stop black"><div class="date-medal">1930s</div><div class="photo" data-wiki="Joseph_Stalin">Loading Wiki image</div><div><h3>Stalin, Trotsky, and Authoritarian Danger</h3><p>The dream of emancipation collides with purges, bureaucracy, exile, terror, and the question of whether revolution can preserve dissent.</p><div class="link-cloud"><button class="pill idea" data-idea="Trotskyism">Trotskyism</button><button class="pill idea" data-idea="Stalinism">Stalinism</button><button class="pill idea" data-idea="authoritarianism">Authoritarianism</button></div></div></article>
+          <article class="stop blue"><div class="date-medal">Today</div><div class="photo">Modern debate photo space</div><div><h3>Present-Day Word Confusion</h3><p>Socialism, communism, capitalism, public spending, markets, and welfare state language are often used as weapons.</p><div class="link-cloud"><button class="pill idea" data-idea="democratic socialism">Democratic Socialism</button><button class="pill idea" data-idea="mixed economy">Mixed Economy</button><button class="pill discuss">Discuss this</button></div></div></article>
+        </div>
+      </section>
+
+      <section id="figures">
+        <div class="section-head"><div class="kicker">Museum Gallery</div><h2>Figure Gallery</h2><p>Portrait spaces use Wiki/Wikimedia summaries where available. Exact quotes are deliberately marked until verified.</p></div>
+        <div class="grid">
+          <article class="card red"><div class="photo" data-wiki="Karl_Marx">Loading Wiki image</div><div class="card-body"><h3>Karl Marx</h3><div class="meta">1818-1883 | class struggle, capital, exploitation</div><p class="hook">Marx = class struggle and capitalism as a historical system.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="surplus value">Surplus Value</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card red"><div class="photo" data-wiki="Friedrich_Engels">Loading Wiki image</div><div class="card-body"><h3>Friedrich Engels</h3><div class="meta">1820-1895 | industry, labor, Marxism</div><p class="hook">Engels = industrial conditions plus Marxist collaboration.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="working class">Working Class</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card blue"><div class="photo" data-wiki="Eduard_Bernstein">Loading Wiki image</div><div class="card-body"><h3>Eduard Bernstein</h3><div class="meta">1850-1932 | revisionism, reform</div><p class="hook">Bernstein = democratic reform instead of violent rupture.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="reform">Reform</button><button class="pill test">Reform Test</button></div></div></article>
+          <article class="card blue"><div class="photo" data-wiki="Karl_Kautsky">Loading Wiki image</div><div class="card-body"><h3>Karl Kautsky</h3><div class="meta">1854-1938 | orthodox Marxism, democracy debate</div><p class="hook">Kautsky = Marxist theory without Leninist party rule.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="orthodox Marxism">Orthodox Marxism</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card gold"><div class="photo" data-wiki="Eugene_V._Debs">Loading Wiki image</div><div class="card-body"><h3>Eugene V. Debs</h3><div class="meta">1855-1926 | American socialism, labor</div><p class="hook">Debs = U.S. labor politics and American socialism.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="unionism">Unionism</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card red"><div class="photo" data-wiki="Leon_Trotsky">Loading Wiki image</div><div class="card-body"><h3>Leon Trotsky</h3><div class="meta">1879-1940 | permanent revolution, exile</div><p class="hook">Trotsky = international revolution and warning about bureaucracy.</p><p class="quote-needed">[exact quote needed]</p><div class="link-cloud"><button class="pill idea" data-idea="permanent revolution">Permanent Revolution</button><button class="pill discuss">Discuss this</button></div></div></article>
+        </div>
+      </section>
+
+      <section id="ideas">
+        <div class="section-head"><div class="kicker">Idea Atlas</div><h2>Clickable Political Vocabulary</h2><p>Every important word needs a plain definition, context, common confusion, related figures, and a test path.</p></div>
+        <div class="link-cloud" id="ideaCloud"></div>
+        <div class="atlas">
+          <article class="panel red"><h3>Class Struggle</h3><p>Conflict between social classes over labor, property, power, and who receives the value created in society.</p><div class="link-cloud"><button class="pill figure">Marx</button><button class="pill test">Test</button><button class="pill discuss">Discuss</button></div></article>
+          <article class="panel blue"><h3>Social Democracy</h3><p>A reform path that uses democratic institutions, welfare systems, unions, and public goods within mixed economies.</p><div class="link-cloud"><button class="pill figure">Bernstein</button><button class="pill test">Test</button><button class="pill discuss">Discuss</button></div></article>
+          <article class="panel gold"><h3>Market</h3><p>A system of exchange using prices, supply, demand, and decentralized decisions. Powerful, but not magic or morally complete.</p><div class="link-cloud"><button class="pill source">Source Needed</button><button class="pill test">Test</button><button class="pill discuss">Discuss</button></div></article>
+          <article class="panel black"><h3>Authoritarianism</h3><p>Power concentrated without meaningful accountability, dissent, or free opposition. Can appear under different flags.</p><div class="link-cloud"><button class="pill idea" data-idea="state violence">State Violence</button><button class="pill test">Truth Test</button><button class="pill discuss">Discuss</button></div></article>
+        </div>
+      </section>
+
+      <section id="truth">
+        <div class="section-head"><div class="kicker">PSDS Judgment Chamber</div><h2>Truth Checks</h2><p>These cards keep promise, power, failure, warning, and open questions visible at the same time.</p></div>
+        <div class="truth-grid">
+          <article class="truth-card blue"><h3>Capitalism</h3><dl><dt>Promise</dt><dd>Freedom, markets, innovation, prosperity.</dd><dt>Failure</dt><dd>Inequality, exploitation, monopoly, instability.</dd><dt>Warning</dt><dd>Wealth can dominate politics.</dd><dt>Question</dt><dd>How do we preserve freedom without letting money rule everything?</dd></dl></article>
+          <article class="truth-card blue"><h3>Socialism</h3><dl><dt>Promise</dt><dd>Fairness, dignity, public goods, worker power.</dd><dt>Failure</dt><dd>Bureaucracy, coercion, weak incentives in some systems.</dd><dt>Warning</dt><dd>Equality can become coercion if power centralizes.</dd><dt>Question</dt><dd>How do we build solidarity without crushing freedom?</dd></dl></article>
+          <article class="truth-card red"><h3>Communism</h3><dl><dt>Promise</dt><dd>Classless society, common ownership, end of exploitation.</dd><dt>Failure</dt><dd>Many party-state experiments became authoritarian.</dd><dt>Warning</dt><dd>Revolutionary states can create new ruling classes.</dd><dt>Question</dt><dd>Can common ownership exist with real democracy and dissent?</dd></dl></article>
+          <article class="truth-card gold"><h3>Markets</h3><dl><dt>Promise</dt><dd>Decentralized exchange and price signals.</dd><dt>Failure</dt><dd>Inequality, externalities, monopoly, commodification.</dd><dt>Warning</dt><dd>Not everything valuable should be priced.</dd><dt>Question</dt><dd>Where do markets belong, and where do they not belong?</dd></dl></article>
+        </div>
+      </section>
+
+      <section id="tests">
+        <div class="section-head"><div class="kicker">Subject Tests</div><h2>Expertise Areas</h2><p>These are simple local prototype tests. Later, scores and badges can belong to real accounts.</p></div>
+        <div class="tests">
+          <article class="test-card"><h3>Marx / Class Struggle</h3><p>Which idea says political history is shaped by conflict between social classes?</p><button onclick="answerTest(this,true,'Class Struggle Badge')">Class struggle</button><button onclick="answerTest(this,false)">Invisible hand</button><button onclick="answerTest(this,false)">Social contract</button><div class="result"></div></article>
+          <article class="test-card"><h3>Reform vs Revolution</h3><p>Which route tries to change society through elections, unions, laws, and welfare institutions?</p><button onclick="answerTest(this,false)">Vanguard seizure</button><button onclick="answerTest(this,true,'Reform Road Badge')">Democratic reform</button><button onclick="answerTest(this,false)">Purges</button><div class="result"></div></article>
+          <article class="test-card"><h3>Markets / Socialism / Public Spending</h3><p>Is every government program automatically communism?</p><button onclick="answerTest(this,false)">Yes</button><button onclick="answerTest(this,true,'Modern Language Badge')">No</button><button onclick="answerTest(this,false)">Only if it has taxes</button><div class="result"></div></article>
+          <article class="test-card"><h3>State Power Warning</h3><p>Which warning belongs in every truth-first study of revolutionary states?</p><button onclick="answerTest(this,true,'Truth Check Badge')">Power can centralize and silence dissent</button><button onclick="answerTest(this,false)">The state always disappears quickly</button><button onclick="answerTest(this,false)">No failures need study</button><div class="result"></div></article>
+        </div>
+      </section>
+
+      <section id="badges">
+        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges should feel like earned knowledge, not fake points. Click ideas and pass sample tests to unlock local prototype badges.</p></div>
+        <div class="badge-case"><h3>Guest Scholar Cabinet</h3><div class="medals" id="medals"></div></div>
+      </section>
+
+      <section id="discussion">
+        <div class="section-head"><div class="kicker">Future Community Layer</div><h2>Discussion Chamber</h2><p>Every figure, idea, event, and test should eventually have a discussion thread. This skeleton shows the architecture without faking working comments.</p></div>
+        <div class="discussion">
+          <h3>Massive Comments Belong Here Later</h3>
+          <p>First path: giscus with GitHub Discussions. Bigger path: hosted app with auth, profiles, moderation, and a comments database.</p>
+          <div class="comment-row"><b>Figure threads:</b> Marx, Engels, Debs, Lenin, Trotsky, Stalin, Mao, Sanders.</div>
+          <div class="comment-row"><b>Idea threads:</b> socialism, communism, capitalism, markets, labor, reform, revolution, authoritarianism.</div>
+          <div class="comment-row"><b>Test threads:</b> ask why an answer is right, challenge wording, add sources.</div>
+          <button class="tiny-btn" type="button" disabled>Comments Coming Later</button>
+        </div>
+      </section>
+
+      <section id="present">
+        <div class="section-head"><div class="kicker">Present-Day Mirror</div><h2>Why People Fight Over These Words Now</h2></div>
+        <div class="present-mirror"><div class="mirror-questions">
+          <p>Why do people call everything socialism?</p><p>What is actually socialist?</p><p>What is social democratic?</p><p>What is communist?</p><p>What is capitalist?</p><p>What is just public spending?</p><p>What is a market?</p><p>What is a mixed economy?</p><p>Why does Bernie Sanders use democratic socialism?</p><p>Why do opponents use communism as an attack word?</p><p>What words are accurate?</p><p>What words are weapons?</p>
+        </div></div>
+      </section>
+    </main>
+
+    <aside class="rightbar">
+      <div class="sidebox"><h3>Knowledge Tracker</h3><div class="tracker-row"><span>Figure Badges</span><b id="figBadges">0</b></div><div class="tracker-row"><span>Idea Badges</span><b id="ideaBadges">0</b></div><div class="tracker-row"><span>Date Badges</span><b>0</b></div><div class="tracker-row"><span>Test Badges</span><b id="testBadges">0</b></div><div class="tracker-row"><span>Truth Badges</span><b>0</b></div></div>
+      <div class="sidebox"><h3>Hosting Road</h3><div class="path">Now: GitHub Pages prototype</div><div class="path">Next: localStorage badges</div><div class="path">Later: Vercel + Supabase</div><div class="path">Later: real comments and profiles</div></div>
+    </aside>
+  </div>
+
+  <footer>
+    Hot2Trotski is a prototype study hall. Photos load from Wikipedia summaries where available. Quotes, licenses, login, and comments must be verified before becoming real features.
+  </footer>
+
+  <script>
+    const ideaNames = ['socialism','communism','capitalism','market','labor','class struggle','surplus value','means of production','alienation','reform','revolution','revisionism','social democracy','democratic socialism','welfare state','vanguard party','permanent revolution','Stalinism','Trotskyism','Maoism','planned economy','mixed economy','private property','public goods','unionism','anti-communism','authoritarianism','totalitarianism','liberalism','conservatism','fascism'];
+    const state = JSON.parse(localStorage.getItem('h2tState') || '{"ideas":[],"badges":[],"name":"Guest Scholar"}');
+    function save(){localStorage.setItem('h2tState', JSON.stringify(state));}
+    function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();}}
+    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);addBadge(name.charAt(0).toUpperCase()+name.slice(1)+' Idea Badge');}save();renderState();}
+    function answerTest(btn, ok, badge){const box=btn.closest('.test-card').querySelector('.result'); if(ok){box.textContent='Correct. Badge unlocked.'; addBadge(badge || 'Test Badge');}else{box.textContent='Not this one. Try again.';}}
+    function setScholarName(){const n=prompt('Local profile name:', state.name || 'Guest Scholar'); if(n && n.trim()){state.name=n.trim();save();renderState();}}
+    function renderState(){
+      document.getElementById('scholarName').textContent=state.name || 'Guest Scholar';
+      document.getElementById('badgeCount').textContent=state.badges.length;
+      document.getElementById('ideaCount').textContent=state.ideas.length;
+      document.getElementById('ideaBadges').textContent=state.ideas.length;
+      document.getElementById('testBadges').textContent=state.badges.filter(b=>/Badge/.test(b) && !/Idea/.test(b)).length;
+      const pct=Math.min(100, 18 + state.badges.length*6 + state.ideas.length*2);
+      document.getElementById('progressMeter').style.width=pct+'%';
+      const medals=document.getElementById('medals');
+      const earned=state.badges.slice(0,12);
+      const slots=[...earned]; while(slots.length<12) slots.push('Locked');
+      medals.innerHTML=slots.map(x=>`<div class="medal ${x==='Locked'?'locked':''}">${x}</div>`).join('');
+    }
+    function buildIdeaCloud(){
+      const cloud=document.getElementById('ideaCloud');
+      cloud.innerHTML=ideaNames.map(name=>`<button class="pill idea" data-idea="${name}">${name}</button>`).join('');
+      document.querySelectorAll('[data-idea]').forEach(el=>el.addEventListener('click',()=>clickIdea(el.dataset.idea)));
+    }
+    async function hydratePhotos(){
+      const boxes=[...document.querySelectorAll('[data-wiki]')];
+      for(const box of boxes){
+        try{
+          const title=box.dataset.wiki;
+          const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`);
+          if(!r.ok) throw new Error('wiki');
+          const data=await r.json();
+          const src=data.thumbnail && data.thumbnail.source;
+          if(src){box.innerHTML=`<img src="${src}" alt="${(data.title||title).replace(/"/g,'&quot;')}">`;}
+          else{box.textContent='Wiki image not available yet';}
+        }catch(e){box.textContent='Wiki image placeholder';}
+      }
+    }
+    buildIdeaCloud(); renderState(); hydratePhotos();
+  </script>
+</body>
+</html>
