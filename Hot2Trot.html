@@ -1,130 +1,816 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Socialism & Communism — Master Timeline Study Guide</title>
+  <title>Master Study Guide — Socialism, Communism, Capitalism</title>
 
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self' https:; img-src 'self' https: data:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline'; connect-src 'self' https:;">
+        content="default-src 'self' https:;
+                 img-src 'self' https: data:;
+                 style-src 'self' 'unsafe-inline';
+                 script-src 'self' 'unsafe-inline';
+                 connect-src 'self' https:;">
 
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #111;
+    :root{
+      /* DARK MODE BASE */
+      --bg:#0b1020;
+      --card:#0f172a;
+      --ink:#e5e7eb;
+      --muted:#a1a1aa;
+      --line:#1f2937;
+      --header:#060a16;
+
+      /* LINKS */
+      --link:#93c5fd;
+
+      /* TOPIC ACCENTS */
+      --soc:#ef4444;   /* red */
+      --cap:#60a5fa;   /* blue */
+
+      /* SOFT BACKGROUNDS */
+      --socSoft: rgba(239,68,68,.16);
+      --capSoft: rgba(96,165,250,.16);
+
+      /* UI */
+      --shadow: 0 1px 0 rgba(0,0,0,.25);
     }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 1.5rem;
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      font-size:18px;   /* bigger, easier to read */
+      line-height:1.55;
     }
-    header h1 {
-      margin: 0 0 .5rem 0;
+
+    header{
+      background:var(--header);
+      color:#fff;
+      padding:22px 18px;
+      border-bottom:1px solid var(--line);
     }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem;
-      background: #fff;
+    header h1{
+      margin:0 0 8px 0;
+      font-size:28px;
+      letter-spacing:.2px;
     }
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: .25rem;
-      margin-top: 2.5rem;
+    header p{margin:0; opacity:.92}
+
+    .wrap{
+      max-width:1150px;
+      margin:0 auto;
+      padding:18px;
     }
-    h3 {
-      margin-top: 1.5rem;
+
+    .toolbar{
+      display:grid;
+      grid-template-columns: 1.3fr .9fr .8fr;
+      gap:12px;
+      margin:14px 0 18px 0;
     }
-    .figure {
-      border-left: 4px solid #444;
-      padding-left: 1rem;
-      margin: 1.5rem 0;
-      background: #fafafa;
+    @media (max-width: 900px){
+      .toolbar{grid-template-columns:1fr; }
     }
-    .meta {
-      font-size: 0.9rem;
-      color: #555;
+
+    .box{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
+      box-shadow:var(--shadow);
     }
-    .hook {
-      font-style: italic;
-      color: #333;
+
+    label{
+      display:block;
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:6px;
     }
-    ul.key-ideas {
-      margin: .5rem 0 .75rem 1.25rem;
+
+    input, select{
+      width:100%;
+      padding:12px 12px;
+      font-size:16px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      outline:none;
+      background:#0b1226;
+      color:var(--ink);
     }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      padding: 2rem;
+    input::placeholder{color:#94a3b8}
+    input:focus, select:focus{
+      border-color:#334155;
+      box-shadow:0 0 0 3px rgba(147,197,253,.18);
+    }
+
+    .btnRow{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    button{
+      border:1px solid var(--line);
+      background:#0b1226;
+      color:var(--ink);
+      border-radius:12px;
+      padding:10px 12px;
+      cursor:pointer;
+      font-size:15px;
+    }
+    button:hover{border-color:#334155}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    /* RED/BLUE TOPIC ACCENTS */
+    .card.soc{ border-left: 7px solid var(--soc); }
+    .card.cap{ border-left: 7px solid var(--cap); }
+
+    .cardTop{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:14px;
+      padding:14px;
+      align-items:start;
+    }
+    @media (max-width: 520px){
+      .cardTop{grid-template-columns:1fr}
+    }
+
+    .thumb{
+      width:120px;
+      height:120px;
+      border-radius:14px;
+      background: #0b1226;
+      border:1px solid var(--line);
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .thumb img{width:100%; height:100%; object-fit:cover; display:block}
+
+    .titleRow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 10px;
+      align-items:baseline;
+      margin-bottom:6px;
+    }
+    .name{
+      font-size:20px;
+      font-weight:800;
+      margin:0;
+    }
+    .dates{
+      color:var(--muted);
+      font-weight:600;
+      font-size:15px;
+    }
+
+    .meta{
+      color:var(--muted);
+      font-size:15px;
+      margin:6px 0;
+    }
+
+    .hook{
+      font-style:italic;
+      margin:6px 0 0 0;
+    }
+
+    .tagRow{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .tag{
+      font-size:12px;
+      padding:4px 8px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      color:var(--muted);
+      background:#0b1226;
+    }
+
+    /* Make topic tags match (red/blue) */
+    .card.soc .tag.topicTag{
+      border-color: rgba(239,68,68,.55);
+      background: var(--socSoft);
+      color: #fecaca;
+    }
+    .card.cap .tag.topicTag{
+      border-color: rgba(96,165,250,.55);
+      background: var(--capSoft);
+      color: #bfdbfe;
+    }
+
+    details{
+      border-top:1px solid var(--line);
+      padding:10px 14px 14px 14px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight:800;
+      color:var(--link);
+      padding:6px 0;
+    }
+
+    ul{ margin:10px 0 0 22px; }
+
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .summaryText{
+      color:var(--muted);
+      margin:10px 0 0 0;
+    }
+
+    .small{
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .timeline{
+      margin-top:18px;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    .timelineHead{
+      padding:14px;
+      border-bottom:1px solid var(--line);
+      background:#0b1226;
+    }
+    .timelineHead h2{
+      margin:0;
+      font-size:18px;
+    }
+    .timelineHead p{margin:6px 0 0 0}
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:15px;
+    }
+    th, td{
+      text-align:left;
+      padding:10px 14px;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+    }
+    th{
+      color:var(--muted);
+      font-weight:800;
+      background:#0b1226;
+    }
+    tr:last-child td{border-bottom:none}
+
+    /* Color stripe on timeline rows */
+    tr.socRow td:first-child{ border-left: 5px solid var(--soc); }
+    tr.capRow td:first-child{ border-left: 5px solid var(--cap); }
+
+    .footer{
+      padding:22px 18px 34px 18px;
+      color:var(--muted);
+      text-align:center;
     }
   </style>
 </head>
-<body>
 
+<body>
 <header>
-  <h1>Socialism & Communism — Master Timeline Study Guide</h1>
-  <p>Interactive reference for theory, figures, and systems (for study & revision)</p>
+  <div class="wrap">
+    <h1>Master Study Guide — Socialism, Communism, Capitalism</h1>
+    <p>Dark mode • Socialism/Communism = <span style="color:var(--soc);font-weight:800;">Red</span> • Capitalism = <span style="color:var(--cap);font-weight:800;">Blue</span></p>
+    <p class="small">Save as <b>index.html</b> (or any-name.html) and open it by double-clicking.</p>
+  </div>
 </header>
 
-<main>
+<main class="wrap">
+  <div class="toolbar">
+    <div class="box">
+      <label for="q">Search (name, role, ideas, hook)</label>
+      <input id="q" placeholder="Try: Trotsky, vanguard, welfare state, invisible hand…" />
+      <div class="btnRow">
+        <button id="clearBtn" type="button">Clear</button>
+        <button id="reloadImgsBtn" type="button">Reload images/summaries</button>
+      </div>
+      <p class="small" style="margin:10px 0 0 0;">Tip: Press Ctrl+F too (your browser’s find).</p>
+    </div>
 
-<h2>Foundations of Marxism (19th Century)</h2>
+    <div class="box">
+      <label for="topic">Topic</label>
+      <select id="topic">
+        <option value="all">All</option>
+        <option value="soc">Socialism & Communism</option>
+        <option value="cap">Capitalism</option>
+      </select>
+      <p class="small" style="margin:10px 0 0 0;">Filters the cards and the timeline.</p>
+    </div>
 
-<div class="figure">
-  <h3>Karl Marx (1818–1883)</h3>
-  <div class="meta">Role: Theorist of capitalism & socialism</div>
-  <div class="hook">Memory Hook: Marx = class struggle & exploitation</div>
-  <ul class="key-ideas">
-    <li><a href="https://en.wikipedia.org/wiki/Class_struggle">Class struggle</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Surplus_value">Surplus value</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Means_of_production">Means of production</a></li>
-  </ul>
-  <p>Marx analyzed capitalism as a system of exploitation where workers create more value than they receive. He argued that history is shaped by class struggle and that economic structures shape politics, law, and culture.</p>
+    <div class="box">
+      <label for="era">Era</label>
+      <select id="era">
+        <option value="all">All</option>
+        <option value="early">Early foundations (1600–1800)</option>
+        <option value="classic">Classical political economy (1700–1800s)</option>
+        <option value="rev">Revolutionary era (1900–1953)</option>
+        <option value="cold">Cold War & global (1950s–1991)</option>
+        <option value="modern">Modern / contemporary</option>
+      </select>
+      <p class="small" style="margin:10px 0 0 0;">Use this like a “unit” selector.</p>
+    </div>
+  </div>
+
+  <div id="cards" class="grid"></div>
+
+  <section class="timeline" aria-label="timeline">
+    <div class="timelineHead">
+      <h2>Master Timeline (quick scan)</h2>
+      <p class="small">Sorted by birth year. Click a name to open Wikipedia.</p>
+    </div>
+    <div style="overflow:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>Years</th>
+            <th>Person</th>
+            <th>Topic</th>
+            <th>Role / Memory Hook</th>
+          </tr>
+        </thead>
+        <tbody id="timelineRows"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<div class="footer">
+  Built for study. You can add more people by copying one entry inside the <b>figures</b> list in this file.
 </div>
 
-<div class="figure">
-  <h3>Friedrich Engels (1820–1895)</h3>
-  <div class="meta">Role: Marx’s collaborator</div>
-  <div class="hook">Memory Hook: Engels = industry + Marxism</div>
-  <ul class="key-ideas">
-    <li><a href="https://en.wikipedia.org/wiki/The_Condition_of_the_Working_Class_in_England">Working-class conditions</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/The_Communist_Manifesto">Communist Manifesto</a></li>
-  </ul>
-  <p>Engels brought real industrial experience to Marxist theory and helped support and publish Marx’s work. He grounded Marxism in factory conditions and labor realities.</p>
-</div>
+<script>
+  // ========= DATA =========
+  // wikiTitle is used to fetch pictures + a short summary from Wikipedia REST API.
+  const figures = [
+    // ---- SOCIALISM / COMMUNISM ----
+    {
+      topic: "soc", era: "classic",
+      name: "Karl Marx", years: "1818–1883",
+      role: "Theorist of capitalism & socialism",
+      hook: "Marx = class struggle & exploitation",
+      wikiTitle: "Karl_Marx",
+      keywords: [
+        {t:"Class struggle", u:"https://en.wikipedia.org/wiki/Class_struggle"},
+        {t:"Surplus value", u:"https://en.wikipedia.org/wiki/Surplus_value"},
+        {t:"Means of production", u:"https://en.wikipedia.org/wiki/Means_of_production"}
+      ],
+      notes: "Marx analyzed capitalism as a system where workers create more value than they receive, and argued that economic structure shapes politics, law, and culture."
+    },
+    {
+      topic: "soc", era: "classic",
+      name: "Friedrich Engels", years: "1820–1895",
+      role: "Marx’s collaborator",
+      hook: "Engels = industry + Marxism",
+      wikiTitle: "Friedrich_Engels",
+      keywords: [
+        {t:"Working-class conditions", u:"https://en.wikipedia.org/wiki/The_Condition_of_the_Working_Class_in_England"},
+        {t:"Communist Manifesto", u:"https://en.wikipedia.org/wiki/The_Communist_Manifesto"}
+      ],
+      notes: "Engels brought industrial experience and helped publish and support Marx’s work."
+    },
+    {
+      topic: "soc", era: "classic",
+      name: "Eduard Bernstein", years: "1850–1932",
+      role: "Revisionist socialist",
+      hook: "Bernstein = reform, not revolution",
+      wikiTitle: "Eduard_Bernstein",
+      keywords: [
+        {t:"Revisionism", u:"https://en.wikipedia.org/wiki/Revisionism_(Marxism)"},
+        {t:"Social democracy", u:"https://en.wikipedia.org/wiki/Social_democracy"}
+      ],
+      notes: "Argued socialism should be achieved through gradual democratic reforms rather than revolution."
+    },
+    {
+      topic: "soc", era: "classic",
+      name: "Karl Kautsky", years: "1854–1938",
+      role: "Orthodox Marxist theorist",
+      hook: "Kautsky = Marx without Lenin",
+      wikiTitle: "Karl_Kautsky",
+      keywords: [
+        {t:"Orthodox Marxism", u:"https://en.wikipedia.org/wiki/Orthodox_Marxism"},
+        {t:"Second International", u:"https://en.wikipedia.org/wiki/Second_International"}
+      ],
+      notes: "Defended Marxist theory but criticized Lenin’s authoritarian model."
+    },
+    {
+      topic: "soc", era: "classic",
+      name: "Eugene V. Debs", years: "1855–1926",
+      role: "U.S. labor & socialist leader",
+      hook: "Debs = American socialism",
+      wikiTitle: "Eugene_V._Debs",
+      keywords: [
+        {t:"Socialist Party of America", u:"https://en.wikipedia.org/wiki/Socialist_Party_of_America"},
+        {t:"Trade union", u:"https://en.wikipedia.org/wiki/Trade_union"}
+      ],
+      notes: "Major U.S. socialist figure; ran for president multiple times; tied socialism to labor rights."
+    },
+    {
+      topic: "soc", era: "rev",
+      name: "Vladimir Lenin", years: "1870–1924",
+      role: "Leader of Russian Revolution",
+      hook: "Lenin = vanguard party + seizure of state power",
+      wikiTitle: "Vladimir_Lenin",
+      keywords: [
+        {t:"Vanguardism", u:"https://en.wikipedia.org/wiki/Vanguardism"},
+        {t:"Dictatorship of the proletariat", u:"https://en.wikipedia.org/wiki/Dictatorship_of_the_proletariat"}
+      ],
+      notes: "Argued a disciplined party should seize state power to build socialism and defend the revolution."
+    },
+    {
+      topic: "soc", era: "rev",
+      name: "Leon Trotsky", years: "1879–1940",
+      role: "Revolutionary & theorist",
+      hook: "Trotsky = permanent revolution + internationalism",
+      wikiTitle: "Leon_Trotsky",
+      keywords: [
+        {t:"Permanent revolution", u:"https://en.wikipedia.org/wiki/Permanent_revolution"}
+      ],
+      notes: "Emphasized international revolution and warned that bureaucracy could corrupt socialist rule."
+    },
+    {
+      topic: "soc", era: "rev",
+      name: "Joseph Stalin", years: "1878–1953",
+      role: "Soviet dictator",
+      hook: "Stalin = centralization + purges",
+      wikiTitle: "Joseph_Stalin",
+      keywords: [
+        {t:"Totalitarianism", u:"https://en.wikipedia.org/wiki/Totalitarianism"},
+        {t:"Great Purge", u:"https://en.wikipedia.org/wiki/Great_Purge"}
+      ],
+      notes: "Centralized power in the USSR and used repression to maintain control."
+    },
+    {
+      topic: "soc", era: "cold",
+      name: "Mao Zedong", years: "1893–1976",
+      role: "Chinese communist leader",
+      hook: "Mao = peasant revolution + mass campaigns",
+      wikiTitle: "Mao_Zedong",
+      keywords: [
+        {t:"Maoism", u:"https://en.wikipedia.org/wiki/Maoism"},
+        {t:"Cultural Revolution", u:"https://en.wikipedia.org/wiki/Cultural_Revolution"}
+      ],
+      notes: "Adapted Marxism to rural China; ruled through mass mobilization and party-state control."
+    },
+    {
+      topic: "soc", era: "cold",
+      name: "Fidel Castro", years: "1926–2016",
+      role: "Cuban revolutionary leader",
+      hook: "Castro = Cuban one-party socialism",
+      wikiTitle: "Fidel_Castro",
+      keywords: [
+        {t:"Cuban Revolution", u:"https://en.wikipedia.org/wiki/Cuban_Revolution"}
+      ],
+      notes: "Led Cuba into a one-party socialist state aligned with the USSR."
+    },
+    {
+      topic: "soc", era: "cold",
+      name: "Che Guevara", years: "1928–1967",
+      role: "Revolutionary icon",
+      hook: "Che = guerrilla revolution + internationalism",
+      wikiTitle: "Che_Guevara",
+      keywords: [
+        {t:"Guerrilla warfare", u:"https://en.wikipedia.org/wiki/Guerrilla_warfare"}
+      ],
+      notes: "Promoted armed revolutionary struggle and became a global symbol."
+    },
+    {
+      topic: "soc", era: "cold",
+      name: "Mikhail Gorbachev", years: "1931–2022",
+      role: "Last Soviet leader",
+      hook: "Gorbachev = reform → USSR ends (1991)",
+      wikiTitle: "Mikhail_Gorbachev",
+      keywords: [
+        {t:"Glasnost", u:"https://en.wikipedia.org/wiki/Glasnost"},
+        {t:"Perestroika", u:"https://en.wikipedia.org/wiki/Perestroika"}
+      ],
+      notes: "Reforms opened the Soviet system and contributed to the USSR’s dissolution."
+    },
+    {
+      topic: "soc", era: "modern",
+      name: "Bernie Sanders", years: "1941–",
+      role: "U.S. democratic socialist",
+      hook: "Sanders = democratic socialism in elections",
+      wikiTitle: "Bernie_Sanders",
+      keywords: [
+        {t:"Democratic socialism", u:"https://en.wikipedia.org/wiki/Democratic_socialism"},
+        {t:"Universal healthcare", u:"https://en.wikipedia.org/wiki/Universal_health_care"}
+      ],
+      notes: "Advocates reforms (health care, labor, inequality) through electoral politics."
+    },
 
-<h2>Early Socialist Debates</h2>
+    // ---- CAPITALISM ----
+    {
+      topic: "cap", era: "early",
+      name: "John Locke", years: "1632–1704",
+      role: "Philosopher of property & liberal rights",
+      hook: "Locke = property rights as a pillar of liberal society",
+      wikiTitle: "John_Locke",
+      keywords: [
+        {t:"Property", u:"https://en.wikipedia.org/wiki/Property"},
+        {t:"Liberalism", u:"https://en.wikipedia.org/wiki/Liberalism"}
+      ],
+      notes: "Foundational liberal arguments about rights, government legitimacy, and property."
+    },
+    {
+      topic: "cap", era: "classic",
+      name: "Adam Smith", years: "1723–1790",
+      role: "Founder of classical economics",
+      hook: "Smith = invisible hand + division of labor",
+      wikiTitle: "Adam_Smith",
+      keywords: [
+        {t:"The Wealth of Nations", u:"https://en.wikipedia.org/wiki/The_Wealth_of_Nations"},
+        {t:"Invisible hand", u:"https://en.wikipedia.org/wiki/Invisible_hand"},
+        {t:"Division of labor", u:"https://en.wikipedia.org/wiki/Division_of_labour"}
+      ],
+      notes: "Argued markets and specialization can raise productivity and living standards."
+    },
+    {
+      topic: "cap", era: "classic",
+      name: "David Ricardo", years: "1772–1823",
+      role: "Classical economist of trade",
+      hook: "Ricardo = comparative advantage",
+      wikiTitle: "David_Ricardo",
+      keywords: [
+        {t:"Comparative advantage", u:"https://en.wikipedia.org/wiki/Comparative_advantage"}
+      ],
+      notes: "Trade theory: specialization can benefit countries even when one is ‘better’ at producing everything."
+    },
+    {
+      topic: "cap", era: "classic",
+      name: "John Stuart Mill", years: "1806–1873",
+      role: "Liberal philosopher & economist",
+      hook: "Mill = liberty + reform",
+      wikiTitle: "John_Stuart_Mill",
+      keywords: [
+        {t:"On Liberty", u:"https://en.wikipedia.org/wiki/On_Liberty"},
+        {t:"Utilitarianism", u:"https://en.wikipedia.org/wiki/Utilitarianism"}
+      ],
+      notes: "Strong case for civil liberties; debated how far reforms can go within market societies."
+    },
+    {
+      topic: "cap", era: "rev",
+      name: "John Maynard Keynes", years: "1883–1946",
+      role: "Economist of government stabilization",
+      hook: "Keynes = manage recessions with policy",
+      wikiTitle: "John_Maynard_Keynes",
+      keywords: [
+        {t:"Keynesian economics", u:"https://en.wikipedia.org/wiki/Keynesian_economics"},
+        {t:"Fiscal policy", u:"https://en.wikipedia.org/wiki/Fiscal_policy"}
+      ],
+      notes: "Argued governments can stabilize capitalist downturns by managing aggregate demand."
+    },
+    {
+      topic: "cap", era: "rev",
+      name: "Friedrich Hayek", years: "1899–1992",
+      role: "Free-market economist",
+      hook: "Hayek = knowledge problem (limits of central planning)",
+      wikiTitle: "Friedrich_Hayek",
+      keywords: [
+        {t:"Knowledge problem", u:"https://en.wikipedia.org/wiki/Knowledge_problem"},
+        {t:"The Road to Serfdom", u:"https://en.wikipedia.org/wiki/The_Road_to_Serfdom"}
+      ],
+      notes: "Argued information is dispersed and markets coordinate knowledge better than planners can."
+    },
+    {
+      topic: "cap", era: "cold",
+      name: "Ayn Rand", years: "1905–1982",
+      role: "Philosopher/novelist defending laissez-faire capitalism",
+      hook: "Rand = moral defense of capitalism",
+      wikiTitle: "Ayn_Rand",
+      keywords: [
+        {t:"Objectivism", u:"https://en.wikipedia.org/wiki/Objectivism"},
+        {t:"Laissez-faire", u:"https://en.wikipedia.org/wiki/Laissez-faire"}
+      ],
+      notes: "Offered a rights/individualism-centered moral argument for laissez-faire capitalism."
+    },
+    {
+      topic: "cap", era: "cold",
+      name: "Milton Friedman", years: "1912–2006",
+      role: "Free-market economist",
+      hook: "Friedman = monetarism + market solutions",
+      wikiTitle: "Milton_Friedman",
+      keywords: [
+        {t:"Monetarism", u:"https://en.wikipedia.org/wiki/Monetarism"},
+        {t:"Chicago school", u:"https://en.wikipedia.org/wiki/Chicago_school_of_economics"}
+      ],
+      notes: "Emphasized inflation/monetary policy and argued for many market-based reforms."
+    },
+    {
+      topic: "cap", era: "modern",
+      name: "Robert Nozick", years: "1938–2002",
+      role: "Libertarian political philosopher",
+      hook: "Nozick = minimal state + entitlement theory",
+      wikiTitle: "Robert_Nozick",
+      keywords: [
+        {t:"Entitlement theory", u:"https://en.wikipedia.org/wiki/Entitlement_theory"},
+        {t:"Libertarianism", u:"https://en.wikipedia.org/wiki/Libertarianism"}
+      ],
+      notes: "Argued justice is about legitimate acquisition and voluntary exchange; skeptical of redistribution."
+    }
+  ];
 
-<div class="figure">
-  <h3>Eduard Bernstein (1850–1932)</h3>
-  <div class="meta">Role: Revisionist socialist</div>
-  <div class="hook">Memory Hook: Bernstein = reform, not revolution</div>
-  <ul class="key-ideas">
-    <li><a href="https://en.wikipedia.org/wiki/Revisionism_(Marxism)">Revisionism</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Social_democracy">Social democracy</a></li>
-  </ul>
-  <p>Bernstein argued that socialism should be achieved through gradual democratic reforms rather than violent revolution.</p>
-</div>
+  // ========= HELPERS =========
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function topicLabel(t){ return t==="soc" ? "Socialism & Communism" : "Capitalism"; }
+  function eraLabel(e){
+    return ({
+      early:"Early foundations (1600–1800)",
+      classic:"Classical political economy (1700–1800s)",
+      rev:"Revolutionary era (1900–1953)",
+      cold:"Cold War & global (1950s–1991)",
+      modern:"Modern / contemporary"
+    }[e] || e);
+  }
+  function birthYearFromRange(years){
+    const m = String(years).match(/(\d{4})/);
+    return m ? parseInt(m[1],10) : 9999;
+  }
 
-<div class="figure">
-  <h3>Karl Kautsky (1854–1938)</h3>
-  <div class="meta">Role: Orthodox Marxist theorist</div>
-  <div class="hook">Memory Hook: Kautsky = Marx without Lenin</div>
-  <ul class="key-ideas">
-    <li><a href="https://en.wikipedia.org/wiki/Orthodox_Marxism">Orthodox Marxism</a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Second_International">Second International</a></li>
-  </ul>
-  <p>Kautsky supported Marxist theory but opposed Lenin’s authoritarian methods. He believed socialism should come through democratic mass parties.</p>
-</div>
+  // ========= WIKIPEDIA FETCH =========
+  async function fetchWikiSummary(wikiTitle){
+    const url = `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(wikiTitle)}`;
+    const r = await fetch(url, { headers: { "accept": "application/json" }});
+    if(!r.ok) throw new Error("Wiki fetch failed");
+    return r.json();
+  }
 
-<div class="figure">
-  <h3>Eugene V. Debs (1855–1926)</h3>
-  <div class="meta">Role: U.S. labor & socialist leader</div>
-  <div class="hook">Memory Hook: Debs = American socialism</div>
-  <ul class="key-ideas">
-    <li><a href="https://en.wikipedia.org/wiki/Socialist_Party_of_America">Socialist Party of America</a></l_
+  async function hydrateCard(cardEl, wikiTitle){
+    const imgBox = cardEl.querySelector("[data-thumb]");
+    const sumBox = cardEl.querySelector("[data-wikisum]");
+    try{
+      const data = await fetchWikiSummary(wikiTitle);
+      const thumb = data.thumbnail && data.thumbnail.source ? data.thumbnail.source : null;
+      const extract = data.extract ? data.extract : "";
+      if(thumb){
+        imgBox.innerHTML = `<img alt="" src="${thumb}">`;
+      } else {
+        imgBox.textContent = "No image";
+      }
+      if(extract){
+        sumBox.textContent = extract;
+      } else {
+        sumBox.textContent = "No summary available.";
+      }
+    }catch(e){
+      imgBox.textContent = "Offline / blocked";
+      sumBox.textContent = "Couldn’t load Wikipedia summary right now (offline or blocked). Your own notes still work here.";
+    }
+  }
+
+  // ========= RENDER =========
+  const cardsEl = document.getElementById("cards");
+  const timelineEl = document.getElementById("timelineRows");
+  const qEl = document.getElementById("q");
+  const topicEl = document.getElementById("topic");
+  const eraEl = document.getElementById("era");
+  const clearBtn = document.getElementById("clearBtn");
+  const reloadImgsBtn = document.getElementById("reloadImgsBtn");
+
+  function matchesQuery(fig, q){
+    if(!q) return true;
+    const blob = [
+      fig.name, fig.years, fig.role, fig.hook, fig.notes,
+      (fig.keywords||[]).map(k=>k.t).join(" ")
+    ].join(" ").toLowerCase();
+    return blob.includes(q.toLowerCase());
+  }
+
+  function getFiltered(){
+    const q = qEl.value.trim();
+    const t = topicEl.value;
+    const e = eraEl.value;
+    return figures
+      .filter(fig => (t==="all" || fig.topic===t) && (e==="all" || fig.era===e) && matchesQuery(fig,q))
+      .sort((a,b)=> birthYearFromRange(a.years)-birthYearFromRange(b.years));
+  }
+
+  function render(){
+    const data = getFiltered();
+
+    cardsEl.innerHTML = data.map(fig=>{
+      const keywordLinks = (fig.keywords||[])
+        .map(k=>`<li><a href="${k.u}" target="_blank" rel="noopener">${escapeHtml(k.t)}</a></li>`).join("");
+      const wikiLink = `https://en.wikipedia.org/wiki/${fig.wikiTitle}`;
+      const topicTagText = fig.topic==="soc" ? "Socialism/Communism" : "Capitalism";
+
+      return `
+        <article class="card ${fig.topic}" data-card data-wikititle="${escapeHtml(fig.wikiTitle)}">
+          <div class="cardTop">
+            <div class="thumb" data-thumb>Loading…</div>
+            <div>
+              <div class="titleRow">
+                <div class="name">${escapeHtml(fig.name)}</div>
+                <div class="dates">${escapeHtml(fig.years)}</div>
+              </div>
+
+              <div class="meta"><b>Topic:</b> ${escapeHtml(topicLabel(fig.topic))} &nbsp; • &nbsp; <b>Era:</b> ${escapeHtml(eraLabel(fig.era))}</div>
+              <div class="meta"><b>Role:</b> ${escapeHtml(fig.role)}</div>
+              <p class="hook">${escapeHtml(fig.hook)}</p>
+
+              <div class="tagRow">
+                <span class="tag topicTag">${escapeHtml(topicTagText)}</span>
+                <span class="tag">${escapeHtml(fig.era)}</span>
+                <span class="tag"><a href="${wikiLink}" target="_blank" rel="noopener">Wikipedia page</a></span>
+              </div>
+            </div>
+          </div>
+
+          <details>
+            <summary>Study details</summary>
+
+            <div class="meta"><b>Key ideas (click):</b></div>
+            <ul>${keywordLinks || "<li>(add your own links)</li>"}</ul>
+
+            <div class="meta" style="margin-top:12px;"><b>Your notes:</b></div>
+            <p class="summaryText">${escapeHtml(fig.notes)}</p>
+
+            <div class="meta" style="margin-top:12px;"><b>Quick Wikipedia summary:</b></div>
+            <p class="summaryText" data-wikisum>Loading…</p>
+          </details>
+        </article>
+      `;
+    }).join("");
+
+    timelineEl.innerHTML = data.map(fig=>{
+      const wikiLink = `https://en.wikipedia.org/wiki/${fig.wikiTitle}`;
+      const rowClass = fig.topic === "soc" ? "socRow" : "capRow";
+      return `
+        <tr class="${rowClass}">
+          <td>${escapeHtml(fig.years)}</td>
+          <td><a href="${wikiLink}" target="_blank" rel="noopener">${escapeHtml(fig.name)}</a></td>
+          <td>${escapeHtml(topicLabel(fig.topic))}</td>
+          <td><b>${escapeHtml(fig.role)}</b><br><span class="small">${escapeHtml(fig.hook)}</span></td>
+        </tr>
+      `;
+    }).join("");
+
+    hydrateVisible();
+  }
+
+  async function hydrateVisible(){
+    const cards = Array.from(document.querySelectorAll("[data-card]"));
+    for(const c of cards){
+      const title = c.getAttribute("data-wikititle");
+      if(title) hydrateCard(c, title);
+    }
+  }
+
+  // ========= EVENTS =========
+  qEl.addEventListener("input", render);
+  topicEl.addEventListener("change", render);
+  eraEl.addEventListener("change", render);
+
+  clearBtn.addEventListener("click", ()=>{
+    qEl.value = "";
+    topicEl.value = "all";
+    eraEl.value = "all";
+    render();
+  });
+
+  reloadImgsBtn.addEventListener("click", ()=>{
+    hydrateVisible();
+  });
+
+  render();
+</script>
+</body>
+</html>
