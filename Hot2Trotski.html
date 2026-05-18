@@ -196,8 +196,17 @@
     .atlas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .panel{border-radius:10px;padding:16px}
     .panel.red{border-left:5px solid var(--red)}.panel.blue{border-left:5px solid var(--blue)}.panel.black{border-left:5px solid #050505}
+    .study-detail{margin:14px 0 16px;padding:16px;border-radius:10px;border:1px solid rgba(216,175,85,.32);background:linear-gradient(180deg,rgba(23,29,41,.94),rgba(8,10,15,.96))}
+    .study-detail h3{font-size:25px;margin-bottom:8px}
+    .study-detail dl{margin:10px 0 0}.study-detail dt{font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:800}.study-detail dd{margin:0 0 10px;color:var(--muted)}
+    .why{border-top:1px solid rgba(255,255,255,.09);margin-top:12px;padding-top:10px;color:var(--muted)}
+    .source-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .source-item{padding:12px;border:1px solid var(--line);border-radius:10px;background:rgba(10,14,21,.88)}
+    .source-item a{font-family:Inter,sans-serif;font-size:13px;font-weight:800;color:var(--ivory)}
+    .source-item p{margin:5px 0 0;color:var(--muted);font-size:15px}
     .truth-grid,.tests,.badges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .truth-card,.test-card{border-radius:10px;padding:16px;border-top:4px solid var(--blue)}
+    .is-highlighted{outline:2px solid var(--accent);box-shadow:0 0 0 6px rgba(216,175,85,.12),var(--shadow)}
     .truth-card.red{border-top-color:var(--red)}.truth-card.blue{border-top-color:var(--blue)}.truth-card.black{border-top-color:#111}
     .truth-card dl{margin:8px 0 0}.truth-card dt{font-family:Inter,sans-serif;font-weight:800;color:var(--accent);font-size:13px}.truth-card dd{margin:0 0 8px;color:var(--muted)}
     .badge-case{background:linear-gradient(135deg,#0a0d12,#17120a);border:1px solid rgba(216,175,85,.35);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
@@ -213,7 +222,7 @@
     .mirror-questions{columns:2;column-gap:28px;color:var(--muted)}
     footer{border-top:1px solid rgba(216,175,85,.3);padding:28px 18px 40px;text-align:center;color:var(--muted)}
     @media (max-width:1180px){.shell{grid-template-columns:1fr}.leftbar,.rightbar{position:static;max-height:none}.sidebox{display:block}.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges{grid-template-columns:1fr}.medals{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
+    @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges,.source-list{grid-template-columns:1fr}.medals{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
   </style>
 </head>
 <body>
@@ -308,11 +317,11 @@
       <section id="figures">
         <div class="section-head"><div class="kicker">Museum Gallery</div><h2>Figure Gallery</h2><p>Portrait spaces use Wiki/Wikimedia summaries where available. Exact quotes are deliberately marked until verified.</p></div>
         <div class="grid">
-          <article class="card red"><div class="photo" data-wiki="Karl_Marx">Loading Wiki image</div><div class="card-body"><h3>Karl Marx</h3><div class="meta">1818-1883 | class struggle, capital, exploitation</div><p class="hook">Marx = class struggle and capitalism as a historical system.</p><p class="quote-needed"><q>The history of all hitherto existing society is the history of class struggles.</q><br><a class="pill source" href="https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1" target="_blank" rel="noopener">Verified source: Manifesto, Part I</a></p><div class="link-cloud"><button class="pill idea" data-idea="surplus value">Surplus Value</button><button class="pill discuss">Discuss this</button></div></div></article>
-          <article class="card red"><div class="photo" data-wiki="Friedrich_Engels">Loading Wiki image</div><div class="card-body"><h3>Friedrich Engels</h3><div class="meta">1820-1895 | industry, labor, Marxism</div><p class="hook">Engels = industrial conditions plus Marxist collaboration.</p><p class="quote-needed"><q>Modern Socialism is, in its essence, the direct product</q><br><a class="pill source" href="https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm" target="_blank" rel="noopener">Verified source: Socialism: Utopian and Scientific</a></p><div class="link-cloud"><button class="pill idea" data-idea="working class">Working Class</button><button class="pill discuss">Discuss this</button></div></div></article>
-          <article class="card blue"><div class="photo" data-wiki="Eduard_Bernstein">Loading Wiki image</div><div class="card-body"><h3>Eduard Bernstein</h3><div class="meta">1850-1932 | revisionism, reform</div><p class="hook">Bernstein = democratic reform instead of violent rupture.</p><p class="quote-needed"><q>the movement is everything</q><br><a class="pill source" href="https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm" target="_blank" rel="noopener">Verified source: Evolutionary Socialism</a></p><div class="link-cloud"><button class="pill idea" data-idea="reform">Reform</button><button class="pill test">Reform Test</button></div></div></article>
-          <article class="card blue"><div class="photo" data-wiki="Karl_Kautsky">Loading Wiki image</div><div class="card-body"><h3>Karl Kautsky</h3><div class="meta">1854-1938 | orthodox Marxism, democracy debate</div><p class="hook">Kautsky = Marxist theory without Leninist party rule.</p><p class="quote-needed"><q>Marx must not, therefore, be cited by those who support dictatorship in preference to democracy.</q><br><a class="pill source" href="https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm" target="_blank" rel="noopener">Verified source: The Dictatorship of the Proletariat</a></p><div class="link-cloud"><button class="pill idea" data-idea="orthodox Marxism">Orthodox Marxism</button><button class="pill discuss">Discuss this</button></div></div></article>
-          <article class="card blue"><div class="photo" data-wiki="Eugene_V._Debs">Loading Wiki image</div><div class="card-body"><h3>Eugene V. Debs</h3><div class="meta">1855-1926 | American socialism, labor</div><p class="hook">Debs = U.S. labor politics and American socialism.</p><p class="quote-needed"><q>while there is a lower class, I am in it</q><br><a class="pill source" href="https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court" target="_blank" rel="noopener">Verified source: Statement to the Court</a></p><div class="link-cloud"><button class="pill idea" data-idea="unionism">Unionism</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card red"><div class="photo" data-wiki="Karl_Marx">Loading Wiki image</div><div class="card-body"><h3>Karl Marx</h3><div class="meta">1818-1883 | class struggle, capital, exploitation</div><p class="hook">Marx = class struggle and capitalism as a historical system.</p><p class="quote-needed"><q>The history of all hitherto existing society is the history of class struggles.</q><br><a class="pill source" href="https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1" target="_blank" rel="noopener">Verified source: Manifesto, Part I</a></p><p class="why"><b>Why this card matters:</b> Marx gives the road its central pressure point: capitalism is not just buying and selling, it is a system of class power with winners, losers, and historical motion.</p><div class="link-cloud"><button class="pill idea" data-idea="surplus value">Surplus Value</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card red"><div class="photo" data-wiki="Friedrich_Engels">Loading Wiki image</div><div class="card-body"><h3>Friedrich Engels</h3><div class="meta">1820-1895 | industry, labor, Marxism</div><p class="hook">Engels = industrial conditions plus Marxist collaboration.</p><p class="quote-needed"><q>Modern Socialism is, in its essence, the direct product</q><br><a class="pill source" href="https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm" target="_blank" rel="noopener">Verified source: Socialism: Utopian and Scientific</a></p><p class="why"><b>Why this card matters:</b> Engels keeps the study guide grounded in factories, cities, poverty, and industrial life, so socialism starts as a response to real conditions, not just a slogan.</p><div class="link-cloud"><button class="pill idea" data-idea="working class">Working Class</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card blue"><div class="photo" data-wiki="Eduard_Bernstein">Loading Wiki image</div><div class="card-body"><h3>Eduard Bernstein</h3><div class="meta">1850-1932 | revisionism, reform</div><p class="hook">Bernstein = democratic reform instead of violent rupture.</p><p class="quote-needed"><q>the movement is everything</q><br><a class="pill source" href="https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm" target="_blank" rel="noopener">Verified source: Evolutionary Socialism</a></p><p class="why"><b>Why this card matters:</b> Bernstein is where the road asks whether democracy, unions, elections, and welfare laws can change capitalism without turning politics into civil war.</p><div class="link-cloud"><button class="pill idea" data-idea="reform">Reform</button><button class="pill test">Reform Test</button></div></div></article>
+          <article class="card blue"><div class="photo" data-wiki="Karl_Kautsky">Loading Wiki image</div><div class="card-body"><h3>Karl Kautsky</h3><div class="meta">1854-1938 | orthodox Marxism, democracy debate</div><p class="hook">Kautsky = Marxist theory without Leninist party rule.</p><p class="quote-needed"><q>Marx must not, therefore, be cited by those who support dictatorship in preference to democracy.</q><br><a class="pill source" href="https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm" target="_blank" rel="noopener">Verified source: The Dictatorship of the Proletariat</a></p><p class="why"><b>Why this card matters:</b> Kautsky makes the democracy problem impossible to skip: if a movement claims liberation but throws away democratic accountability, the word socialism starts to split.</p><div class="link-cloud"><button class="pill idea" data-idea="orthodox Marxism">Orthodox Marxism</button><button class="pill discuss">Discuss this</button></div></div></article>
+          <article class="card blue"><div class="photo" data-wiki="Eugene_V._Debs">Loading Wiki image</div><div class="card-body"><h3>Eugene V. Debs</h3><div class="meta">1855-1926 | American socialism, labor</div><p class="hook">Debs = U.S. labor politics and American socialism.</p><p class="quote-needed"><q>while there is a lower class, I am in it</q><br><a class="pill source" href="https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court" target="_blank" rel="noopener">Verified source: Statement to the Court</a></p><p class="why"><b>Why this card matters:</b> Debs brings the road into American speech: railroads, unions, prisons, elections, and the question of whether democracy can hear working people at all.</p><div class="link-cloud"><button class="pill idea" data-idea="unionism">Unionism</button><button class="pill discuss">Discuss this</button></div></div></article>
           <article class="card red"><div class="photo" data-wiki="Leon_Trotsky">Loading Wiki image</div><div class="card-body"><h3>Leon Trotsky</h3><div class="meta">1879-1940 | permanent revolution, exile</div><p class="hook">Trotsky = international revolution and warning about bureaucracy.</p><p class="quote-needed"><q>The socialist revolution begins on the national arena</q><br><a class="pill source" href="https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm" target="_blank" rel="noopener">Verified source: The Permanent Revolution</a></p><div class="link-cloud"><button class="pill idea" data-idea="permanent revolution">Permanent Revolution</button><button class="pill discuss">Discuss this</button></div></div></article>
           <article class="card blue"><div class="photo" data-wiki="Adam_Smith">Loading Wiki image</div><div class="card-body"><h3>Adam Smith</h3><div class="meta">1723-1790 | markets, exchange, political economy</div><p class="hook">Smith = market exchange and self-interest, but not a cartoon defense of greed.</p><p class="quote-needed"><q>from their regard to their own interest</q><br><a class="pill source" href="https://www.gutenberg.org/files/3300/3300-h/3300-h.htm" target="_blank" rel="noopener">Verified source: Wealth of Nations</a></p><div class="link-cloud"><button class="pill idea" data-idea="market">Market</button><button class="pill idea" data-idea="division of labor">Division of Labor</button></div></div></article>
           <article class="card red"><div class="photo" data-wiki="Vladimir_Lenin">Loading Wiki image</div><div class="card-body"><h3>Vladimir Lenin</h3><div class="meta">1870-1924 | vanguard party, revolution, state power</div><p class="hook">Lenin = theory, organization, and seizure of state power.</p><p class="quote-needed"><q>Without revolutionary theory there can be no revolutionary movement.</q><br><a class="pill source" href="https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm" target="_blank" rel="noopener">Verified source: What Is To Be Done?</a></p><div class="link-cloud"><button class="pill idea" data-idea="vanguard party">Vanguard Party</button><button class="pill discuss">Discuss this</button></div></div></article>
@@ -331,6 +340,15 @@
       <section id="ideas">
         <div class="section-head"><div class="kicker">Idea Atlas</div><h2>Clickable Political Vocabulary</h2><p>Every important word needs a plain definition, context, common confusion, related figures, and a test path.</p></div>
         <div class="link-cloud" id="ideaCloud"></div>
+        <div class="study-detail" id="ideaDetail" tabindex="-1">
+          <div class="kicker">Study Details</div>
+          <h3 id="ideaDetailTitle">Choose an idea</h3>
+          <p id="ideaDetailDefinition">Click any idea pill to collect its badge and open a short study card here.</p>
+          <dl>
+            <dt>Related figures</dt><dd id="ideaDetailFigures">Waiting for a selected idea.</dd>
+            <dt>Source links</dt><dd id="ideaDetailSources"><a class="pill source" href="#texts">Open Source Library</a></dd>
+          </dl>
+        </div>
         <div class="atlas">
           <article class="panel red"><h3>Class Struggle</h3><p>Conflict between social classes over labor, property, power, and who receives the value created in society.</p><div class="link-cloud"><button class="pill figure">Marx</button><button class="pill test">Test</button><button class="pill discuss">Discuss</button></div></article>
           <article class="panel blue"><h3>Social Democracy</h3><p>A reform path that uses democratic institutions, welfare systems, unions, and public goods within mixed economies.</p><div class="link-cloud"><button class="pill figure">Bernstein</button><button class="pill test">Test</button><button class="pill discuss">Discuss</button></div></article>
@@ -352,10 +370,10 @@
       <section id="tests">
         <div class="section-head"><div class="kicker">Subject Tests</div><h2>Expertise Areas</h2><p>These are simple local prototype tests. Later, scores and badges can belong to real accounts.</p></div>
         <div class="tests">
-          <article class="test-card"><h3>Marx / Class Struggle</h3><p>Which idea says political history is shaped by conflict between social classes?</p><button onclick="answerTest(this,true,'Class Struggle Badge')">Class struggle</button><button onclick="answerTest(this,false)">Invisible hand</button><button onclick="answerTest(this,false)">Social contract</button><div class="result"></div></article>
-          <article class="test-card"><h3>Reform vs Revolution</h3><p>Which route tries to change society through elections, unions, laws, and welfare institutions?</p><button onclick="answerTest(this,false)">Vanguard seizure</button><button onclick="answerTest(this,true,'Reform Road Badge')">Democratic reform</button><button onclick="answerTest(this,false)">Purges</button><div class="result"></div></article>
-          <article class="test-card"><h3>Markets / Socialism / Public Spending</h3><p>Is every government program automatically communism?</p><button onclick="answerTest(this,false)">Yes</button><button onclick="answerTest(this,true,'Modern Language Badge')">No</button><button onclick="answerTest(this,false)">Only if it has taxes</button><div class="result"></div></article>
-          <article class="test-card"><h3>State Power Warning</h3><p>Which warning belongs in every truth-first study of revolutionary states?</p><button onclick="answerTest(this,true,'Truth Check Badge')">Power can centralize and silence dissent</button><button onclick="answerTest(this,false)">The state always disappears quickly</button><button onclick="answerTest(this,false)">No failures need study</button><div class="result"></div></article>
+          <article class="test-card" data-test="class-struggle"><h3>Marx / Class Struggle</h3><p>Which idea says political history is shaped by conflict between social classes?</p><button onclick="answerTest(this,true,'Class Struggle Badge')">Class struggle</button><button onclick="answerTest(this,false)">Invisible hand</button><button onclick="answerTest(this,false)">Social contract</button><div class="result"></div></article>
+          <article class="test-card" data-test="reform"><h3>Reform vs Revolution</h3><p>Which route tries to change society through elections, unions, laws, and welfare institutions?</p><button onclick="answerTest(this,false)">Vanguard seizure</button><button onclick="answerTest(this,true,'Reform Road Badge')">Democratic reform</button><button onclick="answerTest(this,false)">Purges</button><div class="result"></div></article>
+          <article class="test-card" data-test="modern-language"><h3>Modern Political Language</h3><p>Is every government program automatically communism?</p><button onclick="answerTest(this,false)">Yes</button><button onclick="answerTest(this,true,'Modern Language Badge')">No</button><button onclick="answerTest(this,false)">Only if it has taxes</button><div class="result"></div></article>
+          <article class="test-card" data-test="state-power"><h3>Russian Revolution / State Power</h3><p>Which warning belongs in every truth-first study of revolutionary states?</p><button onclick="answerTest(this,true,'Truth Check Badge')">Power can centralize and silence dissent</button><button onclick="answerTest(this,false)">The state always disappears quickly</button><button onclick="answerTest(this,false)">No failures need study</button><div class="result"></div></article>
         </div>
       </section>
 
@@ -364,10 +382,35 @@
         <div class="badge-case"><h3>Guest Scholar Cabinet</h3><div class="medals" id="medals"></div></div>
       </section>
 
+      <section id="texts">
+        <div class="section-head"><div class="kicker">Working Source Shelf</div><h2>Source Library</h2><p>A simple shelf for the texts and topic pages already used by this prototype. This is the place source-path buttons should land.</p></div>
+        <div class="source-list">
+          <article class="source-item"><a href="https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1" target="_blank" rel="noopener">Communist Manifesto / Wikisource</a><p>Marx and Engels source path for class struggle and the 1848 stop.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm" target="_blank" rel="noopener">Engels / Socialism: Utopian and Scientific</a><p>Industrial socialism, theory, and the Engels figure card.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm" target="_blank" rel="noopener">Bernstein / Evolutionary Socialism</a><p>Reform road and revisionism source path.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm" target="_blank" rel="noopener">Kautsky / Dictatorship of the Proletariat</a><p>Democracy, dictatorship, and Marxist dispute source path.</p></article>
+          <article class="source-item"><a href="https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court" target="_blank" rel="noopener">Eugene Debs / Statement to the Court</a><p>American socialism, labor, prison, and democratic speech.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm" target="_blank" rel="noopener">Trotsky / The Permanent Revolution</a><p>International revolution and the Hot2Trotski spine.</p></article>
+          <article class="source-item"><a href="https://www.gutenberg.org/files/3300/3300-h/3300-h.htm" target="_blank" rel="noopener">Adam Smith / Wealth of Nations</a><p>Market road, political economy, and source-path buttons.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm" target="_blank" rel="noopener">Lenin / What Is To Be Done?</a><p>Vanguard party and revolutionary theory source path.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm" target="_blank" rel="noopener">Luxemburg / The Russian Revolution</a><p>Socialist democracy and anti-authoritarian warning.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm" target="_blank" rel="noopener">Stalin / Questions of Leninism</a><p>Party-state language and state-power warning.</p></article>
+          <article class="source-item"><a href="https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm" target="_blank" rel="noopener">Mao / Quotations, War and Peace</a><p>Maoism, armed power, and Chinese revolution source path.</p></article>
+          <article class="source-item"><a href="https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/" target="_blank" rel="noopener">Orwell / Politics and the English Language</a><p>Political language and propaganda warning.</p></article>
+          <article class="source-item"><a href="https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm" target="_blank" rel="noopener">Keynes / A Tract on Monetary Reform</a><p>Crisis policy, time, and the limits of waiting for the long run.</p></article>
+          <article class="source-item"><a href="https://www.econlib.org/library/Essays/hykKnw.html" target="_blank" rel="noopener">Hayek / The Use of Knowledge in Society</a><p>Knowledge problem, prices, and planning debate.</p></article>
+          <article class="source-item"><a href="https://www.hoover.org/research/inflation-true-and-false" target="_blank" rel="noopener">Friedman / Inflation: True and False</a><p>Inflation and monetarism source path.</p></article>
+          <article class="source-item"><a href="https://plato.stanford.edu/entries/nozick-political/index.html" target="_blank" rel="noopener">Nozick / Stanford Encyclopedia</a><p>Libertarian rights and minimal-state source path.</p></article>
+          <article class="source-item"><a href="https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/" target="_blank" rel="noopener">Sanders / Senate Op-Ed</a><p>Democratic socialism, health care, and public goods.</p></article>
+          <article class="source-item"><a href="https://en.wikipedia.org/wiki/Industrial_Revolution" target="_blank" rel="noopener">Wikipedia Topic Pages</a><p>Current image/topic summary shelf: Industrial Revolution, Wealth of Nations, Paris Commune, Russian Revolution, Cold War, welfare state, Soviet dissolution, Sanders, and figure portraits.</p></article>
+        </div>
+      </section>
+
       <section id="discussion">
         <div class="section-head"><div class="kicker">Future Community Layer</div><h2>Discussion Chamber</h2><p>Every figure, idea, event, and test should eventually have a discussion thread. This skeleton shows the architecture without faking working comments.</p></div>
         <div class="discussion">
           <h3>Massive Comments Belong Here Later</h3>
+          <p id="discussionTopic" class="truth-banner">Discussion topic: choose a figure, idea, event, or test.</p>
           <p>First path: giscus with GitHub Discussions. Bigger path: hosted app with auth, profiles, moderation, and a comments database.</p>
           <div class="comment-row"><b>Figure threads:</b> Marx, Engels, Debs, Lenin, Trotsky, Stalin, Mao, Sanders.</div>
           <div class="comment-row"><b>Idea threads:</b> socialism, communism, capitalism, markets, labor, reform, revolution, authoritarianism.</div>
@@ -395,11 +438,46 @@
   </footer>
 
   <script>
-    const ideaNames = ['socialism','communism','capitalism','market','labor','class struggle','surplus value','means of production','alienation','reform','revolution','revisionism','social democracy','democratic socialism','welfare state','vanguard party','permanent revolution','Stalinism','Trotskyism','Maoism','planned economy','mixed economy','private property','public goods','unionism','anti-communism','authoritarianism','totalitarianism','liberalism','conservatism','fascism','division of labor','commune','state power','American socialism','peasant revolution','party-state','public spending','socialist democracy','political language'];
+    const ideaNames = ['socialism','communism','capitalism','market','labor','class struggle','surplus value','means of production','alienation','reform','revolution','revisionism','social democracy','democratic socialism','welfare state','vanguard party','permanent revolution','Stalinism','Trotskyism','Maoism','planned economy','mixed economy','property','private property','public goods','unionism','anti-communism','authoritarianism','totalitarianism','liberalism','conservatism','fascism','division of labor','commune','state power','American socialism','peasant revolution','party-state','public spending','socialist democracy','political language'];
+    const ideaDetails = {
+      'class struggle': {definition:'Conflict between social classes over work, property, power, law, and who receives the value society creates.', figures:['Marx','Engels','Debs'], sources:[['Manifesto / Wikisource','https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1']]},
+      'surplus value': {definition:'The Marxist idea that workers create more value than they receive in wages, and that the difference becomes profit, rent, or accumulation.', figures:['Marx','Engels'], sources:[['Manifesto source shelf','#texts']]},
+      'working class': {definition:'People who live mainly by selling labor rather than owning productive property.', figures:['Engels','Debs','Marx'], sources:[['Engels / Socialism: Utopian and Scientific','https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm']]},
+      'reform': {definition:'Changing society through elections, unions, laws, public services, and democratic institutions instead of immediate revolutionary rupture.', figures:['Bernstein','Kautsky','Sanders'], sources:[['Bernstein / Evolutionary Socialism','https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm']]},
+      'revisionism': {definition:'A socialist argument that theory and strategy must adjust to democratic, economic, and social changes instead of repeating old formulas.', figures:['Bernstein','Kautsky'], sources:[['Bernstein / Evolutionary Socialism','https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm']]},
+      'social democracy': {definition:'A democratic reform tradition that keeps elections and mixed economies while expanding labor rights, welfare systems, and public goods.', figures:['Bernstein','Kautsky','Sanders'], sources:[['Source Library','#texts']]},
+      'democratic socialism': {definition:'A socialism that must pass through democracy, civil rights, elections, and public accountability, not one-party command.', figures:['Debs','Sanders','Luxemburg'], sources:[['Sanders Senate op-ed','https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/']]},
+      'market': {definition:'A system where prices, buying, selling, supply, and demand coordinate choices. Useful, powerful, and still not a complete morality.', figures:['Adam Smith','Hayek','Friedman'], sources:[['Adam Smith / Wealth of Nations','https://www.gutenberg.org/files/3300/3300-h/3300-h.htm'],['Hayek / Use of Knowledge','https://www.econlib.org/library/Essays/hykKnw.html']]},
+      'division of labor': {definition:'Breaking work into specialized tasks, which can raise productivity while also changing power, skill, and dependence.', figures:['Adam Smith','Marx'], sources:[['Adam Smith / Wealth of Nations','https://www.gutenberg.org/files/3300/3300-h/3300-h.htm']]},
+      'property': {definition:'Rules about who may own, use, exclude, sell, inherit, or control land, tools, factories, money, and other resources.', figures:['Adam Smith','Nozick','Marx'], sources:[['Nozick / Stanford Encyclopedia','https://plato.stanford.edu/entries/nozick-political/index.html']]},
+      'private property': {definition:'Property controlled by private owners rather than public bodies or common ownership; the dispute is usually about productive property, not your toothbrush.', figures:['Nozick','Adam Smith','Marx'], sources:[['Nozick / Stanford Encyclopedia','https://plato.stanford.edu/entries/nozick-political/index.html']]},
+      'public goods': {definition:'Goods or services that serve public life and are hard to reduce to one private buyer, such as public health, roads, education, or clean air.', figures:['Sanders','Keynes'], sources:[['Sanders Senate op-ed','https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/']]},
+      'vanguard party': {definition:'A revolutionary party that claims it can organize and lead the working class toward state power.', figures:['Lenin','Trotsky','Stalin'], sources:[['Lenin / What Is To Be Done?','https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm']]},
+      'permanent revolution': {definition:'Trotsky argument: socialist revolution cannot be sealed inside one national box and must keep moving internationally.', figures:['Trotsky'], sources:[['Trotsky / The Permanent Revolution','https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm']]},
+      'state power': {definition:'The concentrated ability to make law, command force, collect resources, punish, administer, and define public order.', figures:['Lenin','Stalin','Kautsky','Luxemburg'], sources:[['Kautsky / Dictatorship of the Proletariat','https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm']]},
+      'authoritarianism': {definition:'Politics where power escapes real accountability and dissent becomes dangerous or meaningless.', figures:['Stalin','Orwell','Luxemburg'], sources:[['Orwell / Politics and the English Language','https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/']]},
+      'political language': {definition:'The words people use to explain, hide, sell, attack, or clarify power.', figures:['Orwell','Sanders'], sources:[['Orwell / Politics and the English Language','https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/']]},
+      'unionism': {definition:'Workers organizing together to bargain, strike, vote, and make employers and government hear them.', figures:['Debs','Engels'], sources:[['Debs / Statement to the Court','https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court']]},
+      'mixed economy': {definition:'An economy combining markets, private firms, public rules, taxes, public services, and social insurance.', figures:['Keynes','Sanders','Bernstein'], sources:[['Keynes / A Tract on Monetary Reform','https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm']]},
+      'public spending': {definition:'Government spending on services, infrastructure, benefits, wages, defense, or public investment. It is not automatically socialism or communism.', figures:['Keynes','Sanders'], sources:[['Keynes / A Tract on Monetary Reform','https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm']]},
+      'Stalinism': {definition:'A party-state model associated with centralization, coercion, bureaucracy, purges, and forced political unity.', figures:['Stalin','Trotsky','Orwell'], sources:[['Stalin / Questions of Leninism','https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm']]},
+      'Maoism': {definition:'A Marxist-Leninist tradition shaped by rural revolution, peasant mobilization, party campaigns, and Chinese revolutionary history.', figures:['Mao'], sources:[['Mao / Quotations','https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm']]},
+      'socialist democracy': {definition:'The insistence that socialist politics must keep dissent, participation, and democratic control alive.', figures:['Luxemburg','Kautsky'], sources:[['Luxemburg / The Russian Revolution','https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm']]}
+    };
     const state = JSON.parse(localStorage.getItem('h2tState') || '{"ideas":[],"badges":[],"name":"Guest Scholar"}');
     function save(){localStorage.setItem('h2tState', JSON.stringify(state));}
     function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();}}
-    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);addBadge(name.charAt(0).toUpperCase()+name.slice(1)+' Idea Badge');}save();renderState();}
+    function titleCase(text){return text.replace(/\b\w/g, c=>c.toUpperCase());}
+    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);addBadge(titleCase(name)+' Idea Badge');}save();renderState();showIdeaDetail(name);}
+    function showIdeaDetail(name){
+      const detail=ideaDetails[name] || {definition:`A working study card for ${name}. This term is already on the map; its fuller source shelf still needs expansion.`, figures:['Source Library'], sources:[['Source Library','#texts']]};
+      document.getElementById('ideaDetailTitle').textContent=titleCase(name);
+      document.getElementById('ideaDetailDefinition').textContent=detail.definition;
+      document.getElementById('ideaDetailFigures').textContent=detail.figures.join(', ');
+      document.getElementById('ideaDetailSources').innerHTML=detail.sources.map(([label,url])=>`<a class="pill source" href="${url}" ${url.startsWith('http')?'target="_blank" rel="noopener"':''}>${label}</a>`).join(' ');
+      document.getElementById('ideaDetail').focus({preventScroll:true});
+      document.getElementById('ideaDetail').scrollIntoView({behavior:'smooth',block:'center'});
+    }
     function answerTest(btn, ok, badge){const box=btn.closest('.test-card').querySelector('.result'); if(ok){box.textContent='Correct. Badge unlocked.'; addBadge(badge || 'Test Badge');}else{box.textContent='Not this one. Try again.';}}
     function setScholarName(){const n=prompt('Local profile name:', state.name || 'Guest Scholar'); if(n && n.trim()){state.name=n.trim();save();renderState();}}
     function renderState(){
@@ -420,6 +498,44 @@
       cloud.innerHTML=ideaNames.map(name=>`<button class="pill idea" data-idea="${name}">${name}</button>`).join('');
       document.querySelectorAll('[data-idea]').forEach(el=>el.addEventListener('click',()=>clickIdea(el.dataset.idea)));
     }
+    function cardTopic(el){return el.closest('article')?.querySelector('h3')?.textContent?.trim() || el.textContent.trim() || 'Open thread';}
+    function clearHighlights(){document.querySelectorAll('.is-highlighted').forEach(el=>el.classList.remove('is-highlighted'));}
+    function openDiscussion(topic){
+      const box=document.getElementById('discussionTopic');
+      box.textContent=`Discussion topic: ${topic}`;
+      document.getElementById('discussion').scrollIntoView({behavior:'smooth',block:'start'});
+      box.classList.add('is-highlighted');
+      setTimeout(()=>box.classList.remove('is-highlighted'),2200);
+    }
+    function selectTest(label, context){
+      const text=(label+' '+context).toLowerCase();
+      let key='modern-language';
+      if(/1917|russian|state|stalin|china|mao|truth/.test(text)) key='state-power';
+      if(/reform|u\.s\. left|american socialism|debs/.test(text)) key='reform';
+      if(/class|subject|manifesto|marx/.test(text)) key='class-struggle';
+      const card=document.querySelector(`[data-test="${key}"]`);
+      if(card){
+        clearHighlights();
+        card.classList.add('is-highlighted');
+        card.querySelector('.result').textContent=`Selected path: ${label}.`;
+        document.getElementById('tests').scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    }
+    function openFigure(label){
+      const wanted=label.toLowerCase();
+      const card=[...document.querySelectorAll('#figures .card')].find(el=>el.querySelector('h3')?.textContent.toLowerCase().includes(wanted));
+      if(card){clearHighlights();card.classList.add('is-highlighted');card.scrollIntoView({behavior:'smooth',block:'center'});}
+      else{document.getElementById('figures').scrollIntoView({behavior:'smooth',block:'start'});}
+    }
+    function openSources(){document.getElementById('texts').scrollIntoView({behavior:'smooth',block:'start'});}
+    document.addEventListener('click', event=>{
+      const button=event.target.closest('button');
+      if(!button) return;
+      if(button.classList.contains('discuss')){openDiscussion(cardTopic(button));}
+      if(button.classList.contains('test') && !button.closest('.test-card')){selectTest(button.textContent.trim(), cardTopic(button));}
+      if(button.classList.contains('source')){openSources();}
+      if(button.classList.contains('figure')){openFigure(button.textContent.trim());}
+    });
     async function hydratePhotos(){
       const boxes=[...document.querySelectorAll('[data-wiki]')];
       for(const box of boxes){
