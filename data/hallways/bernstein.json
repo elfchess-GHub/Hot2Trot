@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "bernstein",
+    "name": "Eduard Bernstein",
+    "dates": "1850-1932",
+    "topic": "Social Democracy / Reform",
+    "era": "Reform and revolution debate (1890-1920)",
+    "role": "Social democratic theorist of revisionism, elections, unions, reform, and democratic strategy.",
+    "hook": "Bernstein = democratic reform instead of violent rupture.",
+    "wikiPage": "Eduard_Bernstein",
+    "whyHere": [
+      "Bernstein belongs here because he makes the socialism road argue with itself: must capitalism be overthrown all at once, or can democracy, unions, and public law change society step by step?",
+      "He matters because a lot of modern social democracy grows out of this question. Reform is not the same thing as surrender, but it also has to prove it can change real power."
+    ],
+    "cleanIdea": "The reform road asks whether democratic institutions can steadily reduce class power without turning politics into civil war.",
+    "badgePaths": [
+      { "label": "Revisionism Badge", "ideaId": "revisionism" },
+      { "label": "Democratic Reform Badge", "ideaId": "democratic-reform" },
+      { "label": "Social Democracy Badge", "ideaId": "social-democracy" }
+    ],
+    "keyTerms": [
+      "Revisionism",
+      "Social democracy",
+      "Democratic reform",
+      "Parliament",
+      "Trade unions",
+      "Gradualism",
+      "Reform or revolution",
+      "Movement"
+    ],
+    "sources": [
+      {
+        "title": "Bernstein / Evolutionary Socialism",
+        "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
+        "note": "Source lead for revisionism, movement, democracy, and reform strategy.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Eduard Bernstein / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Eduard_Bernstein",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Eduard Bernstein",
+    "discussionText": "This is the planned debate room for Bernstein: reform, elections, unions, social democracy, revisionism, and whether democracy can change economic power.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1899",
+    "timelineTitle": "Bernstein and Revisionism",
+    "timelineMeaning": "The socialist road splits over democratic reform, unions, elections, and whether capitalism can be transformed without rupture.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["revisionism", "democratic-reform", "social-democracy"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Reform vs Revolution",
+    "discussionHook": "Eduard Bernstein"
+  },
+  "ideas": [
+    {
+      "id": "revisionism",
+      "title": "Revisionism",
+      "plainDefinition": "Revisionism is the argument that socialist theory and strategy should be revised when democratic, economic, and social conditions change.",
+      "context": "In the Bernstein path, revisionism means refusing to treat older formulas as sacred when elections, unions, and reform institutions are changing the political field.",
+      "whyMatters": "Revisionism matters because it forces the study guide to separate democratic socialist reform from revolutionary seizure of power.",
+      "relatedFigures": [{ "label": "Eduard Bernstein", "id": "bernstein" }, { "label": "Karl Kautsky", "id": "kautsky" }],
+      "relatedIdeas": ["democratic-reform", "social-democracy"],
+      "sources": [
+        {
+          "title": "Bernstein / Evolutionary Socialism",
+          "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
+          "note": "Source lead for revisionism and reform strategy.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "democratic-reform",
+      "title": "Democratic Reform",
+      "plainDefinition": "Democratic reform means changing society through voting, parties, unions, public law, bargaining, and civil rights instead of immediate armed rupture.",
+      "context": "In the Bernstein path, reform is not a side issue. It is the central wager that democracy can be a tool for social change.",
+      "whyMatters": "Democratic reform matters because much of modern socialism, labor politics, and welfare-state politics lives on this road.",
+      "relatedFigures": [{ "label": "Eduard Bernstein", "id": "bernstein" }, { "label": "Eugene V. Debs", "id": "debs" }],
+      "relatedIdeas": ["revisionism", "social-democracy"],
+      "sources": [
+        {
+          "title": "Bernstein / Evolutionary Socialism",
+          "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
+          "note": "Source lead for democratic reform strategy.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "social-democracy",
+      "title": "Social Democracy",
+      "plainDefinition": "Social democracy is a democratic reform tradition that keeps elections and civil rights while expanding labor rights, public services, social insurance, and public accountability.",
+      "context": "In the Bernstein path, social democracy is the reform road becoming a durable political tradition.",
+      "whyMatters": "Social democracy matters because it is one of the major ways socialist language entered democratic governments without becoming one-party rule.",
+      "relatedFigures": [{ "label": "Eduard Bernstein", "id": "bernstein" }, { "label": "Karl Kautsky", "id": "kautsky" }],
+      "relatedIdeas": ["democratic-reform", "revisionism"],
+      "sources": [
+        {
+          "title": "Social Democracy / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Social_democracy",
+          "note": "Topic source lead for the political tradition.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -33,18 +33,20 @@ function renderTimelineCard(packet) {
   const figure = packet.figure;
   const card = packet.hallCard;
   const ideaPills = renderIdeaPills(packet);
-  return `<article class="stop ${escapeHtml(card.lane)}"><div class="date-medal">${escapeHtml(card.timelineDate)}</div><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div><h3><a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(card.timelineTitle)}</a></h3><p>${escapeHtml(card.timelineMeaning)}</p><span class="audit-label ok">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
+  const auditClass = card.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
+  return `<article class="stop ${escapeHtml(card.lane)}"><div class="date-medal">${escapeHtml(card.timelineDate)}</div><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div><h3><a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(card.timelineTitle)}</a></h3><p>${escapeHtml(card.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
 }
 
 function renderFigureCard(packet) {
   const figure = packet.figure;
   const card = packet.hallCard;
   const ideaPills = renderIdeaPills(packet);
+  const auditClass = card.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
   const source = figure.sources[0];
   const sourceLink = source
-    ? `<br><a class="pill source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">Verified source: ${escapeHtml(source.title)}</a>`
+    ? `<br><a class="pill source" href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${source.auditStatus === "[needs verification]" ? "Source lead" : "Verified source"}: ${escapeHtml(source.title)}</a>`
     : "";
-  return `<article class="card ${escapeHtml(card.lane)}"><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div class="card-body"><h3><a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(figure.name)}</a></h3><div class="meta">${escapeHtml(figure.dates)} | ${escapeHtml(figure.topic)} | ${escapeHtml(figure.era.toLowerCase())}</div><p class="hook">${escapeHtml(figure.hook)}</p><p class="quote-needed">Role: ${escapeHtml(figure.role)}${sourceLink}</p><span class="audit-label ok">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
+  return `<article class="card ${escapeHtml(card.lane)}"><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div class="card-body"><h3><a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(figure.name)}</a></h3><div class="meta">${escapeHtml(figure.dates)} | ${escapeHtml(figure.topic)} | ${escapeHtml(figure.era.toLowerCase())}</div><p class="hook">${escapeHtml(figure.hook)}</p><p class="quote-needed">Role: ${escapeHtml(figure.role)}${sourceLink}</p><span class="${auditClass}">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
 }
 
 if (!fs.existsSync(indexPath)) {

@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "kautsky",
+    "name": "Karl Kautsky",
+    "dates": "1854-1938",
+    "topic": "Marxism / Democracy Debate",
+    "era": "Second International and revolution debate (1890-1920)",
+    "role": "Marxist theorist who argued over democracy, dictatorship, revolution, and party power.",
+    "hook": "Kautsky = Marxist theory without Leninist party rule.",
+    "wikiPage": "Karl_Kautsky",
+    "whyHere": [
+      "Kautsky belongs here because he makes the democracy question impossible to skip inside Marxism itself.",
+      "He matters because socialism cannot be judged fairly if every democratic Marxist dispute is collapsed into Lenin, Stalin, or party-state rule."
+    ],
+    "cleanIdea": "If a movement claims liberation but throws away democratic accountability, the word socialism starts to split.",
+    "badgePaths": [
+      { "label": "Orthodox Marxism Badge", "ideaId": "orthodox-marxism" },
+      { "label": "Democracy Badge", "ideaId": "democracy" },
+      { "label": "Dictatorship Debate Badge", "ideaId": "dictatorship-debate" }
+    ],
+    "keyTerms": [
+      "Orthodox Marxism",
+      "Democracy",
+      "Dictatorship of the proletariat",
+      "Parliament",
+      "Party",
+      "Second International",
+      "Lenin debate",
+      "Accountability"
+    ],
+    "sources": [
+      {
+        "title": "Kautsky / The Dictatorship of the Proletariat",
+        "url": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
+        "note": "Source lead for democracy and dictatorship debate.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Karl Kautsky / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Karl_Kautsky",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Karl Kautsky",
+    "discussionText": "This is the planned debate room for Kautsky: Marxism, democracy, dictatorship, Lenin, party rule, and accountability.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1918",
+    "timelineTitle": "Kautsky and the Democracy Split",
+    "timelineMeaning": "A major Marxist dispute asks whether socialist politics can abandon democracy and still claim liberation.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["orthodox-marxism", "democracy", "dictatorship-debate"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "State Power",
+    "discussionHook": "Karl Kautsky"
+  },
+  "ideas": [
+    {
+      "id": "orthodox-marxism",
+      "title": "Orthodox Marxism",
+      "plainDefinition": "Orthodox Marxism means a current that tried to preserve Marxist theory while disputing both revisionism and anti-democratic dictatorship.",
+      "context": "In the Kautsky path, orthodox Marxism is not automatically Leninism. It includes disputes about democracy and party rule.",
+      "whyMatters": "Orthodox Marxism matters because it keeps the map from pretending Marxism had only one political road.",
+      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["democracy", "dictatorship-debate"],
+      "sources": [
+        {
+          "title": "Kautsky / The Dictatorship of the Proletariat",
+          "url": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
+          "note": "Source lead for Kautsky's democracy argument.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "democracy",
+      "title": "Democracy",
+      "plainDefinition": "Democracy means public power remains answerable through participation, rights, elections, dissent, and institutions that can remove rulers.",
+      "context": "In the Kautsky path, democracy is the line between socialist emancipation and a ruling party speaking over society.",
+      "whyMatters": "Democracy matters because the project is about truth and self-government, not just who claims to act for the people.",
+      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Eduard Bernstein", "id": "bernstein" }],
+      "relatedIdeas": ["dictatorship-debate", "democratic-reform"],
+      "sources": [
+        {
+          "title": "Kautsky / The Dictatorship of the Proletariat",
+          "url": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
+          "note": "Source lead for democracy and dictatorship dispute.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "dictatorship-debate",
+      "title": "Dictatorship Debate",
+      "plainDefinition": "The dictatorship debate asks whether revolutionary state power can suspend democracy and still remain a movement for liberation.",
+      "context": "In the Kautsky path, this is not an academic side issue. It is the question that separates democratic socialism from party-state command.",
+      "whyMatters": "The dictatorship debate matters because it stops the page from flattening socialism into communism or communism into any public program.",
+      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Leon Trotsky", "id": "trotsky" }],
+      "relatedIdeas": ["democracy", "orthodox-marxism"],
+      "sources": [
+        {
+          "title": "Kautsky / The Dictatorship of the Proletariat",
+          "url": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
+          "note": "Source lead for dictatorship and democracy debate.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

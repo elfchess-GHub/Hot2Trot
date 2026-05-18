@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "debs",
+    "name": "Eugene V. Debs",
+    "dates": "1855-1926",
+    "topic": "American Socialism / Labor",
+    "era": "Labor politics and democratic speech (1890-1920)",
+    "role": "American labor leader, socialist candidate, organizer, speaker, and prisoner for anti-war speech.",
+    "hook": "Debs = U.S. labor politics and American socialism.",
+    "wikiPage": "Eugene_V._Debs",
+    "whyHere": [
+      "Debs belongs here because he brings the road into American democratic life: railroads, unions, strikes, elections, courts, prisons, and public speech.",
+      "He matters because socialism in the United States is not only a foreign scare-word. It also has a labor, free-speech, voting, and class-solidarity history."
+    ],
+    "cleanIdea": "Debs asks whether democracy can hear working people when wealth, courts, employers, and war pressure push the other way.",
+    "badgePaths": [
+      { "label": "Unionism Badge", "ideaId": "unionism" },
+      { "label": "American Socialism Badge", "ideaId": "american-socialism" },
+      { "label": "Labor Politics Badge", "ideaId": "labor-politics" }
+    ],
+    "keyTerms": [
+      "Unionism",
+      "American socialism",
+      "Labor politics",
+      "Railroads",
+      "Speech",
+      "Elections",
+      "Class solidarity",
+      "Anti-war prosecution"
+    ],
+    "sources": [
+      {
+        "title": "Eugene Debs / Statement to the Court",
+        "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
+        "note": "Source lead for Debs's class-solidarity statement and court speech.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Eugene V. Debs / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Eugene_V._Debs",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Eugene V. Debs",
+    "discussionText": "This is the planned debate room for Debs: unions, American socialism, elections, prison, free speech, war, and working-class solidarity.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1900s",
+    "timelineTitle": "Debs and American Socialism",
+    "timelineMeaning": "Labor politics, elections, unions, railroads, prisons, and public speech bring socialist language into U.S. democratic life.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["unionism", "american-socialism", "labor-politics"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "U.S. Left Test",
+    "discussionHook": "Eugene V. Debs"
+  },
+  "ideas": [
+    {
+      "id": "unionism",
+      "title": "Unionism",
+      "plainDefinition": "Unionism means workers organizing together to bargain, strike, vote, and force employers and government to hear them.",
+      "context": "In the Debs path, unionism is the practical doorway from individual frustration to organized labor power.",
+      "whyMatters": "Unionism matters because socialism in the United States often enters politics through labor organization, not abstract theory first.",
+      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }, { "label": "Friedrich Engels", "id": "engels" }],
+      "relatedIdeas": ["american-socialism", "labor-politics"],
+      "sources": [
+        {
+          "title": "Eugene Debs / Statement to the Court",
+          "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
+          "note": "Source lead for labor and class-solidarity language.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "american-socialism",
+      "title": "American Socialism",
+      "plainDefinition": "American socialism is the U.S. labor and electoral tradition that used socialist language for unions, democracy, public ownership debates, anti-war speech, and class politics.",
+      "context": "In the Debs path, American socialism is not imported as a cartoon. It is part of U.S. labor and democratic history.",
+      "whyMatters": "American socialism matters because it keeps the project from letting anti-communist shorthand erase U.S. labor history.",
+      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }],
+      "relatedIdeas": ["unionism", "labor-politics"],
+      "sources": [
+        {
+          "title": "Eugene V. Debs / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Eugene_V._Debs",
+          "note": "Topic source lead for Debs's campaigns and socialist politics.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "labor-politics",
+      "title": "Labor Politics",
+      "plainDefinition": "Labor politics means workers using unions, parties, strikes, campaigns, and public speech to change economic and political power.",
+      "context": "In the Debs path, labor politics connects shop-floor conflict to elections and public argument.",
+      "whyMatters": "Labor politics matters because it shows democracy is not only voting. It is also the struggle over whether ordinary workers can organize power.",
+      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }, { "label": "Eduard Bernstein", "id": "bernstein" }],
+      "relatedIdeas": ["unionism", "democratic-reform"],
+      "sources": [
+        {
+          "title": "Eugene Debs / Statement to the Court",
+          "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
+          "note": "Source lead for class solidarity and political speech.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}
