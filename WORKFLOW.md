@@ -98,13 +98,19 @@ Command:
 
 `node scripts/build_hallway.js data/hallways/locke.json`
 
+Promote command, only after approval:
+
+`node scripts/promote_hallway.js locke`
+
 Process:
 
 1. Write hallway packet JSON.
-2. Run build script.
+2. Build preview.
 3. Inspect generated preview.
-4. If good, copy generated files into live folders.
-5. Run link check and JS check.
+4. Promote only when approved.
+5. Run link check.
 6. Commit.
 
 The first pass writes generated files to `dist-preview/` so the live site stays untouched until the preview is reviewed.
+
+Promotion is separate on purpose. `build_hallway.js` must not overwrite live pages. `promote_hallway.js` should refuse to run when the expected preview files are missing.
