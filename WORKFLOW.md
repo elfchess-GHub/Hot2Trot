@@ -114,3 +114,9 @@ Process:
 The first pass writes generated files to `dist-preview/` so the live site stays untouched until the preview is reviewed.
 
 Promotion is separate on purpose. `build_hallway.js` must not overwrite live pages. `promote_hallway.js` should refuse to run when the expected preview files are missing.
+
+Checker command:
+
+`node scripts/check_hallways.js`
+
+The checker verifies hallway packet fields, expected preview/live files, local links, audit status fields, and obvious dead button candidates.

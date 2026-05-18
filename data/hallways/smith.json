@@ -1,0 +1,98 @@
+{
+  "figure": {
+    "id": "smith",
+    "name": "Adam Smith",
+    "dates": "1723-1790",
+    "topic": "Capitalism / Political Economy",
+    "era": "Market foundations (1700-1800)",
+    "role": "Moral philosopher and political economist of markets, specialization, exchange, and commercial society.",
+    "hook": "Smith = markets and self-interest, but not a cartoon defense of greed.",
+    "wikiPage": "Adam_Smith",
+    "whyHere": [
+      "Smith belongs here because he helps explain the market road before socialism becomes a mass political argument.",
+      "That matters because later socialist critics are arguing with an economy shaped by markets, specialization, wages, commerce, and private accumulation."
+    ],
+    "cleanIdea": "Markets can coordinate many separate choices through exchange and prices, but that does not make markets morally complete or politically automatic.",
+    "badgePaths": [
+      { "label": "Market Badge", "ideaId": "market" },
+      { "label": "Division of Labor Badge", "ideaId": "division-of-labor" }
+    ],
+    "keyTerms": [
+      "Market",
+      "Division of labor",
+      "Political economy",
+      "Exchange",
+      "Self-interest",
+      "Specialization",
+      "Commercial society",
+      "Moral philosophy"
+    ],
+    "sources": [
+      {
+        "title": "Wealth of Nations",
+        "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
+        "note": "supports: division of labor, exchange, and self-interest source lead.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Adam Smith / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Adam_Smith",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Adam Smith",
+    "discussionText": "This is the planned debate room for Smith: markets, specialization, exchange, self-interest, moral philosophy, and the socialist challenge that comes later.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1776",
+    "timelineTitle": "Adam Smith and Political Economy",
+    "timelineMeaning": "Market coordination, specialization, commerce, and moral philosophy become a foundation for later arguments about capitalism.",
+    "lane": "blue",
+    "auditStatus": "[source supports this]",
+    "ideaPills": ["division-of-labor", "market"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Smith / Market Foundations",
+    "discussionHook": "Adam Smith"
+  },
+  "ideas": [
+    {
+      "id": "market",
+      "title": "Market",
+      "plainDefinition": "A market is a system where people exchange goods, labor, money, or services through prices, supply, demand, and choice.",
+      "context": "In the Smith path, markets are coordination machines: they can organize many separate decisions without one central planner.",
+      "whyMatters": "Smith matters because market language becomes one foundation for capitalism. Later socialist arguments ask what markets coordinate well, what they hide, and who carries the cost when market freedom becomes worker dependency.",
+      "relatedFigures": [{ "label": "Adam Smith", "id": "smith" }],
+      "relatedIdeas": ["division-of-labor"],
+      "sources": [
+        {
+          "title": "Smith / Wealth of Nations",
+          "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
+          "note": "supports: market exchange and self-interest source lead.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "division-of-labor",
+      "title": "Division of Labor",
+      "plainDefinition": "Division of labor means breaking work into specialized tasks so production becomes faster, more skilled, or more efficient.",
+      "context": "In the Smith path, specialization helps explain modern productivity and the rise of commercial society.",
+      "whyMatters": "Division of labor is one bridge from Smith to the Industrial Revolution. It helps explain why production can explode, while also setting up later questions about repetitive work, dependence, skill, wages, and worker power.",
+      "relatedFigures": [{ "label": "Adam Smith", "id": "smith" }],
+      "relatedIdeas": ["market"],
+      "sources": [
+        {
+          "title": "Smith / Wealth of Nations",
+          "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
+          "note": "supports: division of labor source lead.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}
