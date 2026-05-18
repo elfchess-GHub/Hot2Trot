@@ -65,6 +65,14 @@
     "discussionText": "This is the planned debate room for Locke: property, consent, toleration, natural rights, and the socialist challenge that comes later.",
     "auditStatus": "[needs verification]"
   },
+  "hallCard": {
+    "timelineDate": "1689/1690",
+    "timelineTitle": "Locke and Liberal Property",
+    "timelineMeaning": "Locke helps build one side of the bridge: natural rights, property, consent of government, toleration, and the right to resist tyranny.",
+    "lane": "blue",
+    "auditStatus": "[source supports this]",
+    "ideaPills": ["property", "liberalism", "consent", "natural-rights"]
+  },
   "hooks": {
     "sourcePath": "texts",
     "badgeHook": true,
