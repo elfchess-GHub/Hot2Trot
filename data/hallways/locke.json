@@ -1,0 +1,140 @@
+{
+  "figure": {
+    "id": "locke",
+    "name": "John Locke",
+    "dates": "1632-1704",
+    "topic": "Capitalism / Liberalism",
+    "era": "Early foundations (1600-1800)",
+    "role": "Philosopher of property, liberal rights, toleration, and government by consent.",
+    "hook": "Locke = property rights + consent of government.",
+    "wikiPage": "John_Locke",
+    "whyHere": [
+      "Locke belongs here because he helps establish the liberal argument for natural rights, private property, consent of government, toleration, and resistance to tyranny.",
+      "That matters because later capitalism uses this language to defend property and markets, while socialism later asks whether property rights protect everyone equally, or protect owners more than workers."
+    ],
+    "cleanIdea": "If people have natural rights, including property, then government exists to protect those rights, and loses legitimacy when it violates them.",
+    "badgePaths": [
+      { "label": "Property Badge", "ideaId": "property" },
+      { "label": "Consent Badge", "ideaId": "consent" },
+      { "label": "Liberalism Badge", "ideaId": "liberalism" },
+      { "label": "Natural Rights Badge", "ideaId": "natural-rights" }
+    ],
+    "keyTerms": [
+      "Property",
+      "Liberalism",
+      "Consent of the governed",
+      "Natural rights",
+      "Toleration",
+      "Right of revolution",
+      "Private property",
+      "Social contract"
+    ],
+    "sources": [
+      {
+        "title": "Two Treatises of Government",
+        "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
+        "note": "Exact Locke passages still need to be pinned.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "A Letter Concerning Toleration",
+        "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
+        "note": "Exact toleration passages still need to be pinned.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "John Locke / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/John_Locke",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Stanford Encyclopedia: Locke's Political Philosophy",
+        "url": "https://plato.stanford.edu/entries/locke-political/",
+        "note": "Stronger secondary source for political philosophy framing.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Britannica: John Locke",
+        "url": "https://www.britannica.com/biography/John-Locke",
+        "note": "Secondary source for biography and influence.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "John Locke",
+    "discussionText": "This is the planned debate room for Locke: property, consent, toleration, natural rights, and the socialist challenge that comes later.",
+    "auditStatus": "[needs verification]"
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Locke / Liberal Foundations",
+    "discussionHook": "John Locke"
+  },
+  "ideas": [
+    {
+      "id": "property",
+      "title": "Property",
+      "plainDefinition": "Property means the things people can claim as theirs, use, protect, transfer, or exclude others from using.",
+      "context": "In the Locke path, property is not just \"stuff I own.\" It connects labor, liberty, personhood, and limits on government.",
+      "whyMatters": "Locke makes property part of the liberal freedom argument: if people have natural rights, government should protect property instead of treating all land, labor, and wealth as the ruler's prize. The socialist question arrives later: what happens when property rights protect owners more strongly than workers?",
+      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["liberalism", "consent", "natural-rights"],
+      "sources": [
+        {
+          "title": "Locke / Two Treatises of Government",
+          "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "liberalism",
+      "title": "Liberalism",
+      "plainDefinition": "Liberalism is a political tradition built around rights, law, consent, toleration, and limits on arbitrary power.",
+      "context": "Hot2Trotski uses Locke to show one early liberal foundation that socialism later argues with, not to turn Locke into the whole story of capitalism.",
+      "whyMatters": "Locke gives the road a rights-and-limits vocabulary: people are not born to obey kings automatically, and government has to answer to rights, law, and consent. That vocabulary becomes part of the liberal defense of markets and property, then becomes something socialist critics test against industrial inequality.",
+      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["property", "consent", "natural-rights"],
+      "sources": [
+        {
+          "title": "Stanford Encyclopedia / Locke's Political Philosophy",
+          "url": "https://plato.stanford.edu/entries/locke-political/",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "consent",
+      "title": "Consent",
+      "plainDefinition": "Consent means political authority is legitimate because people agree to it, not because rulers automatically own obedience.",
+      "context": "This is the anti-divine-right door into the modern political road.",
+      "whyMatters": "Locke ties government to consent so power has a test: it must protect the people and their rights. If government violates that trust, it loses legitimacy. That idea matters later because democratic movements, liberal reformers, and socialist organizers all argue over who really counts in that consent.",
+      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["property", "liberalism", "natural-rights"],
+      "sources": [
+        {
+          "title": "Locke / Two Treatises of Government",
+          "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "natural-rights",
+      "title": "Natural Rights",
+      "plainDefinition": "Natural rights are rights people are treated as having before government grants permission.",
+      "context": "In the Locke path, life, liberty, property, conscience, and resistance to tyranny become part of the ground government must answer to.",
+      "whyMatters": "Natural rights are the reason Locke can put limits on government. If rights come before the state, then the state is not the source of all political truth. Later arguments about capitalism and socialism keep returning to this pressure point: which rights are protected, and whose freedom becomes real in daily life?",
+      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["property", "liberalism", "consent"],
+      "sources": [
+        {
+          "title": "Britannica / John Locke",
+          "url": "https://www.britannica.com/biography/John-Locke",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -89,3 +89,22 @@ If a source is useful but not yet tied to a specific passage, keep the label hon
 6. Report what changed.
 
 The goal is a reusable learning chain: clear doors, honest sources, working navigation, and no unfinished interface pieces pretending to be complete.
+
+## Automation
+
+Use the hallway generator to preview a hallway before touching live pages.
+
+Command:
+
+`node scripts/build_hallway.js data/hallways/locke.json`
+
+Process:
+
+1. Write hallway packet JSON.
+2. Run build script.
+3. Inspect generated preview.
+4. If good, copy generated files into live folders.
+5. Run link check and JS check.
+6. Commit.
+
+The first pass writes generated files to `dist-preview/` so the live site stays untouched until the preview is reviewed.
