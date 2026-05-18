@@ -1,0 +1,122 @@
+{
+  "figure": {
+    "id": "marx",
+    "name": "Karl Marx",
+    "dates": "1818-1883",
+    "topic": "Socialism / Capitalism Critique",
+    "era": "Industrial capitalism and revolutionary theory (1800-1900)",
+    "role": "Critic of capitalism, class power, exploitation, and historical economic systems.",
+    "hook": "Marx = class struggle and capitalism as a historical system.",
+    "wikiPage": "Karl_Marx",
+    "whyHere": [
+      "Marx belongs here because he gives the socialism road its central pressure point: capitalism is not only buying and selling, but a historical system of class power.",
+      "That matters because later socialist, communist, social-democratic, labor, and anti-communist arguments all react to Marx, whether they follow him, revise him, or reject him."
+    ],
+    "cleanIdea": "To understand modern politics, ask who owns productive property, who sells labor, who receives profit, and how that relationship shapes power.",
+    "badgePaths": [
+      { "label": "Class Struggle Badge", "ideaId": "class-struggle" },
+      { "label": "Surplus Value Badge", "ideaId": "surplus-value" },
+      { "label": "Means of Production Badge", "ideaId": "means-of-production" }
+    ],
+    "keyTerms": [
+      "Class struggle",
+      "Capital",
+      "Labor",
+      "Surplus value",
+      "Means of production",
+      "Bourgeoisie",
+      "Proletariat",
+      "Historical materialism"
+    ],
+    "sources": [
+      {
+        "title": "Manifesto of the Communist Party / Part I",
+        "url": "https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1",
+        "note": "supports: class struggle and bourgeois/proletarian conflict.",
+        "auditStatus": "[passage pinned]"
+      },
+      {
+        "title": "Karl Marx / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Karl_Marx",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Capital, Volume I / Marxists Internet Archive",
+        "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
+        "note": "Source lead for capital, labor, commodity, and surplus value.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Karl Marx",
+    "discussionText": "This is the planned debate room for Marx: class struggle, capital, labor, exploitation, property, democracy, and the political movements built in his name.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1848",
+    "timelineTitle": "Marx, Engels, and the Manifesto",
+    "timelineMeaning": "A radical critique of class power turns into one of the most influential political texts in history.",
+    "lane": "red",
+    "auditStatus": "[source supports this]",
+    "ideaPills": ["class-struggle", "surplus-value", "means-of-production"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Marx / Class Struggle",
+    "discussionHook": "Karl Marx"
+  },
+  "ideas": [
+    {
+      "id": "class-struggle",
+      "title": "Class Struggle",
+      "plainDefinition": "Class struggle means conflict between social classes over work, property, power, law, and who receives the value society creates.",
+      "context": "In the Marx path, class struggle is not just disagreement. It is the engine of political conflict inside class society.",
+      "whyMatters": "Class struggle matters because it turns socialism from a vague wish for fairness into a question about power: who owns, who works, who governs, and who benefits.",
+      "relatedFigures": [{ "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["surplus-value", "means-of-production"],
+      "sources": [
+        {
+          "title": "Manifesto of the Communist Party / Part I",
+          "url": "https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1",
+          "note": "supports: class struggle.",
+          "auditStatus": "[passage pinned]"
+        }
+      ]
+    },
+    {
+      "id": "surplus-value",
+      "title": "Surplus Value",
+      "plainDefinition": "Surplus value is the Marxist idea that workers create more value than they receive back in wages, and that the difference can become profit.",
+      "context": "In the Marx path, surplus value is one way to explain exploitation without reducing it to personal cruelty.",
+      "whyMatters": "Surplus value matters because it asks where profit comes from and why wage labor can look free while still producing dependency and class power.",
+      "relatedFigures": [{ "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["class-struggle", "means-of-production"],
+      "sources": [
+        {
+          "title": "Capital, Volume I / Marxists Internet Archive",
+          "url": "https://www.marxists.org/archive/marx/works/1867-c1/",
+          "note": "Source lead for surplus value.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "means-of-production",
+      "title": "Means of Production",
+      "plainDefinition": "Means of production are the land, tools, machines, factories, infrastructure, and resources used to produce goods and services.",
+      "context": "In the Marx path, the key question is not only who works, but who controls the productive property that work depends on.",
+      "whyMatters": "Means of production matters because it separates personal belongings from productive property. Many socialism arguments are really about who controls production, not whether anyone owns a toothbrush.",
+      "relatedFigures": [{ "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["class-struggle", "surplus-value"],
+      "sources": [
+        {
+          "title": "Manifesto of the Communist Party / Part I",
+          "url": "https://en.wikisource.org/wiki/Manifesto_of_the_Communist_Party/1",
+          "note": "Source lead for property and class power.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}
