@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "luxemburg",
+    "name": "Rosa Luxemburg",
+    "dates": "1871-1919",
+    "topic": "Socialist Democracy / Mass Action",
+    "era": "Revolution and democracy debate (1900-1919)",
+    "role": "Revolutionary socialist writer focused on mass action, democracy, party power, and criticism of authoritarian methods.",
+    "hook": "Luxemburg = revolution with democratic accountability.",
+    "wikiPage": "Rosa_Luxemburg",
+    "whyHere": [
+      "Luxemburg belongs here because she shows that revolutionary socialism also contained democratic and anti-authoritarian arguments from inside the left.",
+      "She matters because the map has to separate socialism, Leninism, party-state rule, mass democracy, and anti-communist shorthand instead of flattening them together."
+    ],
+    "cleanIdea": "A movement for liberation has to preserve participation, dissent, and accountability while it fights for power.",
+    "badgePaths": [
+      { "label": "Socialist Democracy Badge", "ideaId": "socialist-democracy" },
+      { "label": "Mass Strike Badge", "ideaId": "mass-strike" },
+      { "label": "Democratic Dissent Badge", "ideaId": "democratic-dissent" }
+    ],
+    "keyTerms": [
+      "Socialist democracy",
+      "Mass strike",
+      "Dissent",
+      "Participation",
+      "Party power",
+      "Revolution",
+      "Accountability",
+      "Working-class action"
+    ],
+    "sources": [
+      {
+        "title": "Luxemburg / The Russian Revolution",
+        "url": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm",
+        "note": "Source lead for socialist democracy and criticism of party-state methods.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Rosa Luxemburg / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rosa_Luxemburg",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Rosa Luxemburg",
+    "discussionText": "This is the planned debate room for Luxemburg: socialist democracy, mass strike, revolution, party power, participation, and dissent.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1918/1919",
+    "timelineTitle": "Luxemburg and Socialist Democracy",
+    "timelineMeaning": "A revolutionary socialist argument insists that mass participation, dissent, and democracy cannot be treated as optional.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["socialist-democracy", "mass-strike", "democratic-dissent"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "State Power",
+    "discussionHook": "Rosa Luxemburg"
+  },
+  "ideas": [
+    {
+      "id": "socialist-democracy",
+      "title": "Socialist Democracy",
+      "plainDefinition": "Socialist democracy means socialist politics that preserves participation, dissent, accountability, and democratic control.",
+      "context": "In the Luxemburg path, democracy is not decoration. It is part of what makes socialism emancipatory rather than administrative command.",
+      "whyMatters": "Socialist democracy matters because it gives the page a left-wing democratic critique of centralized party rule.",
+      "relatedFigures": [{ "label": "Rosa Luxemburg", "id": "luxemburg" }, { "label": "Karl Kautsky", "id": "kautsky" }],
+      "relatedIdeas": ["democracy", "democratic-dissent"],
+      "sources": [
+        {
+          "title": "Luxemburg / The Russian Revolution",
+          "url": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm",
+          "note": "Source lead for socialist democracy.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "mass-strike",
+      "title": "Mass Strike",
+      "plainDefinition": "A mass strike is broad worker action that links economic pressure, political demands, organization, and public power.",
+      "context": "In the Luxemburg path, mass action is how ordinary people become political actors rather than spectators.",
+      "whyMatters": "Mass strike matters because it makes democracy active: people organize, stop work, assemble, and force public questions into view.",
+      "relatedFigures": [{ "label": "Rosa Luxemburg", "id": "luxemburg" }, { "label": "Eugene V. Debs", "id": "debs" }],
+      "relatedIdeas": ["socialist-democracy", "labor-politics"],
+      "sources": [
+        {
+          "title": "Rosa Luxemburg / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rosa_Luxemburg",
+          "note": "Topic source lead for mass-strike framing.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "democratic-dissent",
+      "title": "Democratic Dissent",
+      "plainDefinition": "Democratic dissent means the protected ability to criticize leaders, parties, policies, and institutions without being treated as an enemy of society.",
+      "context": "In the Luxemburg path, dissent is a test of whether a movement trusts the people it claims to represent.",
+      "whyMatters": "Democratic dissent matters because truth-first politics cannot work if criticism is treated as sabotage by default.",
+      "relatedFigures": [{ "label": "Rosa Luxemburg", "id": "luxemburg" }, { "label": "Karl Kautsky", "id": "kautsky" }],
+      "relatedIdeas": ["democracy", "socialist-democracy"],
+      "sources": [
+        {
+          "title": "Luxemburg / The Russian Revolution",
+          "url": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm",
+          "note": "Source lead for dissent and socialist democracy.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

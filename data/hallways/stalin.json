@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "stalin",
+    "name": "Joseph Stalin",
+    "dates": "1878-1953",
+    "topic": "Soviet State / Party-State Power",
+    "era": "Soviet consolidation and central planning (1920-1953)",
+    "role": "Soviet leader associated with party-state consolidation, central planning, industrialization, coercive institutions, and wartime leadership.",
+    "hook": "Stalin = Soviet state consolidation, industrialization, repression, and the party-state model.",
+    "wikiPage": "Joseph_Stalin",
+    "whyHere": [
+      "Stalin belongs here because the study guide has to examine how a revolutionary state became a centralized party-state with planning, security institutions, industrialization, and limited dissent.",
+      "He matters because many political arguments use Stalin as shorthand for socialism or communism. The page needs to identify the specific Soviet party-state model instead of turning every public program into Stalinism."
+    ],
+    "cleanIdea": "Stalin's road is about Soviet state consolidation: party authority, planning, industrial policy, security institutions, and constrained dissent.",
+    "badgePaths": [
+      { "label": "Party-State Badge", "ideaId": "party-state" },
+      { "label": "Central Planning Badge", "ideaId": "central-planning" },
+      { "label": "Stalinism Badge", "ideaId": "stalinism" }
+    ],
+    "keyTerms": [
+      "Party-state",
+      "Central planning",
+      "Industrialization",
+      "Collectivization",
+      "Security institutions",
+      "Soviet Union",
+      "Bureaucracy",
+      "Limited dissent"
+    ],
+    "sources": [
+      {
+        "title": "Stalin / Questions of Leninism",
+        "url": "https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm",
+        "note": "Source lead for Stalin's Leninism and party-state language.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Joseph Stalin / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Joseph Stalin",
+    "discussionText": "This is the planned debate room for Stalin: Soviet state consolidation, party-state power, planning, industrialization, coercive institutions, and political language.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1920s-1953",
+    "timelineTitle": "Stalin and Soviet State Consolidation",
+    "timelineMeaning": "The Soviet system centralizes party authority, planning, industrial policy, security institutions, and limits on dissent.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["party-state", "central-planning", "stalinism"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "State Power",
+    "discussionHook": "Joseph Stalin"
+  },
+  "ideas": [
+    {
+      "id": "party-state",
+      "title": "Party-State",
+      "plainDefinition": "A party-state is a political system where the ruling party and state institutions are closely fused.",
+      "context": "In the Stalin path, party-state means party authority shapes administration, planning, security institutions, and public political life.",
+      "whyMatters": "Party-state matters because it names a specific political structure instead of using socialism as a vague insult.",
+      "relatedFigures": [{ "label": "Joseph Stalin", "id": "stalin" }, { "label": "Vladimir Lenin", "id": "lenin" }],
+      "relatedIdeas": ["central-planning", "state-power"],
+      "sources": [
+        {
+          "title": "Stalin / Questions of Leninism",
+          "url": "https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm",
+          "note": "Source lead for party-state language.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "central-planning",
+      "title": "Central Planning",
+      "plainDefinition": "Central planning means major production, investment, and distribution decisions are directed through state planning institutions instead of mainly through private market decisions.",
+      "context": "In the Stalin path, planning is tied to rapid industrialization, state targets, and administrative command.",
+      "whyMatters": "Central planning matters because it is a specific economic institution, not the same thing as any tax-funded public service.",
+      "relatedFigures": [{ "label": "Joseph Stalin", "id": "stalin" }],
+      "relatedIdeas": ["party-state", "state-power"],
+      "sources": [
+        {
+          "title": "Joseph Stalin / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+          "note": "Topic source lead for Soviet planning and industrialization.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "stalinism",
+      "title": "Stalinism",
+      "plainDefinition": "Stalinism names the Soviet political model associated with centralized party leadership, state planning, coercive institutions, and limited dissent under Stalin.",
+      "context": "In the Stalin path, Stalinism is a historical party-state model, not a synonym for every form of socialism or public spending.",
+      "whyMatters": "Stalinism matters because it keeps the page precise: public roads, public schools, welfare states, and Soviet party-state rule are not the same category.",
+      "relatedFigures": [{ "label": "Joseph Stalin", "id": "stalin" }, { "label": "Leon Trotsky", "id": "trotsky" }],
+      "relatedIdeas": ["party-state", "central-planning"],
+      "sources": [
+        {
+          "title": "Stalin / Questions of Leninism",
+          "url": "https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm",
+          "note": "Source lead for Stalin's Leninism.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "lenin",
+    "name": "Vladimir Lenin",
+    "dates": "1870-1924",
+    "topic": "Revolution / Party Organization",
+    "era": "Russian Revolution and early Soviet state (1900-1924)",
+    "role": "Revolutionary theorist and Bolshevik leader focused on party organization, state power, imperialism, and revolution.",
+    "hook": "Lenin = theory, organization, revolution, and state power.",
+    "wikiPage": "Vladimir_Lenin",
+    "whyHere": [
+      "Lenin belongs here because the socialist road becomes a governing problem in 1917: organization, revolution, state power, civil conflict, and party authority move from theory into institutions.",
+      "He matters because debates about socialism and communism often pass through Leninism, but Leninism is a specific revolutionary and party-state road, not a synonym for every public program or every socialist idea."
+    ],
+    "cleanIdea": "Lenin's road asks how a revolutionary party can organize power, and what happens when that organization becomes the state.",
+    "badgePaths": [
+      { "label": "Vanguard Party Badge", "ideaId": "vanguard-party" },
+      { "label": "Revolutionary Theory Badge", "ideaId": "revolutionary-theory" },
+      { "label": "State Power Badge", "ideaId": "state-power" }
+    ],
+    "keyTerms": [
+      "Vanguard party",
+      "Revolutionary theory",
+      "State power",
+      "Bolshevism",
+      "Democratic centralism",
+      "Imperialism",
+      "Soviet state",
+      "Party organization"
+    ],
+    "sources": [
+      {
+        "title": "Lenin / What Is To Be Done?",
+        "url": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
+        "note": "Source lead for revolutionary theory and party organization.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Vladimir Lenin / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Vladimir_Lenin",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Vladimir Lenin",
+    "discussionText": "This is the planned debate room for Lenin: vanguard party, revolutionary theory, state power, Soviet institutions, and the difference between socialism, communism, and Leninism.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1917",
+    "timelineTitle": "Lenin and Revolution Becomes Government",
+    "timelineMeaning": "The Bolshevik victory turns revolutionary theory into a problem of state power, party authority, civil conflict, and institutions.",
+    "lane": "red",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["vanguard-party", "revolutionary-theory", "state-power"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "1917 Test",
+    "discussionHook": "Vladimir Lenin"
+  },
+  "ideas": [
+    {
+      "id": "vanguard-party",
+      "title": "Vanguard Party",
+      "plainDefinition": "A vanguard party is a revolutionary organization that claims it can organize and lead the working class toward political power.",
+      "context": "In the Lenin path, the party is not just a campaign machine. It is the central tool for discipline, theory, strategy, and state power.",
+      "whyMatters": "Vanguard party matters because it separates Lenin's revolutionary road from democratic reform roads and from broad public-service arguments.",
+      "relatedFigures": [{ "label": "Vladimir Lenin", "id": "lenin" }, { "label": "Leon Trotsky", "id": "trotsky" }],
+      "relatedIdeas": ["revolutionary-theory", "state-power"],
+      "sources": [
+        {
+          "title": "Lenin / What Is To Be Done?",
+          "url": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
+          "note": "Source lead for revolutionary theory and organization.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "revolutionary-theory",
+      "title": "Revolutionary Theory",
+      "plainDefinition": "Revolutionary theory is a framework for explaining political conflict and guiding revolutionary organization and action.",
+      "context": "In the Lenin path, theory is treated as a practical organizing question, not just a classroom subject.",
+      "whyMatters": "Revolutionary theory matters because movements do not only react to events. They also interpret events through a strategy.",
+      "relatedFigures": [{ "label": "Vladimir Lenin", "id": "lenin" }],
+      "relatedIdeas": ["vanguard-party", "state-power"],
+      "sources": [
+        {
+          "title": "Lenin / What Is To Be Done?",
+          "url": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
+          "note": "Source lead for the revolutionary-theory claim.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "state-power",
+      "title": "State Power",
+      "plainDefinition": "State power is the organized ability to make law, administer institutions, collect resources, command force, punish, and define public order.",
+      "context": "In the Lenin path, state power is where revolutionary promises become institutions and coercive authority.",
+      "whyMatters": "State power matters because it keeps the study guide focused on what governments actually do, not just what movements say they want.",
+      "relatedFigures": [{ "label": "Vladimir Lenin", "id": "lenin" }, { "label": "Karl Kautsky", "id": "kautsky" }],
+      "relatedIdeas": ["vanguard-party", "dictatorship-debate"],
+      "sources": [
+        {
+          "title": "Lenin / What Is To Be Done?",
+          "url": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
+          "note": "Source lead for party and state-power debates.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

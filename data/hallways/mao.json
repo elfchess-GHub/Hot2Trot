@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "mao",
+    "name": "Mao Zedong",
+    "dates": "1893-1976",
+    "topic": "Chinese Revolution / Maoism",
+    "era": "Chinese revolution and party-state transformation (1920-1976)",
+    "role": "Chinese Communist leader associated with rural revolution, party rule, mass campaigns, land struggle, and state-led transformation.",
+    "hook": "Mao = Marxism-Leninism adapted to rural revolution and mass mobilization.",
+    "wikiPage": "Mao_Zedong",
+    "whyHere": [
+      "Mao belongs here because Marxism-Leninism changes when it is adapted to a largely rural society, peasant revolution, land struggle, civil war, and Chinese state-building.",
+      "He matters because the global socialism/communism map cannot be only European, Russian, or American. China becomes one of the major twentieth-century test cases."
+    ],
+    "cleanIdea": "Mao's road asks how revolutionary theory changes when peasants, land, party organization, military struggle, and mass campaigns become central.",
+    "badgePaths": [
+      { "label": "Maoism Badge", "ideaId": "maoism" },
+      { "label": "Peasant Revolution Badge", "ideaId": "peasant-revolution" },
+      { "label": "Mass Campaigns Badge", "ideaId": "mass-campaigns" }
+    ],
+    "keyTerms": [
+      "Maoism",
+      "Peasant revolution",
+      "Land reform",
+      "Party rule",
+      "Mass campaigns",
+      "Chinese revolution",
+      "State-led transformation",
+      "Marxism-Leninism"
+    ],
+    "sources": [
+      {
+        "title": "Mao / Quotations, War and Peace",
+        "url": "https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm",
+        "note": "Source lead for Mao's political power and armed struggle language.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Mao Zedong / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mao_Zedong",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Mao Zedong",
+    "discussionText": "This is the planned debate room for Mao: rural revolution, Maoism, party rule, land struggle, mass campaigns, and Chinese state transformation.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1949",
+    "timelineTitle": "Mao and China",
+    "timelineMeaning": "Marxism-Leninism is adapted to rural revolution, party rule, land struggle, mass campaigns, and state-led transformation.",
+    "lane": "red",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["maoism", "peasant-revolution", "mass-campaigns"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "China Test",
+    "discussionHook": "Mao Zedong"
+  },
+  "ideas": [
+    {
+      "id": "maoism",
+      "title": "Maoism",
+      "plainDefinition": "Maoism is a Marxist-Leninist current shaped by Chinese revolutionary experience, rural struggle, party organization, military strategy, and mass mobilization.",
+      "context": "In the Mao path, Marxism-Leninism is adapted to a different social setting from industrial Europe.",
+      "whyMatters": "Maoism matters because it shows socialism and communism became global languages with different national and social forms.",
+      "relatedFigures": [{ "label": "Mao Zedong", "id": "mao" }, { "label": "Vladimir Lenin", "id": "lenin" }],
+      "relatedIdeas": ["peasant-revolution", "mass-campaigns"],
+      "sources": [
+        {
+          "title": "Mao / Quotations, War and Peace",
+          "url": "https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm",
+          "note": "Source lead for Maoist political language.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "peasant-revolution",
+      "title": "Peasant Revolution",
+      "plainDefinition": "Peasant revolution means revolutionary politics centered on rural populations, land struggle, village organization, and agrarian power.",
+      "context": "In the Mao path, peasants are not treated as a side issue. They become central to revolution and state-building.",
+      "whyMatters": "Peasant revolution matters because it changes the map from factory-only socialism to land, countryside, and colonial or semi-colonial conditions.",
+      "relatedFigures": [{ "label": "Mao Zedong", "id": "mao" }],
+      "relatedIdeas": ["maoism", "mass-campaigns"],
+      "sources": [
+        {
+          "title": "Mao Zedong / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mao_Zedong",
+          "note": "Topic source lead for rural revolution and Chinese revolutionary history.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "mass-campaigns",
+      "title": "Mass Campaigns",
+      "plainDefinition": "Mass campaigns are organized political drives meant to mobilize large numbers of people around state, party, or ideological goals.",
+      "context": "In the Mao path, mass campaigns become a governing method as well as a revolutionary method.",
+      "whyMatters": "Mass campaigns matter because they show how political participation, mobilization, pressure, and state direction can overlap.",
+      "relatedFigures": [{ "label": "Mao Zedong", "id": "mao" }, { "label": "Rosa Luxemburg", "id": "luxemburg" }],
+      "relatedIdeas": ["maoism", "state-power"],
+      "sources": [
+        {
+          "title": "Mao Zedong / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mao_Zedong",
+          "note": "Topic source lead for mass campaign history.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}
