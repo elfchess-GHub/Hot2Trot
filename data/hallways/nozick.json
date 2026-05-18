@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "nozick",
+    "name": "Robert Nozick",
+    "dates": "1938-2002",
+    "topic": "Libertarianism / Rights",
+    "era": "Rights and minimal-state debate (1970-2002)",
+    "role": "Political philosopher focused on libertarian rights, entitlement theory, private property, and the minimal state.",
+    "hook": "Nozick = rights as limits on what society may do.",
+    "wikiPage": "Robert_Nozick",
+    "whyHere": [
+      "Nozick belongs here because the capitalism/socialism road needs the rights-based argument against redistribution and broad state control.",
+      "He matters because property is not only an economic question. It is also an argument about rights, consent, coercion, and what government may legitimately take or require."
+    ],
+    "cleanIdea": "Nozick's path asks whether individual rights place hard limits on taxation, redistribution, and collective social goals.",
+    "badgePaths": [
+      { "label": "Libertarianism Badge", "ideaId": "libertarianism" },
+      { "label": "Private Property Badge", "ideaId": "private-property" },
+      { "label": "Minimal State Badge", "ideaId": "minimal-state" }
+    ],
+    "keyTerms": [
+      "Libertarianism",
+      "Private property",
+      "Minimal state",
+      "Individual rights",
+      "Entitlement theory",
+      "Redistribution",
+      "Consent",
+      "Taxation"
+    ],
+    "sources": [
+      {
+        "title": "Nozick / Stanford Encyclopedia",
+        "url": "https://plato.stanford.edu/entries/nozick-political/index.html",
+        "note": "Source lead for Nozick's rights, property, and minimal-state theory.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Robert Nozick / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Robert_Nozick",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Robert Nozick",
+    "discussionText": "This is the planned debate room for Nozick: rights, property, taxation, redistribution, consent, libertarianism, and the minimal state.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1974",
+    "timelineTitle": "Nozick and Libertarian Rights",
+    "timelineMeaning": "A rights-based argument says redistribution and broad state power may violate individual entitlement and consent.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["libertarianism", "private-property", "minimal-state"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Rights Test",
+    "discussionHook": "Robert Nozick"
+  },
+  "ideas": [
+    {
+      "id": "libertarianism",
+      "title": "Libertarianism",
+      "plainDefinition": "Libertarianism is a political philosophy that gives strong priority to individual liberty, property rights, voluntary exchange, and limits on state power.",
+      "context": "In the Nozick path, libertarianism challenges redistributive policy by asking what government may take or command.",
+      "whyMatters": "Libertarianism matters because the page must treat property-rights arguments seriously before comparing them with socialist and social-democratic claims.",
+      "relatedFigures": [{ "label": "Robert Nozick", "id": "nozick" }, { "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["private-property", "minimal-state"],
+      "sources": [
+        {
+          "title": "Nozick / Stanford Encyclopedia",
+          "url": "https://plato.stanford.edu/entries/nozick-political/index.html",
+          "note": "Source lead for libertarian rights and entitlement theory.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "private-property",
+      "title": "Private Property",
+      "plainDefinition": "Private property means property controlled by private owners rather than public bodies, common ownership, or direct state control.",
+      "context": "In the Nozick path, private property is tied to individual rights and limits on redistribution.",
+      "whyMatters": "Private property matters because capitalism, liberalism, socialism, and libertarianism disagree over what ownership permits and what society may require.",
+      "relatedFigures": [{ "label": "Robert Nozick", "id": "nozick" }, { "label": "John Locke", "id": "locke" }],
+      "relatedIdeas": ["property", "libertarianism"],
+      "sources": [
+        {
+          "title": "Nozick / Stanford Encyclopedia",
+          "url": "https://plato.stanford.edu/entries/nozick-political/index.html",
+          "note": "Source lead for private property and entitlement theory.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "minimal-state",
+      "title": "Minimal State",
+      "plainDefinition": "A minimal state is a government limited mainly to protecting people against force, theft, fraud, and rights violations.",
+      "context": "In the Nozick path, the minimal state is the boundary he argues government should not exceed.",
+      "whyMatters": "Minimal state matters because it names the libertarian alternative to welfare-state and socialist policy claims.",
+      "relatedFigures": [{ "label": "Robert Nozick", "id": "nozick" }],
+      "relatedIdeas": ["libertarianism", "private-property"],
+      "sources": [
+        {
+          "title": "Nozick / Stanford Encyclopedia",
+          "url": "https://plato.stanford.edu/entries/nozick-political/index.html",
+          "note": "Source lead for minimal-state theory.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "sanders",
+    "name": "Bernie Sanders",
+    "dates": "1941-",
+    "topic": "Democratic Socialism / Public Goods",
+    "era": "Modern U.S. democratic-socialist debate (2010-present)",
+    "role": "U.S. senator and democratic-socialist politician focused on health care, inequality, labor, taxation, and public goods.",
+    "hook": "Sanders = democratic socialism in modern U.S. electoral politics.",
+    "wikiPage": "Bernie_Sanders",
+    "whyHere": [
+      "Sanders belongs here because he brings the language argument into the present United States.",
+      "He matters because opponents often use socialism as an attack word, while Sanders uses democratic socialism for electoral politics, public goods, labor, health care, taxation, and inequality."
+    ],
+    "cleanIdea": "Modern democratic-socialist politics can argue for public goods and social rights through elections, not one-party rule.",
+    "badgePaths": [
+      { "label": "Democratic Socialism Badge", "ideaId": "democratic-socialism" },
+      { "label": "Public Goods Badge", "ideaId": "public-goods" },
+      { "label": "Public Spending Badge", "ideaId": "public-spending" }
+    ],
+    "keyTerms": [
+      "Democratic socialism",
+      "Public goods",
+      "Public spending",
+      "Health care",
+      "Inequality",
+      "Taxation",
+      "Elections",
+      "Labor rights"
+    ],
+    "sources": [
+      {
+        "title": "Sanders / Senate Op-Ed",
+        "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
+        "note": "Source lead for health care and rights language.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Bernie Sanders / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bernie_Sanders",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Bernie Sanders",
+    "discussionText": "This is the planned debate room for Sanders: democratic socialism, public goods, taxes, health care, inequality, elections, and political labels.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "2016+",
+    "timelineTitle": "Democratic Socialism Returns to U.S. Campaigns",
+    "timelineMeaning": "Sanders and younger voters reopen fights over health care, inequality, billionaires, public goods, taxes, and political labels.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["democratic-socialism", "public-goods", "public-spending"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Modern Language Test",
+    "discussionHook": "Bernie Sanders"
+  },
+  "ideas": [
+    {
+      "id": "democratic-socialism",
+      "title": "Democratic Socialism",
+      "plainDefinition": "Democratic socialism links socialist goals to democracy, civil rights, elections, and public accountability.",
+      "context": "In the Sanders path, democratic socialism is framed through campaigns, public goods, labor, health care, and taxation.",
+      "whyMatters": "Democratic socialism matters because it keeps modern U.S. usage separate from communist-party rule.",
+      "relatedFigures": [{ "label": "Bernie Sanders", "id": "sanders" }, { "label": "Eugene V. Debs", "id": "debs" }],
+      "relatedIdeas": ["public-goods", "public-spending"],
+      "sources": [
+        {
+          "title": "Sanders / Senate Op-Ed",
+          "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
+          "note": "Source lead for democratic-socialist public-goods language.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "public-goods",
+      "title": "Public Goods",
+      "plainDefinition": "Public goods are goods or services that serve public life and are hard to reduce to one private buyer.",
+      "context": "In the Sanders path, health care, education, labor protections, and public investment become political claims about shared social life.",
+      "whyMatters": "Public goods matter because social funding needs careful language: public provision, social democracy, democratic socialism, and socialism are related but not identical.",
+      "relatedFigures": [{ "label": "Bernie Sanders", "id": "sanders" }, { "label": "John Maynard Keynes", "id": "keynes" }],
+      "relatedIdeas": ["public-spending", "democratic-socialism"],
+      "sources": [
+        {
+          "title": "Sanders / Senate Op-Ed",
+          "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
+          "note": "Source lead for health care as a public claim.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "public-spending",
+      "title": "Public Spending",
+      "plainDefinition": "Public spending is government spending on services, infrastructure, benefits, wages, defense, or public investment.",
+      "context": "In the Sanders path, public spending is part of democratic debate over what people fund together.",
+      "whyMatters": "Public spending matters because collective funding is real, but the page still has to name the specific policy and ownership structure.",
+      "relatedFigures": [{ "label": "Bernie Sanders", "id": "sanders" }, { "label": "John Maynard Keynes", "id": "keynes" }],
+      "relatedIdeas": ["public-goods", "mixed-economy"],
+      "sources": [
+        {
+          "title": "Sanders / Senate Op-Ed",
+          "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
+          "note": "Source lead for public spending and health care argument.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "orwell",
+    "name": "George Orwell",
+    "dates": "1903-1950",
+    "topic": "Political Language / Democratic Socialism",
+    "era": "Twentieth-century propaganda and political language (1930-1950)",
+    "role": "Writer and democratic socialist focused on political language, propaganda, authoritarian power, and public truth.",
+    "hook": "Orwell = political language as a tool for truth or evasion.",
+    "wikiPage": "George_Orwell",
+    "whyHere": [
+      "Orwell belongs here because this project is about political words as much as political systems.",
+      "He matters because socialism, communism, capitalism, democracy, and freedom can all be used as honest descriptions or as weapons. Orwell helps the study guide ask what a word is doing before accepting it."
+    ],
+    "cleanIdea": "Political language can clarify power, or it can hide responsibility behind slogans, abstractions, and attack labels.",
+    "badgePaths": [
+      { "label": "Political Language Badge", "ideaId": "political-language" },
+      { "label": "Propaganda Badge", "ideaId": "propaganda" },
+      { "label": "Democratic Socialism Badge", "ideaId": "democratic-socialism" }
+    ],
+    "keyTerms": [
+      "Political language",
+      "Propaganda",
+      "Democratic socialism",
+      "Authoritarianism",
+      "Plain speech",
+      "Euphemism",
+      "Public truth",
+      "Attack labels"
+    ],
+    "sources": [
+      {
+        "title": "Orwell / Politics and the English Language",
+        "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
+        "note": "Source lead for political language, euphemism, and public truth.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "George Orwell / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/George_Orwell",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "George Orwell",
+    "discussionText": "This is the planned debate room for Orwell: political language, propaganda, socialism, authoritarianism, and how words can clarify or hide power.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1940s",
+    "timelineTitle": "Orwell and Political Language",
+    "timelineMeaning": "A democratic socialist warning about propaganda, euphemism, authoritarian language, and the need for public truth.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["political-language", "propaganda", "democratic-socialism"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Modern Language Test",
+    "discussionHook": "George Orwell"
+  },
+  "ideas": [
+    {
+      "id": "political-language",
+      "title": "Political Language",
+      "plainDefinition": "Political language is the set of words, slogans, categories, and explanations people use to describe power.",
+      "context": "In the Orwell path, political language can be a truth tool or a fog machine.",
+      "whyMatters": "Political language matters because Hot2Trotski cannot be fair if it lets labels do the thinking.",
+      "relatedFigures": [{ "label": "George Orwell", "id": "orwell" }, { "label": "Bernie Sanders", "id": "sanders" }],
+      "relatedIdeas": ["propaganda", "democratic-socialism"],
+      "sources": [
+        {
+          "title": "Orwell / Politics and the English Language",
+          "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
+          "note": "Source lead for political language and unclear public speech.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "propaganda",
+      "title": "Propaganda",
+      "plainDefinition": "Propaganda is organized communication meant to shape belief, loyalty, fear, or action.",
+      "context": "In the Orwell path, propaganda is not only lying. It can also be selective truth, repetition, loaded wording, and category confusion.",
+      "whyMatters": "Propaganda matters because political education has to separate evidence from persuasion.",
+      "relatedFigures": [{ "label": "George Orwell", "id": "orwell" }],
+      "relatedIdeas": ["political-language", "democratic-socialism"],
+      "sources": [
+        {
+          "title": "Orwell / Politics and the English Language",
+          "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
+          "note": "Source lead for euphemism and political wording.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "democratic-socialism",
+      "title": "Democratic Socialism",
+      "plainDefinition": "Democratic socialism links socialist goals to democracy, civil rights, elections, and public accountability.",
+      "context": "In the Orwell path, democratic socialism is a stated political commitment, not a synonym for one-party rule.",
+      "whyMatters": "Democratic socialism matters because it prevents the page from collapsing every socialist word into the same historical category.",
+      "relatedFigures": [{ "label": "George Orwell", "id": "orwell" }, { "label": "Bernie Sanders", "id": "sanders" }],
+      "relatedIdeas": ["political-language", "social-democracy"],
+      "sources": [
+        {
+          "title": "George Orwell / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/George_Orwell",
+          "note": "Topic source lead for Orwell's political position.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "keynes",
+    "name": "John Maynard Keynes",
+    "dates": "1883-1946",
+    "topic": "Mixed Economy / Stabilization Policy",
+    "era": "Crisis policy and managed capitalism (1919-1946)",
+    "role": "Economist focused on demand, unemployment, money, crisis, and public policy inside capitalist economies.",
+    "hook": "Keynes = markets can stall, and policy can matter.",
+    "wikiPage": "John_Maynard_Keynes",
+    "whyHere": [
+      "Keynes belongs here because not every public intervention is socialism, and not every market economy is laissez-faire.",
+      "He matters because modern democracies often combine private markets with public spending, stabilization policy, social insurance, and regulation."
+    ],
+    "cleanIdea": "A mixed economy can use public policy to stabilize demand and employment without abolishing markets or private firms.",
+    "badgePaths": [
+      { "label": "Mixed Economy Badge", "ideaId": "mixed-economy" },
+      { "label": "Public Spending Badge", "ideaId": "public-spending" },
+      { "label": "Fiscal Policy Badge", "ideaId": "fiscal-policy" }
+    ],
+    "keyTerms": [
+      "Mixed economy",
+      "Public spending",
+      "Fiscal policy",
+      "Demand",
+      "Unemployment",
+      "Stabilization",
+      "Capitalism",
+      "Long run"
+    ],
+    "sources": [
+      {
+        "title": "Keynes / A Tract on Monetary Reform",
+        "url": "https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm",
+        "note": "Source lead for Keynes's policy urgency and long-run argument.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "John Maynard Keynes / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "John Maynard Keynes",
+    "discussionText": "This is the planned debate room for Keynes: markets, crisis, public spending, mixed economies, unemployment, and what counts as socialism.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1930s",
+    "timelineTitle": "Keynes and Managed Capitalism",
+    "timelineMeaning": "Economic crisis pushes democracies toward public spending, stabilization policy, and mixed-economy arguments.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["mixed-economy", "public-spending", "fiscal-policy"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Mixed Economy Test",
+    "discussionHook": "John Maynard Keynes"
+  },
+  "ideas": [
+    {
+      "id": "mixed-economy",
+      "title": "Mixed Economy",
+      "plainDefinition": "A mixed economy combines markets, private firms, public rules, taxes, public services, and social insurance.",
+      "context": "In the Keynes path, mixed economy means capitalism with public policy tools, not automatic socialism.",
+      "whyMatters": "Mixed economy matters because it names the real structure many democracies use.",
+      "relatedFigures": [{ "label": "John Maynard Keynes", "id": "keynes" }, { "label": "Bernie Sanders", "id": "sanders" }],
+      "relatedIdeas": ["public-spending", "fiscal-policy"],
+      "sources": [
+        {
+          "title": "John Maynard Keynes / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+          "note": "Topic source lead for Keynes and modern macroeconomic policy.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "public-spending",
+      "title": "Public Spending",
+      "plainDefinition": "Public spending is government spending on services, infrastructure, benefits, wages, defense, or public investment.",
+      "context": "In the Keynes path, public spending can be a stabilization tool inside a market economy.",
+      "whyMatters": "Public spending matters because tax-funded spending is a broad category; it is not automatically communism, socialism, or capitalism by itself.",
+      "relatedFigures": [{ "label": "John Maynard Keynes", "id": "keynes" }, { "label": "Bernie Sanders", "id": "sanders" }],
+      "relatedIdeas": ["mixed-economy", "public-goods"],
+      "sources": [
+        {
+          "title": "Keynes / A Tract on Monetary Reform",
+          "url": "https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm",
+          "note": "Source lead for policy timing and economic crisis.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "fiscal-policy",
+      "title": "Fiscal Policy",
+      "plainDefinition": "Fiscal policy means using public budgets, taxes, borrowing, and spending to influence economic conditions.",
+      "context": "In the Keynes path, fiscal policy is one way governments respond to unemployment and weak demand.",
+      "whyMatters": "Fiscal policy matters because the argument is about public economic tools, not a simple market-versus-state slogan.",
+      "relatedFigures": [{ "label": "John Maynard Keynes", "id": "keynes" }],
+      "relatedIdeas": ["public-spending", "mixed-economy"],
+      "sources": [
+        {
+          "title": "John Maynard Keynes / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Maynard_Keynes",
+          "note": "Topic source lead for Keynesian economics.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

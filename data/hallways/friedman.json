@@ -1,0 +1,116 @@
+{
+  "figure": {
+    "id": "friedman",
+    "name": "Milton Friedman",
+    "dates": "1912-2006",
+    "topic": "Market Liberalism / Monetarism",
+    "era": "Twentieth-century markets and inflation debate (1945-2006)",
+    "role": "Economist focused on money, inflation, markets, monetarism, and limits on broad state control.",
+    "hook": "Friedman = money, inflation, and market liberalism.",
+    "wikiPage": "Milton_Friedman",
+    "whyHere": [
+      "Friedman belongs here because the page needs the modern market-liberal argument after Keynes and Hayek.",
+      "He matters because debates over public spending, inflation, taxation, welfare states, and markets need a clear account of the anti-planning and anti-intervention side."
+    ],
+    "cleanIdea": "Friedman's path argues that money, inflation, incentives, and market freedom matter when judging public policy.",
+    "badgePaths": [
+      { "label": "Monetarism Badge", "ideaId": "monetarism" },
+      { "label": "Inflation Badge", "ideaId": "inflation" },
+      { "label": "Market Liberalism Badge", "ideaId": "market-liberalism" }
+    ],
+    "keyTerms": [
+      "Monetarism",
+      "Inflation",
+      "Market liberalism",
+      "Money supply",
+      "Public spending",
+      "Incentives",
+      "Central banking",
+      "Limited government"
+    ],
+    "sources": [
+      {
+        "title": "Friedman / Inflation: True and False",
+        "url": "https://www.hoover.org/research/inflation-true-and-false",
+        "note": "Source lead for inflation and monetarist framing.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Milton Friedman / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Milton_Friedman",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Milton Friedman",
+    "discussionText": "This is the planned debate room for Friedman: monetarism, inflation, markets, public spending, incentives, and limited government.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1960s-1980s",
+    "timelineTitle": "Friedman and Market Liberalism",
+    "timelineMeaning": "Inflation, money, incentives, and market freedom become central arguments against broad state control.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["monetarism", "inflation", "market-liberalism"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Market Test",
+    "discussionHook": "Milton Friedman"
+  },
+  "ideas": [
+    {
+      "id": "monetarism",
+      "title": "Monetarism",
+      "plainDefinition": "Monetarism is an economic view that treats the money supply as central to inflation and economic stability.",
+      "context": "In the Friedman path, monetarism is the argument that inflation cannot be understood without money and central-bank policy.",
+      "whyMatters": "Monetarism matters because it gives the market-liberal road a specific economic claim instead of a vague dislike of government.",
+      "relatedFigures": [{ "label": "Milton Friedman", "id": "friedman" }],
+      "relatedIdeas": ["inflation", "market-liberalism"],
+      "sources": [
+        {
+          "title": "Friedman / Inflation: True and False",
+          "url": "https://www.hoover.org/research/inflation-true-and-false",
+          "note": "Source lead for monetarist inflation language.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "inflation",
+      "title": "Inflation",
+      "plainDefinition": "Inflation is a sustained rise in the general price level, reducing the purchasing power of money.",
+      "context": "In the Friedman path, inflation is tied to money, policy choices, and the limits of public spending promises.",
+      "whyMatters": "Inflation matters because any honest study of public spending has to ask how programs are funded and what happens to prices.",
+      "relatedFigures": [{ "label": "Milton Friedman", "id": "friedman" }, { "label": "John Maynard Keynes", "id": "keynes" }],
+      "relatedIdeas": ["monetarism", "public-spending"],
+      "sources": [
+        {
+          "title": "Friedman / Inflation: True and False",
+          "url": "https://www.hoover.org/research/inflation-true-and-false",
+          "note": "Source lead for inflation framing.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "market-liberalism",
+      "title": "Market Liberalism",
+      "plainDefinition": "Market liberalism emphasizes private exchange, competition, property rights, prices, and limits on state economic control.",
+      "context": "In the Friedman path, market liberalism is the modern argument for market coordination and against broad state planning.",
+      "whyMatters": "Market liberalism matters because the page needs capitalism's strongest policy defenses, not just socialist critiques of capitalism.",
+      "relatedFigures": [{ "label": "Milton Friedman", "id": "friedman" }, { "label": "Friedrich Hayek", "id": "hayek" }],
+      "relatedIdeas": ["market-coordination", "price-signals"],
+      "sources": [
+        {
+          "title": "Milton Friedman / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Milton_Friedman",
+          "note": "Topic source lead for market-liberal policy influence.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}
