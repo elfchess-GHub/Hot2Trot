@@ -1,0 +1,128 @@
+{
+  "figure": {
+    "id": "morgan",
+    "name": "J. P. Morgan",
+    "dates": "1837-1913",
+    "topic": "Finance Capital / Industrial Consolidation",
+    "era": "Gilded Age finance, railroads, steel, and panic management (1870-1913)",
+    "role": "Financier and banker associated with railroad reorganization, industrial consolidation, U.S. Steel, the Money Trust debate, and the Panic of 1907.",
+    "hook": "Morgan = finance capital, railroads, steel, panic control, and private banking power.",
+    "wikiPage": "J._P._Morgan",
+    "whyHere": [
+      "Morgan belongs here because American capitalism was built not only by inventors and factories, but by bankers who organized railroads, steel, debt, mergers, and credit.",
+      "He matters because the Panic of 1907 shows private finance acting like an emergency central bank before the Federal Reserve existed."
+    ],
+    "cleanIdea": "Finance capital can organize industry, rescue markets, and concentrate enough private power that democracy has to ask who controls credit.",
+    "badgePaths": [
+      { "label": "Finance Capital Badge", "ideaId": "finance-capital" },
+      { "label": "Money Trust Badge", "ideaId": "money-trust" },
+      { "label": "Panic Management Badge", "ideaId": "panic-management" }
+    ],
+    "keyTerms": [
+      "Finance capital",
+      "J.P. Morgan & Co.",
+      "Railroad reorganization",
+      "U.S. Steel",
+      "Panic of 1907",
+      "Money Trust",
+      "Credit",
+      "Federal Reserve"
+    ],
+    "sources": [
+      {
+        "title": "J. P. Morgan / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/J._P._Morgan",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Panic of 1907 / Federal Reserve History",
+        "url": "https://www.federalreservehistory.org/essays/panic-of-1907",
+        "note": "Source lead for panic, private banking intervention, and Federal Reserve context.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Panic of 1907 / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Panic_of_1907",
+        "note": "Source lead for Morgan's role in the 1907 crisis.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "J.P. Morgan & Co. / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/J.P._Morgan_%26_Co.",
+        "note": "Source lead for the banking institution.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "J. P. Morgan",
+    "discussionText": "This is the planned debate room for Morgan: finance capital, railroad reorganization, industrial consolidation, private banking power, the Panic of 1907, and the Money Trust debate.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1890s-1907",
+    "timelineTitle": "J. P. Morgan and Finance Capital",
+    "timelineMeaning": "Banking power organizes railroads, steel, mergers, credit, panic response, and the political question of who controls money.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["finance-capital", "money-trust", "panic-management"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "American Capitalism Test",
+    "discussionHook": "J. P. Morgan"
+  },
+  "ideas": [
+    {
+      "id": "finance-capital",
+      "title": "Finance Capital",
+      "plainDefinition": "Finance capital is power organized through banks, credit, securities, debt, mergers, investment, and control over access to money.",
+      "context": "In the Morgan path, finance capital reorganizes railroads, consolidates industry, and manages crisis.",
+      "whyMatters": "Finance capital matters because controlling credit can mean controlling the terms under which factories, railroads, governments, and workers survive.",
+      "relatedFigures": [{ "label": "J. P. Morgan", "id": "morgan" }],
+      "relatedIdeas": ["capitalism", "railroad-capitalism", "state-power"],
+      "sources": [
+        {
+          "title": "J. P. Morgan / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/J._P._Morgan",
+          "note": "Source lead for banking and industrial consolidation.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "money-trust",
+      "title": "Money Trust",
+      "plainDefinition": "Money Trust is a political term for concentrated control over banking, credit, securities, and corporate finance by a small financial elite.",
+      "context": "In the Morgan path, the Money Trust debate asks whether private bankers governed too much of the economy.",
+      "whyMatters": "Money Trust matters because democracy cannot ignore who controls credit, mergers, panic response, and investment access.",
+      "relatedFigures": [{ "label": "J. P. Morgan", "id": "morgan" }],
+      "relatedIdeas": ["finance-capital", "capitalism", "democracy"],
+      "sources": [
+        {
+          "title": "Panic of 1907 / Federal Reserve History",
+          "url": "https://www.federalreservehistory.org/essays/panic-of-1907",
+          "note": "Source lead for private finance and later Federal Reserve context.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "panic-management",
+      "title": "Panic Management",
+      "plainDefinition": "Panic management is the emergency response to financial runs, credit freezes, market crashes, and confidence crises.",
+      "context": "In the Morgan path, panic management shows private banking power stepping into a role later associated with public central banking.",
+      "whyMatters": "Panic management matters because capitalist markets can require rescue, coordination, and public trust when private confidence collapses.",
+      "relatedFigures": [{ "label": "J. P. Morgan", "id": "morgan" }, { "label": "John Maynard Keynes", "id": "keynes" }],
+      "relatedIdeas": ["finance-capital", "state-power", "mixed-economy"],
+      "sources": [
+        {
+          "title": "Panic of 1907 / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Panic_of_1907",
+          "note": "Source lead for Morgan's role in the crisis.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

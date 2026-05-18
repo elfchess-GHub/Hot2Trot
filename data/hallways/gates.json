@@ -1,0 +1,128 @@
+{
+  "figure": {
+    "id": "gates",
+    "name": "Bill Gates",
+    "dates": "1955-",
+    "topic": "Technology Capital / Philanthropy",
+    "era": "Software monopoly, global philanthropy, and platform wealth (1975-present)",
+    "role": "Microsoft cofounder, software capitalist, billionaire philanthropist, and central figure in debates over monopoly power and private public-good funding.",
+    "hook": "Gates = software monopoly, antitrust pressure, and billionaire philanthropy.",
+    "wikiPage": "Bill_Gates",
+    "whyHere": [
+      "Gates belongs here because modern capitalism is not only factories, railroads, and banks. It is also software platforms, intellectual property, network effects, antitrust law, and foundation power.",
+      "He matters because he shows both sides of concentrated wealth: Microsoft became a defining private technology empire, while Gates later used private philanthropy to shape global health and education debates."
+    ],
+    "cleanIdea": "A billionaire can fund public-good work and still raise democratic questions about monopoly power, private agenda-setting, and who gets to steer public life.",
+    "badgePaths": [
+      { "label": "Software Monopoly Badge", "ideaId": "software-monopoly" },
+      { "label": "Antitrust Badge", "ideaId": "antitrust" },
+      { "label": "Philanthropy Capital Badge", "ideaId": "philanthropy-capital" }
+    ],
+    "keyTerms": [
+      "Microsoft",
+      "Software monopoly",
+      "Antitrust",
+      "Network effects",
+      "Intellectual property",
+      "Private philanthropy",
+      "Global health",
+      "Public accountability"
+    ],
+    "sources": [
+      {
+        "title": "Bill Gates / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Bill_Gates",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "DOJ / U.S. v. Microsoft Findings of Fact",
+        "url": "https://www.justice.gov/atr/cases/f3800/msjudgex.htm",
+        "note": "Source lead for antitrust and Microsoft market-power claims.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Gates Foundation / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Gates_Foundation",
+        "note": "Source lead for foundation scale and philanthropic role.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Forbes / Bill Gates profile",
+        "url": "https://www.forbes.com/profile/bill-gates",
+        "note": "Source lead for wealth and Microsoft/investment framing.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Bill Gates",
+    "discussionText": "This is the planned debate room for Gates: software monopoly, antitrust, philanthropy, global health, intellectual property, and billionaire power.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1975+",
+    "timelineTitle": "Bill Gates and Software Capital",
+    "timelineMeaning": "Microsoft turns software, operating systems, network effects, antitrust fights, and philanthropy into a modern capitalism hallway.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["software-monopoly", "antitrust", "philanthropy-capital"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Modern Capitalism Test",
+    "discussionHook": "Bill Gates"
+  },
+  "ideas": [
+    {
+      "id": "software-monopoly",
+      "title": "Software Monopoly",
+      "plainDefinition": "Software monopoly means a firm gains durable power over a digital market through operating systems, standards, licensing, defaults, bundling, network effects, or lock-in.",
+      "context": "In the Gates path, monopoly is not only owning factories. It is controlling the platform where other software and users have to live.",
+      "whyMatters": "Software monopoly matters because modern capitalism can concentrate power through code, interfaces, contracts, and defaults, not only through land or machines.",
+      "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
+      "relatedIdeas": ["capitalism", "market", "private-property"],
+      "sources": [
+        {
+          "title": "DOJ / U.S. v. Microsoft Findings of Fact",
+          "url": "https://www.justice.gov/atr/cases/f3800/msjudgex.htm",
+          "note": "Source lead for Microsoft market-power claims.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "antitrust",
+      "title": "Antitrust",
+      "plainDefinition": "Antitrust is law and policy aimed at limiting monopoly power, anti-competitive conduct, and market structures that block fair competition.",
+      "context": "In the Gates path, antitrust is the democratic/legal counterweight to private platform power.",
+      "whyMatters": "Antitrust matters because a market can stop acting like a fair contest when one firm controls the door, the rules, and the defaults.",
+      "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
+      "relatedIdeas": ["market", "capitalism", "state-power"],
+      "sources": [
+        {
+          "title": "DOJ / U.S. v. Microsoft case index",
+          "url": "https://www.justice.gov/atr/cases/ms_index.htm",
+          "note": "Source lead for the Microsoft antitrust case record.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "philanthropy-capital",
+      "title": "Philanthropy Capital",
+      "plainDefinition": "Philanthropy capital is private wealth used to fund public-good work, often through foundations, grants, research programs, and agenda-setting institutions.",
+      "context": "In the Gates path, philanthropy is real public-good work and also a democratic-accountability question.",
+      "whyMatters": "Philanthropy capital matters because helping people with private wealth does not erase the question of who decides priorities and who answers to the public.",
+      "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
+      "relatedIdeas": ["public-goods", "capitalism", "public-spending"],
+      "sources": [
+        {
+          "title": "Gates Foundation / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gates_Foundation",
+          "note": "Source lead for foundation scale and program areas.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "figure": {
+    "id": "buffett",
+    "name": "Warren Buffett",
+    "dates": "1930-",
+    "topic": "Investment Capital / Corporate Ownership",
+    "era": "Berkshire Hathaway, value investing, and philanthropy (1950-present)",
+    "role": "Investor, Berkshire Hathaway leader, billionaire philanthropist, and example of patient capital, insurance float, corporate ownership, and shareholder capitalism.",
+    "hook": "Buffett = investing, Berkshire Hathaway, compounding, insurance float, and philanthropy.",
+    "wikiPage": "Warren_Buffett",
+    "whyHere": [
+      "Buffett belongs here because American capitalism is not only factories, oil, banks, and tech. It is also ownership: buying pieces of companies and letting compounding do political and economic work over time.",
+      "He matters because he makes capitalism look calmer than the robber-baron or platform-power versions, while still concentrating enormous wealth and corporate influence."
+    ],
+    "cleanIdea": "Investment capitalism can look patient and disciplined, but it still raises questions about ownership, compounding, corporate control, taxes, and philanthropy.",
+    "badgePaths": [
+      { "label": "Investment Capital Badge", "ideaId": "investment-capital" },
+      { "label": "Shareholder Power Badge", "ideaId": "shareholder-power" },
+      { "label": "Giving Pledge Badge", "ideaId": "giving-pledge" }
+    ],
+    "keyTerms": [
+      "Berkshire Hathaway",
+      "Value investing",
+      "Insurance float",
+      "Compounding",
+      "Shareholder power",
+      "Corporate ownership",
+      "Philanthropy",
+      "Giving Pledge"
+    ],
+    "sources": [
+      {
+        "title": "Warren Buffett / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Berkshire Hathaway / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Berkshire_Hathaway",
+        "note": "Source lead for Berkshire Hathaway, ownership, and corporate structure.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Forbes / Warren Buffett profile",
+        "url": "https://www.forbes.com/profile/warren-buffett",
+        "note": "Source lead for wealth and Berkshire Hathaway framing.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "The Giving Pledge / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Giving_Pledge",
+        "note": "Source lead for Buffett, Gates, and philanthropy pledge.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Warren Buffett",
+    "discussionText": "This is the planned debate room for Buffett: investment capital, compounding, shareholder power, Berkshire Hathaway, taxation, philanthropy, and the Giving Pledge.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1956+",
+    "timelineTitle": "Warren Buffett and Investment Capital",
+    "timelineMeaning": "Berkshire Hathaway, compounding, insurance float, shareholder ownership, corporate control, and philanthropy become a quieter capitalism hallway.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["investment-capital", "shareholder-power", "giving-pledge"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "American Capitalism Test",
+    "discussionHook": "Warren Buffett"
+  },
+  "ideas": [
+    {
+      "id": "investment-capital",
+      "title": "Investment Capital",
+      "plainDefinition": "Investment capital is money used to buy ownership claims, finance companies, hold assets, earn returns, and compound wealth over time.",
+      "context": "In the Buffett path, investment capital is patient ownership rather than direct factory command or platform control.",
+      "whyMatters": "Investment capital matters because ownership itself can become a governing force in the economy.",
+      "relatedFigures": [{ "label": "Warren Buffett", "id": "buffett" }, { "label": "J. P. Morgan", "id": "morgan" }],
+      "relatedIdeas": ["finance-capital", "capitalism", "private-property"],
+      "sources": [
+        {
+          "title": "Warren Buffett / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Warren_Buffett",
+          "note": "Source lead for investment career and Berkshire pathway.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "shareholder-power",
+      "title": "Shareholder Power",
+      "plainDefinition": "Shareholder power is influence over companies through ownership, voting rights, boards, capital allocation, and market pressure.",
+      "context": "In the Buffett path, shareholder power shows how capitalism can govern through ownership without direct political office.",
+      "whyMatters": "Shareholder power matters because companies answer to ownership, and ownership is not evenly distributed.",
+      "relatedFigures": [{ "label": "Warren Buffett", "id": "buffett" }],
+      "relatedIdeas": ["investment-capital", "capitalism", "private-property"],
+      "sources": [
+        {
+          "title": "Berkshire Hathaway / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Berkshire_Hathaway",
+          "note": "Source lead for Berkshire structure and shareholder framing.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "giving-pledge",
+      "title": "Giving Pledge",
+      "plainDefinition": "The Giving Pledge is a billionaire philanthropy campaign asking wealthy people to commit most of their wealth to charitable causes.",
+      "context": "In the Buffett path, the Giving Pledge links investment wealth to private philanthropy and public-good claims.",
+      "whyMatters": "The Giving Pledge matters because philanthropy may do real good while still leaving democratic questions about wealth, taxation, and public priorities.",
+      "relatedFigures": [{ "label": "Warren Buffett", "id": "buffett" }, { "label": "Bill Gates", "id": "gates" }],
+      "relatedIdeas": ["philanthropy-capital", "public-goods", "capitalism"],
+      "sources": [
+        {
+          "title": "The Giving Pledge / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Giving_Pledge",
+          "note": "Source lead for pledge origins and purpose.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

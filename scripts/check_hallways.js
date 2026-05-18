@@ -54,7 +54,10 @@ function checkLocalLinks(relativePath, options = {}) {
     const [target] = href.split("#");
     if (!target) continue;
     const resolved = path.resolve(path.dirname(fullPath), target);
-    if (!fs.existsSync(resolved)) {
+    const liveIdeaFallback = relativePath.startsWith("dist-preview/ideas/")
+      ? path.join(repoRoot, "ideas", target)
+      : null;
+    if (!fs.existsSync(resolved) && !(liveIdeaFallback && fs.existsSync(liveIdeaFallback))) {
       errors.push(`broken local link: ${relativePath} -> ${href}`);
     }
   }

@@ -1,0 +1,122 @@
+{
+  "figure": {
+    "id": "rand",
+    "name": "Ayn Rand",
+    "dates": "1905-1982",
+    "topic": "Objectivism / Laissez-Faire Capitalism",
+    "era": "Popular capitalist philosophy and anti-collectivism (1940-1982)",
+    "role": "Writer and philosopher who popularized Objectivism, rational self-interest, individualism, property rights, and laissez-faire capitalism.",
+    "hook": "Rand = capitalism as moral individualism, not just market efficiency.",
+    "wikiPage": "Ayn_Rand",
+    "whyHere": [
+      "Rand belongs here because she made capitalism a moral story for millions of readers, not just an economic model.",
+      "She matters because Objectivism turns private property, individual achievement, self-interest, and anti-collectivism into a full political philosophy."
+    ],
+    "cleanIdea": "Rand's capitalism argument says individual rights and productive self-interest are moral foundations, not embarrassments to apologize for.",
+    "badgePaths": [
+      { "label": "Objectivism Badge", "ideaId": "objectivism" },
+      { "label": "Laissez-Faire Badge", "ideaId": "laissez-faire" },
+      { "label": "Rational Self-Interest Badge", "ideaId": "rational-self-interest" }
+    ],
+    "keyTerms": [
+      "Objectivism",
+      "Atlas Shrugged",
+      "The Fountainhead",
+      "Laissez-faire capitalism",
+      "Individual rights",
+      "Rational self-interest",
+      "Anti-collectivism",
+      "Property rights"
+    ],
+    "sources": [
+      {
+        "title": "Ayn Rand / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ayn_Rand",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Objectivism / Britannica",
+        "url": "https://www.britannica.com/topic/objectivism-philosophy",
+        "note": "Source lead for Objectivism, ethical egoism, individualism, and laissez-faire capitalism.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Atlas Shrugged / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Atlas_Shrugged",
+        "note": "Source lead for Rand's fictional presentation of Objectivism.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Ayn Rand",
+    "discussionText": "This is the planned debate room for Rand: Objectivism, selfishness, achievement, property rights, laissez-faire capitalism, and whether a moral defense of capitalism can stay honest about power.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1943-1957",
+    "timelineTitle": "Ayn Rand and Capitalism as Moral Story",
+    "timelineMeaning": "Objectivism turns capitalism into an argument about individual rights, achievement, property, self-interest, and anti-collectivism.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["objectivism", "laissez-faire", "rational-self-interest"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Capitalist Ideas Test",
+    "discussionHook": "Ayn Rand"
+  },
+  "ideas": [
+    {
+      "id": "objectivism",
+      "title": "Objectivism",
+      "plainDefinition": "Objectivism is Ayn Rand's philosophy of reality, reason, self-interest, individual rights, and laissez-faire capitalism.",
+      "context": "In the Rand path, capitalism is defended as the political system that protects individual achievement and property rights.",
+      "whyMatters": "Objectivism matters because it is one of the most influential popular moral defenses of capitalism in U.S. political culture.",
+      "relatedFigures": [{ "label": "Ayn Rand", "id": "rand" }],
+      "relatedIdeas": ["private-property", "capitalism", "libertarianism"],
+      "sources": [
+        {
+          "title": "Objectivism / Britannica",
+          "url": "https://www.britannica.com/topic/objectivism-philosophy",
+          "note": "Source lead for Objectivist tenets.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "laissez-faire",
+      "title": "Laissez-Faire",
+      "plainDefinition": "Laissez-faire is a view that economic life should be left largely to private exchange, property, contract, and competition with minimal state interference.",
+      "context": "In the Rand path, laissez-faire becomes a moral demand for individual rights, not only an efficiency claim.",
+      "whyMatters": "Laissez-faire matters because many capitalist arguments treat government intervention as the main danger to freedom.",
+      "relatedFigures": [{ "label": "Ayn Rand", "id": "rand" }, { "label": "Milton Friedman", "id": "friedman" }],
+      "relatedIdeas": ["market-liberalism", "private-property", "minimal-state"],
+      "sources": [
+        {
+          "title": "Objectivism / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Objectivism",
+          "note": "Source lead for Rand's laissez-faire capitalism claim.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "rational-self-interest",
+      "title": "Rational Self-Interest",
+      "plainDefinition": "Rational self-interest is the idea that people should pursue their own life, values, achievement, and happiness through reason rather than sacrifice or coercion.",
+      "context": "In the Rand path, self-interest is defended as moral when joined to reason, production, and voluntary exchange.",
+      "whyMatters": "Rational self-interest matters because it is the moral doorway into Rand's defense of capitalism.",
+      "relatedFigures": [{ "label": "Ayn Rand", "id": "rand" }, { "label": "Adam Smith", "id": "smith" }],
+      "relatedIdeas": ["objectivism", "laissez-faire", "capitalism"],
+      "sources": [
+        {
+          "title": "Ayn Rand / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ayn_Rand",
+          "note": "Source lead for Rand's philosophical biography.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "figure": {
+    "id": "jackson",
+    "name": "Andrew Jackson",
+    "dates": "1767-1845",
+    "topic": "State Power / Settler Expansion",
+    "era": "Jacksonian democracy, slavery, and Indian removal (1820-1845)",
+    "role": "U.S. president associated with Jacksonian democracy, slavery, Indian removal, territorial expansion, and state-backed dispossession.",
+    "hook": "Jackson = democracy for some, removal for Native nations, and land for settler expansion.",
+    "wikiPage": "Andrew_Jackson",
+    "whyHere": [
+      "Jackson belongs here because capitalism in America cannot be separated from land, slavery, white settlement, law, and state power.",
+      "He matters because Indian removal shows how democratic politics for settlers could become coercive dispossession for Native nations."
+    ],
+    "cleanIdea": "American capitalism did not expand through markets alone; it also expanded through state-backed land seizure, slavery, settler politics, and forced removal.",
+    "badgePaths": [
+      { "label": "Removal Policy Badge", "ideaId": "removal-policy" },
+      { "label": "Settler State Badge", "ideaId": "settler-state" },
+      { "label": "Expansion Politics Badge", "ideaId": "expansion-politics" }
+    ],
+    "keyTerms": [
+      "Indian Removal Act",
+      "Trail of Tears",
+      "Settler expansion",
+      "Slavery",
+      "Land dispossession",
+      "Jacksonian democracy",
+      "State power",
+      "Sovereignty"
+    ],
+    "sources": [
+      {
+        "title": "Andrew Jackson / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Andrew_Jackson",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Indian Removal Act / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Indian_Removal_Act",
+        "note": "Source lead for removal law and Jackson-era policy.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Trail of Tears / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Trail_of_Tears",
+        "note": "Source lead for forced migration and death-count work.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Britannica primary source / A Permanent Habitation for the American Indians",
+        "url": "https://cdn.britannica.com/primary_source/eb/116891.html",
+        "note": "Source lead for Jackson's public removal argument.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Andrew Jackson",
+    "discussionText": "This is the planned debate room for Jackson: democracy, slavery, removal, land, Native sovereignty, settler expansion, and state power.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1830",
+    "timelineTitle": "Andrew Jackson and Removal Politics",
+    "timelineMeaning": "The Indian Removal Act exposes the American capitalism ledger: land, slavery, settler democracy, state force, and Native dispossession.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["removal-policy", "settler-state", "expansion-politics"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Capitalism Ledger Test",
+    "discussionHook": "Andrew Jackson"
+  },
+  "ideas": [
+    {
+      "id": "removal-policy",
+      "title": "Removal Policy",
+      "plainDefinition": "Removal policy means state action used to force Native peoples from homelands into other territories.",
+      "context": "In the Jackson path, removal policy connects federal law, settler pressure, land hunger, slavery expansion, and Native dispossession.",
+      "whyMatters": "Removal policy matters because American expansion was not just migration or markets. It was also law, force, and broken sovereignty.",
+      "relatedFigures": [{ "label": "Andrew Jackson", "id": "jackson" }],
+      "relatedIdeas": ["land-dispossession", "settler-capitalism", "state-power"],
+      "sources": [
+        {
+          "title": "Indian Removal Act / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Indian_Removal_Act",
+          "note": "Source lead for the removal law.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "settler-state",
+      "title": "Settler State",
+      "plainDefinition": "A settler state uses law, force, treaties, land policy, and political institutions to secure settler control over territory.",
+      "context": "In the Jackson path, the state protects settler expansion while claiming democratic legitimacy for the settler public.",
+      "whyMatters": "Settler state matters because democracy for one group can become domination for another when sovereignty and land are denied.",
+      "relatedFigures": [{ "label": "Andrew Jackson", "id": "jackson" }],
+      "relatedIdeas": ["settler-capitalism", "land-dispossession", "democracy"],
+      "sources": [
+        {
+          "title": "Settler Colonialism / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Settler_colonialism",
+          "note": "Source lead for settler-state framing.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "expansion-politics",
+      "title": "Expansion Politics",
+      "plainDefinition": "Expansion politics is political conflict over territorial growth, settlement, markets, slavery, sovereignty, and state power.",
+      "context": "In the Jackson path, expansion politics ties land hunger to public policy and racial hierarchy.",
+      "whyMatters": "Expansion politics matters because capitalist development in the United States grew inside fights over land, labor, race, and state violence.",
+      "relatedFigures": [{ "label": "Andrew Jackson", "id": "jackson" }],
+      "relatedIdeas": ["capitalism", "land-dispossession", "plantation-capitalism"],
+      "sources": [
+        {
+          "title": "Trail of Tears / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Trail_of_Tears",
+          "note": "Source lead for forced removal and migration.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

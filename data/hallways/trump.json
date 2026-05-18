@@ -1,0 +1,128 @@
+{
+  "figure": {
+    "id": "trump",
+    "name": "Donald Trump",
+    "dates": "1946-",
+    "topic": "Real Estate Capital / Political Power",
+    "era": "Brand, real estate, media, and presidential power (1970-present)",
+    "role": "Real estate businessman, media figure, political leader, and example of capital, brand, debt, law, spectacle, and state power crossing into each other.",
+    "hook": "Trump = real estate, brand power, media politics, and capital entering government.",
+    "wikiPage": "Donald_Trump",
+    "whyHere": [
+      "Trump belongs here because modern capitalism is not only factories or technology. It is real estate, branding, licensing, debt, media attention, inheritance, litigation, and political office.",
+      "He matters because his path makes the border between private business, public power, media spectacle, and political loyalty impossible to ignore."
+    ],
+    "cleanIdea": "Capital can become political power when property, brand, media attention, party politics, and state authority reinforce one another.",
+    "badgePaths": [
+      { "label": "Real Estate Capital Badge", "ideaId": "real-estate-capital" },
+      { "label": "Brand Politics Badge", "ideaId": "brand-politics" },
+      { "label": "Political Capitalism Badge", "ideaId": "political-capitalism" }
+    ],
+    "keyTerms": [
+      "Real estate",
+      "Brand licensing",
+      "Inheritance",
+      "Debt",
+      "Media spectacle",
+      "Conflict of interest",
+      "Political office",
+      "State power"
+    ],
+    "sources": [
+      {
+        "title": "Donald Trump / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Business career of Donald Trump / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Business_career_of_Donald_Trump",
+        "note": "Source lead for real estate and business path.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "The Trump Organization / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/The_Trump_Organization",
+        "note": "Source lead for corporate structure and business areas.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Forbes / Donald Trump profile",
+        "url": "https://www.forbes.com/profile/donald-trump/",
+        "note": "Source lead for wealth and real-estate origin framing.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Donald Trump",
+    "discussionText": "This is the planned debate room for Trump: real estate, brand, media, inherited capital, debt, presidential power, and conflicts between private interest and public office.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1970s+",
+    "timelineTitle": "Donald Trump and Brand-Political Capital",
+    "timelineMeaning": "Real estate, inherited capital, brand licensing, television, debt, law, and presidential power become one modern capitalism doorway.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "ideaPills": ["real-estate-capital", "brand-politics", "political-capitalism"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Modern Capitalism Test",
+    "discussionHook": "Donald Trump"
+  },
+  "ideas": [
+    {
+      "id": "real-estate-capital",
+      "title": "Real Estate Capital",
+      "plainDefinition": "Real estate capital is wealth and power built through land, buildings, rent, debt, zoning, development, taxes, speculation, and location.",
+      "context": "In the Trump path, real estate is not just buildings. It is inheritance, leverage, city politics, branding, and legal conflict.",
+      "whyMatters": "Real estate capital matters because property can become political influence, social status, and public-policy pressure.",
+      "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }],
+      "relatedIdeas": ["capitalism", "private-property", "state-power"],
+      "sources": [
+        {
+          "title": "Business career of Donald Trump / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Business_career_of_Donald_Trump",
+          "note": "Source lead for the real-estate business path.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "brand-politics",
+      "title": "Brand Politics",
+      "plainDefinition": "Brand politics is the use of personal image, media attention, slogans, loyalty, spectacle, and market identity as political force.",
+      "context": "In the Trump path, the business brand and political identity reinforce each other.",
+      "whyMatters": "Brand politics matters because modern power can be sold, watched, repeated, and defended like a product.",
+      "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }, { "label": "George Orwell", "id": "orwell" }],
+      "relatedIdeas": ["political-language", "propaganda", "capitalism"],
+      "sources": [
+        {
+          "title": "Donald Trump / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Donald_Trump",
+          "note": "Source lead for media and political biography.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "political-capitalism",
+      "title": "Political Capitalism",
+      "plainDefinition": "Political capitalism is the study of how private wealth, public office, regulation, contracts, courts, parties, lobbying, and state power interact.",
+      "context": "In the Trump path, private business identity and public authority meet directly.",
+      "whyMatters": "Political capitalism matters because democracy has to ask when private gain, public office, and state authority become entangled.",
+      "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }, { "label": "Elon Musk", "id": "musk" }],
+      "relatedIdeas": ["state-power", "capitalism", "democracy"],
+      "sources": [
+        {
+          "title": "The Trump Organization / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Trump_Organization",
+          "note": "Source lead for the business organization and ownership path.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    }
+  ]
+}

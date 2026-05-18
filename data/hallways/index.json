@@ -1,8 +1,11 @@
 [
   "locke",
   "smith",
+  "jackson",
   "marx",
   "engels",
+  "rockefeller",
+  "morgan",
   "bernstein",
   "kautsky",
   "debs",
@@ -12,9 +15,15 @@
   "stalin",
   "mao",
   "orwell",
+  "mises",
+  "rand",
   "keynes",
+  "buffett",
   "hayek",
   "sanders",
   "friedman",
-  "nozick"
+  "nozick",
+  "gates",
+  "musk",
+  "trump"
 ]
