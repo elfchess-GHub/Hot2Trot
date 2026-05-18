@@ -2,6 +2,16 @@
 
 Working rule: do not remove `[exact quote needed]` unless the quote has a source link next to it or is logged here for the next page pass.
 
+## Project Rules
+
+- Major identity lanes are Red, Blue, and Black only.
+- Gold is allowed as decorative text, source, badge, and small "thousand points of light" accent.
+- Gold must not be used as a party, ideology, lane, card class, timeline category, or truth category.
+- Do not invent a new symbolic category without Jeremy approving it first.
+- "A thousand points of light" is a George H. W. Bush phrase, not a generic decoration. If used, treat it as a sourced reference to civic organizations and volunteer public life, not as a partisan category.
+  - Source: https://www.presidency.ucsb.edu/documents/inaugural-address
+  - Quote checked: "I have spoken of a Thousand Points of Light"
+
 ## Verified in Hot2Trotski.html
 
 - Karl Marx / Friedrich Engels, `Manifesto of the Communist Party`, Wikisource:
