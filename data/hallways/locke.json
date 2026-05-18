@@ -33,14 +33,14 @@
       {
         "title": "Two Treatises of Government",
         "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
-        "note": "Exact Locke passages still need to be pinned.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: property and labor; consent and political legitimacy; natural rights / limits of arbitrary power.",
+        "auditStatus": "[passage pinned]"
       },
       {
         "title": "A Letter Concerning Toleration",
         "url": "https://en.wikisource.org/wiki/A_Letter_Concerning_Toleration",
-        "note": "Exact toleration passages still need to be pinned.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: toleration and civil power not governing souls.",
+        "auditStatus": "[passage pinned]"
       },
       {
         "title": "John Locke / Wikipedia",
@@ -51,14 +51,14 @@
       {
         "title": "Stanford Encyclopedia: Locke's Political Philosophy",
         "url": "https://plato.stanford.edu/entries/locke-political/",
-        "note": "Stronger secondary source for political philosophy framing.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: natural law / natural rights, property, consent, and toleration framing.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Britannica: John Locke",
         "url": "https://www.britannica.com/biography/John-Locke",
-        "note": "Secondary source for biography and influence.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: natural rights to life, liberty, property, and removal of rights-violating rulers.",
+        "auditStatus": "[passage pinned]"
       }
     ],
     "discussionTopic": "John Locke",
@@ -84,7 +84,8 @@
         {
           "title": "Locke / Two Treatises of Government",
           "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
-          "auditStatus": "[needs verification]"
+          "note": "supports: property and labor.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -100,7 +101,8 @@
         {
           "title": "Stanford Encyclopedia / Locke's Political Philosophy",
           "url": "https://plato.stanford.edu/entries/locke-political/",
-          "auditStatus": "[needs verification]"
+          "note": "supports: natural law / rights, property, consent, and toleration framing.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -116,7 +118,8 @@
         {
           "title": "Locke / Two Treatises of Government",
           "url": "https://www.gutenberg.org/files/7370/old/trgov10h.htm",
-          "auditStatus": "[needs verification]"
+          "note": "supports: consent and political legitimacy.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -132,7 +135,8 @@
         {
           "title": "Britannica / John Locke",
           "url": "https://www.britannica.com/biography/John-Locke",
-          "auditStatus": "[needs verification]"
+          "note": "supports: natural rights and limits on rulers.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     }

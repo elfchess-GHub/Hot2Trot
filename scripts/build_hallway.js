@@ -57,7 +57,8 @@ function renderSources(sources, block = true) {
   }
 
   return sources.map((source) => {
-    return `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a> <span class="audit">${escapeHtml(source.auditStatus)}</span></p>`;
+    const note = source.note ? ` ${escapeHtml(source.note)}` : "";
+    return `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a> <span class="audit">${escapeHtml(source.auditStatus)}</span>${note}</p>`;
   }).join("\n      ");
 }
 
