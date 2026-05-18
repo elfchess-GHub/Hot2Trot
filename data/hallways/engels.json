@@ -1,0 +1,122 @@
+{
+  "figure": {
+    "id": "engels",
+    "name": "Friedrich Engels",
+    "dates": "1820-1895",
+    "topic": "Socialism / Industrial Capitalism",
+    "era": "Industrial capitalism and Marxist theory (1800-1900)",
+    "role": "Writer on industrial labor, class society, and the development of socialist theory.",
+    "hook": "Engels = factories, class conditions, and socialism grounded in industrial life.",
+    "wikiPage": "Friedrich_Engels",
+    "whyHere": [
+      "Engels belongs here because he keeps the socialism road attached to industrial reality: factories, cities, wage labor, poverty, and the working-class conditions created by modern capitalism.",
+      "He is also not just Marx's shadow. Engels helped write the Manifesto, developed socialist theory in his own works, and made the industrial labor question harder to ignore."
+    ],
+    "cleanIdea": "If socialism is going to tell the truth, it has to look at how people actually live and work inside industrial capitalism, not only at abstract ideals.",
+    "badgePaths": [
+      { "label": "Working Class Badge", "ideaId": "working-class" },
+      { "label": "Industrial Capitalism Badge", "ideaId": "industrial-capitalism" },
+      { "label": "Scientific Socialism Badge", "ideaId": "scientific-socialism" }
+    ],
+    "keyTerms": [
+      "Working class",
+      "Industrial capitalism",
+      "Class antagonism",
+      "Wage labor",
+      "Factory system",
+      "Utopian socialism",
+      "Scientific socialism",
+      "Marxist collaboration"
+    ],
+    "sources": [
+      {
+        "title": "Engels / Socialism: Utopian and Scientific",
+        "url": "https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm",
+        "note": "supports: modern socialism, class antagonisms, capitalists, and wage-workers.",
+        "auditStatus": "[passage pinned]"
+      },
+      {
+        "title": "Engels / The Condition of the Working Class in England",
+        "url": "https://www.marxists.org/archive/marx/works/1845/condition-working-class/",
+        "note": "Source lead for industrial labor conditions.",
+        "auditStatus": "[needs verification]"
+      },
+      {
+        "title": "Friedrich Engels / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Friedrich_Engels",
+        "note": "Topic summary and image pathway.",
+        "auditStatus": "[needs verification]"
+      }
+    ],
+    "discussionTopic": "Friedrich Engels",
+    "discussionText": "This is the planned debate room for Engels: factories, working-class life, class antagonism, Marxist collaboration, and what industrial capitalism did to ordinary people.",
+    "auditStatus": "[needs verification]"
+  },
+  "hallCard": {
+    "timelineDate": "1880",
+    "timelineTitle": "Engels and Scientific Socialism",
+    "timelineMeaning": "Engels frames modern socialism as a response to industrial class antagonisms, not just a dream of fairness.",
+    "lane": "red",
+    "auditStatus": "[source supports this]",
+    "ideaPills": ["working-class", "industrial-capitalism", "scientific-socialism"]
+  },
+  "hooks": {
+    "sourcePath": "texts",
+    "badgeHook": true,
+    "testHook": "Marx / Class Struggle",
+    "discussionHook": "Friedrich Engels"
+  },
+  "ideas": [
+    {
+      "id": "working-class",
+      "title": "Working Class",
+      "plainDefinition": "The working class means people who live mainly by selling their labor rather than by owning productive property.",
+      "context": "In the Engels path, working-class life is not a background detail. It is the evidence that makes the labor question concrete.",
+      "whyMatters": "Working class matters for Engels because his socialism begins from real industrial conditions: wages, housing, work discipline, poverty, injury, and class power.",
+      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["class-struggle", "industrial-capitalism"],
+      "sources": [
+        {
+          "title": "Engels / The Condition of the Working Class in England",
+          "url": "https://www.marxists.org/archive/marx/works/1845/condition-working-class/",
+          "note": "Source lead for working-class conditions.",
+          "auditStatus": "[needs verification]"
+        }
+      ]
+    },
+    {
+      "id": "industrial-capitalism",
+      "title": "Industrial Capitalism",
+      "plainDefinition": "Industrial capitalism is an economic system built around private capital, factories, wage labor, machinery, competition, and mass production.",
+      "context": "In the Engels path, industrial capitalism is the historical pressure cooker that turns poverty, production, ownership, and class power into one problem.",
+      "whyMatters": "Industrial capitalism matters because Engels is watching socialism emerge from a factory world, not from a clean classroom definition.",
+      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["working-class", "means-of-production"],
+      "sources": [
+        {
+          "title": "Engels / Socialism: Utopian and Scientific",
+          "url": "https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm",
+          "note": "supports: modern industry, capitalists, wage-workers, and class antagonisms.",
+          "auditStatus": "[passage pinned]"
+        }
+      ]
+    },
+    {
+      "id": "scientific-socialism",
+      "title": "Scientific Socialism",
+      "plainDefinition": "Scientific socialism is Engels's and Marx's claim that socialism should be explained through historical and economic forces, not only moral wishes or ideal plans.",
+      "context": "In the Engels path, this term marks a break from utopian schemes toward arguments about capitalism's structure and development.",
+      "whyMatters": "Scientific socialism matters because it shows why Engels is not only describing suffering. He is trying to explain where that suffering comes from and why the system changes.",
+      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
+      "relatedIdeas": ["class-struggle", "industrial-capitalism"],
+      "sources": [
+        {
+          "title": "Engels / Socialism: Utopian and Scientific",
+          "url": "https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm",
+          "note": "supports: distinction between utopian socialism and modern socialism.",
+          "auditStatus": "[passage pinned]"
+        }
+      ]
+    }
+  ]
+}
