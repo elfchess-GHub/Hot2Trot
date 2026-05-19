@@ -147,4 +147,8 @@ Build the main-hall preview with:
 
 `node scripts/build_hall_cards.js`
 
-Then inspect `dist-preview/hall-cards.html` before copying generated timeline or figure cards into `Hot2Trotski.html`.
+Promote the generated main-hall cards with:
+
+`node scripts/promote_hall_cards.js`
+
+That command rebuilds `dist-preview/hall-cards.html`, verifies that generated timeline and figure card sections exist, then replaces only the Timeline Road and Figure Gallery sections inside `Hot2Trotski.html`.
