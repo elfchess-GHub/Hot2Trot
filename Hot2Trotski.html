@@ -141,8 +141,16 @@
     .sidebox{background:rgba(17,23,34,.9);border:1px solid var(--line);padding:14px;border-radius:10px;margin-bottom:14px}
     .sidebox h3{font-size:17px;color:var(--accent);margin-bottom:10px}
     .path,.tracker-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);font-family:Inter,sans-serif;font-size:13px;color:var(--muted)}
+    button.path{width:100%;border:0;background:transparent;text-align:left;cursor:pointer}
+    button.path:hover,button.path.active{color:var(--ivory)}
+    button.path b{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
     .path:last-child,.tracker-row:last-child{border-bottom:0}
-    .dot{width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none}
+    .path-detail{margin-top:12px;padding:12px;border:1px solid rgba(216,175,85,.28);border-radius:10px;background:rgba(5,6,8,.55);font-size:13px;color:var(--muted)}
+    .path-detail h4{font-family:Cinzel,serif;color:var(--ivory);font-size:17px;margin-bottom:6px}
+    .path-detail p{margin:0 0 8px}
+    .path-chips{display:flex;flex-wrap:wrap;gap:6px}
+    .path-chip{font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:var(--accent);border:1px solid rgba(216,175,85,.32);border-radius:999px;padding:4px 6px}
+    .dot{display:inline-flex;width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none;margin-right:6px;vertical-align:middle}
     .dot.red{background:var(--red)}.dot.blue{background:var(--blue)}.dot.black{background:#222}
     section{scroll-margin-top:82px;margin-bottom:26px}
     .section-head{padding:28px 0 14px;border-top:1px solid rgba(216,175,85,.28)}
@@ -221,6 +229,9 @@
     .truth-card.red{border-top-color:var(--red)}.truth-card.blue{border-top-color:var(--blue)}.truth-card.black{border-top-color:#111}
     .truth-card dl{margin:8px 0 0}.truth-card dt{font-family:Inter,sans-serif;font-weight:800;color:var(--accent);font-size:13px}.truth-card dd{margin:0 0 8px;color:var(--muted)}
     .badge-case{background:linear-gradient(135deg,#0a0d12,#17120a);border:1px solid rgba(216,175,85,.35);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+    .badge-case p{color:var(--muted);margin:8px 0 0}
+    .badge-breakdown,.next-badges{display:grid;gap:8px;margin-top:12px}
+    .badge-breakdown .tracker-row,.next-badges .tracker-row{background:rgba(5,6,8,.45);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:8px 10px}
     .medals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
     .medal{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
     .medal.locked{filter:grayscale(1);opacity:.45;color:#111}
@@ -269,7 +280,7 @@
         <div class="meter"><span id="progressMeter"></span></div>
         <div class="tracker-row"><span>Badges collected</span><b id="badgeCount">0</b></div>
         <div class="tracker-row"><span>Ideas clicked</span><b id="ideaCount">0</b></div>
-        <div class="tracker-row"><span>Expertise areas</span><b>Locked</b></div>
+        <div class="tracker-row"><span>Expertise areas</span><b id="pathCount">0</b></div>
         <button type="button" onclick="setScholarName()">Set Local Name</button>
         <button type="button" disabled title="Real login comes later">Future Login</button>
         <p class="meta">This profile is local-browser only for now. Real shared profiles need a host with auth and a database.</p>
@@ -281,13 +292,18 @@
     <aside class="leftbar">
       <div class="sidebox">
         <h3>Learning Paths</h3>
-        <div class="path"><span><span class="dot blue"></span> Reform Road</span></div>
-        <div class="path"><span><span class="dot red"></span> Revolution Road</span></div>
-        <div class="path"><span><span class="dot red"></span> Labor Road</span></div>
-        <div class="path"><span><span class="dot blue"></span> Market Road</span></div>
-        <div class="path"><span><span class="dot black"></span> State Power Road</span></div>
-        <div class="path"><span><span class="dot blue"></span> Anti-Authoritarian Road</span></div>
-        <div class="path"><span><span class="dot red"></span> American Socialism Road</span></div>
+        <button class="path" type="button" data-path="reform"><span><span class="dot blue"></span> Reform Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="revolution"><span><span class="dot red"></span> Revolution Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="labor"><span><span class="dot red"></span> Labor Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="market"><span><span class="dot blue"></span> Market Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="state-power"><span><span class="dot black"></span> State Power Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="anti-authoritarian"><span><span class="dot blue"></span> Anti-Authoritarian Road</span><b>Start</b></button>
+        <button class="path" type="button" data-path="american-socialism"><span><span class="dot red"></span> American Socialism Road</span><b>Start</b></button>
+        <div class="path-detail" id="pathDetail">
+          <h4>Choose a path</h4>
+          <p>Pick a road to collect a path badge and see which ideas, figures, and tests belong together.</p>
+          <div class="path-chips"><span class="path-chip">ideas</span><span class="path-chip">figures</span><span class="path-chip">tests</span></div>
+        </div>
       </div>
       <div class="sidebox">
         <h3>Link Map</h3>
@@ -451,8 +467,20 @@
       </section>
 
       <section id="badges">
-        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges should feel like earned knowledge, not fake points. Click ideas and pass sample tests to unlock local prototype badges.</p></div>
-        <div class="badge-case"><h3>Guest Scholar Cabinet</h3><div class="medals" id="medals"></div></div>
+        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges should feel like earned knowledge, not fake points. Click ideas, open figures, start learning paths, study truth checks, and pass sample tests to unlock local prototype badges.</p></div>
+        <div class="badges">
+          <div class="badge-case"><h3>Guest Scholar Cabinet</h3><p>Earned badges stay in this browser for now.</p><div class="medals" id="medals"></div></div>
+          <div class="badge-case"><h3>Badge Paths</h3><p>The cabinet now separates the kinds of learning instead of treating every click as the same thing.</p>
+            <div class="badge-breakdown">
+              <div class="tracker-row"><span>Idea Badges</span><b id="badgeIdeas">0</b></div>
+              <div class="tracker-row"><span>Path Badges</span><b id="badgePaths">0</b></div>
+              <div class="tracker-row"><span>Figure Badges</span><b id="badgeFigures">0</b></div>
+              <div class="tracker-row"><span>Truth Badges</span><b id="badgeTruths">0</b></div>
+              <div class="tracker-row"><span>Test Badges</span><b id="badgeTests">0</b></div>
+            </div>
+          </div>
+          <div class="badge-case"><h3>Next Badge Goals</h3><div class="next-badges" id="nextBadges"></div></div>
+        </div>
       </section>
 
       <section id="texts">
@@ -603,7 +631,7 @@
     </main>
 
     <aside class="rightbar">
-      <div class="sidebox"><h3>Knowledge Tracker</h3><div class="tracker-row"><span>Figure Badges</span><b id="figBadges">0</b></div><div class="tracker-row"><span>Idea Badges</span><b id="ideaBadges">0</b></div><div class="tracker-row"><span>Date Badges</span><b>0</b></div><div class="tracker-row"><span>Test Badges</span><b id="testBadges">0</b></div><div class="tracker-row"><span>Truth Badges</span><b>0</b></div></div>
+      <div class="sidebox"><h3>Knowledge Tracker</h3><div class="tracker-row"><span>Figure Badges</span><b id="figBadges">0</b></div><div class="tracker-row"><span>Idea Badges</span><b id="ideaBadges">0</b></div><div class="tracker-row"><span>Path Badges</span><b id="pathBadges">0</b></div><div class="tracker-row"><span>Test Badges</span><b id="testBadges">0</b></div><div class="tracker-row"><span>Truth Badges</span><b id="truthBadges">0</b></div></div>
       <div class="sidebox"><h3>Hosting Road</h3><div class="path">Now: GitHub Pages prototype</div><div class="path">Next: localStorage badges</div><div class="path">Later: Vercel + Supabase</div><div class="path">Later: real comments and profiles</div></div>
     </aside>
   </div>
@@ -1078,7 +1106,67 @@
             ]
       }
 });
-    const state = JSON.parse(localStorage.getItem('h2tState') || '{"ideas":[],"badges":[],"name":"Guest Scholar"}');
+    const learningPaths = {
+      reform: {
+        label: 'Reform Road',
+        color: 'blue',
+        summary: 'Elections, unions, laws, welfare institutions, and democratic pressure as a road to change.',
+        ideas: ['reform','democratic reform','social democracy','welfare state','public goods'],
+        figures: ['Bernstein','Kautsky','Debs','Sanders'],
+        test: 'reform'
+      },
+      revolution: {
+        label: 'Revolution Road',
+        color: 'red',
+        summary: 'Class struggle, rupture, revolutionary parties, and the danger of state power after victory.',
+        ideas: ['revolution','class struggle','vanguard party','permanent revolution','state power'],
+        figures: ['Marx','Engels','Lenin','Trotsky'],
+        test: 'state-power'
+      },
+      labor: {
+        label: 'Labor Road',
+        color: 'red',
+        summary: 'Work, unions, strikes, class organization, and the question of who has power inside production.',
+        ideas: ['labor','working class','unionism','labor politics','wage labor'],
+        figures: ['Engels','Debs','Marx'],
+        test: 'class-struggle'
+      },
+      market: {
+        label: 'Market Road',
+        color: 'blue',
+        summary: 'Property, exchange, prices, entrepreneurship, political economy, and the case for market freedom.',
+        ideas: ['property','market','private property','entrepreneurship','division of labor'],
+        figures: ['Locke','Adam Smith','Hayek','Friedman','Mises'],
+        test: 'modern-language'
+      },
+      'state-power': {
+        label: 'State Power Road',
+        color: 'black',
+        summary: 'The hard question: what happens when a revolution, party, army, or bureaucracy controls the state.',
+        ideas: ['state power','authoritarianism','planned economy','party-state','state violence'],
+        figures: ['Lenin','Stalin','Mao','Trotsky'],
+        test: 'state-power'
+      },
+      'anti-authoritarian': {
+        label: 'Anti-Authoritarian Road',
+        color: 'blue',
+        summary: 'Democracy, dissent, language, and the warning that liberation cannot survive without criticism.',
+        ideas: ['democracy','democratic dissent','socialist democracy','political language','anti-authoritarianism'],
+        figures: ['Luxemburg','Kautsky','Orwell','Debs'],
+        test: 'modern-language'
+      },
+      'american-socialism': {
+        label: 'American Socialism Road',
+        color: 'red',
+        summary: 'Labor politics, democratic socialism, public goods, public spending, and the U.S. argument over the word socialism.',
+        ideas: ['american socialism','democratic socialism','public goods','public spending','labor politics'],
+        figures: ['Debs','Sanders'],
+        test: 'reform'
+      }
+    };
+    const storedState = JSON.parse(localStorage.getItem('h2tState') || '{}');
+    const state = Object.assign({ideas:[],badges:[],name:'Guest Scholar',paths:[],figures:[],truths:[],tests:[]}, storedState);
+    ['ideas','badges','paths','figures','truths','tests'].forEach(key=>{if(!Array.isArray(state[key])) state[key]=[];});
     function save(){localStorage.setItem('h2tState', JSON.stringify(state));}
     function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();}}
     function titleCase(text){return text.replace(/\b\w/g, c=>c.toUpperCase());}
@@ -1092,20 +1180,74 @@
       document.getElementById('ideaDetail').focus({preventScroll:true});
       document.getElementById('ideaDetail').scrollIntoView({behavior:'smooth',block:'center'});
     }
-    function answerTest(btn, ok, badge){const box=btn.closest('.test-card').querySelector('.result'); if(ok){box.textContent='Correct. Badge unlocked.'; addBadge(badge || 'Test Badge');}else{box.textContent='Not this one. Try again.';}}
+    function startPath(key){
+      const path=learningPaths[key];
+      if(!path) return;
+      if(!state.paths.includes(key)) state.paths.push(key);
+      addBadge(path.label+' Path Badge');
+      renderPathDetail(key);
+      renderState();
+      document.getElementById('pathDetail').scrollIntoView({behavior:'smooth',block:'nearest'});
+    }
+    function renderPathDetail(key){
+      const path=learningPaths[key];
+      if(!path) return;
+      document.querySelectorAll('[data-path]').forEach(btn=>{
+        btn.classList.toggle('active', btn.dataset.path===key);
+        const status=btn.querySelector('b');
+        if(status) status.textContent=state.paths.includes(btn.dataset.path) ? 'Open' : 'Start';
+      });
+      const chips=[...path.ideas.map(x=>'Idea: '+titleCase(x)), ...path.figures.map(x=>'Figure: '+x), 'Test: '+titleCase(path.test.replace(/-/g,' '))];
+      document.getElementById('pathDetail').innerHTML=`<h4>${path.label}</h4><p>${path.summary}</p><div class="path-chips">${chips.map(x=>`<span class="path-chip">${x}</span>`).join('')}</div><div class="link-cloud"><button class="pill test" type="button" data-topic="${path.label}">${titleCase(path.test.replace(/-/g,' '))} Test</button><a class="pill source" href="#texts">Source Library</a></div>`;
+      const firstIdea=path.ideas.find(name=>ideaDetails[name] || ideaPageMap[name]) || path.ideas[0];
+      if(firstIdea) showIdeaDetail(firstIdea);
+    }
+    function answerTest(btn, ok, badge){
+      const card=btn.closest('.test-card');
+      const box=card.querySelector('.result');
+      if(ok){
+        const testKey=card.dataset.test || badge || 'test';
+        if(!state.tests.includes(testKey)) state.tests.push(testKey);
+        box.textContent='Correct. Badge unlocked.';
+        addBadge(badge || 'Test Badge');
+      }else{box.textContent='Not this one. Try again.';}
+      save();renderState();
+    }
+    function addFigureBadge(label){if(!label) return; if(!state.figures.includes(label)) state.figures.push(label); addBadge(label+' Figure Badge');}
+    function addTruthBadge(label){if(!label) return; if(!state.truths.includes(label)) state.truths.push(label); addBadge(label+' Truth Badge');}
     function setScholarName(){const n=prompt('Local profile name:', state.name || 'Guest Scholar'); if(n && n.trim()){state.name=n.trim();save();renderState();}}
     function renderState(){
       document.getElementById('scholarName').textContent=state.name || 'Guest Scholar';
       document.getElementById('badgeCount').textContent=state.badges.length;
       document.getElementById('ideaCount').textContent=state.ideas.length;
+      document.getElementById('pathCount').textContent=state.paths.length;
       document.getElementById('ideaBadges').textContent=state.ideas.length;
-      document.getElementById('testBadges').textContent=state.badges.filter(b=>/Badge/.test(b) && !/Idea/.test(b)).length;
-      const pct=Math.min(100, 18 + state.badges.length*6 + state.ideas.length*2);
+      document.getElementById('pathBadges').textContent=state.paths.length;
+      document.getElementById('figBadges').textContent=state.figures.length;
+      document.getElementById('truthBadges').textContent=state.truths.length;
+      document.getElementById('testBadges').textContent=state.tests.length;
+      document.getElementById('badgeIdeas').textContent=state.ideas.length;
+      document.getElementById('badgePaths').textContent=state.paths.length;
+      document.getElementById('badgeFigures').textContent=state.figures.length;
+      document.getElementById('badgeTruths').textContent=state.truths.length;
+      document.getElementById('badgeTests').textContent=state.tests.length;
+      document.querySelectorAll('[data-path]').forEach(btn=>{
+        const status=btn.querySelector('b');
+        if(status) status.textContent=state.paths.includes(btn.dataset.path) ? 'Open' : 'Start';
+      });
+      const pct=Math.min(100, 18 + state.badges.length*5 + state.ideas.length*2 + state.paths.length*4 + state.tests.length*4);
       document.getElementById('progressMeter').style.width=pct+'%';
       const medals=document.getElementById('medals');
-      const earned=state.badges.slice(0,12);
+      const earned=state.badges.slice(-12).reverse();
       const slots=[...earned]; while(slots.length<12) slots.push('Locked');
       medals.innerHTML=slots.map(x=>`<div class="medal ${x==='Locked'?'locked':''}">${x}</div>`).join('');
+      const goals=[];
+      if(state.paths.length<3) goals.push('Start three learning paths');
+      if(state.ideas.length<8) goals.push('Open eight idea rooms');
+      if(state.figures.length<5) goals.push('Open five figure study cards');
+      if(state.truths.length<3) goals.push('Study three truth checks');
+      if(state.tests.length<4) goals.push('Pass all four subject tests');
+      document.getElementById('nextBadges').innerHTML=(goals.length?goals:['Full local prototype cabinet complete']).map(goal=>`<div class="tracker-row"><span>${goal}</span><b>${goals.length?'Next':'Done'}</b></div>`).join('');
     }
     function buildIdeaCloud(){
       const cloud=document.getElementById('ideaCloud');
@@ -1143,12 +1285,21 @@
     }
     function openSources(){document.getElementById('texts').scrollIntoView({behavior:'smooth',block:'start'});}
     document.addEventListener('click', event=>{
+      const pathButton=event.target.closest('[data-path]');
+      if(pathButton){startPath(pathButton.dataset.path);return;}
+      const truthCard=event.target.closest('.truth-card');
+      if(truthCard && !event.target.closest('a,button')) addTruthBadge(cardTopic(truthCard));
+      const figureLink=event.target.closest('#figures .photo-link,#figures h3 a,.pill.figure');
+      if(figureLink){
+        const figureName=figureLink.dataset.figure || figureLink.closest('article')?.querySelector('h3')?.textContent?.trim() || figureLink.textContent.trim();
+        if(figureName && !/Open Study Page/i.test(figureName)) addFigureBadge(figureName);
+      }
       const button=event.target.closest('button');
       if(!button) return;
       if(button.classList.contains('discuss')){openDiscussion(cardTopic(button));}
       if(button.classList.contains('test') && !button.closest('.test-card')){selectTest(button.textContent.trim(), cardTopic(button));}
       if(button.classList.contains('source')){openSources();}
-      if(button.classList.contains('figure')){openFigure(button.textContent.trim());}
+      if(button.classList.contains('figure')){openFigure(cardTopic(button));}
     });
     async function hydratePhotos(){
       const boxes=[...document.querySelectorAll('[data-wiki]')];

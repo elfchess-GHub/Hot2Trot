@@ -69,7 +69,30 @@ Each idea room should include:
 
 Idea rooms should connect back to the figure hallway and across to sibling ideas.
 
-## 6. Audit Rules
+## 6. Badges and Learning Paths
+
+Badges are learning receipts, not decoration.
+
+The main hall should track these categories separately:
+
+- Idea Badges: earned by opening or studying idea pills.
+- Figure Badges: earned by opening figure study rooms or figure cards.
+- Path Badges: earned by starting a named learning path.
+- Test Badges: earned by answering subject tests correctly.
+- Truth Badges: earned by studying truth-check cards.
+
+Each learning path should name:
+
+- the road label
+- the political lane color
+- the short learning promise
+- related ideas
+- related figures
+- related subject test
+
+Do not add a badge label unless the click does something meaningful.
+
+## 7. Audit Rules
 
 - No fake exact quotes.
 - Use `[needs verification]` until exact source passages are pinned.
@@ -79,7 +102,7 @@ Idea rooms should connect back to the figure hallway and across to sibling ideas
 
 If a source is useful but not yet tied to a specific passage, keep the label honest instead of pretending the claim is fully pinned.
 
-## 7. Build Sequence
+## 8. Build Sequence
 
 1. Prepare a hallway packet.
 2. Create or update the needed pages.
