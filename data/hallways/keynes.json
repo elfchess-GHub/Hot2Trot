@@ -52,7 +52,8 @@
     "timelineMeaning": "Economic crisis pushes democracies toward public spending, stabilization policy, and mixed-economy arguments.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["mixed-economy", "public-spending", "fiscal-policy"]
+    "ideaPills": ["mixed-economy", "public-spending", "fiscal-policy"],
+    "sortYear": 1930
   },
   "hooks": {
     "sourcePath": "texts",

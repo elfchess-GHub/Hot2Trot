@@ -52,7 +52,8 @@
     "timelineMeaning": "Marxism-Leninism is adapted to rural revolution, party rule, land struggle, mass campaigns, and state-led transformation.",
     "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["maoism", "peasant-revolution", "mass-campaigns"]
+    "ideaPills": ["maoism", "peasant-revolution", "mass-campaigns"],
+    "sortYear": 1949
   },
   "hooks": {
     "sourcePath": "texts",

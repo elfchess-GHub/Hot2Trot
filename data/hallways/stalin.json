@@ -52,7 +52,8 @@
     "timelineMeaning": "The Soviet system centralizes party authority, planning, industrial policy, security institutions, and limits on dissent.",
     "lane": "black",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["party-state", "central-planning", "stalinism"]
+    "ideaPills": ["party-state", "central-planning", "stalinism"],
+    "sortYear": 1924
   },
   "hooks": {
     "sourcePath": "texts",

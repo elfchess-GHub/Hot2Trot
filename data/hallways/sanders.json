@@ -50,9 +50,10 @@
     "timelineDate": "2016+",
     "timelineTitle": "Democratic Socialism Returns to U.S. Campaigns",
     "timelineMeaning": "Sanders and younger voters reopen fights over health care, inequality, billionaires, public goods, taxes, and political labels.",
-    "lane": "blue",
+    "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["democratic-socialism", "public-goods", "public-spending"]
+    "ideaPills": ["democratic-socialism", "public-goods", "public-spending"],
+    "sortYear": 2016
   },
   "hooks": {
     "sourcePath": "texts",

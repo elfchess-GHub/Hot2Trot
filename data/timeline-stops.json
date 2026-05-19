@@ -1,0 +1,331 @@
+[
+  {
+    "id": "enclosure-primitive-accumulation",
+    "sortYear": 1500,
+    "timelineDate": "1500s-1700s",
+    "timelineTitle": "Enclosure and Primitive Accumulation",
+    "timelineMeaning": "Land, law, enclosure, debt, and forced market dependence help create the conditions for wage labor and capitalist property relations.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Enclosure",
+    "sources": [
+      {
+        "title": "Enclosure / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Enclosure",
+        "note": "Source lead for enclosure and land-law background."
+      }
+    ],
+    "ideaPills": ["primitive-accumulation", "private-property", "land-dispossession"],
+    "discussionTopic": "Enclosure and Primitive Accumulation"
+  },
+  {
+    "id": "atlantic-slavery-plantation-capitalism",
+    "sortYear": 1600,
+    "timelineDate": "1600s-1800s",
+    "timelineTitle": "Atlantic Slavery and Plantation Capitalism",
+    "timelineMeaning": "Enslaved labor, cotton, sugar, shipping, insurance, credit, racial law, and plantation wealth become central to Atlantic and American capitalism.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Atlantic_slave_trade",
+    "sources": [
+      {
+        "title": "Atlantic slave trade / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Atlantic_slave_trade",
+        "note": "Source lead for slavery, trade, shipping, and Atlantic extraction."
+      },
+      {
+        "title": "Plantation economy / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Plantation_economy",
+        "note": "Source lead for plantation labor and export production."
+      }
+    ],
+    "ideaPills": ["plantation-capitalism", "racial-capitalism", "capitalism"],
+    "discussionTopic": "Atlantic Slavery and Plantation Capitalism"
+  },
+  {
+    "id": "colonial-extraction-empire",
+    "sortYear": 1650,
+    "timelineDate": "1500s-1900s",
+    "timelineTitle": "Colonial Extraction and Empire",
+    "timelineMeaning": "European empires tie conquest, trade, extraction, forced labor, chartered companies, and global markets into the capitalism road.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Colonialism",
+    "sources": [
+      {
+        "title": "Colonialism / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Colonialism",
+        "note": "Source lead for empire, extraction, and colonial rule."
+      }
+    ],
+    "ideaPills": ["colonialism", "capitalism", "land-dispossession"],
+    "discussionTopic": "Colonial Extraction and Empire"
+  },
+  {
+    "id": "french-revolution-rights-property",
+    "sortYear": 1789,
+    "timelineDate": "1789",
+    "timelineTitle": "French Revolution, Rights, and Property",
+    "timelineMeaning": "The language of rights, citizenship, equality, property, class, and popular sovereignty becomes a major bridge into modern democratic and socialist politics.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "French_Revolution",
+    "sources": [
+      {
+        "title": "French Revolution / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/French_Revolution",
+        "note": "Source lead for rights, citizenship, class conflict, and revolution."
+      }
+    ],
+    "ideaPills": ["revolution", "private-property", "democracy"],
+    "discussionTopic": "French Revolution, Rights, and Property"
+  },
+  {
+    "id": "industrial-revolution",
+    "sortYear": 1760,
+    "timelineDate": "1760s",
+    "timelineTitle": "Industrial Revolution",
+    "timelineMeaning": "Factories, wage labor, urban poverty, productivity, and the modern labor question intensify.",
+    "lane": "black",
+    "auditStatus": "[source supports this]",
+    "wikiPage": "Industrial_Revolution",
+    "sources": [
+      {
+        "title": "Industrial Revolution / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+        "note": "Source lead for industrial production, factories, wage labor, and urbanization."
+      }
+    ],
+    "ideaPills": ["labor", "market"],
+    "discussionTopic": "Industrial Revolution"
+  },
+  {
+    "id": "utopian-socialists",
+    "sortYear": 1820,
+    "timelineDate": "early 1800s",
+    "timelineTitle": "Utopian Socialists Before Marx",
+    "timelineMeaning": "Saint-Simon, Fourier, Owen, and other reformers imagine cooperative and planned alternatives before Marx and Engels define their own socialist road.",
+    "lane": "red",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Utopian_socialism",
+    "sources": [
+      {
+        "title": "Utopian socialism / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Utopian_socialism",
+        "note": "Source lead for Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments."
+      }
+    ],
+    "ideaPills": ["socialism", "reform", "working-class"],
+    "discussionTopic": "Utopian Socialists"
+  },
+  {
+    "id": "revolutions-of-1848",
+    "sortYear": 1848.1,
+    "timelineDate": "1848",
+    "timelineTitle": "Revolutions of 1848",
+    "timelineMeaning": "Europe-wide uprisings put liberal rights, nationalism, labor unrest, class politics, and democratic demands into the same historical year as the Manifesto.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Revolutions_of_1848",
+    "sources": [
+      {
+        "title": "Revolutions of 1848 / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848",
+        "note": "Source lead for the wider revolutionary setting around the Manifesto."
+      }
+    ],
+    "ideaPills": ["revolution", "democracy", "labor-politics"],
+    "discussionTopic": "Revolutions of 1848"
+  },
+  {
+    "id": "labor-movement-unions",
+    "sortYear": 1824,
+    "timelineDate": "1800s-1900s",
+    "timelineTitle": "Labor Movement and Trade Unions",
+    "timelineMeaning": "Workers organize strikes, unions, parties, and bargaining power against long hours, unsafe work, low wages, and employer domination.",
+    "lane": "red",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Trade_union",
+    "sources": [
+      {
+        "title": "Trade union / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Trade_union",
+        "note": "Source lead for labor organization and collective bargaining."
+      },
+      {
+        "title": "Labor movement / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Labour_movement",
+        "note": "Source lead for worker organization and labor politics."
+      }
+    ],
+    "ideaPills": ["unionism", "labor-politics", "working-class"],
+    "discussionTopic": "Labor Movement and Trade Unions"
+  },
+  {
+    "id": "paris-commune",
+    "sortYear": 1871,
+    "timelineDate": "1871",
+    "timelineTitle": "Paris Commune",
+    "timelineMeaning": "A short-lived revolutionary government becomes a major symbol for later socialist, communist, and anti-authoritarian debates.",
+    "lane": "red",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Paris_Commune",
+    "sources": [
+      {
+        "title": "Paris Commune / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Paris_Commune",
+        "note": "Source lead for the 1871 revolutionary government and later socialist memory."
+      }
+    ],
+    "ideaPills": ["commune", "state-power"],
+    "discussionTopic": "Paris Commune"
+  },
+  {
+    "id": "new-deal-social-security-labor-law",
+    "sortYear": 1935,
+    "timelineDate": "1930s",
+    "timelineTitle": "New Deal, Social Security, and Labor Law",
+    "timelineMeaning": "The United States responds to capitalist crisis with public jobs, social insurance, labor rights, regulation, and a larger democratic state.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "New_Deal",
+    "sources": [
+      {
+        "title": "New Deal / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/New_Deal",
+        "note": "Source lead for U.S. crisis response, public works, labor law, and social insurance."
+      },
+      {
+        "title": "Social Security Act / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Social_Security_Act",
+        "note": "Source lead for U.S. social insurance."
+      }
+    ],
+    "ideaPills": ["public-spending", "welfare-state", "labor-politics"],
+    "discussionTopic": "New Deal, Social Security, and Labor Law"
+  },
+  {
+    "id": "civil-rights-racial-capitalism-housing",
+    "sortYear": 1954,
+    "timelineDate": "1950s-1970s",
+    "timelineTitle": "Civil Rights, Housing, and Racial Capitalism",
+    "timelineMeaning": "Segregation, redlining, labor exclusion, policing, schools, housing, and property access shape who gets wealth and citizenship in American capitalism.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Civil_rights_movement",
+    "sources": [
+      {
+        "title": "Civil rights movement / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Civil_rights_movement",
+        "note": "Source lead for civil rights and citizenship struggles."
+      },
+      {
+        "title": "Redlining / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Redlining",
+        "note": "Source lead for housing discrimination and property access."
+      }
+    ],
+    "ideaPills": ["racial-capitalism", "private-property", "public-goods"],
+    "discussionTopic": "Civil Rights, Housing, and Racial Capitalism"
+  },
+  {
+    "id": "neoliberal-turn",
+    "sortYear": 1970,
+    "timelineDate": "1970s-1980s",
+    "timelineTitle": "Neoliberal Turn",
+    "timelineMeaning": "Deregulation, privatization, anti-union politics, tax cuts, global finance, and market-first policy reshape capitalism after the postwar settlement.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Neoliberalism",
+    "sources": [
+      {
+        "title": "Neoliberalism / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Neoliberalism",
+        "note": "Source lead for deregulation, privatization, and market-first policy."
+      }
+    ],
+    "ideaPills": ["market-liberalism", "private-property", "capitalism"],
+    "discussionTopic": "Neoliberal Turn"
+  },
+  {
+    "id": "cold-war",
+    "sortYear": 1945.1,
+    "timelineDate": "1945-91",
+    "timelineTitle": "Cold War",
+    "timelineMeaning": "Capitalism, communism, empire, decolonization, proxy wars, nuclear fear, and propaganda shape global political language.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Cold_War",
+    "sources": [
+      {
+        "title": "Cold War / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Cold_War",
+        "note": "Source lead for capitalism, communism, proxy conflict, and political language."
+      }
+    ],
+    "ideaPills": ["anti-communism", "mixed-economy"],
+    "discussionTopic": "Cold War"
+  },
+  {
+    "id": "social-democracy-welfare-states",
+    "sortYear": 1945.2,
+    "timelineDate": "1945+",
+    "timelineTitle": "Social Democracy and Welfare States",
+    "timelineMeaning": "Many democracies combine markets, unions, taxation, public goods, social insurance, and electoral competition.",
+    "lane": "blue",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Welfare_state",
+    "sources": [
+      {
+        "title": "Welfare state / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Welfare_state",
+        "note": "Source lead for public goods, social insurance, taxation, and mixed economies."
+      }
+    ],
+    "ideaPills": ["welfare-state", "public-goods"],
+    "discussionTopic": "Social Democracy and Welfare States"
+  },
+  {
+    "id": "fall-of-soviet-union",
+    "sortYear": 1991,
+    "timelineDate": "1991",
+    "timelineTitle": "Fall of the Soviet Union",
+    "timelineMeaning": "The collapse reshapes arguments about planning, party-state rule, capitalism, democracy, and what communism meant in practice.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "Dissolution_of_the_Soviet_Union",
+    "sources": [
+      {
+        "title": "Dissolution of the Soviet Union / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+        "note": "Source lead for the collapse of the Soviet state and post-1991 political argument."
+      }
+    ],
+    "ideaPills": ["planned-economy", "party-state"],
+    "discussionTopic": "Fall of the Soviet Union"
+  },
+  {
+    "id": "present-day-word-confusion",
+    "sortYear": 2026,
+    "timelineDate": "Today",
+    "timelineTitle": "Present-Day Word Confusion",
+    "timelineMeaning": "Socialism, communism, capitalism, public spending, markets, and welfare state language are often used as weapons.",
+    "lane": "black",
+    "auditStatus": "[needs verification]",
+    "wikiPage": "",
+    "sources": [
+      {
+        "title": "Socialism / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Socialism",
+        "note": "Source lead for modern vocabulary disputes around socialism."
+      },
+      {
+        "title": "Capitalism / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Capitalism",
+        "note": "Source lead for modern vocabulary disputes around capitalism."
+      }
+    ],
+    "ideaPills": ["democratic-socialism", "mixed-economy"],
+    "discussionTopic": "Present-Day Word Confusion"
+  }
+]

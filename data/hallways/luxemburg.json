@@ -50,9 +50,10 @@
     "timelineDate": "1918/1919",
     "timelineTitle": "Luxemburg and Socialist Democracy",
     "timelineMeaning": "A revolutionary socialist argument insists that mass participation, dissent, and democracy cannot be treated as optional.",
-    "lane": "blue",
+    "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["socialist-democracy", "mass-strike", "democratic-dissent"]
+    "ideaPills": ["socialist-democracy", "mass-strike", "democratic-dissent"],
+    "sortYear": 1918.5
   },
   "hooks": {
     "sourcePath": "texts",

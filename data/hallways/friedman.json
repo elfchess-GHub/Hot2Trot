@@ -52,7 +52,8 @@
     "timelineMeaning": "Inflation, money, incentives, and market freedom become central arguments against broad state control.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["monetarism", "inflation", "market-liberalism"]
+    "ideaPills": ["monetarism", "inflation", "market-liberalism"],
+    "sortYear": 1960
   },
   "hooks": {
     "sourcePath": "texts",

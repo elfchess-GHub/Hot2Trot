@@ -3,6 +3,7 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 const indexPath = path.join(repoRoot, "data", "hallways", "index.json");
+const timelineStopsPath = path.join(repoRoot, "data", "timeline-stops.json");
 const previewPath = path.join(repoRoot, "dist-preview", "hall-cards.html");
 
 function escapeHtml(value) {
@@ -29,12 +30,32 @@ function renderIdeaPills(packet) {
   }).join("");
 }
 
+function genericIdeaLabel(id) {
+  return id.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function renderTimelineIdeaPills(ids) {
+  return ids.map((id) => {
+    return `<a class="pill idea" data-idea="${escapeHtml(ideaDataName(id))}" href="ideas/${escapeHtml(id)}.html">${escapeHtml(genericIdeaLabel(id))}</a>`;
+  }).join("");
+}
+
 function renderTimelineCard(packet) {
   const figure = packet.figure;
   const card = packet.hallCard;
   const ideaPills = renderIdeaPills(packet);
   const auditClass = card.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
-  return `<article class="stop ${escapeHtml(card.lane)}"><div class="date-medal">${escapeHtml(card.timelineDate)}</div><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div><h3><a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(card.timelineTitle)}</a></h3><p>${escapeHtml(card.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
+  const title = card.timelineTitleHtml || `<a href="figures/${escapeHtml(figure.id)}.html">${escapeHtml(card.timelineTitle)}</a>`;
+  return `<article class="stop ${escapeHtml(card.lane)}"><div class="date-medal">${escapeHtml(card.timelineDate)}</div><a class="photo-link" href="figures/${escapeHtml(figure.id)}.html"><div class="photo" data-wiki="${escapeHtml(figure.wikiPage)}">Loading Wiki image</div></a><div><h3>${title}</h3><p>${escapeHtml(card.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(card.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><a class="pill figure" href="figures/${escapeHtml(figure.id)}.html">Open Study Page</a><button class="pill discuss" data-topic="${escapeHtml(figure.name)}">Discuss this</button></div></div></article>`;
+}
+
+function renderTimelineStop(stop) {
+  const ideaPills = renderTimelineIdeaPills(stop.ideaPills || []);
+  const auditClass = stop.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
+  const photo = stop.wikiPage
+    ? `<div class="photo" data-wiki="${escapeHtml(stop.wikiPage)}">Loading Wiki image</div>`
+    : `<div class="photo">Timeline source space</div>`;
+  return `<article class="stop ${escapeHtml(stop.lane)}"><div class="date-medal">${escapeHtml(stop.timelineDate)}</div>${photo}<div><h3>${escapeHtml(stop.timelineTitle)}</h3><p>${escapeHtml(stop.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(stop.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><button class="pill discuss" data-topic="${escapeHtml(stop.discussionTopic || stop.timelineTitle)}">Discuss this</button></div></div></article>`;
 }
 
 function renderFigureCard(packet) {
@@ -56,6 +77,7 @@ if (!fs.existsSync(indexPath)) {
 
 const hallwayIds = JSON.parse(fs.readFileSync(indexPath, "utf8"));
 const timelineCards = [];
+const timelineEntries = [];
 const figureCards = [];
 const warnings = [];
 
@@ -72,9 +94,36 @@ for (const id of hallwayIds) {
     continue;
   }
 
-  timelineCards.push(renderTimelineCard(packet));
+  if (packet.hallCard.sortYear === undefined) {
+    warnings.push(`missing sortYear: ${id}`);
+  }
+
+  timelineEntries.push({
+    sortYear: packet.hallCard.sortYear ?? 9999,
+    html: renderTimelineCard(packet),
+    label: id
+  });
   figureCards.push(renderFigureCard(packet));
 }
+
+if (fs.existsSync(timelineStopsPath)) {
+  const stops = JSON.parse(fs.readFileSync(timelineStopsPath, "utf8"));
+  for (const stop of stops) {
+    if (stop.sortYear === undefined) {
+      warnings.push(`missing sortYear: timeline stop ${stop.id || stop.timelineTitle}`);
+      continue;
+    }
+    timelineEntries.push({
+      sortYear: stop.sortYear,
+      html: renderTimelineStop(stop),
+      label: stop.id || stop.timelineTitle
+    });
+  }
+}
+
+timelineEntries
+  .sort((a, b) => Number(a.sortYear) - Number(b.sortYear))
+  .forEach((entry) => timelineCards.push(entry.html));
 
 const output = [
   "<!-- Generated main hall card preview. Do not paste blindly; inspect first. -->",

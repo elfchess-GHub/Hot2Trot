@@ -51,7 +51,8 @@
     "timelineMeaning": "Market coordination, specialization, commerce, and moral philosophy become a foundation for later arguments about capitalism.",
     "lane": "blue",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["division-of-labor", "market"]
+    "ideaPills": ["division-of-labor", "market"],
+    "sortYear": 1776
   },
   "hooks": {
     "sourcePath": "texts",

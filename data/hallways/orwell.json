@@ -52,7 +52,8 @@
     "timelineMeaning": "A democratic socialist warning about propaganda, euphemism, authoritarian language, and the need for public truth.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["political-language", "propaganda", "democratic-socialism"]
+    "ideaPills": ["political-language", "propaganda", "democratic-socialism"],
+    "sortYear": 1940
   },
   "hooks": {
     "sourcePath": "texts",

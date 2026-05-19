@@ -64,7 +64,8 @@
     "timelineMeaning": "The Indian Removal Act exposes the American capitalism ledger: land, slavery, settler democracy, state force, and Native dispossession.",
     "lane": "black",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["removal-policy", "settler-state", "expansion-politics"]
+    "ideaPills": ["removal-policy", "settler-state", "expansion-politics"],
+    "sortYear": 1830
   },
   "hooks": {
     "sourcePath": "texts",

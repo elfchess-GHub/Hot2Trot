@@ -52,7 +52,8 @@
     "timelineMeaning": "The Bolshevik victory turns revolutionary theory into a problem of state power, party authority, civil conflict, and institutions.",
     "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["vanguard-party", "revolutionary-theory", "state-power"]
+    "ideaPills": ["vanguard-party", "revolutionary-theory", "state-power"],
+    "sortYear": 1917
   },
   "hooks": {
     "sourcePath": "texts",

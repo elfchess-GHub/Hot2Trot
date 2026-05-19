@@ -64,7 +64,8 @@
     "timelineMeaning": "Oil refining, trust power, railroad deals, monopoly pressure, antitrust law, and philanthropy become a central American capitalism hallway.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["trust-power", "oil-capital", "monopoly-power"]
+    "ideaPills": ["trust-power", "oil-capital", "monopoly-power"],
+    "sortYear": 1870
   },
   "hooks": {
     "sourcePath": "texts",

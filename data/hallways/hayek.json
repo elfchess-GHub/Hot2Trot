@@ -52,7 +52,8 @@
     "timelineMeaning": "The market-road argument says prices can coordinate dispersed information that planners cannot easily gather.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["knowledge-problem", "price-signals", "market-coordination"]
+    "ideaPills": ["knowledge-problem", "price-signals", "market-coordination"],
+    "sortYear": 1945
   },
   "hooks": {
     "sourcePath": "texts",

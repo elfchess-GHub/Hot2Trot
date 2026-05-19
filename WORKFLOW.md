@@ -120,3 +120,31 @@ Checker command:
 `node scripts/check_hallways.js`
 
 The checker verifies hallway packet fields, expected preview/live files, local links, audit status fields, and obvious dead button candidates.
+
+### Main Hall Timeline Automation
+
+Figure hallway packets can also generate main-hall cards.
+
+Each `data/hallways/*.json` packet should include a `hallCard.sortYear` field. The timeline uses `sortYear` for chronological order; the visible `timelineDate` can stay human-readable, such as `1920s-1953` or `2016+`.
+
+Timeline events that do not yet need full figure rooms belong in:
+
+`data/timeline-stops.json`
+
+Use timeline-only stops for broad historical spine items such as slavery, colonialism, labor movements, welfare states, Cold War language, or present-day word confusion. They still need:
+
+- `sortYear`
+- `timelineDate`
+- `timelineTitle`
+- `timelineMeaning`
+- `lane`
+- `auditStatus`
+- idea pills that point to real idea rooms
+- source leads where available
+- discussion topic
+
+Build the main-hall preview with:
+
+`node scripts/build_hall_cards.js`
+
+Then inspect `dist-preview/hall-cards.html` before copying generated timeline or figure cards into `Hot2Trotski.html`.

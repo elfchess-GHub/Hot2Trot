@@ -52,7 +52,8 @@
     "timelineMeaning": "The socialist road splits over democratic reform, unions, elections, and whether capitalism can be transformed without rupture.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["revisionism", "democratic-reform", "social-democracy"]
+    "ideaPills": ["revisionism", "democratic-reform", "social-democracy"],
+    "sortYear": 1899
   },
   "hooks": {
     "sourcePath": "texts",

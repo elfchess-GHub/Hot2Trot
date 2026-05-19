@@ -64,7 +64,8 @@
     "timelineMeaning": "Real estate, inherited capital, brand licensing, television, debt, law, and presidential power become one modern capitalism doorway.",
     "lane": "black",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["real-estate-capital", "brand-politics", "political-capitalism"]
+    "ideaPills": ["real-estate-capital", "brand-politics", "political-capitalism"],
+    "sortYear": 1970
   },
   "hooks": {
     "sourcePath": "texts",

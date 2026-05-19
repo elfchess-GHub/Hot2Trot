@@ -71,7 +71,8 @@
     "timelineMeaning": "Locke helps build one side of the bridge: natural rights, property, consent of government, toleration, and the right to resist tyranny.",
     "lane": "blue",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["property", "liberalism", "consent", "natural-rights"]
+    "ideaPills": ["property", "liberalism", "consent", "natural-rights"],
+    "sortYear": 1689
   },
   "hooks": {
     "sourcePath": "texts",

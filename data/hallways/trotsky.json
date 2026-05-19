@@ -52,7 +52,8 @@
     "timelineMeaning": "The revolutionary road turns into a dispute over bureaucracy, centralization, dissent, and whether Soviet power remained accountable.",
     "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["permanent-revolution", "bureaucracy", "soviet-opposition"]
+    "ideaPills": ["permanent-revolution", "bureaucracy", "soviet-opposition"],
+    "sortYear": 1930
   },
   "hooks": {
     "sourcePath": "texts",

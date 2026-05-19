@@ -58,7 +58,8 @@
     "timelineMeaning": "Engels frames modern socialism as a response to industrial class antagonisms, not just a dream of fairness.",
     "lane": "red",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["working-class", "industrial-capitalism", "scientific-socialism"]
+    "ideaPills": ["working-class", "industrial-capitalism", "scientific-socialism"],
+    "sortYear": 1880
   },
   "hooks": {
     "sourcePath": "texts",

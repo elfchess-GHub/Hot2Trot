@@ -55,10 +55,12 @@
   "hallCard": {
     "timelineDate": "1848",
     "timelineTitle": "Marx, Engels, and the Manifesto",
+    "timelineTitleHtml": "<a href=\"figures/marx.html\">Marx</a>, <a href=\"figures/engels.html\">Engels</a>, and the Manifesto",
     "timelineMeaning": "A radical critique of class power turns into one of the most influential political texts in history.",
     "lane": "red",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["class-struggle", "surplus-value", "means-of-production"]
+    "ideaPills": ["class-struggle", "surplus-value", "means-of-production"],
+    "sortYear": 1848
   },
   "hooks": {
     "sourcePath": "texts",

@@ -70,7 +70,8 @@
     "timelineMeaning": "Tesla, SpaceX, X, stock wealth, state contracts, and platform ownership show capitalist power moving through firms, government, markets, and media.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["founder-control", "state-contracts", "attention-platform"]
+    "ideaPills": ["founder-control", "state-contracts", "attention-platform"],
+    "sortYear": 2002
   },
   "hooks": {
     "sourcePath": "texts",

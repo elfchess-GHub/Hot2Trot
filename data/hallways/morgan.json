@@ -64,7 +64,8 @@
     "timelineMeaning": "Banking power organizes railroads, steel, mergers, credit, panic response, and the political question of who controls money.",
     "lane": "black",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["finance-capital", "money-trust", "panic-management"]
+    "ideaPills": ["finance-capital", "money-trust", "panic-management"],
+    "sortYear": 1890
   },
   "hooks": {
     "sourcePath": "texts",

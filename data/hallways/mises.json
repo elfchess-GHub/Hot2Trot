@@ -64,7 +64,8 @@
     "timelineMeaning": "The Austrian critique says socialism faces a price-and-calculation problem when planners replace private property and market exchange.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["austrian-economics", "economic-calculation", "interventionism"]
+    "ideaPills": ["austrian-economics", "economic-calculation", "interventionism"],
+    "sortYear": 1920
   },
   "hooks": {
     "sourcePath": "texts",

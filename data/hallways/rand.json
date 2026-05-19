@@ -58,7 +58,8 @@
     "timelineMeaning": "Objectivism turns capitalism into an argument about individual rights, achievement, property, self-interest, and anti-collectivism.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["objectivism", "laissez-faire", "rational-self-interest"]
+    "ideaPills": ["objectivism", "laissez-faire", "rational-self-interest"],
+    "sortYear": 1943
   },
   "hooks": {
     "sourcePath": "texts",

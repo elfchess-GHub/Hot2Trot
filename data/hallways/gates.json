@@ -64,7 +64,8 @@
     "timelineMeaning": "Microsoft turns software, operating systems, network effects, antitrust fights, and philanthropy into a modern capitalism hallway.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["software-monopoly", "antitrust", "philanthropy-capital"]
+    "ideaPills": ["software-monopoly", "antitrust", "philanthropy-capital"],
+    "sortYear": 1975
   },
   "hooks": {
     "sourcePath": "texts",

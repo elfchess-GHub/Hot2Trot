@@ -50,9 +50,10 @@
     "timelineDate": "1900s",
     "timelineTitle": "Debs and American Socialism",
     "timelineMeaning": "Labor politics, elections, unions, railroads, prisons, and public speech bring socialist language into U.S. democratic life.",
-    "lane": "blue",
+    "lane": "red",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["unionism", "american-socialism", "labor-politics"]
+    "ideaPills": ["unionism", "american-socialism", "labor-politics"],
+    "sortYear": 1900
   },
   "hooks": {
     "sourcePath": "texts",

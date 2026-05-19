@@ -52,7 +52,8 @@
     "timelineMeaning": "A major Marxist dispute asks whether socialist politics can abandon democracy and still claim liberation.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["orthodox-marxism", "democracy", "dictatorship-debate"]
+    "ideaPills": ["orthodox-marxism", "democracy", "dictatorship-debate"],
+    "sortYear": 1918
   },
   "hooks": {
     "sourcePath": "texts",

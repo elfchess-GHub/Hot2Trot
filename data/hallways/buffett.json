@@ -64,7 +64,8 @@
     "timelineMeaning": "Berkshire Hathaway, compounding, insurance float, shareholder ownership, corporate control, and philanthropy become a quieter capitalism hallway.",
     "lane": "blue",
     "auditStatus": "[needs verification]",
-    "ideaPills": ["investment-capital", "shareholder-power", "giving-pledge"]
+    "ideaPills": ["investment-capital", "shareholder-power", "giving-pledge"],
+    "sortYear": 1956
   },
   "hooks": {
     "sourcePath": "texts",
