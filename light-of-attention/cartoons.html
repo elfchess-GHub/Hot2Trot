@@ -26,25 +26,7 @@
         <h1>Cartoons</h1>
         <p>Pictures that point. Comic panels, poster jokes, visual arguments, and scenes about power, media, machinery, and attention.</p>
 
-        <div class="item-list">
-          <section class="item">
-            <div class="meta">Comic page</div>
-            <h3>Eyes Open</h3>
-            <p>Jay and the Little Monitor talk through attention, anger, and checking the machinery instead of trusting the vibe.</p>
-          </section>
-
-          <section class="item">
-            <div class="meta">Cartoon / investigation</div>
-            <h3>Ad Tech Goblins</h3>
-            <p>A little trip into trackers, auctions, cookies, and the goblins behind the screen.</p>
-          </section>
-
-          <section class="item">
-            <div class="meta">Poster wall</div>
-            <h3>The Candidate Is Not The Revolution</h3>
-            <p>Posters on a wall, public power, and the question of whether the message gets through.</p>
-          </section>
-        </div>
+        <div class="cartoon-grid" id="cartoon-grid" aria-label="Cartoon gallery"></div>
       </article>
 
       <aside class="side-stack">
@@ -55,5 +37,86 @@
 
     <footer class="footer">The wall keeps growing. The light stays on.</footer>
   </main>
+
+  <script>
+    const cartoonFiles = [
+      "042085ea-4e7b-4e4a-af7f-0e216766ae7e.png",
+      "17fdf999-7e53-4faf-b767-47abcd9000d7.png",
+      "235bf596-27f1-4e2e-b707-ac9c9a2496fd.png",
+      "23e0f520-0f97-44b4-a8d4-2a210b5cdea0.png",
+      "2dd6207b-dc1e-4874-9fd6-54df10c516b3 (1).png",
+      "2dd6207b-dc1e-4874-9fd6-54df10c516b3.png",
+      "2e6fa412-b2a1-4406-b553-f88c669ab426.png",
+      "33608527-b18b-405e-af76-ef69a0862720.png",
+      "38ca3453-91d0-4382-abda-644746a4f879.png",
+      "415224cf-6db0-4124-96f3-64de2b2cad1b.png",
+      "4f46d85b-ce87-4bc7-ac4d-a14947ed46e4.png",
+      "6139d5d4-6957-4b50-b397-23fe86991829.png",
+      "64440dd6-3342-40dc-b3b1-08a99160cf3e.png",
+      "7f4cf20e-703a-41a7-8ecd-51b155d78083.png",
+      "9455afb2-7d0d-4d65-839e-b6f24402d4ad.png",
+      "9a919ea8-a7cb-48af-923b-1308116ce8eb.png",
+      "a232eb25-d853-4dad-8f50-17ab1746ceca.png",
+      "c5ab0190-8a8e-4ee7-bee3-995707e86b75.png",
+      "ChatGPT Image May 17, 2026, 11_19_52 AM (1).png",
+      "ChatGPT Image May 17, 2026, 11_19_52 AM (2).png",
+      "ChatGPT Image May 17, 2026, 11_19_53 AM (3).png",
+      "ChatGPT Image May 17, 2026, 11_32_43 AM.png",
+      "ChatGPT Image May 18, 2026, 08_31_20 AM (1).png",
+      "ChatGPT Image May 18, 2026, 08_31_20 AM (2).png",
+      "ChatGPT Image May 18, 2026, 08_31_20 AM (3).png",
+      "ChatGPT Image May 18, 2026, 08_31_20 AM (4).png",
+      "ChatGPT Image May 18, 2026, 08_55_13 AM.png",
+      "ChatGPT Image May 18, 2026, 09_06_19 AM (1).png",
+      "ChatGPT Image May 18, 2026, 09_06_19 AM (2).png",
+      "ChatGPT Image May 18, 2026, 09_13_46 AM.png",
+      "ChatGPT Image May 18, 2026, 09_18_49 AM (1).png",
+      "ChatGPT Image May 18, 2026, 09_18_51 AM (2).png",
+      "ChatGPT Image May 18, 2026, 09_18_51 AM (3).png",
+      "ChatGPT Image May 18, 2026, 12_26_01 PM.png",
+      "ChatGPT Image May 19, 2026, 09_26_26 AM (1).png",
+      "ChatGPT Image May 19, 2026, 09_26_27 AM (2).png",
+      "ChatGPT Image May 19, 2026, 09_26_27 AM (3).png",
+      "de7ebe4f-365e-4310-8b4f-fffc566612aa.png",
+      "e5681c34-493f-4316-9f08-8b3500c2bf24.png",
+      "f4dfa03f-f0e3-4623-a534-1db2d5c326ad.png",
+      "f80a1272-0860-447b-a88f-25eb9ac19d18.png",
+      "ff4149ce-5d4e-45f2-b189-6e244af49841 (1).png",
+      "ff4149ce-5d4e-45f2-b189-6e244af49841.png",
+      "Screenshot 2026-05-17 114509.png",
+      "Screenshot 2026-05-17 114532.png",
+      "Screenshot 2026-05-17 114546.png",
+      "Screenshot 2026-05-17 114607.png",
+      "Screenshot 2026-05-17 114645.png",
+      "Screenshot 2026-05-17 114701.png",
+      "Screenshot 2026-05-17 114717.png",
+      "Screenshot 2026-05-17 114750.png",
+      "Screenshot 2026-05-17 114811.png",
+      "Screenshot 2026-05-17 114837.png",
+      "Screenshot 2026-05-17 120312.png",
+      "Screenshot 2026-05-17 120328.png",
+      "Screenshot 2026-05-17 120408.png",
+      "Screenshot 2026-05-17 120439.png"
+    ];
+
+    const encodeMediaPath = (folder, file) => `${folder}/${encodeURIComponent(file)}`;
+    const grid = document.getElementById("cartoon-grid");
+
+    cartoonFiles.forEach((file, index) => {
+      const link = document.createElement("a");
+      link.className = "cartoon-tile";
+      link.href = encodeMediaPath("cartoons", file);
+      link.target = "_blank";
+      link.rel = "noopener";
+
+      const img = document.createElement("img");
+      img.src = encodeMediaPath("cartoons", file);
+      img.alt = `Cartoon ${index + 1}`;
+      img.loading = "lazy";
+
+      link.appendChild(img);
+      grid.appendChild(link);
+    });
+  </script>
 </body>
 </html>
