@@ -242,13 +242,13 @@
     .path-progress-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:8px 10px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:rgba(5,6,8,.45);font-family:Inter,sans-serif;font-size:12px;color:var(--muted)}
     .mini-meter{grid-column:1/-1;height:7px;border-radius:999px;overflow:hidden;background:#05070b;border:1px solid rgba(255,255,255,.08)}
     .mini-meter span{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--blue),var(--accent))}
-    .medals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
-    .medal{min-height:74px;border-radius:14px;display:grid;place-items:center;text-align:center;padding:9px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
-    .medal.path{background:linear-gradient(145deg,#d9ecff,#5f9ce8 55%,#1a4f9b);border-color:#a8d2ff;color:#071426}
-    .medal.figure{background:linear-gradient(145deg,#f3f4f6,#9ca3af 55%,#374151);border-color:#e5e7eb;color:#0b0f16}
-    .medal.truth{background:linear-gradient(145deg,#fff0bf,#d8af55 50%,#7f6428);border-color:#f3d57b;color:#241704}
-    .medal.source{background:linear-gradient(145deg,#dcfce7,#60a579 55%,#1f5b3d);border-color:#a7f3c4;color:#06170e}
-    .medal.test{background:linear-gradient(145deg,#ffd7d3,#d65a53 55%,#761d22);border-color:#ffc3bd;color:#230504}
+    .medals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+    .medal{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medal.path{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(47,116,208,.24)}
+    .medal.figure{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(255,255,255,.22)}
+    .medal.truth{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(5,6,8,.24)}
+    .medal.source{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(90,150,96,.28)}
+    .medal.test{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(211,58,50,.24)}
     .medal.locked{filter:grayscale(1);opacity:.45;color:#111}
     .test-card button,.profile-card button{font-family:Inter,sans-serif;border:1px solid rgba(216,175,85,.45);background:#0a0e15;color:var(--text);border-radius:8px;padding:9px 10px;font-weight:800;cursor:pointer;margin:4px 4px 0 0}
     .test-card button:hover,.profile-card button:hover{border-color:var(--accent)}
@@ -488,7 +488,7 @@
         <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Idea clicks become study marks. Medals come from deeper work: figure halls, learning paths, source checks, truth cards, and subject tests.</p></div>
         <div class="badges">
           <div class="badge-case"><h3>Study Marks</h3><p>Idea clicks are browsing marks: they show what you looked at without pretending every glance is a major medal.</p><div class="study-marks" id="studyMarks"></div></div>
-          <div class="badge-case"><h3>Medal Case</h3><p>Large medals come from deeper actions: paths, figures, sources, truth checks, and tests.</p><div class="medals" id="medals"></div></div>
+          <div class="badge-case"><h3>Medal Case</h3><p>Gold medals come from deeper actions: paths, figures, sources, truth checks, and tests.</p><div class="medals" id="medals"></div></div>
           <div class="badge-case"><h3>Learning Types</h3><p>The cabinet separates browsing, source work, tests, paths, truth checks, and figure study.</p>
             <div class="badge-breakdown">
               <div class="tracker-row"><span>Idea Study Marks</span><b id="badgeIdeas">0</b></div>
