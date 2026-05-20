@@ -3,6 +3,7 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 const indexPath = path.join(repoRoot, "data", "hallways", "index.json");
+const timelineStopsPath = path.join(repoRoot, "data", "timeline-stops.json");
 const errors = [];
 const warnings = [];
 
@@ -53,7 +54,8 @@ function checkLocalLinks(relativePath, options = {}) {
 
     const [target] = href.split("#");
     if (!target) continue;
-    const resolved = path.resolve(path.dirname(fullPath), target);
+    const linkBase = options.rootRelativeLinks ? repoRoot : path.dirname(fullPath);
+    const resolved = path.resolve(linkBase, target);
     const liveIdeaFallback = relativePath.startsWith("dist-preview/ideas/")
       ? path.join(repoRoot, "ideas", target)
       : null;
@@ -125,7 +127,23 @@ for (const id of hallwayIds) {
   }
 }
 
-checkLocalLinks("dist-preview/hall-cards.html", { allowMainHallButtons: true });
+checkLocalLinks("dist-preview/hall-cards.html", { allowMainHallButtons: true, rootRelativeLinks: true });
+
+const timelineStops = readJson(path.relative(repoRoot, timelineStopsPath)) || [];
+if (Array.isArray(timelineStops)) {
+  for (const stop of timelineStops) {
+    requireField(stop, "id", "data/timeline-stops.json[]");
+    requireField(stop, "timelineTitle", `data/timeline-stops.json.${stop.id || "unknown"}`);
+    requireField(stop, "timelineMeaning", `data/timeline-stops.json.${stop.id || "unknown"}`);
+    requireField(stop, "auditStatus", `data/timeline-stops.json.${stop.id || "unknown"}`);
+    if (!Array.isArray(stop.ideaPills) || stop.ideaPills.length === 0) {
+      errors.push(`missing data/timeline-stops.json.${stop.id || "unknown"}.ideaPills`);
+    }
+    if (stop.id) checkLocalLinks(`events/${stop.id}.html`);
+  }
+} else {
+  errors.push("data/timeline-stops.json must be an array");
+}
 
 if (warnings.length) {
   console.log("Warnings:");

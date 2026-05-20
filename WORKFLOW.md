@@ -24,6 +24,16 @@ Use Locke as the model:
 
 A future figure hallway should have one figure study room plus the idea rooms needed to make that figure's learning chain usable.
 
+Timeline stops that are not people should get event rooms under `events/`.
+
+Example:
+
+- `events/industrial-revolution.html`
+- `events/paris-commune.html`
+- `events/cold-war.html`
+
+These are not full chapters yet. They are real doors: date, meaning, why it matters, idea doors, source leads, discussion hook, and return links.
+
 ## 3. Main Hall Card Requirements
 
 Each main hall card should include:
@@ -165,6 +175,10 @@ Use timeline-only stops for broad historical spine items such as slavery, coloni
 - idea pills that point to real idea rooms
 - source leads where available
 - discussion topic
+
+Build event rooms from timeline-only stops with:
+
+`node scripts/build_event_rooms.js`
 
 Build the main-hall preview with:
 

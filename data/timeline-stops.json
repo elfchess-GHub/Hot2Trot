@@ -15,6 +15,23 @@
         "note": "Source lead for enclosure and land-law background."
       }
     ],
+    "lesson": {
+      "whatHappened": "Enclosure means land that had been used through common or customary rights was fenced, legally enclosed, or converted into more exclusive private control. In England, this happened over a long period through local practice, landlord power, market pressure, and parliamentary enclosure.",
+      "whyMatters": "This stop matters because capitalism is not only factories and inventions. Before factory wage labor becomes normal, many people have to lose older ways of living from land, commons, village rights, or subsistence. Enclosure helps show how property law can create freedom for owners and dependency for workers at the same time.",
+      "keyTerms": [
+        "Commons",
+        "Enclosure",
+        "Private property",
+        "Wage labor",
+        "Land dispossession",
+        "Primitive accumulation"
+      ],
+      "careful": "Do not reduce enclosure to one simple villain story. It involved law, agriculture, class power, market incentives, productivity arguments, and real displacement. The fair question is what kind of property system was being built, who gained power, and who lost independence.",
+      "miniCheck": {
+        "question": "Why does enclosure belong near the beginning of the capitalism road?",
+        "answer": "Because it shows how changes in land rights and property law helped push people toward wage labor and market dependence before industrial capitalism fully takes off."
+      }
+    },
     "ideaPills": ["primitive-accumulation", "private-property", "land-dispossession"],
     "discussionTopic": "Enclosure and Primitive Accumulation"
   },
@@ -39,6 +56,25 @@
         "note": "Source lead for plantation labor and export production."
       }
     ],
+    "lesson": {
+      "whatHappened": "The Atlantic slave trade carried enslaved African people across the ocean into plantation, mining, construction, domestic, and other labor systems in the Americas. Plantation economies then turned coerced labor into export crops such as sugar, tobacco, rice, cotton, coffee, and indigo, tying violence, shipping, credit, land, law, and global markets together.",
+      "whyMatters": "This stop matters because capitalism in the Atlantic world cannot be taught honestly as only invention, thrift, and free exchange. Enslaved people were treated as property and labor power, while merchants, planters, insurers, shippers, lenders, and states built wealth around forced labor and commodity exports. This is one of the places where the freedom language of markets collides directly with unfreedom.",
+      "keyTerms": [
+        "Atlantic slave trade",
+        "Middle Passage",
+        "Plantation economy",
+        "Cash crops",
+        "Chattel slavery",
+        "Racial capitalism",
+        "Commodity export",
+        "Human property"
+      ],
+      "careful": "Do not flatten this into a slogan like capitalism alone killed X unless a source gives that exact accounting method. The better first claim is that Atlantic capitalism, empire, racial law, private property in human beings, shipping, finance, plantation production, and state power worked together. That is already severe enough without inventing numbers.",
+      "miniCheck": {
+        "question": "Why does Atlantic slavery belong on the capitalism road?",
+        "answer": "Because plantation wealth and Atlantic trade connected forced labor, human property, commodity exports, finance, shipping, law, and imperial power to the growth of Atlantic and American capitalism."
+      }
+    },
     "ideaPills": ["plantation-capitalism", "racial-capitalism", "capitalism"],
     "discussionTopic": "Atlantic Slavery and Plantation Capitalism"
   },
@@ -58,6 +94,24 @@
         "note": "Source lead for empire, extraction, and colonial rule."
       }
     ],
+    "lesson": {
+      "whatHappened": "European colonial empires expanded through conquest, settlement, trade monopolies, chartered companies, forced labor, resource extraction, missionary activity, military power, and colonial law. Different empires worked differently, but the pattern joined political domination to economic extraction.",
+      "whyMatters": "This stop matters because capitalism did not grow only inside national borders. Colonial rule helped connect land, labor, raw materials, shipping, finance, and markets across the world. It also shows why we have to separate older empire, monarchy, church, and charter-company power from later capitalist forms without using that separation as an excuse.",
+      "keyTerms": [
+        "Colonialism",
+        "Empire",
+        "Extraction",
+        "Chartered companies",
+        "Forced labor",
+        "Settler colonialism",
+        "Global markets"
+      ],
+      "careful": "Do not treat every empire as identical or every colonial act as purely capitalist. The safer first claim is that colonial power and capitalist development often became entangled through land, labor, commodities, law, and trade.",
+      "miniCheck": {
+        "question": "Why does colonial extraction belong on the capitalism road?",
+        "answer": "Because empire linked conquest and political rule to resources, labor, trade, and global markets that helped shape capitalist development."
+      }
+    },
     "ideaPills": ["colonialism", "capitalism", "land-dispossession"],
     "discussionTopic": "Colonial Extraction and Empire"
   },
@@ -77,6 +131,24 @@
         "note": "Source lead for rights, citizenship, class conflict, and revolution."
       }
     ],
+    "lesson": {
+      "whatHappened": "The French Revolution challenged monarchy and aristocratic privilege while raising arguments about citizenship, rights, popular sovereignty, equality, property, secular law, and political representation. It also moved through violence, war, repression, and counterrevolution.",
+      "whyMatters": "This stop matters because modern political language changes here. Liberal rights, democratic citizenship, class conflict, revolution, and property all become part of the same argument. Later socialism inherits some of this democratic language while also criticizing the limits of property-based liberal freedom.",
+      "keyTerms": [
+        "Citizenship",
+        "Rights",
+        "Popular sovereignty",
+        "Equality",
+        "Property",
+        "Revolution",
+        "Counterrevolution"
+      ],
+      "careful": "Do not make the French Revolution a simple freedom story or a simple terror story. It is both a rights-and-citizenship turning point and a warning that revolutionary politics can become violent and unstable.",
+      "miniCheck": {
+        "question": "Why does the French Revolution matter for this study guide?",
+        "answer": "Because it puts rights, property, democracy, class, and revolution into a modern political vocabulary that later capitalism and socialism both fight over."
+      }
+    },
     "ideaPills": ["revolution", "private-property", "democracy"],
     "discussionTopic": "French Revolution, Rights, and Property"
   },
@@ -96,6 +168,24 @@
         "note": "Source lead for industrial production, factories, wage labor, and urbanization."
       }
     ],
+    "lesson": {
+      "whatHappened": "The Industrial Revolution shifted production toward machines, factories, fossil energy, wage labor, urban growth, new transport, and large increases in output. It began unevenly, with Britain as an early center, and then spread into other regions and industries.",
+      "whyMatters": "This stop matters because the modern labor question explodes here. Factories create wealth and productivity, but also long hours, unsafe work, child labor, crowded cities, and new class relations between owners and wage workers. Socialism becomes a mass argument in response to this industrial world.",
+      "keyTerms": [
+        "Factory system",
+        "Wage labor",
+        "Urbanization",
+        "Industrial capitalism",
+        "Productivity",
+        "Working class",
+        "Labor conditions"
+      ],
+      "careful": "Do not describe industrialization as only progress or only misery. It raised productivity and transformed life, while also creating severe labor, health, housing, and class problems.",
+      "miniCheck": {
+        "question": "Why does the Industrial Revolution matter for socialism?",
+        "answer": "Because industrial capitalism created the wage-working class, factory conditions, and class conflicts that socialist movements tried to explain and change."
+      }
+    },
     "ideaPills": ["labor", "market"],
     "discussionTopic": "Industrial Revolution"
   },
@@ -115,6 +205,24 @@
         "note": "Source lead for Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments."
       }
     ],
+    "lesson": {
+      "whatHappened": "Before Marx and Engels became the famous socialist doorway, earlier reformers imagined cooperative communities, planned association, moral reform, social harmony, and alternatives to competitive industrial capitalism. Figures such as Saint-Simon, Fourier, and Owen are often grouped under utopian socialism.",
+      "whyMatters": "This stop matters because socialism did not begin as one single Marxist doctrine. Early socialism was also experimental, religious, cooperative, moral, and reformist. Marx and Engels later define themselves partly by criticizing these earlier socialist roads.",
+      "keyTerms": [
+        "Utopian socialism",
+        "Cooperation",
+        "Association",
+        "Robert Owen",
+        "Fourier",
+        "Saint-Simon",
+        "Planned community"
+      ],
+      "careful": "Do not use utopian as an insult. In this context it marks a style of socialism that imagined models of social cooperation before Marxist class analysis became dominant.",
+      "miniCheck": {
+        "question": "Why put utopian socialists before Marx?",
+        "answer": "Because they show that socialism had cooperative and reformist roots before Marx and Engels gave it a class-struggle framework."
+      }
+    },
     "ideaPills": ["socialism", "reform", "working-class"],
     "discussionTopic": "Utopian Socialists"
   },
@@ -134,6 +242,24 @@
         "note": "Source lead for the wider revolutionary setting around the Manifesto."
       }
     ],
+    "lesson": {
+      "whatHappened": "The revolutions of 1848 were a wave of uprisings across Europe involving demands for constitutional government, national self-determination, civil liberties, labor reforms, and wider political participation. Many were defeated, but they revealed deep pressure inside the old political order.",
+      "whyMatters": "This stop matters because the Communist Manifesto appears in the same revolutionary year. Liberal demands, democratic demands, national movements, labor unrest, and class politics were all colliding. That helps the learner see Marx and Engels inside a wider crisis, not floating outside history.",
+      "keyTerms": [
+        "1848 revolutions",
+        "Constitutionalism",
+        "Nationalism",
+        "Democracy",
+        "Labor unrest",
+        "Class politics",
+        "Reaction"
+      ],
+      "careful": "Do not treat 1848 as only communist revolution. It included liberals, nationalists, workers, radicals, and many different local struggles.",
+      "miniCheck": {
+        "question": "Why does 1848 sit next to the Manifesto?",
+        "answer": "Because the Manifesto belongs to a year of broad European upheaval over rights, nationhood, democracy, labor, and class power."
+      }
+    },
     "ideaPills": ["revolution", "democracy", "labor-politics"],
     "discussionTopic": "Revolutions of 1848"
   },
@@ -158,6 +284,24 @@
         "note": "Source lead for worker organization and labor politics."
       }
     ],
+    "lesson": {
+      "whatHappened": "Workers organized unions, strikes, mutual aid, parties, and bargaining campaigns to respond to wages, hours, safety, discipline, child labor, unemployment, and employer power. Labor movements developed differently across countries, trades, industries, and legal systems.",
+      "whyMatters": "This stop matters because socialism is not only books by theorists. It is also workers organizing power at the job, in the street, and in elections. Labor movements turn the abstract idea of class into real organizations and conflicts.",
+      "keyTerms": [
+        "Trade union",
+        "Strike",
+        "Collective bargaining",
+        "Labor movement",
+        "Working class",
+        "Mutual aid",
+        "Labor party"
+      ],
+      "careful": "Do not pretend all labor politics is socialist, and do not pretend labor is outside politics. Unions can be reformist, radical, conservative, democratic, exclusionary, solidaristic, or contradictory.",
+      "miniCheck": {
+        "question": "Why does labor organization matter on this road?",
+        "answer": "Because unions and labor movements show workers building collective power inside industrial and capitalist societies."
+      }
+    },
     "ideaPills": ["unionism", "labor-politics", "working-class"],
     "discussionTopic": "Labor Movement and Trade Unions"
   },
@@ -177,6 +321,24 @@
         "note": "Source lead for the 1871 revolutionary government and later socialist memory."
       }
     ],
+    "lesson": {
+      "whatHappened": "The Paris Commune was a short-lived revolutionary government in Paris in 1871 after France's defeat in the Franco-Prussian War and conflict between Paris and the national government. It became famous for experiments in local self-government, radical democracy, worker politics, and its violent suppression.",
+      "whyMatters": "This stop matters because later socialists, communists, anarchists, and anti-authoritarian radicals all argued over what the Commune proved. Was it a model of workers' democracy, a warning about state power, or both? It becomes a memory object for the revolutionary road.",
+      "keyTerms": [
+        "Paris Commune",
+        "Commune",
+        "Workers' democracy",
+        "Repression",
+        "Revolutionary government",
+        "State power",
+        "Radical democracy"
+      ],
+      "careful": "Do not turn the Commune into a perfect myth. It was brief, pressured by war and conflict, and remembered differently by different socialist traditions.",
+      "miniCheck": {
+        "question": "Why does the Paris Commune matter later?",
+        "answer": "Because it became a symbol and argument about whether working people could govern directly and what happens when revolutionary power meets state repression."
+      }
+    },
     "ideaPills": ["commune", "state-power"],
     "discussionTopic": "Paris Commune"
   },
@@ -201,6 +363,24 @@
         "note": "Source lead for U.S. social insurance."
       }
     ],
+    "lesson": {
+      "whatHappened": "The New Deal was the U.S. federal response to the Great Depression, expanding public works, financial regulation, labor protections, relief programs, and social insurance. Social Security and labor law became part of a larger shift toward a more active democratic state inside capitalism.",
+      "whyMatters": "This stop matters because it helps separate public spending, welfare-state policy, labor rights, and socialism. The New Deal did not abolish capitalism, but it changed what democratic government could do inside a capitalist economy.",
+      "keyTerms": [
+        "New Deal",
+        "Social Security",
+        "Public works",
+        "Labor law",
+        "Regulation",
+        "Relief",
+        "Mixed economy"
+      ],
+      "careful": "Do not call every public program socialism without defining what you mean. The New Deal is better taught first as democratic state intervention, social insurance, and regulation inside capitalism.",
+      "miniCheck": {
+        "question": "Why does the New Deal matter for the socialism argument?",
+        "answer": "Because it shows public spending, labor rights, and social insurance expanding inside a capitalist democracy without abolishing private markets."
+      }
+    },
     "ideaPills": ["public-spending", "welfare-state", "labor-politics"],
     "discussionTopic": "New Deal, Social Security, and Labor Law"
   },
@@ -225,6 +405,24 @@
         "note": "Source lead for housing discrimination and property access."
       }
     ],
+    "lesson": {
+      "whatHappened": "The civil rights era challenged legal segregation and racial exclusion, while housing struggles exposed redlining, discrimination, unequal credit access, and unequal property opportunity. These fights connected citizenship, schools, labor, policing, housing, voting, and wealth.",
+      "whyMatters": "This stop matters because capitalism in America is not only markets and entrepreneurs. Property access, racial law, labor exclusion, public policy, and housing finance shaped who could build wealth and who was blocked from it.",
+      "keyTerms": [
+        "Civil rights",
+        "Segregation",
+        "Redlining",
+        "Housing discrimination",
+        "Property access",
+        "Racial capitalism",
+        "Citizenship"
+      ],
+      "careful": "Do not collapse all racial injustice into capitalism alone, and do not pretend capitalism sits outside racial law and property policy. The point is the connection: markets, state power, race, housing, and wealth worked together.",
+      "miniCheck": {
+        "question": "Why does housing belong in a capitalism study guide?",
+        "answer": "Because property, credit, neighborhood access, and public policy shape who can accumulate wealth and who is excluded from it."
+      }
+    },
     "ideaPills": ["racial-capitalism", "private-property", "public-goods"],
     "discussionTopic": "Civil Rights, Housing, and Racial Capitalism"
   },
@@ -244,6 +442,24 @@
         "note": "Source lead for deregulation, privatization, and market-first policy."
       }
     ],
+    "lesson": {
+      "whatHappened": "The neoliberal turn describes a shift toward market-first policy, deregulation, privatization, tax cuts, anti-inflation priorities, free trade, weaker unions in many places, and skepticism toward broad state economic management.",
+      "whyMatters": "This stop matters because it shows capitalism changing after the postwar welfare-state settlement. Market arguments did not simply return by magic; they moved through parties, economists, business groups, crises, voters, and institutions.",
+      "keyTerms": [
+        "Neoliberalism",
+        "Deregulation",
+        "Privatization",
+        "Tax cuts",
+        "Anti-union politics",
+        "Global finance",
+        "Market liberalism"
+      ],
+      "careful": "Do not use neoliberal as a vague insult for everything bad. Use it for a market-centered policy turn, then name the specific policy: deregulation, privatization, austerity, tax cuts, trade, or labor weakening.",
+      "miniCheck": {
+        "question": "What is the useful first meaning of neoliberalism here?",
+        "answer": "A market-first policy turn that favored deregulation, privatization, lower taxes, weaker labor power in many cases, and limits on broad state economic management."
+      }
+    },
     "ideaPills": ["market-liberalism", "private-property", "capitalism"],
     "discussionTopic": "Neoliberal Turn"
   },
@@ -263,6 +479,24 @@
         "note": "Source lead for capitalism, communism, proxy conflict, and political language."
       }
     ],
+    "lesson": {
+      "whatHappened": "The Cold War was a global conflict after World War II centered on rivalry between the United States and the Soviet Union, with capitalism, communism, military alliances, nuclear weapons, proxy wars, intelligence operations, decolonization, and propaganda all shaping world politics.",
+      "whyMatters": "This stop matters because political words became weapons. Socialism, communism, capitalism, freedom, democracy, empire, and security were all used in propaganda and policy. The page has to teach the words without inheriting the slogans uncritically.",
+      "keyTerms": [
+        "Cold War",
+        "Capitalism",
+        "Communism",
+        "Proxy war",
+        "Nuclear fear",
+        "Propaganda",
+        "Anti-communism"
+      ],
+      "careful": "Do not turn the Cold War into a simple good-side bad-side cartoon. Study authoritarian abuses, capitalist interventions, empire, decolonization, democratic claims, propaganda, and real security fears together.",
+      "miniCheck": {
+        "question": "Why does the Cold War matter for political language?",
+        "answer": "Because it turned words like socialism, communism, capitalism, freedom, and democracy into weapons in a global struggle."
+      }
+    },
     "ideaPills": ["anti-communism", "mixed-economy"],
     "discussionTopic": "Cold War"
   },
@@ -282,6 +516,24 @@
         "note": "Source lead for public goods, social insurance, taxation, and mixed economies."
       }
     ],
+    "lesson": {
+      "whatHappened": "Postwar social democracies and welfare states expanded public health care, pensions, unemployment support, education, housing policy, labor protections, taxation, and social insurance while usually keeping markets, private property, and electoral competition.",
+      "whyMatters": "This stop matters because it answers a major vocabulary fight. Public goods and tax-funded services can exist inside mixed capitalist democracies. That can be social democratic without being the same thing as communist party-state rule.",
+      "keyTerms": [
+        "Welfare state",
+        "Social democracy",
+        "Public goods",
+        "Social insurance",
+        "Taxation",
+        "Mixed economy",
+        "Labor rights"
+      ],
+      "careful": "Do not confuse social funding with total social ownership. A welfare state may redistribute, insure, regulate, and provide public services while leaving much of the economy privately owned.",
+      "miniCheck": {
+        "question": "Why is a welfare state not automatically communism?",
+        "answer": "Because it can use taxes and public services inside a mixed economy with markets, elections, and private property still operating."
+      }
+    },
     "ideaPills": ["welfare-state", "public-goods"],
     "discussionTopic": "Social Democracy and Welfare States"
   },
@@ -301,6 +553,24 @@
         "note": "Source lead for the collapse of the Soviet state and post-1991 political argument."
       }
     ],
+    "lesson": {
+      "whatHappened": "The Soviet Union dissolved in 1991 after years of economic stagnation, political crisis, reform attempts, nationalist movements, institutional breakdown, and loss of legitimacy. The collapse ended one major party-state model that had claimed socialism and communism.",
+      "whyMatters": "This stop matters because it reshaped the global argument. Some treated the collapse as proof that all socialism failed; others argued it proved the danger of authoritarian party-state rule, bureaucracy, and undemocratic planning. The page has to keep those claims separate.",
+      "keyTerms": [
+        "Soviet Union",
+        "Dissolution",
+        "Party-state",
+        "Planned economy",
+        "Bureaucracy",
+        "Reform",
+        "Post-communism"
+      ],
+      "careful": "Do not use the Soviet collapse as a shortcut that settles every question about socialism, public goods, democracy, labor, or markets. It is evidence about a specific historical state and system of rule.",
+      "miniCheck": {
+        "question": "What question does the Soviet collapse raise?",
+        "answer": "Whether a system claiming socialism can preserve democracy, economic legitimacy, dissent, and institutional flexibility under party-state rule."
+      }
+    },
     "ideaPills": ["planned-economy", "party-state"],
     "discussionTopic": "Fall of the Soviet Union"
   },
@@ -325,6 +595,24 @@
         "note": "Source lead for modern vocabulary disputes around capitalism."
       }
     ],
+    "lesson": {
+      "whatHappened": "Today, words like socialism, communism, capitalism, public spending, markets, welfare state, democratic socialism, and mixed economy are often used with different meanings. Sometimes people use them to explain a system; sometimes they use them as attack labels.",
+      "whyMatters": "This stop matters because the study guide exists to slow that confusion down. A fair reader has to ask what meaning is being used: tax-funded public service, social ownership, worker power, state planning, welfare capitalism, party-state communism, or just a political insult.",
+      "keyTerms": [
+        "Socialism",
+        "Communism",
+        "Capitalism",
+        "Public spending",
+        "Mixed economy",
+        "Democratic socialism",
+        "Attack label"
+      ],
+      "careful": "Do not let one word do five jobs. Before judging a claim, name the door: public funding, public ownership, worker control, welfare state, market economy, party-state rule, or propaganda.",
+      "miniCheck": {
+        "question": "What is the first move when someone says socialism?",
+        "answer": "Ask which meaning they are using before agreeing, disagreeing, or comparing it to communism or capitalism."
+      }
+    },
     "ideaPills": ["democratic-socialism", "mixed-economy"],
     "discussionTopic": "Present-Day Word Confusion"
   }

@@ -52,10 +52,13 @@ function renderTimelineCard(packet) {
 function renderTimelineStop(stop) {
   const ideaPills = renderTimelineIdeaPills(stop.ideaPills || []);
   const auditClass = stop.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
+  const eventPath = stop.id ? `events/${escapeHtml(stop.id)}.html` : "";
   const photo = stop.wikiPage
-    ? `<div class="photo" data-wiki="${escapeHtml(stop.wikiPage)}">Loading Wiki image</div>`
+    ? `${eventPath ? `<a class="photo-link" href="${eventPath}">` : ""}<div class="photo" data-wiki="${escapeHtml(stop.wikiPage)}">Loading Wiki image</div>${eventPath ? "</a>" : ""}`
     : `<div class="photo">Timeline source space</div>`;
-  return `<article class="stop ${escapeHtml(stop.lane)}"><div class="date-medal">${escapeHtml(stop.timelineDate)}</div>${photo}<div><h3>${escapeHtml(stop.timelineTitle)}</h3><p>${escapeHtml(stop.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(stop.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button><button class="pill discuss" data-topic="${escapeHtml(stop.discussionTopic || stop.timelineTitle)}">Discuss this</button></div></div></article>`;
+  const title = eventPath ? `<a href="${eventPath}">${escapeHtml(stop.timelineTitle)}</a>` : escapeHtml(stop.timelineTitle);
+  const eventLink = eventPath ? `<a class="pill figure" href="${eventPath}">Open Event Room</a>` : "";
+  return `<article class="stop ${escapeHtml(stop.lane)}"><div class="date-medal">${escapeHtml(stop.timelineDate)}</div>${photo}<div><h3>${title}</h3><p>${escapeHtml(stop.timelineMeaning)}</p><span class="${auditClass}">${escapeHtml(stop.auditStatus)}</span><div class="link-cloud">${ideaPills}<button class="pill source">Source Path</button>${eventLink}<button class="pill discuss" data-topic="${escapeHtml(stop.discussionTopic || stop.timelineTitle)}">Discuss this</button></div></div></article>`;
 }
 
 function renderFigureCard(packet) {
