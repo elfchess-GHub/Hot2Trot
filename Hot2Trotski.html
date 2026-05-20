@@ -300,6 +300,7 @@
         <div class="tracker-row"><span>Ideas clicked</span><b id="ideaCount">0</b></div>
         <div class="tracker-row"><span>Expertise areas</span><b id="pathCount">0</b></div>
         <button type="button" onclick="setScholarName()">Set Local Name</button>
+        <button type="button" onclick="resetProgress()">Clear Progress</button>
         <button type="button" disabled title="Shared accounts require the hosted app account system">Sign In</button>
         <p class="meta">Progress saves in this browser. Shared profiles will use secure accounts when the hosted app grows.</p>
       </div>
@@ -485,7 +486,7 @@
       </section>
 
       <section id="badges">
-        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2></div>
+        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>For people who love to show off.</p></div>
         <div class="badges">
           <div class="badge-case"><h3>Silver Idea Marks</h3><div class="study-marks" id="studyMarks"></div></div>
           <div class="badge-case"><h3>Gold Medals</h3><div class="medals" id="medals"></div></div>
@@ -1275,6 +1276,13 @@
     function addTruthBadge(label){if(!label) return; if(!state.truths.includes(label)) state.truths.push(label); addBadge(label+' Truth Badge');}
     function addSourceBadge(label){const clean=compactLabel(label || 'Source Library'); if(!state.sources.includes(clean)) state.sources.push(clean); addBadge(clean+' Source Badge');}
     function setScholarName(){const n=prompt('Local profile name:', state.name || 'Guest Scholar'); if(n && n.trim()){state.name=n.trim();save();renderState();}}
+    function resetProgress(){
+      if(!confirm('Clear all local study marks, medals, tests, paths, and profile progress?')) return;
+      Object.assign(state,{ideas:[],badges:[],name:'Guest Scholar',paths:[],figures:[],truths:[],tests:[],sources:[]});
+      save();
+      renderState();
+      document.getElementById('pathDetail').innerHTML='<h4>Choose a path</h4><p>Pick a road to collect a path badge and see which ideas, figures, and tests belong together.</p><div class="path-chips"><span class="path-chip">ideas</span><span class="path-chip">figures</span><span class="path-chip">tests</span></div>';
+    }
     function renderState(){
       document.getElementById('scholarName').textContent=state.name || 'Guest Scholar';
       document.getElementById('rankTitle').textContent=rankTitle();
