@@ -334,6 +334,47 @@ audio {
   padding: 22px 26px;
 }
 
+.research-post .source-note {
+  overflow-x: auto;
+}
+
+.research-post h2,
+.research-post h3,
+.research-post h4 {
+  margin-top: 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 18px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff7de;
+}
+
+th,
+td {
+  border: 3px solid var(--ink);
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background: var(--gold);
+}
+
+.code-block {
+  overflow-x: auto;
+  background: #151515;
+  color: #f7f1de;
+  border: 4px solid var(--ink);
+  padding: 14px;
+}
+
 @media (max-width: 950px) {
   .home-grid,
   .content-layout,
