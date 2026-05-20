@@ -153,6 +153,12 @@
     .path-ladder{display:grid;gap:7px;margin:10px 0}
     .path-step{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:rgba(255,255,255,.03)}
     .path-step b{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+    .lesson-steps{display:grid;gap:9px;margin:10px 0}
+    .lesson-step{border:1px solid rgba(255,255,255,.09);border-radius:9px;background:rgba(5,6,8,.5);padding:10px}
+    .lesson-step h5{margin:0 0 5px;font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+    .lesson-step p{margin:0 0 7px}
+    .lesson-step .link-cloud{margin:6px 0 0;gap:6px}
+    .lesson-step .pill{font-size:11px;padding:6px 8px}
     .dot{display:inline-flex;width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none;margin-right:6px;vertical-align:middle}
     .dot.red{background:var(--red)}.dot.blue{background:var(--blue)}.dot.black{background:#222}
     section{scroll-margin-top:82px;margin-bottom:26px}
@@ -1136,6 +1142,7 @@
         label: 'Reform Road',
         color: 'blue',
         summary: 'Elections, unions, laws, welfare institutions, and democratic pressure as a road to change.',
+        lesson: 'Reform asks whether democracy can change capitalism without replacing it all at once. This road follows elections, unions, welfare institutions, social democracy, and public goods.',
         ideas: ['reform','democratic reform','social democracy','welfare state','public goods'],
         figures: ['Bernstein','Kautsky','Debs','Sanders'],
         sources: ['Bernstein / Evolutionary Socialism','Social Democracy / Wikipedia','Sanders / Senate Op-Ed'],
@@ -1145,6 +1152,7 @@
         label: 'Revolution Road',
         color: 'red',
         summary: 'Class struggle, rupture, revolutionary parties, and the danger of state power after victory.',
+        lesson: 'Revolution Road studies the claim that class power cannot be reformed away. It also keeps the hard question open: what happens to democracy after revolutionary power wins?',
         ideas: ['revolution','class struggle','vanguard party','permanent revolution','state power'],
         figures: ['Marx','Engels','Lenin','Trotsky'],
         sources: ['Communist Manifesto / Wikisource','Lenin / What Is To Be Done?','Trotsky / The Permanent Revolution'],
@@ -1154,6 +1162,7 @@
         label: 'Labor Road',
         color: 'red',
         summary: 'Work, unions, strikes, class organization, and the question of who has power inside production.',
+        lesson: 'Labor Road starts from work itself: wages, hours, danger, bargaining power, strikes, and worker organization. It turns theory into the daily question of who has power at the job.',
         ideas: ['labor','working class','unionism','labor politics','wage labor'],
         figures: ['Engels','Debs','Marx'],
         sources: ['Engels / The Condition of the Working Class in England','Eugene Debs / Statement to the Court','Trade union / Wikipedia'],
@@ -1163,6 +1172,7 @@
         label: 'Market Road',
         color: 'blue',
         summary: 'Property, exchange, prices, entrepreneurship, political economy, and the case for market freedom.',
+        lesson: 'Market Road studies the strongest case for private property, exchange, prices, entrepreneurship, and decentralized choice, then asks where market freedom needs limits.',
         ideas: ['property','market','private property','entrepreneurship','division of labor'],
         figures: ['Locke','Adam Smith','Hayek','Friedman','Mises'],
         sources: ['John Locke / Two Treatises of Government','Adam Smith / Wealth of Nations','Capitalism / Wikipedia'],
@@ -1172,6 +1182,7 @@
         label: 'State Power Road',
         color: 'black',
         summary: 'The hard question: what happens when a revolution, party, army, or bureaucracy controls the state.',
+        lesson: 'State Power Road follows the machinery of rule: law, bureaucracy, police, armies, party control, planning, coercion, and dissent. It asks what power does after it claims to liberate people.',
         ideas: ['state power','authoritarianism','planned economy','party-state','state violence'],
         figures: ['Lenin','Stalin','Mao','Trotsky'],
         sources: ['State / Wikipedia','Stalin / Questions of Leninism','Dissolution of the Soviet Union / Wikipedia'],
@@ -1181,6 +1192,7 @@
         label: 'Anti-Authoritarian Road',
         color: 'blue',
         summary: 'Democracy, dissent, language, and the warning that liberation cannot survive without criticism.',
+        lesson: 'Anti-Authoritarian Road protects the warning voice. It studies democracy, dissent, political language, and the danger of movements that silence criticism in the name of liberation.',
         ideas: ['democracy','democratic dissent','socialist democracy','political language','anti-authoritarianism'],
         figures: ['Luxemburg','Kautsky','Orwell','Debs'],
         sources: ['Luxemburg / The Russian Revolution','Orwell / Politics and the English Language','Kautsky / Dictatorship of the Proletariat'],
@@ -1190,6 +1202,7 @@
         label: 'American Socialism Road',
         color: 'red',
         summary: 'Labor politics, democratic socialism, public goods, public spending, and the U.S. argument over the word socialism.',
+        lesson: 'American Socialism Road keeps the word inside U.S. history: Debs, labor, elections, public goods, Sanders, taxes, health care, and the fight over what socialism means here.',
         ideas: ['american socialism','democratic socialism','public goods','public spending','labor politics'],
         figures: ['Debs','Sanders'],
         sources: ['Eugene Debs / Statement to the Court','Sanders / Senate Op-Ed','Socialism / Wikipedia'],
@@ -1250,6 +1263,25 @@
       });
       const chips=[...path.ideas.map(x=>'Idea: '+titleCase(x)), ...path.figures.map(x=>'Figure: '+x), ...(path.sources || []).map(x=>'Source: '+x), 'Test: '+titleCase(path.test.replace(/-/g,' '))];
       const score=pathScore(path);
+      const ideaLinks=path.ideas.map(name=>`<a class="pill idea" data-idea="${name}" href="${ideaPageMap[name] || '#ideas'}">${titleCase(name)}</a>`).join('');
+      const figureLinks=path.figures.map(name=>{
+        const card=[...document.querySelectorAll('#figures .card')].find(el=>el.querySelector('h3')?.textContent.toLowerCase().includes(name.toLowerCase()));
+        const href=card?.querySelector('h3 a')?.getAttribute('href') || '#figures';
+        return `<a class="pill figure" data-figure="${name}" href="${href}">${name}</a>`;
+      }).join('');
+      const sourceLinks=(path.sources || []).map(name=>{
+        const item=[...document.querySelectorAll('.source-item a')].find(a=>a.textContent.toLowerCase().includes(name.toLowerCase().slice(0,18)));
+        const href=item?.getAttribute('href') || '#texts';
+        const external=href.startsWith('http') ? 'target="_blank" rel="noopener"' : '';
+        return `<a class="pill source" href="${href}" ${external}>${name}</a>`;
+      }).join('');
+      const lessonSteps=[
+        ['Start Here', path.lesson || path.summary, ''],
+        ['Learn the Ideas', 'Open the key idea rooms and compare how the terms work together.', ideaLinks],
+        ['Meet the Figures', 'Use the figure halls to attach the argument to real people and conflicts.', figureLinks],
+        ['Check the Sources', 'Use the source shelf before treating the road as proven.', sourceLinks || '<a class="pill source" href="#texts">Source Library</a>'],
+        ['Prove It', 'Take the matching subject test when the road makes sense.', `<button class="pill test" type="button" data-topic="${path.label}">${titleCase(path.test.replace(/-/g,' '))} Test</button>`]
+      ];
       const ladder=[
         ['Start the road', score.started],
         ['Study two path ideas', score.ideaHits>=2],
@@ -1257,9 +1289,7 @@
         ['Check one path source', score.sourceHit],
         ['Pass the path test', score.testHit]
       ];
-      document.getElementById('pathDetail').innerHTML=`<h4>${path.label}</h4><p>${path.summary}</p><div class="path-ladder">${ladder.map(([label,done])=>`<div class="path-step"><span>${label}</span><b>${done?'Done':'Open'}</b></div>`).join('')}</div><div class="path-chips">${chips.map(x=>`<span class="path-chip">${x}</span>`).join('')}</div><div class="link-cloud"><button class="pill test" type="button" data-topic="${path.label}">${titleCase(path.test.replace(/-/g,' '))} Test</button><a class="pill source" href="#texts">Path Source Shelf</a></div>`;
-      const firstIdea=path.ideas.find(name=>ideaDetails[name] || ideaPageMap[name]) || path.ideas[0];
-      if(firstIdea) showIdeaDetail(firstIdea);
+      document.getElementById('pathDetail').innerHTML=`<h4>${path.label}</h4><p>${path.summary}</p><div class="lesson-steps">${lessonSteps.map(([title,body,links])=>`<div class="lesson-step"><h5>${title}</h5><p>${body}</p>${links?`<div class="link-cloud">${links}</div>`:''}</div>`).join('')}</div><div class="path-ladder">${ladder.map(([label,done])=>`<div class="path-step"><span>${label}</span><b>${done?'Done':'Open'}</b></div>`).join('')}</div><div class="path-chips">${chips.map(x=>`<span class="path-chip">${x}</span>`).join('')}</div>`;
     }
     function answerTest(btn, ok, badge){
       const card=btn.closest('.test-card');
