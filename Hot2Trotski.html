@@ -1319,10 +1319,10 @@
       }).join('');
       const lessonSteps=[
         ['Start Here', path.lesson || path.summary, ''],
-        ['Learn the Ideas', path.stepCopy?.ideas || 'Open the key idea rooms and compare how the terms work together.', ideaLinks],
-        ['Meet the Figures', path.stepCopy?.figures || 'Use the figure halls to attach the argument to real people and conflicts.', figureLinks],
-        ['Check the Sources', path.stepCopy?.sources || 'Use the source shelf before treating the road as proven.', sourceLinks || '<a class="pill source" href="#texts">Source Library</a>'],
-        ['Prove It', path.stepCopy?.test || 'Take the matching subject test when the road makes sense.', `<button class="pill test" type="button" data-topic="${path.label}">${titleCase(path.test.replace(/-/g,' '))} Test</button>`]
+        ['Learn the Ideas', path.stepCopy?.ideas || path.summary, ideaLinks],
+        ['Meet the Figures', path.stepCopy?.figures || path.summary, figureLinks],
+        ['Check the Sources', path.stepCopy?.sources || path.summary, sourceLinks || '<a class="pill source" href="#texts">Source Library</a>'],
+        ['Prove It', path.stepCopy?.test || path.summary, `<button class="pill test" type="button" data-topic="${path.label}">${titleCase(path.test.replace(/-/g,' '))} Test</button>`]
       ];
       const ladder=[
         ['Start the road', score.started],
