@@ -235,12 +235,20 @@
     .badge-case p{color:var(--muted);margin:8px 0 0}
     .badge-breakdown,.next-badges{display:grid;gap:8px;margin-top:12px}
     .badge-breakdown .tracker-row,.next-badges .tracker-row{background:rgba(5,6,8,.45);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:8px 10px}
+    .study-marks{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;max-height:150px;overflow:auto;padding-right:4px}
+    .study-mark{display:inline-flex;align-items:center;min-height:28px;padding:5px 8px;border-radius:999px;border:1px solid rgba(216,175,85,.34);background:rgba(216,175,85,.08);color:#f4d891;font-family:Inter,sans-serif;font-size:11px;font-weight:800}
+    .medal-shelf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
     .path-progress{display:grid;gap:8px;margin-top:12px}
     .path-progress-row{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;padding:8px 10px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:rgba(5,6,8,.45);font-family:Inter,sans-serif;font-size:12px;color:var(--muted)}
     .mini-meter{grid-column:1/-1;height:7px;border-radius:999px;overflow:hidden;background:#05070b;border:1px solid rgba(255,255,255,.08)}
     .mini-meter span{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--blue),var(--accent))}
-    .medals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
-    .medal{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+    .medal{min-height:74px;border-radius:14px;display:grid;place-items:center;text-align:center;padding:9px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medal.path{background:linear-gradient(145deg,#d9ecff,#5f9ce8 55%,#1a4f9b);border-color:#a8d2ff;color:#071426}
+    .medal.figure{background:linear-gradient(145deg,#f3f4f6,#9ca3af 55%,#374151);border-color:#e5e7eb;color:#0b0f16}
+    .medal.truth{background:linear-gradient(145deg,#fff0bf,#d8af55 50%,#7f6428);border-color:#f3d57b;color:#241704}
+    .medal.source{background:linear-gradient(145deg,#dcfce7,#60a579 55%,#1f5b3d);border-color:#a7f3c4;color:#06170e}
+    .medal.test{background:linear-gradient(145deg,#ffd7d3,#d65a53 55%,#761d22);border-color:#ffc3bd;color:#230504}
     .medal.locked{filter:grayscale(1);opacity:.45;color:#111}
     .test-card button,.profile-card button{font-family:Inter,sans-serif;border:1px solid rgba(216,175,85,.45);background:#0a0e15;color:var(--text);border-radius:8px;padding:9px 10px;font-weight:800;cursor:pointer;margin:4px 4px 0 0}
     .test-card button:hover,.profile-card button:hover{border-color:var(--accent)}
@@ -254,7 +262,7 @@
     .mirror-questions{columns:2;column-gap:28px;color:var(--muted)}
     footer{border-top:1px solid rgba(216,175,85,.3);padding:28px 18px 40px;text-align:center;color:var(--muted)}
     @media (max-width:1180px){.shell{grid-template-columns:1fr}.leftbar,.rightbar{position:static;max-height:none}.sidebox{display:block}.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges,.source-list{grid-template-columns:1fr}.medals{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
+    @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges,.source-list{grid-template-columns:1fr}.medals,.medal-shelf{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
   </style>
 </head>
 <body>
@@ -477,17 +485,18 @@
       </section>
 
       <section id="badges">
-        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges mark real study actions: open idea rooms, follow figure halls, start learning paths, check sources, study truth cards, and pass subject tests.</p></div>
+        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Idea clicks become study marks. Medals come from deeper work: figure halls, learning paths, source checks, truth cards, and subject tests.</p></div>
         <div class="badges">
-          <div class="badge-case"><h3>Guest Scholar Cabinet</h3><p>Earned badges stay in this browser for now.</p><div class="medals" id="medals"></div></div>
-          <div class="badge-case"><h3>Badge Paths</h3><p>The cabinet now separates the kinds of learning instead of treating every click as the same thing.</p>
+          <div class="badge-case"><h3>Study Marks</h3><p>Idea clicks are browsing marks: they show what you looked at without pretending every glance is a major medal.</p><div class="study-marks" id="studyMarks"></div></div>
+          <div class="badge-case"><h3>Medal Case</h3><p>Large medals come from deeper actions: paths, figures, sources, truth checks, and tests.</p><div class="medals" id="medals"></div></div>
+          <div class="badge-case"><h3>Learning Types</h3><p>The cabinet separates browsing, source work, tests, paths, truth checks, and figure study.</p>
             <div class="badge-breakdown">
-              <div class="tracker-row"><span>Idea Badges</span><b id="badgeIdeas">0</b></div>
-              <div class="tracker-row"><span>Path Badges</span><b id="badgePaths">0</b></div>
-              <div class="tracker-row"><span>Figure Badges</span><b id="badgeFigures">0</b></div>
-              <div class="tracker-row"><span>Truth Badges</span><b id="badgeTruths">0</b></div>
-              <div class="tracker-row"><span>Source Badges</span><b id="badgeSources">0</b></div>
-              <div class="tracker-row"><span>Test Badges</span><b id="badgeTests">0</b></div>
+              <div class="tracker-row"><span>Idea Study Marks</span><b id="badgeIdeas">0</b></div>
+              <div class="tracker-row"><span>Path Medals</span><b id="badgePaths">0</b></div>
+              <div class="tracker-row"><span>Figure Medals</span><b id="badgeFigures">0</b></div>
+              <div class="tracker-row"><span>Truth Medals</span><b id="badgeTruths">0</b></div>
+              <div class="tracker-row"><span>Source Medals</span><b id="badgeSources">0</b></div>
+              <div class="tracker-row"><span>Test Medals</span><b id="badgeTests">0</b></div>
             </div>
           </div>
           <div class="badge-case"><h3>Learning Path Progress</h3><p>Each road has a ladder: start it, study ideas, open figures, check sources, pass the related test.</p><div class="path-progress" id="pathProgress"></div></div>
@@ -1211,7 +1220,7 @@
       if(count>=5) return 'Badge Apprentice';
       return 'Apprentice of the Timeline';
     }
-    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);addBadge(titleCase(name)+' Idea Badge');}save();renderState();showIdeaDetail(name);}
+    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);}save();renderState();showIdeaDetail(name);}
     function showIdeaDetail(name){
       const detail=ideaDetails[name] || {definition:`A working study card for ${name}. This term is already on the map; its fuller source shelf still needs expansion.`, figures:['Source Library'], sources:[['Source Library','#texts']]};
       document.getElementById('ideaDetailTitle').textContent=titleCase(name);
@@ -1290,10 +1299,23 @@
       });
       const pct=Math.min(100, 18 + state.badges.length*5 + state.ideas.length*2 + state.paths.length*4 + state.tests.length*4);
       document.getElementById('progressMeter').style.width=pct+'%';
+      const studyMarks=document.getElementById('studyMarks');
+      const recentIdeas=state.ideas.slice(-30).reverse();
+      studyMarks.innerHTML=(recentIdeas.length?recentIdeas:['No idea marks yet']).map(x=>`<span class="study-mark">${titleCase(x)}</span>`).join('');
       const medals=document.getElementById('medals');
-      const earned=state.badges.slice(-12).reverse();
-      const slots=[...earned]; while(slots.length<12) slots.push('Locked');
-      medals.innerHTML=slots.map(x=>`<div class="medal ${x==='Locked'?'locked':''}">${x}</div>`).join('');
+      const earned=state.badges.filter(name=>!/Idea Badge$/.test(name)).slice(-9).reverse();
+      const medalClass=name=>{
+        if(name==='Locked') return 'locked';
+        if(/Path Badge$/.test(name)) return 'path';
+        if(/Figure Badge$/.test(name)) return 'figure';
+        if(/Truth Badge$/.test(name)) return 'truth';
+        if(/Source Badge$/.test(name)) return 'source';
+        if(/Badge$/.test(name)) return 'test';
+        return '';
+      };
+      const medalLabel=name=>name==='Locked' ? 'Locked' : name.replace(/\s+(Path|Figure|Truth|Source|Test)?\s*Badge$/,'').trim();
+      const slots=[...earned]; while(slots.length<9) slots.push('Locked');
+      medals.innerHTML=slots.map(x=>`<div class="medal ${medalClass(x)}">${medalLabel(x)}</div>`).join('');
       document.getElementById('pathProgress').innerHTML=Object.entries(learningPaths).map(([key,path])=>{
         const score=pathScore(path);
         const pct=Math.round((score.points/score.total)*100);
