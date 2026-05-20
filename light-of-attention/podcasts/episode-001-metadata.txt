@@ -1,0 +1,154 @@
+TwoVoiceReader render metadata
+episode_name=Episode_001
+episode_number=001
+series_title=The Light of Attention
+script_episode_label=Episode 1
+publisher_or_collection=Haymarket Books
+book_segment=Book One
+featured_work=Men Explain Things to Me — Rebecca Solnit
+output_dir=C:\cardgameJ\TwoVoiceReader\outputs\Episode_001
+script_blocks=134
+sample_rate=24000
+duration_seconds=714.700
+speed=1.0
+gap_seconds=0.35
+include_music=True
+music_path=C:\Users\elfch\Downloads\traditional-american-folk-acoustic.mp3
+intro_music=0s-37s, fade out starts at 32s
+outro_music=35s-60s, fade out starts at 55s
+
+clips:
+001	JAY	am_eric	Natural	001_JAY.wav	112 chars
+002	AI-GPT	af_bella	Harmony	002_AI-GPT.wav	51 chars
+003	JAY	am_eric	Natural	003_JAY.wav	17 chars
+004	AI-GPT	af_bella	Harmony	004_AI-GPT.wav	17 chars
+005	JAY	am_eric	Natural	005_JAY.wav	64 chars
+006	AI-GPT	af_bella	Harmony	006_AI-GPT.wav	43 chars
+007	JAY	am_eric	Natural	007_JAY.wav	66 chars
+008	AI-GPT	af_bella	Harmony	008_AI-GPT.wav	185 chars
+009	JAY	am_eric	Natural	009_JAY.wav	37 chars
+010	AI-GPT	af_bella	Harmony	010_AI-GPT.wav	44 chars
+011	JAY	am_eric	Natural	011_JAY.wav	22 chars
+012	AI-GPT	af_bella	Harmony	012_AI-GPT.wav	66 chars
+013	JAY	am_eric	Natural	013_JAY.wav	60 chars
+014	AI-GPT	af_bella	Harmony	014_AI-GPT.wav	75 chars
+015	JAY	am_eric	Natural	015_JAY.wav	81 chars
+016	AI-GPT	af_bella	Harmony	016_AI-GPT.wav	138 chars
+017	JAY	am_eric	Natural	017_JAY.wav	44 chars
+018	AI-GPT	af_bella	Harmony	018_AI-GPT.wav	163 chars
+019	JAY	am_eric	Natural	019_JAY.wav	43 chars
+020	AI-GPT	af_bella	Harmony	020_AI-GPT.wav	71 chars
+021	JAY	am_eric	Natural	021_JAY.wav	97 chars
+022	AI-GPT	af_bella	Harmony	022_AI-GPT.wav	8 chars
+023	JAY	am_eric	Natural	023_JAY.wav	66 chars
+024	AI-GPT	af_bella	Harmony	024_AI-GPT.wav	137 chars
+025	JAY	am_eric	Natural	025_JAY.wav	32 chars
+026	AI-GPT	af_bella	Harmony	026_AI-GPT.wav	26 chars
+027	JAY	am_eric	Natural	027_JAY.wav	53 chars
+028	AI-GPT	af_bella	Harmony	028_AI-GPT.wav	48 chars
+029	JAY	am_eric	Natural	029_JAY.wav	38 chars
+030	AI-GPT	af_bella	Harmony	030_AI-GPT.wav	23 chars
+031	JAY	am_eric	Natural	031_JAY.wav	4 chars
+032	AI-GPT	af_bella	Harmony	032_AI-GPT.wav	186 chars
+033	JAY	am_eric	Natural	033_JAY.wav	28 chars
+034	AI-GPT	af_bella	Harmony	034_AI-GPT.wav	31 chars
+035	JAY	am_eric	Natural	035_JAY.wav	64 chars
+036	AI-GPT	af_bella	Harmony	036_AI-GPT.wav	21 chars
+037	JAY	am_eric	Natural	037_JAY.wav	76 chars
+038	AI-GPT	af_bella	Harmony	038_AI-GPT.wav	41 chars
+039	JAY	am_eric	Natural	039_JAY.wav	9 chars
+040	AI-GPT	af_bella	Harmony	040_AI-GPT.wav	221 chars
+041	JAY	am_eric	Natural	041_JAY.wav	69 chars
+042	AI-GPT	af_bella	Harmony	042_AI-GPT.wav	79 chars
+043	JAY	am_eric	Natural	043_JAY.wav	18 chars
+044	AI-GPT	af_bella	Harmony	044_AI-GPT.wav	116 chars
+045	JAY	am_eric	Natural	045_JAY.wav	22 chars
+046	AI-GPT	af_bella	Harmony	046_AI-GPT.wav	30 chars
+047	JAY	am_eric	Natural	047_JAY.wav	16 chars
+048	AI-GPT	af_bella	Harmony	048_AI-GPT.wav	197 chars
+049	JAY	am_eric	Natural	049_JAY.wav	67 chars
+050	AI-GPT	af_bella	Harmony	050_AI-GPT.wav	21 chars
+051	JAY	am_eric	Natural	051_JAY.wav	19 chars
+052	AI-GPT	af_bella	Harmony	052_AI-GPT.wav	23 chars
+053	JAY	am_eric	Natural	053_JAY.wav	48 chars
+054	AI-GPT	af_bella	Harmony	054_AI-GPT.wav	25 chars
+055	JAY	am_eric	Natural	055_JAY.wav	33 chars
+056	AI-GPT	af_bella	Harmony	056_AI-GPT.wav	17 chars
+057	JAY	am_eric	Natural	057_JAY.wav	16 chars
+058	AI-GPT	af_bella	Harmony	058_AI-GPT.wav	151 chars
+059	JAY	am_eric	Natural	059_JAY.wav	17 chars
+060	AI-GPT	af_bella	Harmony	060_AI-GPT.wav	50 chars
+061	JAY	am_eric	Natural	061_JAY.wav	78 chars
+062	AI-GPT	af_bella	Harmony	062_AI-GPT.wav	36 chars
+063	JAY	am_eric	Natural	063_JAY.wav	19 chars
+064	AI-GPT	af_bella	Harmony	064_AI-GPT.wav	121 chars
+065	JAY	am_eric	Natural	065_JAY.wav	33 chars
+066	AI-GPT	af_bella	Harmony	066_AI-GPT.wav	53 chars
+067	JAY	am_eric	Natural	067_JAY.wav	29 chars
+068	AI-GPT	af_bella	Harmony	068_AI-GPT.wav	176 chars
+069	JAY	am_eric	Natural	069_JAY.wav	22 chars
+070	AI-GPT	af_bella	Harmony	070_AI-GPT.wav	207 chars
+071	JAY	am_eric	Natural	071_JAY.wav	46 chars
+072	AI-GPT	af_bella	Harmony	072_AI-GPT.wav	34 chars
+073	JAY	am_eric	Natural	073_JAY.wav	24 chars
+074	AI-GPT	af_bella	Harmony	074_AI-GPT.wav	99 chars
+075	JAY	am_eric	Natural	075_JAY.wav	30 chars
+076	AI-GPT	af_bella	Harmony	076_AI-GPT.wav	47 chars
+077	JAY	am_eric	Natural	077_JAY.wav	7 chars
+078	AI-GPT	af_bella	Harmony	078_AI-GPT.wav	4 chars
+079	JAY	am_eric	Natural	079_JAY.wav	16 chars
+080	AI-GPT	af_bella	Harmony	080_AI-GPT.wav	12 chars
+081	JAY	am_eric	Natural	081_JAY.wav	34 chars
+082	AI-GPT	af_bella	Harmony	082_AI-GPT.wav	34 chars
+083	JAY	am_eric	Natural	083_JAY.wav	7 chars
+084	AI-GPT	af_bella	Harmony	084_AI-GPT.wav	115 chars
+085	JAY	am_eric	Natural	085_JAY.wav	32 chars
+086	AI-GPT	af_bella	Harmony	086_AI-GPT.wav	210 chars
+087	JAY	am_eric	Natural	087_JAY.wav	51 chars
+088	AI-GPT	af_bella	Harmony	088_AI-GPT.wav	3 chars
+089	JAY	am_eric	Natural	089_JAY.wav	48 chars
+090	AI-GPT	af_bella	Harmony	090_AI-GPT.wav	8 chars
+091	JAY	am_eric	Natural	091_JAY.wav	26 chars
+092	AI-GPT	af_bella	Harmony	092_AI-GPT.wav	126 chars
+093	JAY	am_eric	Natural	093_JAY.wav	24 chars
+094	AI-GPT	af_bella	Harmony	094_AI-GPT.wav	41 chars
+095	JAY	am_eric	Natural	095_JAY.wav	120 chars
+096	AI-GPT	af_bella	Harmony	096_AI-GPT.wav	29 chars
+097	JAY	am_eric	Natural	097_JAY.wav	10 chars
+098	AI-GPT	af_bella	Harmony	098_AI-GPT.wav	106 chars
+099	JAY	am_eric	Natural	099_JAY.wav	94 chars
+100	AI-GPT	af_bella	Harmony	100_AI-GPT.wav	99 chars
+101	JAY	am_eric	Natural	101_JAY.wav	24 chars
+102	AI-GPT	af_bella	Harmony	102_AI-GPT.wav	178 chars
+103	JAY	am_eric	Natural	103_JAY.wav	43 chars
+104	AI-GPT	af_bella	Harmony	104_AI-GPT.wav	81 chars
+105	JAY	am_eric	Natural	105_JAY.wav	38 chars
+106	AI-GPT	af_bella	Harmony	106_AI-GPT.wav	42 chars
+107	JAY	am_eric	Natural	107_JAY.wav	21 chars
+108	AI-GPT	af_bella	Harmony	108_AI-GPT.wav	67 chars
+109	JAY	am_eric	Natural	109_JAY.wav	10 chars
+110	AI-GPT	af_bella	Harmony	110_AI-GPT.wav	88 chars
+111	JAY	am_eric	Natural	111_JAY.wav	25 chars
+112	AI-GPT	af_bella	Harmony	112_AI-GPT.wav	145 chars
+113	JAY	am_eric	Natural	113_JAY.wav	54 chars
+114	AI-GPT	af_bella	Harmony	114_AI-GPT.wav	50 chars
+115	JAY	am_eric	Natural	115_JAY.wav	20 chars
+116	AI-GPT	af_bella	Harmony	116_AI-GPT.wav	202 chars
+117	JAY	am_eric	Natural	117_JAY.wav	21 chars
+118	AI-GPT	af_bella	Harmony	118_AI-GPT.wav	78 chars
+119	JAY	am_eric	Natural	119_JAY.wav	21 chars
+120	AI-GPT	af_bella	Harmony	120_AI-GPT.wav	71 chars
+121	JAY	am_eric	Natural	121_JAY.wav	15 chars
+122	AI-GPT	af_bella	Harmony	122_AI-GPT.wav	6 chars
+123	JAY	am_eric	Natural	123_JAY.wav	15 chars
+124	AI-GPT	af_bella	Harmony	124_AI-GPT.wav	8 chars
+125	JAY	am_eric	Natural	125_JAY.wav	36 chars
+126	AI-GPT	af_bella	Harmony	126_AI-GPT.wav	72 chars
+127	JAY	am_eric	Natural	127_JAY.wav	19 chars
+128	AI-GPT	af_bella	Harmony	128_AI-GPT.wav	10 chars
+129	JAY	am_eric	Natural	129_JAY.wav	88 chars
+130	AI-GPT	af_bella	Harmony	130_AI-GPT.wav	34 chars
+131	JAY	am_eric	Natural	131_JAY.wav	23 chars
+132	AI-GPT	af_bella	Harmony	132_AI-GPT.wav	16 chars
+133	JAY	am_eric	Natural	133_JAY.wav	29 chars
+134	AI-GPT	af_bella	Harmony	134_AI-GPT.wav	29 chars

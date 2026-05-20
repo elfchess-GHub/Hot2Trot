@@ -1,0 +1,652 @@
+You’re right. I messed up the TwoVoiceReader format.
+
+Here’s the corrected version for **Book Two**, with only the speaker labels using the colon format, and all headings as Markdown headings. Based on your uploaded Book Two script. 
+
+# The Light of Attention
+
+## Episode 001
+
+## Haymarket Books
+
+## Book Two
+
+## No Is Not Enough — Naomi Klein
+
+**JAY:**
+Okay.
+
+Book two.
+
+**AI-GPT:**
+Book two is No Is Not Enough by Naomi Klein.
+
+**JAY:**
+That title sounds like a protest sign that learned how to write a book.
+
+**AI-GPT:**
+That is actually close to what it is.
+
+**JAY:**
+Good.
+
+But don’t give me the slogan version.
+
+**AI-GPT:**
+Right.
+
+This book is Haymarket moving fast.
+
+**JAY:**
+Moving fast how?
+
+**AI-GPT:**
+No Is Not Enough was published in the United States by Haymarket on June 13, 2017.
+
+The full subtitle is Resisting Trump’s Shock Politics and Winning the World We Need.
+
+**JAY:**
+So only a few months after Trump’s first inauguration.
+
+**AI-GPT:**
+Yes.
+
+Trump’s first inauguration was in January 2017.
+
+This book came out in June.
+
+**JAY:**
+That’s fast.
+
+Like...
+
+that’s not “we’ll get around to the discourse eventually” fast.
+
+**AI-GPT:**
+No.
+
+That is emergency-publishing fast.
+
+**JAY:**
+Okay.
+
+So what did Haymarket actually do?
+
+**AI-GPT:**
+Haymarket announced that it had acquired the U.S. rights and planned a one hundred thousand copy first print run.
+
+**JAY:**
+Wait.
+
+One hundred thousand?
+
+**AI-GPT:**
+Yes.
+
+**JAY:**
+For Haymarket?
+
+**AI-GPT:**
+For Haymarket.
+
+**JAY:**
+That’s huge.
+
+**AI-GPT:**
+It is.
+
+For a small independent nonprofit publisher, that is enormous.
+
+**JAY:**
+So this wasn’t just...
+
+“we published a thoughtful book and hoped somebody noticed.”
+
+**AI-GPT:**
+No.
+
+This was a major intervention.
+
+**JAY:**
+Intervention.
+
+Yeah.
+
+That’s the right word.
+
+**AI-GPT:**
+That fact alone tells us a lot.
+
+Haymarket was not just publishing slow theory here.
+
+It was trying to respond to a live political emergency while the emergency was still unfolding.
+
+**JAY:**
+So Haymarket isn’t only a library.
+
+Sometimes it’s a fire truck.
+
+**AI-GPT:**
+A fire truck with footnotes.
+
+**JAY:**
+There you go.
+
+That’s the show.
+
+**AI-GPT:**
+Naomi Klein was already famous for No Logo, The Shock Doctrine, and This Changes Everything.
+
+She normally had access to bigger commercial publishers.
+
+**JAY:**
+So why Haymarket?
+
+**AI-GPT:**
+Publishers Weekly reported that Klein deliberately wanted an independent press for this book, and Haymarket became the U.S. publisher.
+
+**JAY:**
+That matters.
+
+Because if a major author chooses Haymarket...
+
+that says something about Haymarket’s role.
+
+**AI-GPT:**
+Yes.
+
+It suggests Haymarket was not just a niche left publisher anymore.
+
+It had become a place where a major political book could land quickly and seriously.
+
+**JAY:**
+Okay.
+
+So what’s the actual argument?
+
+**AI-GPT:**
+The subtitle matters.
+
+Resisting Trump’s Shock Politics and Winning the World We Need.
+
+**JAY:**
+That’s a long subtitle.
+
+**AI-GPT:**
+It is doing a lot of work.
+
+**JAY:**
+Translate.
+
+**AI-GPT:**
+This is not simply an anti-Trump book.
+
+Klein’s deeper claim is that Trump was not an accident, not a weird one-off, and not just a bad personality.
+
+**JAY:**
+Good.
+
+Because if the whole argument is “Trump bad”...
+
+that’s not enough.
+
+**AI-GPT:**
+Exactly.
+
+**JAY:**
+See?
+
+Title’s already working.
+
+**AI-GPT:**
+Klein frames Trump as a concentration of several long-running forces.
+
+Corporate power.
+
+Branding culture.
+
+Disaster capitalism.
+
+Racism.
+
+Fossil-fuel politics.
+
+Misogyny.
+
+And authoritarian spectacle.
+
+**JAY:**
+That is a lot in one guy.
+
+**AI-GPT:**
+The claim is that he is not just one guy.
+
+He is a product of systems.
+
+**JAY:**
+Okay.
+
+Say the core argument clean.
+
+**AI-GPT:**
+The argument is not Trump is bad, vote harder.
+
+**JAY:**
+Thank you.
+
+**AI-GPT:**
+The argument is closer to this.
+
+Trump is what happens when capitalism, celebrity branding, crisis politics, and white backlash fuse into one political machine.
+
+**JAY:**
+That’s very Haymarket.
+
+**AI-GPT:**
+Very Haymarket.
+
+**JAY:**
+Because Haymarket doesn’t want to isolate the symptom.
+
+**AI-GPT:**
+Right.
+
+It wants to show the machinery.
+
+**JAY:**
+The disease behind the fever.
+
+**AI-GPT:**
+Yes.
+
+**JAY:**
+That’s the shape of it.
+
+**AI-GPT:**
+That’s usually my line.
+
+**JAY:**
+Yup.
+
+I stole it.
+
+**AI-GPT:**
+Fair.
+
+**JAY:**
+And the title?
+
+No Is Not Enough?
+
+**AI-GPT:**
+The title is the whole political thesis in miniature.
+
+Klein is saying resistance cannot only be defensive.
+
+**JAY:**
+Meaning you can’t just say no.
+
+**AI-GPT:**
+Right.
+
+You cannot only say no to Trump.
+
+No to fascism.
+
+No to racism.
+
+No to climate denial.
+
+No to privatization.
+
+No to cruelty.
+
+**JAY:**
+Even though you do have to say no.
+
+**AI-GPT:**
+Yes.
+
+The no still matters.
+
+**JAY:**
+But no is not enough.
+
+**AI-GPT:**
+Exactly.
+
+You also need a positive program.
+
+A livable society.
+
+Climate justice.
+
+Public goods.
+
+Racial justice.
+
+Labor power.
+
+And a politics that gives people something real to fight for.
+
+**JAY:**
+That’s the part a lot of politics misses.
+
+**AI-GPT:**
+Yes.
+
+Outrage can identify a danger.
+
+But it cannot, by itself, build a future.
+
+**JAY:**
+Hmm.
+
+That sounds like a line for the wall.
+
+**AI-GPT:**
+I can put it on the wall.
+
+**JAY:**
+Later.
+
+Keep digging.
+
+**AI-GPT:**
+This is where the book belongs in the Haymarket ecosystem.
+
+Haymarket is not just selling outrage.
+
+It is trying to publish books that connect outrage to analysis, and analysis to organizing.
+
+**JAY:**
+Wait.
+
+Say that again.
+
+**AI-GPT:**
+Outrage to analysis.
+
+Analysis to organizing.
+
+**JAY:**
+That’s the ladder.
+
+**AI-GPT:**
+Yes.
+
+**JAY:**
+And if you don’t have the ladder?
+
+**AI-GPT:**
+Then outrage can trap you at the level of reaction.
+
+**JAY:**
+Right.
+
+You get mad.
+
+You scroll.
+
+You get mad again.
+
+You call that politics.
+
+**AI-GPT:**
+That is one form of political exhaustion.
+
+**JAY:**
+It’s also just the internet eating your nervous system.
+
+**AI-GPT:**
+The less wounded version is...
+
+panic without structure becomes doomscrolling.
+
+**JAY:**
+Yup.
+
+That’s better.
+
+Annoying, but better.
+
+**AI-GPT:**
+The book’s central move is this.
+
+Do not treat Trump as the whole disease.
+
+Treat him as a symptom of a larger system.
+
+**JAY:**
+There it is.
+
+**AI-GPT:**
+Commercially, it worked.
+
+**JAY:**
+Receipts.
+
+**AI-GPT:**
+Haymarket celebrated the book spending five weeks on the New York Times bestseller list in August 2017.
+
+Naomi Klein’s own site says the book debuted at number two on the New York Times bestseller list, was longlisted for the National Book Award, and was named one of Publishers Weekly’s Best Books of 2017.
+
+**JAY:**
+So mainstream attention.
+
+Not just lefty approval.
+
+**AI-GPT:**
+Correct.
+
+**JAY:**
+But do we have lifetime Haymarket sales?
+
+**AI-GPT:**
+Not from the public evidence we found.
+
+**JAY:**
+Good.
+
+Say that plainly.
+
+**AI-GPT:**
+We do not have a public lifetime Haymarket sales number for this book.
+
+**JAY:**
+Or, in my voice...
+
+we don’t have that number.
+
+**AI-GPT:**
+Right.
+
+We don’t have that number.
+
+**JAY:**
+Good.
+
+**AI-GPT:**
+But we do have enough to say it crossed over.
+
+The bestseller-list performance, the one hundred thousand copy first print run, and the public publishing coverage all show that it reached mainstream attention.
+
+**JAY:**
+For a radical nonprofit publisher, that’s the point.
+
+**AI-GPT:**
+Exactly.
+
+Get a radical framework into the hands of people who might otherwise only get cable-news panic.
+
+**JAY:**
+Cable-news panic.
+
+That’s real.
+
+**AI-GPT:**
+The book was trying to give structure to panic.
+
+**JAY:**
+That is useful.
+
+Because panic without structure just becomes doomscrolling.
+
+**AI-GPT:**
+Yes.
+
+And doomscrolling rarely builds public power.
+
+**JAY:**
+Okay, AI-GPT.
+
+That was almost too clean.
+
+But I’ll allow it.
+
+**AI-GPT:**
+Noted.
+
+**JAY:**
+What’s the criticism?
+
+**AI-GPT:**
+The criticism is worth naming.
+
+Because the book was written quickly, it has the energy and limitations of an emergency intervention.
+
+**JAY:**
+Meaning?
+
+**AI-GPT:**
+It is sharp, urgent, and readable.
+
+But it is not a slow archival history.
+
+**JAY:**
+So it’s not trying to be the final word.
+
+**AI-GPT:**
+No.
+
+It is trying to be useful in the moment.
+
+**JAY:**
+That’s fair.
+
+And honestly, sometimes that’s what a book is for.
+
+**AI-GPT:**
+Yes.
+
+Some books are meant to outlast the crisis.
+
+Some books are meant to help people move through the crisis.
+
+**JAY:**
+That’s a good distinction.
+
+**AI-GPT:**
+Some readers may find No Is Not Enough too tied to the Trump moment.
+
+Others may think its “movement of movements” politics is inspiring, but not specific enough about how power is actually won.
+
+**JAY:**
+That’s a real tension.
+
+**AI-GPT:**
+Yes.
+
+Inspiration and strategy are not the same thing.
+
+**JAY:**
+Good line.
+
+**AI-GPT:**
+But as a Haymarket book, it makes perfect sense.
+
+It is not trying to be detached scholarship.
+
+It is trying to be a political tool handed to readers during a crisis.
+
+**JAY:**
+A tool.
+
+Not a museum object.
+
+**AI-GPT:**
+Exactly.
+
+**JAY:**
+And that fits Haymarket because Haymarket isn’t pretending history is dead.
+
+**AI-GPT:**
+Right.
+
+It treats publishing as part of political struggle.
+
+**JAY:**
+There’s the deeper thing.
+
+**AI-GPT:**
+The deeper reason this book matters is that it shows Haymarket becoming something bigger than a niche left publisher.
+
+With No Is Not Enough, Haymarket was able to publish a major international author, move fast, print big, and put a radical explanation of Trump into mass circulation.
+
+**JAY:**
+So if Men Explain Things to Me showed Haymarket could give people language for everyday gendered power—
+
+**AI-GPT:**
+Then No Is Not Enough showed Haymarket could intervene in a national political rupture.
+
+**JAY:**
+That’s the bridge.
+
+**AI-GPT:**
+Book one was language for a pattern.
+
+**JAY:**
+Book two was framework for a crisis.
+
+**AI-GPT:**
+Yes.
+
+**JAY:**
+Okay.
+
+That’s good.
+
+And the warning?
+
+**AI-GPT:**
+The warning is that saying no is necessary.
+
+But if all you have is no, you may still be trapped inside the thing you oppose.
+
+**JAY:**
+Hmm.
+
+Yeah.
+
+That’s the scary part.
+
+Because no can feel like power.
+
+**AI-GPT:**
+But it can also become a cage.
+
+**JAY:**
+Right.
+
+You’re still letting the enemy name the room.
+
+**AI-GPT:**
+That’s the shape of it.
+
+**JAY:**
+Yup.
+
+**AI-GPT:**
+Under the light of attention?
+
+**JAY:**
+Under the light of attention.
