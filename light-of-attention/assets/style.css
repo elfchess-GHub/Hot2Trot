@@ -324,6 +324,16 @@ audio {
   font-weight: 850;
 }
 
+.talk-copy .big-say {
+  border-left: 0;
+  background: #0e4b82;
+  color: #f4f8ff;
+  border-radius: 28px;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.35;
+  padding: 22px 26px;
+}
+
 @media (max-width: 950px) {
   .home-grid,
   .content-layout,
