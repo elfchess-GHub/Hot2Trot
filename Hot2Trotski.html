@@ -284,7 +284,7 @@
         </div>
       </div>
       <div id="profile" class="profile-card">
-        <div class="kicker">Future Account Layer</div>
+        <div class="kicker">Scholar Profile</div>
         <div class="profile-name" id="scholarName">Guest Scholar</div>
         <div class="meta">Rank: <span id="rankTitle">Apprentice of the Timeline</span></div>
         <div class="meter"><span id="progressMeter"></span></div>
@@ -292,8 +292,8 @@
         <div class="tracker-row"><span>Ideas clicked</span><b id="ideaCount">0</b></div>
         <div class="tracker-row"><span>Expertise areas</span><b id="pathCount">0</b></div>
         <button type="button" onclick="setScholarName()">Set Local Name</button>
-        <button type="button" disabled title="Real login comes later">Future Login</button>
-        <p class="meta">This profile is local-browser only for now. Real shared profiles need a host with auth and a database.</p>
+        <button type="button" disabled title="Shared accounts require the hosted app account system">Sign In</button>
+        <p class="meta">Progress saves in this browser. Shared profiles will use secure accounts when the hosted app grows.</p>
       </div>
     </div>
   </header>
@@ -442,7 +442,7 @@
           <article class="truth-card red"><h3>Slavery and Plantation Capitalism</h3><dl><dt>Mechanism</dt><dd>Enslaved labor, private ownership of people as property, cotton exports, land speculation, credit, insurance, law, and racial violence supported wealth creation.</dd><dt>Human cost</dt><dd>The card needs separate source-pinned counts for enslavement, mortality, family separation, and racial terror instead of one lazy number.</dd><dt>Audit</dt><dd><span class="audit-label">[needs verification]</span> Source leads support the economic link; exact claims still need passage work.</dd></dl><div class="link-cloud"><a class="pill idea" data-idea="plantation capitalism" href="ideas/plantation-capitalism.html">Plantation Capitalism</a><a class="pill idea" data-idea="racial capitalism" href="ideas/racial-capitalism.html">Racial Capitalism</a><button class="pill discuss" data-topic="Slavery and plantation capitalism">Discuss this</button></div></article>
           <article class="truth-card blue"><h3>Railroads, Land Grants, and Labor</h3><dl><dt>Mechanism</dt><dd>Public land grants and state support helped private railroad corporations expand markets, settlement, extraction, and industrial reach while workers faced dangerous conditions and discrimination.</dd><dt>Human cost</dt><dd>Worker deaths, Indigenous displacement, and land-transfer figures need pinned sources before becoming a death ledger.</dd><dt>Audit</dt><dd><span class="audit-label">[needs verification]</span> Source leads support land grants, Chinese labor, and western expansion; exact count work remains open.</dd></dl><div class="link-cloud"><a class="pill idea" data-idea="railroad capitalism" href="ideas/railroad-capitalism.html">Railroad Capitalism</a><a class="pill idea" data-idea="state power" href="ideas/state-power.html">State Power</a><button class="pill discuss" data-topic="Railroads, land grants, and labor">Discuss this</button></div></article>
           <article class="truth-card black"><h3>Attribution Rule</h3><dl><dt>Do not write</dt><dd>Capitalism alone killed X, unless a source actually argues that exact accounting and method.</dd><dt>Do write</dt><dd>Capitalist expansion plus state violence, racial law, slavery, land seizure, private accumulation, and market growth produced a specific harm.</dd><dt>Do not excuse</dt><dd>When the state acts to protect or expand private accumulation, state action is part of the capitalist road, not a magic escape hatch.</dd></dl><div class="link-cloud"><a class="pill source" href="#texts">Open Source Library</a><button class="pill discuss" data-topic="Capitalism attribution rule">Discuss this</button></div></article>
-          <article class="truth-card blue"><h3>Empire Before America</h3><dl><dt>Contrast</dt><dd>Spanish, British, French, Portuguese, Dutch, and other empires used monarchy, church, chartered companies, extraction, conquest, forced labor, and colonial law before the United States.</dd><dt>Why it matters</dt><dd>This keeps the page honest about older imperial systems without using them to excuse American capitalism.</dd><dt>Audit</dt><dd><span class="audit-label">[needs verification]</span> Needs a later empire hallway and source shelf.</dd></dl><div class="link-cloud"><a class="pill idea" data-idea="colonialism" href="ideas/colonialism.html">Colonialism</a><a class="pill idea" data-idea="capitalism" href="ideas/capitalism.html">Capitalism</a></div></article>
+          <article class="truth-card blue"><h3>Empire Before America</h3><dl><dt>Contrast</dt><dd>Spanish, British, French, Portuguese, Dutch, and other empires used monarchy, church, chartered companies, extraction, conquest, forced labor, and colonial law before the United States.</dd><dt>Why it matters</dt><dd>This keeps the page honest about older imperial systems without using them to excuse American capitalism.</dd><dt>Audit</dt><dd><span class="audit-label">[needs verification]</span> Needs an empire hallway and source shelf.</dd></dl><div class="link-cloud"><a class="pill idea" data-idea="colonialism" href="ideas/colonialism.html">Colonialism</a><a class="pill idea" data-idea="capitalism" href="ideas/capitalism.html">Capitalism</a></div></article>
         </div>
       </section>
 
@@ -467,7 +467,7 @@
       </section>
 
       <section id="tests">
-        <div class="section-head"><div class="kicker">Subject Tests</div><h2>Expertise Areas</h2><p>These are simple local prototype tests. Later, scores and badges can belong to real accounts.</p></div>
+        <div class="section-head"><div class="kicker">Subject Tests</div><h2>Expertise Areas</h2><p>Short checks connect each road to the ideas, figures, sources, and warnings a reader should be able to explain.</p></div>
         <div class="tests">
           <article class="test-card" data-test="class-struggle"><h3>Marx / Class Struggle</h3><div class="quiz-question"><p>Which idea says political history is shaped by conflict between social classes?</p><button onclick="answerTest(this,true,'Class Struggle Badge')">Class struggle</button><button onclick="answerTest(this,false)">Invisible hand</button><button onclick="answerTest(this,false)">Social contract</button></div><div class="quiz-question"><p>In the Manifesto hallway, what are Marx and Engels mainly tracking?</p><button onclick="answerTest(this,true,'Manifesto Reader Badge')">Class power inside capitalism</button><button onclick="answerTest(this,false)">A neutral list of presidents</button><button onclick="answerTest(this,false)">Only personal morality</button></div><div class="quiz-question"><p>Which idea door belongs with this test?</p><button onclick="answerTest(this,false)">Minimal state</button><button onclick="answerTest(this,true,'Means of Production Badge')">Means of production</button><button onclick="answerTest(this,false)">Founder control</button></div><div class="quiz-question"><p>Why does Engels belong beside Marx in the Manifesto stop?</p><button onclick="answerTest(this,true,'Engels Context Badge')">He co-authored the Manifesto and links socialism to industrial capitalism</button><button onclick="answerTest(this,false)">He was only a later commentator</button><button onclick="answerTest(this,false)">He belongs only on the capitalist road</button></div><div class="result"></div></article>
           <article class="test-card" data-test="reform"><h3>Reform vs Revolution</h3><div class="quiz-question"><p>Which route tries to change society through elections, unions, laws, and welfare institutions?</p><button onclick="answerTest(this,false)">Vanguard seizure</button><button onclick="answerTest(this,true,'Reform Road Badge')">Democratic reform</button><button onclick="answerTest(this,false)">Coercive party control</button></div><div class="quiz-question"><p>Which figures sit naturally on the reform road?</p><button onclick="answerTest(this,true,'Social Democracy Badge')">Bernstein, Kautsky, Debs, Sanders</button><button onclick="answerTest(this,false)">Only Stalin and Mao</button><button onclick="answerTest(this,false)">Only Rockefeller and Morgan</button></div><div class="quiz-question"><p>What is the honest question reform raises?</p><button onclick="answerTest(this,true,'Reform Question Badge')">Can democracy change capitalism enough?</button><button onclick="answerTest(this,false)">Are sources unnecessary?</button><button onclick="answerTest(this,false)">Should all dissent disappear?</button></div><div class="quiz-question"><p>What does a welfare state usually preserve inside a mixed economy?</p><button onclick="answerTest(this,false)">Abolition of every market</button><button onclick="answerTest(this,true,'Mixed Economy Badge')">Private markets plus public rules, taxes, and social insurance</button><button onclick="answerTest(this,false)">One-party rule as the default</button></div><div class="result"></div></article>
@@ -477,7 +477,7 @@
       </section>
 
       <section id="badges">
-        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges should feel like earned knowledge, not fake points. Click ideas, open figures, start learning paths, study truth checks, and pass sample tests to unlock local prototype badges.</p></div>
+        <div class="section-head"><div class="kicker">Badge Cabinet</div><h2>Civic Medal Case</h2><p>Badges mark real study actions: open idea rooms, follow figure halls, start learning paths, check sources, study truth cards, and pass subject tests.</p></div>
         <div class="badges">
           <div class="badge-case"><h3>Guest Scholar Cabinet</h3><p>Earned badges stay in this browser for now.</p><div class="medals" id="medals"></div></div>
           <div class="badge-case"><h3>Badge Paths</h3><p>The cabinet now separates the kinds of learning instead of treating every click as the same thing.</p>
@@ -496,7 +496,7 @@
       </section>
 
       <section id="texts">
-        <div class="section-head"><div class="kicker">Working Source Shelf</div><h2>Source Library</h2><p>A simple shelf for the texts and topic pages already used by this prototype. This is the place source-path buttons should land.</p></div>
+        <div class="section-head"><div class="kicker">Source Shelf</div><h2>Source Library</h2><p>The source shelf gathers the primary texts, topic pages, reference leads, and image paths used by the hall.</p></div>
         <div class="source-list">
           <div class="source-index"><a class="pill source" href="#source-foundations">Foundations and Liberal Property</a><a class="pill source" href="#source-capitalism-ledger">Capitalism, Slavery, Empire, Land, and Labor</a><a class="pill source" href="#source-socialist-texts">Socialist and Marxist Primary Texts</a><a class="pill source" href="#source-state-power">Revolution, Soviet State Power, and Authoritarian Danger</a><a class="pill source" href="#source-democratic-public">Democratic Socialism, Welfare States, and Public Goods</a><a class="pill source" href="#source-market-liberalism">Market Liberalism, Austrian Economics, Libertarianism</a><a class="pill source" href="#source-modern-capitalism">Modern Capitalism Figures and Institutions</a><a class="pill source" href="#source-topic-overviews">Topic Overviews and Image Sources</a></div>
           <article class="source-group" id="source-foundations"><h3>Foundations and Liberal Property</h3><p>Locke, Smith, liberal rights, property, consent, and early market language. 5 source item(s).</p></article>
@@ -509,7 +509,7 @@
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Capitalism" target="_blank" rel="noopener">Capitalism / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label ok">[source lead checked]</span> Broad source lead for capitalism definitions, history, and criticism. Passage pinning still needed for the ledger.</p></article>
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Primitive_accumulation" target="_blank" rel="noopener">Primitive Accumulation / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label">[needs verification]</span> Source lead for capitalism origins, enclosure, colonialism, slavery, and accumulation debates.</p></article>
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Economics_of_slavery_in_the_United_States" target="_blank" rel="noopener">Economics of Slavery in the United States / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label">[needs verification]</span> Source lead for plantation economy, cotton, capital, enslaved labor, and U.S. economic history.</p></article>
-          <article class="source-item"><a href="https://en.wikipedia.org/wiki/Racial_capitalism" target="_blank" rel="noopener">Racial Capitalism / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label ok">[source lead checked]</span> Supports the concept link between racial hierarchy, capital accumulation, slavery, colonialism, and inequality; exact scholarly passage pinning still belongs later.</p></article>
+          <article class="source-item"><a href="https://en.wikipedia.org/wiki/Racial_capitalism" target="_blank" rel="noopener">Racial Capitalism / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label ok">[source lead checked]</span> Supports the concept link between racial hierarchy, capital accumulation, slavery, colonialism, and inequality; exact scholarly passage pinning remains open.</p></article>
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Slavery_in_the_United_States" target="_blank" rel="noopener">Slavery in the United States / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label">[needs verification]</span> Source lead for slavery, law, violence, labor, and racial order in U.S. history.</p></article>
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Indian_Removal_Act" target="_blank" rel="noopener">Indian Removal Act / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label">[needs verification]</span> Source lead for Jackson-era removal policy and state-backed dispossession.</p></article>
           <article class="source-item"><a href="https://en.wikipedia.org/wiki/Trail_of_Tears" target="_blank" rel="noopener">Trail of Tears / Wikipedia</a><p><span class="source-tag">Topic / image lead</span> <span class="audit-label">[needs verification]</span> Source lead for forced migration, death, removal routes, and Native dispossession.</p></article>
@@ -625,15 +625,15 @@
       </section>
 
       <section id="discussion">
-        <div class="section-head"><div class="kicker">Future Community Layer</div><h2>Discussion Chamber</h2><p>Every figure, idea, event, and test should eventually have a discussion thread. This skeleton shows the architecture without faking working comments.</p></div>
+        <div class="section-head"><div class="kicker">Community Layer</div><h2>Discussion Chamber</h2><p>Every figure, idea, event, and test points to a named discussion topic so the debate stays attached to the lesson being studied.</p></div>
         <div class="discussion">
-          <h3>Massive Comments Belong Here Later</h3>
+          <h3>Discussion Queue</h3>
           <p id="discussionTopic" class="truth-banner">Discussion topic: choose a figure, idea, event, or test.</p>
-          <p>First path: giscus with GitHub Discussions. Bigger path: hosted app with auth, profiles, moderation, and a comments database.</p>
+          <p>First path: GitHub Discussions. Bigger path: hosted accounts, profiles, moderation, and a comments database.</p>
           <div class="comment-row"><b>Figure threads:</b> Marx, Engels, Debs, Lenin, Trotsky, Stalin, Mao, Sanders.</div>
           <div class="comment-row"><b>Idea threads:</b> socialism, communism, capitalism, markets, labor, reform, revolution, authoritarianism.</div>
           <div class="comment-row"><b>Test threads:</b> ask why an answer is right, challenge wording, add sources.</div>
-          <button class="tiny-btn" type="button" disabled>Comments Coming Later</button>
+          <button class="tiny-btn" type="button" disabled>Discussion Room Planned</button>
         </div>
       </section>
 
@@ -647,12 +647,12 @@
 
     <aside class="rightbar">
       <div class="sidebox"><h3>Knowledge Tracker</h3><div class="tracker-row"><span>Figure Badges</span><b id="figBadges">0</b></div><div class="tracker-row"><span>Idea Badges</span><b id="ideaBadges">0</b></div><div class="tracker-row"><span>Path Badges</span><b id="pathBadges">0</b></div><div class="tracker-row"><span>Source Badges</span><b id="sourceBadges">0</b></div><div class="tracker-row"><span>Test Badges</span><b id="testBadges">0</b></div><div class="tracker-row"><span>Truth Badges</span><b id="truthBadges">0</b></div></div>
-      <div class="sidebox"><h3>Hosting Road</h3><div class="path">Now: GitHub Pages prototype</div><div class="path">Next: localStorage badges</div><div class="path">Later: Vercel + Supabase</div><div class="path">Later: real comments and profiles</div></div>
+      <div class="sidebox"><h3>Hosting Road</h3><div class="path">Published: GitHub Pages</div><div class="path">Progress: browser-saved badges</div><div class="path">Next build: accounts + database</div><div class="path">Discussion: moderated threads</div></div>
     </aside>
   </div>
 
   <footer>
-    Hot2Trotski is a prototype study hall. Photos load from Wikipedia summaries where available. Quotes, licenses, login, and comments must be verified before becoming real features.
+    Hot2Trotski is a truth-first study hall. Photos load from Wikipedia summaries where available. Source passages, licenses, shared accounts, and comments stay marked until they are verified.
   </footer>
 
   <script>
@@ -1306,7 +1306,7 @@
       if(state.truths.length<3) goals.push('Study three truth checks');
       if(state.sources.length<3) goals.push('Open three source shelf items');
       if(state.tests.length<4) goals.push('Pass all four subject tests');
-      document.getElementById('nextBadges').innerHTML=(goals.length?goals:['Full local prototype cabinet complete']).map(goal=>`<div class="tracker-row"><span>${goal}</span><b>${goals.length?'Next':'Done'}</b></div>`).join('');
+      document.getElementById('nextBadges').innerHTML=(goals.length?goals:['Medal case complete']).map(goal=>`<div class="tracker-row"><span>${goal}</span><b>${goals.length?'Next':'Done'}</b></div>`).join('');
     }
     function buildIdeaCloud(){
       const cloud=document.getElementById('ideaCloud');
@@ -1373,7 +1373,7 @@
           const src=data.thumbnail && data.thumbnail.source;
           if(src){box.innerHTML=`<img src="${src}" alt="${(data.title||title).replace(/"/g,'&quot;')}">`;}
           else{box.textContent='Wiki image not available yet';}
-        }catch(e){box.textContent='Wiki image placeholder';}
+        }catch(e){box.textContent='Wiki image unavailable';}
       }
     }
     buildIdeaCloud(); renderState(); hydratePhotos();
