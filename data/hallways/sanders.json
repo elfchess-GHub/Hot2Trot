@@ -32,8 +32,8 @@
       {
         "title": "Sanders / Senate Op-Ed",
         "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
-        "note": "Source lead for health care and rights language.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: health care as a human right, Medicare for All, and public-goods politics.",
+        "auditStatus": "[passage pinned]"
       },
       {
         "title": "Bernie Sanders / Wikipedia",
@@ -74,8 +74,8 @@
         {
           "title": "Sanders / Senate Op-Ed",
           "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
-          "note": "Source lead for democratic-socialist public-goods language.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: democratic-socialist public-goods language and health care as a human right.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -91,8 +91,8 @@
         {
           "title": "Sanders / Senate Op-Ed",
           "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
-          "note": "Source lead for health care as a public claim.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: health care as a public claim and human right.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -108,8 +108,8 @@
         {
           "title": "Sanders / Senate Op-Ed",
           "url": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
-          "note": "Source lead for public spending and health care argument.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: public spending and health care argument.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     }

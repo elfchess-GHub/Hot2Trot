@@ -32,8 +32,8 @@
       {
         "title": "Bernstein / Evolutionary Socialism",
         "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
-        "note": "Source lead for revisionism, movement, democracy, and reform strategy.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: revisionism, movement, democracy, legislative reform, and reform strategy.",
+        "auditStatus": "[passage pinned]"
       },
       {
         "title": "Eduard Bernstein / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Eduard Bernstein",
     "discussionText": "This is the planned debate room for Bernstein: reform, elections, unions, social democracy, revisionism, and whether democracy can change economic power.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1899",
     "timelineTitle": "Bernstein and Revisionism",
     "timelineMeaning": "The socialist road splits over democratic reform, unions, elections, and whether capitalism can be transformed without rupture.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[passage pinned]",
     "ideaPills": ["revisionism", "democratic-reform", "social-democracy"],
     "sortYear": 1899
   },
@@ -74,8 +74,8 @@
         {
           "title": "Bernstein / Evolutionary Socialism",
           "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
-          "note": "Source lead for revisionism and reform strategy.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: revisionism, movement, and reform strategy.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -91,8 +91,8 @@
         {
           "title": "Bernstein / Evolutionary Socialism",
           "url": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
-          "note": "Source lead for democratic reform strategy.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: legislative reform, democratic political action, and the comparison between constitutional legislation and revolutionary force.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -108,8 +108,8 @@
         {
           "title": "Social Democracy / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Social_democracy",
-          "note": "Topic source lead for the political tradition.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: gradual democratic change, reforming capitalism toward social justice, and mixed-economy policy tradition.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     }

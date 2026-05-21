@@ -31,8 +31,8 @@
       {
         "title": "Wealth of Nations",
         "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
-        "note": "supports: division of labor, exchange, and self-interest source lead.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: division of labor, exchange, self-interest, invisible hand, and limits on state direction of capital.",
+        "auditStatus": "[passage pinned]"
       },
       {
         "title": "Adam Smith / Wikipedia",
@@ -43,7 +43,7 @@
     ],
     "discussionTopic": "Adam Smith",
     "discussionText": "This is the planned debate room for Smith: markets, specialization, exchange, self-interest, moral philosophy, and the socialist challenge that comes later.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source supports this]"
   },
   "hallCard": {
     "timelineDate": "1776",
@@ -73,8 +73,8 @@
         {
           "title": "Smith / Wealth of Nations",
           "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
-          "note": "supports: market exchange and self-interest source lead.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: market exchange, self-interest, and limits on state direction of capital.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     },
@@ -90,8 +90,8 @@
         {
           "title": "Smith / Wealth of Nations",
           "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
-          "note": "supports: division of labor source lead.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: division of labor and pin factory example.",
+          "auditStatus": "[passage pinned]"
         }
       ]
     }
