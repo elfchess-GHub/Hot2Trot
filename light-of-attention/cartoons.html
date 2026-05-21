@@ -27,6 +27,11 @@
         <h1>Cartoons</h1>
         <p>Pictures that point. Comic panels, poster jokes, visual arguments, and scenes about power, media, machinery, and attention.</p>
 
+        <h2>Socialist Shelf Cartoons</h2>
+        <p>Modern versions on the left. Older versions on the right. The order follows the Socialist Shelf podcast books.</p>
+        <div class="cartoon-pair-grid" id="socialist-cartoon-grid" aria-label="Socialist Shelf cartoon pairs"></div>
+
+        <h2>Wall Archive</h2>
         <div class="cartoon-grid" id="cartoon-grid" aria-label="Cartoon gallery"></div>
       </article>
 
@@ -40,6 +45,19 @@
   </main>
 
   <script>
+    const socialistCartoonPairs = [
+      ["The Communist Manifesto", "521modern/bk1.png", "521old/Book1.png"],
+      ["Capital, Volume I", "521modern/bk2.png", "521old/book2.png"],
+      ["Socialism: Utopian and Scientific", "521modern/bk3.png", "521old/book3.png"],
+      ["Wage Labour and Capital", "521modern/bk4.png", "521old/book4.png"],
+      ["The State and Revolution", "521modern/bk5.png", "521old/book5.png"],
+      ["Reform or Revolution", "521modern/bk6.png", "521old/book6.png"],
+      ["The Conquest of Bread", "521modern/bk7.png", "521old/book7.png"],
+      ["Mutual Aid: A Factor of Evolution", "521modern/bk8.png", "521old/book8.png"],
+      ["The Ragged-Trousered Philanthropists", "521modern/Bk9.png", "521old/book9.png"],
+      ["The Road to Wigan Pier", "521modern/bk10.png", "521old/book10.png"]
+    ];
+
     const cartoonFiles = [
       "042085ea-4e7b-4e4a-af7f-0e216766ae7e.png",
       "17fdf999-7e53-4faf-b767-47abcd9000d7.png",
@@ -100,8 +118,47 @@
       "Screenshot 2026-05-17 120439.png"
     ];
 
-    const encodeMediaPath = (folder, file) => `${folder}/${encodeURIComponent(file)}`;
+    const encodeMediaPath = (folder, file) => `${folder}/${file.split("/").map(encodeURIComponent).join("/")}`;
+    const pairGrid = document.getElementById("socialist-cartoon-grid");
     const grid = document.getElementById("cartoon-grid");
+
+    socialistCartoonPairs.forEach(([title, modernFile, oldFile], index) => {
+      const section = document.createElement("section");
+      section.className = "cartoon-pair";
+
+      const titleEl = document.createElement("h3");
+      titleEl.textContent = `${index + 1}. ${title}`;
+
+      const pair = document.createElement("div");
+      pair.className = "cartoon-pair-images";
+
+      [
+        ["Modern", modernFile],
+        ["Old", oldFile]
+      ].forEach(([label, file]) => {
+        const link = document.createElement("a");
+        link.className = "cartoon-pair-tile";
+        link.href = encodeMediaPath("cartoons", file);
+        link.target = "_blank";
+        link.rel = "noopener";
+
+        const badge = document.createElement("span");
+        badge.textContent = label;
+
+        const img = document.createElement("img");
+        img.src = encodeMediaPath("cartoons", file);
+        img.alt = `${label} cartoon for ${title}`;
+        img.loading = "lazy";
+
+        link.appendChild(badge);
+        link.appendChild(img);
+        pair.appendChild(link);
+      });
+
+      section.appendChild(titleEl);
+      section.appendChild(pair);
+      pairGrid.appendChild(section);
+    });
 
     cartoonFiles.forEach((file, index) => {
       const link = document.createElement("a");
