@@ -245,11 +245,15 @@ body {
 .podcast-rail {
   display: grid;
   align-content: start;
-  gap: 18px;
+  gap: 230px;
 }
 
 .podcast-rail-left {
-  padding-top: 190px;
+  padding-top: 70px;
+}
+
+.podcast-rail-right {
+  padding-top: 0;
 }
 
 .portrait-sticker {
@@ -282,18 +286,6 @@ body {
   text-transform: uppercase;
   letter-spacing: .04em;
   line-height: 1;
-}
-
-.drop-small {
-  margin-top: 58px;
-}
-
-.drop-medium {
-  margin-top: 128px;
-}
-
-.drop-large {
-  margin-top: 210px;
 }
 
 .small-image {
@@ -526,13 +518,8 @@ th {
 
   .podcast-rail {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
     padding-top: 0;
-  }
-
-  .drop-small,
-  .drop-medium,
-  .drop-large {
-    margin-top: 0;
   }
 
   .motto-card {
@@ -578,6 +565,7 @@ th {
 
   .podcast-rail {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .talk-panel {
