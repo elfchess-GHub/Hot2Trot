@@ -146,6 +146,11 @@ body {
   align-items: start;
 }
 
+.podcast-layout {
+  grid-template-columns: 160px minmax(0, 1fr) 180px;
+  gap: 16px;
+}
+
 .paper-panel {
   background: rgba(240, 216, 170, .96);
   color: var(--ink);
@@ -235,8 +240,60 @@ body {
 .side-stack {
   display: grid;
   gap: 16px;
-  position: sticky;
-  top: 18px;
+}
+
+.podcast-rail {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+}
+
+.podcast-rail-left {
+  padding-top: 190px;
+}
+
+.portrait-sticker {
+  background: var(--ink);
+  border: 4px solid var(--ink);
+  border-radius: 12px;
+  color: var(--cream);
+  overflow: hidden;
+  box-shadow: 5px 5px 0 var(--shadow);
+  transform: rotate(-1.2deg);
+}
+
+.portrait-sticker.monitor {
+  background: #0c4776;
+  transform: rotate(1deg);
+}
+
+.portrait-sticker img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.portrait-sticker span {
+  display: block;
+  padding: 8px 8px 9px;
+  font-family: Impact, "Arial Black", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  line-height: 1;
+}
+
+.drop-small {
+  margin-top: 58px;
+}
+
+.drop-medium {
+  margin-top: 128px;
+}
+
+.drop-large {
+  margin-top: 210px;
 }
 
 .small-image {
@@ -251,55 +308,6 @@ body {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.talking-side {
-  display: grid;
-  gap: 12px;
-}
-
-.talking-card {
-  display: grid;
-  grid-template-columns: 78px minmax(0, 1fr);
-  align-items: center;
-  gap: 10px;
-  background: var(--ink);
-  border: 4px solid var(--ink);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 5px 5px 0 var(--shadow);
-}
-
-.talking-card img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-
-.talking-card span {
-  color: var(--cream);
-  font-family: Impact, "Arial Black", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .04em;
-  line-height: 1;
-  padding-right: 10px;
-}
-
-.talking-card.monitor {
-  grid-template-columns: minmax(0, 1fr) 78px;
-  background: #0c4776;
-}
-
-.talking-card.monitor img {
-  grid-column: 2;
-}
-
-.talking-card.monitor span {
-  grid-column: 1;
-  grid-row: 1;
-  padding: 0 0 0 10px;
-  text-align: right;
 }
 
 .link-wall {
@@ -494,14 +502,37 @@ th {
     grid-template-columns: 1fr 1fr;
   }
 
+  .podcast-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .podcast-layout .paper-panel {
+    order: 1;
+  }
+
+  .podcast-rail-left {
+    order: 2;
+  }
+
+  .podcast-rail-right {
+    order: 3;
+  }
+
   .side-stack {
     grid-column: 1 / -1;
     grid-template-columns: 1fr 1fr;
     position: static;
   }
 
-  .talking-side {
-    grid-template-columns: 1fr 1fr;
+  .podcast-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 0;
+  }
+
+  .drop-small,
+  .drop-medium,
+  .drop-large {
+    margin-top: 0;
   }
 
   .motto-card {
@@ -545,8 +576,8 @@ th {
     max-width: none;
   }
 
-  .talking-side {
-    grid-template-columns: 1fr;
+  .podcast-rail {
+    grid-template-columns: 1fr 1fr;
   }
 
   .talk-panel {
