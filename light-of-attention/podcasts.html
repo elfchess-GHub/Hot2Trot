@@ -503,6 +503,29 @@
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && lightbox.classList.contains("open")) close();
     });
+
+    const podcastPlayers = Array.from(document.querySelectorAll("audio"));
+    let nextEpisodeTimer = null;
+
+    podcastPlayers.forEach((player, index) => {
+      player.addEventListener("play", () => {
+        window.clearTimeout(nextEpisodeTimer);
+        podcastPlayers.forEach((otherPlayer) => {
+          if (otherPlayer !== player) otherPlayer.pause();
+        });
+      });
+
+      player.addEventListener("ended", () => {
+        const nextPlayer = podcastPlayers[index + 1];
+        if (!nextPlayer) return;
+
+        nextEpisodeTimer = window.setTimeout(() => {
+          nextPlayer.play().catch(() => {
+            nextPlayer.scrollIntoView({ behavior: "smooth", block: "center" });
+          });
+        }, 1800);
+      });
+    });
   </script>
 </body>
 </html>
