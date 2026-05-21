@@ -196,6 +196,27 @@ body {
   box-shadow: 5px 5px 0 rgba(0,0,0,.25);
 }
 
+.collection-divider {
+  border: 5px solid var(--ink);
+  background: var(--red);
+  color: var(--cream);
+  padding: 18px 16px;
+  box-shadow: 6px 6px 0 rgba(0,0,0,.3);
+}
+
+.collection-divider h2,
+.collection-divider p {
+  margin-bottom: 0;
+}
+
+.collection-divider .meta {
+  color: var(--gold);
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: .9rem;
+}
+
 .item a {
   color: inherit;
   text-decoration-thickness: 3px;
