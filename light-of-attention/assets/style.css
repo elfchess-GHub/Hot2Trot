@@ -734,6 +734,14 @@ th {
     min-height: 0;
   }
 
+  .today-pair {
+    grid-template-columns: 150px minmax(0, 1fr) 150px;
+  }
+
+  .today-pair .speaker-cartoon {
+    max-width: 150px;
+  }
+
   .motto-card {
     grid-column: 1 / -1;
     max-width: 360px;
@@ -782,6 +790,14 @@ th {
 
   .cartoon-pair-images {
     grid-template-columns: 1fr;
+  }
+
+  .today-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .today-pair .speaker-cartoon {
+    max-width: 260px;
   }
 
   .talk-panel {
