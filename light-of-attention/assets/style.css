@@ -228,6 +228,31 @@ body {
   text-underline-offset: 3px;
 }
 
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.source-title,
+.source-links a {
+  border: 3px solid var(--ink);
+  background: var(--paper2);
+  color: var(--ink);
+  font-size: .86rem;
+  font-weight: 900;
+  line-height: 1.15;
+  padding: 6px 8px;
+}
+
+.source-title {
+  background: var(--ink);
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
 .item .meta {
   font-weight: 900;
   color: #6d3728;
