@@ -12,7 +12,7 @@
       "Musk belongs here because twenty-first-century capitalism mixes founder mythology, stock-market wealth, state contracts, industrial risk, social media power, and political influence.",
       "He matters because he shows that capitalist power can be private, public-facing, state-supported, and media-shaping at the same time."
     ],
-    "cleanIdea": "Modern capitalist power can come from owning valuable firms, controlling platforms, winning public contracts, and turning personal reputation into market power.",
+    "cleanIdea": "Modern capitalist power can come from owning valuable firms, controlling platforms, winning public contracts, and turning personal reputation into market power. Musk is useful because he forces the page to hold several truths at once: private risk, public subsidy, engineering ambition, securities conflict, labor conflict, and platform control.",
     "badgePaths": [
       { "label": "Founder Control Badge", "ideaId": "founder-control" },
       { "label": "State Contracts Badge", "ideaId": "state-contracts" },
@@ -85,14 +85,14 @@
       "title": "Founder Control",
       "plainDefinition": "Founder control is the power a founder keeps through ownership stakes, voting rights, board influence, brand identity, and investor confidence.",
       "context": "In the Musk path, founder control means the person and the company become hard to separate in markets, media, and politics.",
-      "whyMatters": "Founder control matters because capitalism can concentrate authority inside a public company even when many people technically own shares.",
+      "whyMatters": "Founder control matters because capitalism can concentrate authority inside a public company even when many people technically own shares. The founder can become the product, the market signal, the political actor, and the crisis risk all at once.",
       "relatedFigures": [{ "label": "Elon Musk", "id": "musk" }],
       "relatedIdeas": ["capitalism", "market-liberalism", "private-property"],
       "sources": [
         {
           "title": "Forbes / Elon Musk profile",
           "url": "https://www.forbes.com/profile/elon-musk",
-          "note": "Source lead for company and wealth framing.",
+          "note": "Source lead for company and wealth framing; supports the branch from personal control to public-company market power.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -102,14 +102,14 @@
       "title": "State Contracts",
       "plainDefinition": "State contracts are public contracts awarded to private firms for services, infrastructure, technology, military, space, health, or other public purposes.",
       "context": "In the Musk path, SpaceX shows that private capitalism and public funding can be deeply intertwined.",
-      "whyMatters": "State contracts matter because a company can be private and still depend on public missions, public money, and public risk.",
+      "whyMatters": "State contracts matter because a company can be private and still depend on public missions, public money, and public risk. This is where the simple slogan 'government versus business' breaks down: capitalist firms can build public projects with public contracts while keeping private ownership.",
       "relatedFigures": [{ "label": "Elon Musk", "id": "musk" }],
       "relatedIdeas": ["public-spending", "state-power", "capitalism"],
       "sources": [
         {
           "title": "NASA / Commercial Crew Program",
           "url": "https://www.nasa.gov/humans-in-space/commercial-space/commercial-crew-program/commercial-crew-program-essentials/",
-          "note": "Source lead for commercial crew contract structure.",
+          "note": "Source lead for commercial crew contract structure; supports the public-contract side of the Musk hallway.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -119,14 +119,14 @@
       "title": "Attention Platform",
       "plainDefinition": "An attention platform is a privately controlled media or social platform that shapes what people see, share, monetize, fight over, or believe is visible.",
       "context": "In the Musk path, Twitter/X turns ownership into direct influence over a public communication arena.",
-      "whyMatters": "Attention platforms matter because speech, politics, advertising, identity, and markets now move through privately owned infrastructure.",
+      "whyMatters": "Attention platforms matter because speech, politics, advertising, identity, and markets now move through privately owned infrastructure. Owning the platform is not the same as owning every opinion on it, but it can shape moderation, visibility, monetization, and public conflict.",
       "relatedFigures": [{ "label": "Elon Musk", "id": "musk" }, { "label": "George Orwell", "id": "orwell" }],
       "relatedIdeas": ["political-language", "propaganda", "capitalism"],
       "sources": [
         {
           "title": "Acquisition of Twitter by Elon Musk / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
-          "note": "Source lead for the acquisition and ownership shift.",
+          "note": "Source lead for the acquisition and ownership shift; supports the claim that platform ownership belongs in the capitalism road.",
           "auditStatus": "[needs verification]"
         }
       ]

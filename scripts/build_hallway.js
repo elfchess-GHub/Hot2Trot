@@ -62,6 +62,27 @@ function renderSources(sources, block = true) {
   }).join("\n      ");
 }
 
+function renderExtraSections(idea) {
+  const sections = [];
+
+  if (idea.carefulVersion) {
+    sections.push(`<section class="panel">
+      <h2>Careful Version</h2>
+      <p class="plain">${escapeHtml(idea.carefulVersion)}</p>
+    </section>`);
+  }
+
+  if (Array.isArray(idea.keyTerms) && idea.keyTerms.length) {
+    const terms = idea.keyTerms.map((term) => `<span class="pill">${escapeHtml(term)}</span>`).join("");
+    sections.push(`<section class="panel">
+      <h2>Key Terms</h2>
+      ${terms}
+    </section>`);
+  }
+
+  return sections.join("\n    ");
+}
+
 function buildFigure() {
   const figure = packet.figure;
   const html = render(figureTemplate, {
@@ -95,6 +116,7 @@ function buildIdea(idea) {
     plainDefinition: escapeHtml(idea.plainDefinition),
     context: escapeHtml(idea.context),
     whyMatters: escapeHtml(idea.whyMatters),
+    extraSections: renderExtraSections(idea),
     relatedLinks: [...relatedFigureLinks, ...relatedIdeaLinks].join(""),
     sources: renderSources(idea.sources, false)
   });

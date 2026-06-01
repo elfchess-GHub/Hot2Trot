@@ -12,7 +12,7 @@
       "Trump belongs here because modern capitalism is not only factories or technology. It is real estate, branding, licensing, debt, media attention, inheritance, litigation, and political office.",
       "He matters because his path makes the border between private business, public power, media spectacle, and political loyalty impossible to ignore."
     ],
-    "cleanIdea": "Capital can become political power when property, brand, media attention, party politics, and state authority reinforce one another.",
+    "cleanIdea": "Capital can become political power when property, brand, media attention, party politics, and state authority reinforce one another. Trump is not on the page as a cartoon villain; he is there because modern capitalism can turn ownership, debt, spectacle, and office into one public-force machine.",
     "badgePaths": [
       { "label": "Real Estate Capital Badge", "ideaId": "real-estate-capital" },
       { "label": "Brand Politics Badge", "ideaId": "brand-politics" },
@@ -79,14 +79,14 @@
       "title": "Real Estate Capital",
       "plainDefinition": "Real estate capital is wealth and power built through land, buildings, rent, debt, zoning, development, taxes, speculation, and location.",
       "context": "In the Trump path, real estate is not just buildings. It is inheritance, leverage, city politics, branding, and legal conflict.",
-      "whyMatters": "Real estate capital matters because property can become political influence, social status, and public-policy pressure.",
+      "whyMatters": "Real estate capital matters because property can become political influence, social status, and public-policy pressure. Buildings sit inside law: zoning, tax treatment, lending, permits, courts, labor, inheritance, and city politics all shape who profits.",
       "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }],
       "relatedIdeas": ["capitalism", "private-property", "state-power"],
       "sources": [
         {
           "title": "Business career of Donald Trump / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Business_career_of_Donald_Trump",
-          "note": "Source lead for the real-estate business path.",
+          "note": "Source lead for the real-estate business path; supports the branch from property ownership to brand and political power.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -96,14 +96,14 @@
       "title": "Brand Politics",
       "plainDefinition": "Brand politics is the use of personal image, media attention, slogans, loyalty, spectacle, and market identity as political force.",
       "context": "In the Trump path, the business brand and political identity reinforce each other.",
-      "whyMatters": "Brand politics matters because modern power can be sold, watched, repeated, and defended like a product.",
+      "whyMatters": "Brand politics matters because modern power can be sold, watched, repeated, and defended like a product. This is not only advertising; it is identity, loyalty, media repetition, grievance, celebrity, and the conversion of attention into political force.",
       "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }, { "label": "George Orwell", "id": "orwell" }],
       "relatedIdeas": ["political-language", "propaganda", "capitalism"],
       "sources": [
         {
           "title": "Donald Trump / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Donald_Trump",
-          "note": "Source lead for media and political biography.",
+          "note": "Source lead for media and political biography; supports the link between celebrity, media, and political identity.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -113,14 +113,14 @@
       "title": "Political Capitalism",
       "plainDefinition": "Political capitalism is the study of how private wealth, public office, regulation, contracts, courts, parties, lobbying, and state power interact.",
       "context": "In the Trump path, private business identity and public authority meet directly.",
-      "whyMatters": "Political capitalism matters because democracy has to ask when private gain, public office, and state authority become entangled.",
+      "whyMatters": "Political capitalism matters because democracy has to ask when private gain, public office, and state authority become entangled. This room is where conflicts of interest, state power, courts, business networks, and voter loyalty have to be studied together instead of separately.",
       "relatedFigures": [{ "label": "Donald Trump", "id": "trump" }, { "label": "Elon Musk", "id": "musk" }],
       "relatedIdeas": ["state-power", "capitalism", "democracy"],
       "sources": [
         {
           "title": "The Trump Organization / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/The_Trump_Organization",
-          "note": "Source lead for the business organization and ownership path.",
+          "note": "Source lead for the business organization and ownership path; supports the private-business side of the political-capitalism hallway.",
           "auditStatus": "[needs verification]"
         }
       ]

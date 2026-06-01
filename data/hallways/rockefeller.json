@@ -12,7 +12,7 @@
       "Rockefeller belongs here because American capitalism cannot be explained without oil, trusts, rail rebates, industrial consolidation, and monopoly power.",
       "He matters because Standard Oil shows the double edge of capitalist scale: lower costs and organized production on one side, concentrated private power and antitrust backlash on the other."
     ],
-    "cleanIdea": "Industrial capitalism can build enormous productive systems, then become so concentrated that democracy has to ask whether private power is governing the market.",
+    "cleanIdea": "Industrial capitalism can build enormous productive systems, then become so concentrated that democracy has to ask whether private power is governing the market. Rockefeller is the cleanest American doorway into that problem: efficiency, scale, lower costs, ruthless competition, monopoly pressure, antitrust, and philanthropy all sit in one hallway.",
     "badgePaths": [
       { "label": "Trust Power Badge", "ideaId": "trust-power" },
       { "label": "Oil Capital Badge", "ideaId": "oil-capital" },
@@ -77,17 +77,31 @@
     {
       "id": "trust-power",
       "title": "Trust Power",
-      "plainDefinition": "Trust power is concentrated corporate control over many companies or assets, often used to coordinate pricing, production, competition, or market access.",
-      "context": "In the Rockefeller path, trust power turns the oil industry into a question of private coordination and public control.",
-      "whyMatters": "Trust power matters because capitalism can produce firms so large that the market stops looking like open competition.",
+      "plainDefinition": "Trust power is concentrated corporate control over many companies, assets, routes, supplies, or markets, often used to coordinate pricing, production, competition, or access.",
+      "context": "In the Rockefeller path, trust power turns capitalism into a question of private coordination and public control: when does scale become domination?",
+      "whyMatters": "Trust power matters because capitalism can produce firms so large that the market stops looking like open competition. Standard Oil is the classic American road sign: efficiency, integration, wealth, monopoly power, and antitrust law all arrive in the same story.",
+      "carefulVersion": "Big is not automatically bad. The question is whether size comes with exclusion, price control, coercive contracts, political leverage, suppression of competitors, or control over essential access. Trust power is where private success starts acting like private government.",
+      "keyTerms": ["Antitrust", "Monopoly Power", "Competition", "Oil Capital", "State Power"],
       "relatedFigures": [{ "label": "John D. Rockefeller", "id": "rockefeller" }],
-      "relatedIdeas": ["antitrust", "capitalism", "market"],
+      "relatedIdeas": ["antitrust", "monopoly-power", "competition", "oil-capital", "state-power", "market"],
       "sources": [
         {
           "title": "Standard Oil / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Standard_Oil",
-          "note": "Source lead for the Standard Oil trust.",
+          "note": "supports: trust form, antitrust attention, and monopoly case pathway.",
+          "auditStatus": "[source lead checked]"
+        },
+        {
+          "title": "Standard Oil Co. v. United States / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Standard_Oil_Co._of_New_Jersey_v._United_States",
+          "note": "source lead for the Supreme Court antitrust case.",
           "auditStatus": "[needs verification]"
+        },
+        {
+          "title": "DOJ / The Antitrust Laws",
+          "url": "https://www.justice.gov/atr/antitrust-laws-and-you",
+          "note": "supports monopoly and restraint-of-trade language.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -96,14 +110,14 @@
       "title": "Oil Capital",
       "plainDefinition": "Oil capital is wealth and power built through petroleum extraction, refining, transport, pricing, infrastructure, and energy dependence.",
       "context": "In the Rockefeller path, oil capital means industrial organization plus control over the fuel of modern life.",
-      "whyMatters": "Oil capital matters because energy systems shape labor, transport, war, environment, prices, and political power.",
+      "whyMatters": "Oil capital matters because energy systems shape labor, transport, war, environment, prices, and political power. Standard Oil is not just a company story; it is a story about controlling a necessary input for modern transport, factories, heating, and military power.",
       "relatedFigures": [{ "label": "John D. Rockefeller", "id": "rockefeller" }],
       "relatedIdeas": ["capitalism", "monopoly-power", "railroad-capitalism"],
       "sources": [
         {
           "title": "Britannica / Standard Oil Company and Trust",
           "url": "https://www.britannica.com/topic/Standard-Oil-Company-and-Trust",
-          "note": "Source lead for oil consolidation and antitrust breakup.",
+          "note": "Source lead for oil consolidation and antitrust breakup; supports the bridge from petroleum wealth to public regulation.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -113,14 +127,14 @@
       "title": "Monopoly Power",
       "plainDefinition": "Monopoly power is the ability of one firm or small group of firms to control prices, access, supply, competition, or terms in a market.",
       "context": "In the Rockefeller path, monopoly power becomes a public question because private concentration can overrule market freedom.",
-      "whyMatters": "Monopoly power matters because capitalism's defenders praise competition, but capitalism's winners may try to escape competition.",
+      "whyMatters": "Monopoly power matters because capitalism's defenders praise competition, but capitalism's winners may try to escape competition. That is the key tension: markets are defended as open contests, while successful firms often seek control, exclusion, pricing power, and legal protection.",
       "relatedFigures": [{ "label": "John D. Rockefeller", "id": "rockefeller" }, { "label": "Bill Gates", "id": "gates" }],
       "relatedIdeas": ["antitrust", "software-monopoly", "capitalism"],
       "sources": [
         {
           "title": "Standard Oil / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Standard_Oil",
-          "note": "Source lead for monopoly and breakup framing.",
+          "note": "Source lead for monopoly and breakup framing; supports the Standard Oil example for antitrust and market power.",
           "auditStatus": "[needs verification]"
         }
       ]

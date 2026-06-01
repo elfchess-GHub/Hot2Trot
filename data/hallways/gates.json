@@ -12,7 +12,7 @@
       "Gates belongs here because modern capitalism is not only factories, railroads, and banks. It is also software platforms, intellectual property, network effects, antitrust law, and foundation power.",
       "He matters because he shows both sides of concentrated wealth: Microsoft became a defining private technology empire, while Gates later used private philanthropy to shape global health and education debates."
     ],
-    "cleanIdea": "A billionaire can fund public-good work and still raise democratic questions about monopoly power, private agenda-setting, and who gets to steer public life.",
+    "cleanIdea": "A billionaire can fund public-good work and still raise democratic questions about monopoly power, private agenda-setting, and who gets to steer public life. Gates is the bridge from twentieth-century antitrust to twenty-first-century philanthropy and platform wealth.",
     "badgePaths": [
       { "label": "Software Monopoly Badge", "ideaId": "software-monopoly" },
       { "label": "Antitrust Badge", "ideaId": "antitrust" },
@@ -79,14 +79,14 @@
       "title": "Software Monopoly",
       "plainDefinition": "Software monopoly means a firm gains durable power over a digital market through operating systems, standards, licensing, defaults, bundling, network effects, or lock-in.",
       "context": "In the Gates path, monopoly is not only owning factories. It is controlling the platform where other software and users have to live.",
-      "whyMatters": "Software monopoly matters because modern capitalism can concentrate power through code, interfaces, contracts, and defaults, not only through land or machines.",
+      "whyMatters": "Software monopoly matters because modern capitalism can concentrate power through code, interfaces, contracts, and defaults, not only through land or machines. The lesson is that control over a platform can shape the choices available to customers, developers, competitors, and whole industries.",
       "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
       "relatedIdeas": ["capitalism", "market", "private-property"],
       "sources": [
         {
           "title": "DOJ / U.S. v. Microsoft Findings of Fact",
           "url": "https://www.justice.gov/atr/cases/f3800/msjudgex.htm",
-          "note": "Source lead for Microsoft market-power claims.",
+          "note": "Source lead for Microsoft market-power claims; supports the operating-system, browser, and platform-control branch.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -94,16 +94,30 @@
     {
       "id": "antitrust",
       "title": "Antitrust",
-      "plainDefinition": "Antitrust is law and policy aimed at limiting monopoly power, anti-competitive conduct, and market structures that block fair competition.",
-      "context": "In the Gates path, antitrust is the democratic/legal counterweight to private platform power.",
-      "whyMatters": "Antitrust matters because a market can stop acting like a fair contest when one firm controls the door, the rules, and the defaults.",
-      "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
-      "relatedIdeas": ["market", "capitalism", "state-power"],
+      "plainDefinition": "Antitrust is law and policy aimed at protecting competition by limiting monopoly power, restraints of trade, price-fixing, and anti-competitive conduct.",
+      "context": "On this road, antitrust is a democratic/legal counterweight to private market power. It is where capitalism admits that competition may need public rules to stay real.",
+      "whyMatters": "Antitrust matters because a market can stop acting like a fair contest when one firm controls the door, the defaults, the infrastructure, or the price. Rockefeller and Gates belong here because Standard Oil and Microsoft both became examples of private power large enough to bring law back into the market story.",
+      "carefulVersion": "Antitrust is not anti-business by default. It is about the difference between winning by better work and maintaining power by suppressing competition. The hard cases ask whether success came from merit, exclusion, control over access, predatory behavior, or political influence.",
+      "keyTerms": ["Competition", "Monopoly Power", "Trust Power", "Software Monopoly", "State Power"],
+      "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }, { "label": "John D. Rockefeller", "id": "rockefeller" }],
+      "relatedIdeas": ["market", "competition", "monopoly-power", "trust-power", "software-monopoly", "state-power"],
       "sources": [
+        {
+          "title": "DOJ / The Antitrust Laws",
+          "url": "https://www.justice.gov/atr/antitrust-laws-and-you",
+          "note": "supports: restraint of trade, monopoly, and anti-competitive conduct.",
+          "auditStatus": "[source lead checked]"
+        },
+        {
+          "title": "FTC / Competition Counts",
+          "url": "https://www.ftc.gov/enforcement-policy/competition-enforcement/competition-guidance/competition-counts",
+          "note": "supports: antitrust enforcement keeping markets open and competitive.",
+          "auditStatus": "[source lead checked]"
+        },
         {
           "title": "DOJ / U.S. v. Microsoft case index",
           "url": "https://www.justice.gov/atr/cases/ms_index.htm",
-          "note": "Source lead for the Microsoft antitrust case record.",
+          "note": "Source lead for the Microsoft antitrust case record; supports the legal counter-power side of the Gates hallway.",
           "auditStatus": "[needs verification]"
         }
       ]
@@ -113,14 +127,14 @@
       "title": "Philanthropy Capital",
       "plainDefinition": "Philanthropy capital is private wealth used to fund public-good work, often through foundations, grants, research programs, and agenda-setting institutions.",
       "context": "In the Gates path, philanthropy is real public-good work and also a democratic-accountability question.",
-      "whyMatters": "Philanthropy capital matters because helping people with private wealth does not erase the question of who decides priorities and who answers to the public.",
+      "whyMatters": "Philanthropy capital matters because helping people with private wealth does not erase the question of who decides priorities and who answers to the public. This is not a cheap attack on charity; it is the democratic question raised when private fortunes fund public-good work at global scale.",
       "relatedFigures": [{ "label": "Bill Gates", "id": "gates" }],
       "relatedIdeas": ["public-goods", "capitalism", "public-spending"],
       "sources": [
         {
           "title": "Gates Foundation / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Gates_Foundation",
-          "note": "Source lead for foundation scale and program areas.",
+          "note": "Source lead for foundation scale and program areas; supports the claim that philanthropy is part of modern capitalist power.",
           "auditStatus": "[needs verification]"
         }
       ]
