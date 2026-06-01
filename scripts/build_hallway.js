@@ -67,7 +67,7 @@ function renderExtraSections(idea) {
 
   if (idea.carefulVersion) {
     sections.push(`<section class="panel">
-      <h2>Careful Version</h2>
+      <h2>Where It Gets Tricky</h2>
       <p class="plain">${escapeHtml(idea.carefulVersion)}</p>
     </section>`);
   }
