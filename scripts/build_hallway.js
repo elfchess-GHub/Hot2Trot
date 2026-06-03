@@ -48,6 +48,15 @@ function ideaTitle(id) {
   return idea ? idea.title : id;
 }
 
+function laneColor() {
+  const lane = packet.hallCard?.lane || packet.figure?.lane || "blue";
+  return {
+    red: "#d33a32",
+    blue: "#2f74d0",
+    black: "#050608"
+  }[lane] || "#2f74d0";
+}
+
 function renderSources(sources, block = true) {
   if (block) {
     return sources.map((source) => {
@@ -93,6 +102,7 @@ function buildFigure() {
     era: escapeHtml(figure.era),
     role: escapeHtml(figure.role),
     wikiPage: escapeHtml(figure.wikiPage),
+    laneColor: laneColor(),
     whyHere: figure.whyHere.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n      "),
     cleanIdea: escapeHtml(figure.cleanIdea),
     badgeLinks: figure.badgePaths.map((badge) => `<a class="badge" href="../ideas/${escapeHtml(badge.ideaId)}.html">${escapeHtml(badge.label)}</a>`).join("\n        "),
@@ -113,6 +123,7 @@ function buildIdea(idea) {
   const html = render(ideaTemplate, {
     ideaTitle: escapeHtml(idea.title),
     shortName: escapeHtml(firstName(packet.figure.name)),
+    laneColor: laneColor(),
     plainDefinition: escapeHtml(idea.plainDefinition),
     context: escapeHtml(idea.context),
     whyMatters: escapeHtml(idea.whyMatters),
