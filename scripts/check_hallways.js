@@ -6,6 +6,7 @@ const indexPath = path.join(repoRoot, "data", "hallways", "index.json");
 const timelineStopsPath = path.join(repoRoot, "data", "timeline-stops.json");
 const errors = [];
 const warnings = [];
+let keyTermLinksChecked = 0;
 
 function readJson(relativePath) {
   const fullPath = path.join(repoRoot, relativePath);
@@ -47,6 +48,10 @@ function checkLocalLinks(relativePath, options = {}) {
   }
 
   const text = fs.readFileSync(fullPath, "utf8");
+  for (const block of text.matchAll(/<section[^>]*>[\s\S]*?<h2>Key Terms<\/h2>[\s\S]*?<\/section>/gi)) {
+    keyTermLinksChecked += [...block[0].matchAll(/href="([^"]+\.html)"/g)].length;
+  }
+
   for (const match of text.matchAll(/href="([^"]+)"/g)) {
     const href = match[1];
     if (/^(https?:|mailto:|#)/.test(href) || href.includes("${")) continue;
@@ -157,3 +162,4 @@ if (errors.length) {
 }
 
 console.log(`Hallway check passed for ${hallwayIds.length} hallway packet(s).`);
+console.log(`Key Terms links checked: ${keyTermLinksChecked}.`);

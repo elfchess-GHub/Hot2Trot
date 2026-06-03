@@ -14,6 +14,7 @@ const packetPath = path.resolve(repoRoot, inputPath);
 const packet = JSON.parse(fs.readFileSync(packetPath, "utf8"));
 const figureTemplate = fs.readFileSync(path.join(repoRoot, "templates", "figure-room.html"), "utf8");
 const ideaTemplate = fs.readFileSync(path.join(repoRoot, "templates", "idea-room.html"), "utf8");
+const hallwayIndex = JSON.parse(fs.readFileSync(path.join(repoRoot, "data", "hallways", "index.json"), "utf8"));
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -41,6 +42,27 @@ function writeFile(relativePath, content) {
 
 function firstName(fullName) {
   return String(fullName).split(/\s+/).pop();
+}
+
+function termId(term) {
+  return String(term)
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function existingIdeaIds() {
+  const ids = new Set();
+  for (const hallwayId of hallwayIndex) {
+    const file = path.join(repoRoot, "data", "hallways", `${hallwayId}.json`);
+    if (!fs.existsSync(file)) continue;
+    const hallway = JSON.parse(fs.readFileSync(file, "utf8"));
+    for (const idea of hallway.ideas || []) {
+      ids.add(idea.id);
+    }
+  }
+  return ids;
 }
 
 function ideaTitle(id) {
@@ -92,6 +114,16 @@ function renderExtraSections(idea) {
   return sections.join("\n    ");
 }
 
+const knownIdeaIds = existingIdeaIds();
+
+function renderKeyTerm(term) {
+  const id = termId(term);
+  if (knownIdeaIds.has(id)) {
+    return `<a class="term" href="../ideas/${escapeHtml(id)}.html">${escapeHtml(term)}</a>`;
+  }
+  return `<div class="term">${escapeHtml(term)}</div>`;
+}
+
 function buildFigure() {
   const figure = packet.figure;
   const html = render(figureTemplate, {
@@ -106,7 +138,7 @@ function buildFigure() {
     whyHere: figure.whyHere.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n      "),
     cleanIdea: escapeHtml(figure.cleanIdea),
     badgeLinks: figure.badgePaths.map((badge) => `<a class="badge" href="../ideas/${escapeHtml(badge.ideaId)}.html">${escapeHtml(badge.label)}</a>`).join("\n        "),
-    keyTerms: figure.keyTerms.map((term) => `<div class="term">${escapeHtml(term)}</div>`).join(""),
+    keyTerms: figure.keyTerms.map(renderKeyTerm).join(""),
     sources: renderSources(figure.sources, true),
     discussionText: escapeHtml(figure.discussionText)
   });
