@@ -56,7 +56,7 @@ function renderIdeaLinks(ids = []) {
 function renderSourceLinks(sources = []) {
   if (!sources.length) return `<div class="source-item"><span class="audit">[needs verification]</span><p class="plain">No source lead is listed yet.</p></div>`;
   return sources.map((source) => {
-    return `<div class="source-item"><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a><p class="plain">${escapeHtml(source.note || "Source lead for this event room.")}</p><span class="audit">[needs verification]</span></div>`;
+    return `<div class="source-item"><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a><p class="plain">${escapeHtml(source.note || "Source lead for this event room.")}</p><span class="audit">${escapeHtml(source.auditStatus || "[needs verification]")}</span></div>`;
   }).join("");
 }
 

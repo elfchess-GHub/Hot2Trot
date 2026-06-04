@@ -6,13 +6,14 @@
     "timelineTitle": "Enclosure and Primitive Accumulation",
     "timelineMeaning": "Land, law, enclosure, debt, and forced market dependence help create the conditions for wage labor and capitalist property relations.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Enclosure",
     "sources": [
       {
         "title": "Enclosure / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Enclosure",
-        "note": "Source lead for enclosure and land-law background."
+        "note": "Source lead for enclosure and land-law background. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -32,7 +33,11 @@
         "answer": "Because it shows how changes in land rights and property law helped push people toward wage labor and market dependence before industrial capitalism fully takes off."
       }
     },
-    "ideaPills": ["primitive-accumulation", "private-property", "land-dispossession"],
+    "ideaPills": [
+      "primitive-accumulation",
+      "private-property",
+      "land-dispossession"
+    ],
     "discussionTopic": "Enclosure and Primitive Accumulation"
   },
   {
@@ -42,18 +47,20 @@
     "timelineTitle": "Atlantic Slavery and Plantation Capitalism",
     "timelineMeaning": "Enslaved labor, cotton, sugar, shipping, insurance, credit, racial law, and plantation wealth become central to Atlantic and American capitalism.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Atlantic_slave_trade",
     "sources": [
       {
         "title": "Atlantic slave trade / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Atlantic_slave_trade",
-        "note": "Source lead for slavery, trade, shipping, and Atlantic extraction."
+        "note": "Source lead for slavery, trade, shipping, and Atlantic extraction. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Plantation economy / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Plantation_economy",
-        "note": "Source lead for plantation labor and export production."
+        "note": "Source lead for plantation labor and export production. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -75,7 +82,11 @@
         "answer": "Because plantation wealth and Atlantic trade connected forced labor, human property, commodity exports, finance, shipping, law, and imperial power to the growth of Atlantic and American capitalism."
       }
     },
-    "ideaPills": ["plantation-capitalism", "racial-capitalism", "capitalism"],
+    "ideaPills": [
+      "plantation-capitalism",
+      "racial-capitalism",
+      "capitalism"
+    ],
     "discussionTopic": "Atlantic Slavery and Plantation Capitalism"
   },
   {
@@ -85,13 +96,14 @@
     "timelineTitle": "Colonial Extraction and Empire",
     "timelineMeaning": "European empires tie conquest, trade, extraction, forced labor, chartered companies, and global markets into the capitalism road.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Colonialism",
     "sources": [
       {
         "title": "Colonialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Colonialism",
-        "note": "Source lead for empire, extraction, and colonial rule."
+        "note": "Source lead for empire, extraction, and colonial rule. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -112,7 +124,11 @@
         "answer": "Because empire linked conquest and political rule to resources, labor, trade, and global markets that helped shape capitalist development."
       }
     },
-    "ideaPills": ["colonialism", "capitalism", "land-dispossession"],
+    "ideaPills": [
+      "colonialism",
+      "capitalism",
+      "land-dispossession"
+    ],
     "discussionTopic": "Colonial Extraction and Empire"
   },
   {
@@ -122,13 +138,14 @@
     "timelineTitle": "French Revolution, Rights, and Property",
     "timelineMeaning": "The language of rights, citizenship, equality, property, class, and popular sovereignty becomes a major bridge into modern democratic and socialist politics.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "French_Revolution",
     "sources": [
       {
         "title": "French Revolution / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/French_Revolution",
-        "note": "Source lead for rights, citizenship, class conflict, and revolution."
+        "note": "Source lead for rights, citizenship, class conflict, and revolution. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -149,7 +166,11 @@
         "answer": "Because it puts rights, property, democracy, class, and revolution into a modern political vocabulary that later capitalism and socialism both fight over."
       }
     },
-    "ideaPills": ["revolution", "private-property", "democracy"],
+    "ideaPills": [
+      "revolution",
+      "private-property",
+      "democracy"
+    ],
     "discussionTopic": "French Revolution, Rights, and Property"
   },
   {
@@ -165,7 +186,8 @@
       {
         "title": "Industrial Revolution / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
-        "note": "Source lead for industrial production, factories, wage labor, and urbanization."
+        "note": "Source lead for industrial production, factories, wage labor, and urbanization.",
+        "auditStatus": "[source supports this]"
       }
     ],
     "lesson": {
@@ -186,7 +208,10 @@
         "answer": "Because industrial capitalism created the wage-working class, factory conditions, and class conflicts that socialist movements tried to explain and change."
       }
     },
-    "ideaPills": ["labor", "market"],
+    "ideaPills": [
+      "labor",
+      "market"
+    ],
     "discussionTopic": "Industrial Revolution"
   },
   {
@@ -196,13 +221,14 @@
     "timelineTitle": "Utopian Socialists Before Marx",
     "timelineMeaning": "Saint-Simon, Fourier, Owen, and other reformers imagine cooperative and planned alternatives before Marx and Engels define their own socialist road.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Utopian_socialism",
     "sources": [
       {
         "title": "Utopian socialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Utopian_socialism",
-        "note": "Source lead for Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments."
+        "note": "Source lead for Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -223,7 +249,11 @@
         "answer": "Because they show that socialism had cooperative and reformist roots before Marx and Engels gave it a class-struggle framework."
       }
     },
-    "ideaPills": ["socialism", "reform", "working-class"],
+    "ideaPills": [
+      "socialism",
+      "reform",
+      "working-class"
+    ],
     "discussionTopic": "Utopian Socialists"
   },
   {
@@ -233,13 +263,14 @@
     "timelineTitle": "Revolutions of 1848",
     "timelineMeaning": "Europe-wide uprisings put liberal rights, nationalism, labor unrest, class politics, and democratic demands into the same historical year as the Manifesto.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Revolutions_of_1848",
     "sources": [
       {
         "title": "Revolutions of 1848 / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848",
-        "note": "Source lead for the wider revolutionary setting around the Manifesto."
+        "note": "Source lead for the wider revolutionary setting around the Manifesto. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -260,7 +291,11 @@
         "answer": "Because the Manifesto belongs to a year of broad European upheaval over rights, nationhood, democracy, labor, and class power."
       }
     },
-    "ideaPills": ["revolution", "democracy", "labor-politics"],
+    "ideaPills": [
+      "revolution",
+      "democracy",
+      "labor-politics"
+    ],
     "discussionTopic": "Revolutions of 1848"
   },
   {
@@ -270,18 +305,20 @@
     "timelineTitle": "Labor Movement and Trade Unions",
     "timelineMeaning": "Workers organize strikes, unions, parties, and bargaining power against long hours, unsafe work, low wages, and employer domination.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Trade_union",
     "sources": [
       {
         "title": "Trade union / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Trade_union",
-        "note": "Source lead for labor organization and collective bargaining."
+        "note": "Source lead for labor organization and collective bargaining. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Labor movement / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Labour_movement",
-        "note": "Source lead for worker organization and labor politics."
+        "note": "Source lead for worker organization and labor politics. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -302,7 +339,11 @@
         "answer": "Because unions and labor movements show workers building collective power inside industrial and capitalist societies."
       }
     },
-    "ideaPills": ["unionism", "labor-politics", "working-class"],
+    "ideaPills": [
+      "unionism",
+      "labor-politics",
+      "working-class"
+    ],
     "discussionTopic": "Labor Movement and Trade Unions"
   },
   {
@@ -312,13 +353,14 @@
     "timelineTitle": "Paris Commune",
     "timelineMeaning": "A short-lived revolutionary government becomes a major symbol for later socialist, communist, and anti-authoritarian debates.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Paris_Commune",
     "sources": [
       {
         "title": "Paris Commune / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Paris_Commune",
-        "note": "Source lead for the 1871 revolutionary government and later socialist memory."
+        "note": "Source lead for the 1871 revolutionary government and later socialist memory. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -339,7 +381,10 @@
         "answer": "Because it became a symbol and argument about whether working people could govern directly and what happens when revolutionary power meets state repression."
       }
     },
-    "ideaPills": ["commune", "state-power"],
+    "ideaPills": [
+      "commune",
+      "state-power"
+    ],
     "discussionTopic": "Paris Commune"
   },
   {
@@ -349,18 +394,20 @@
     "timelineTitle": "New Deal, Social Security, and Labor Law",
     "timelineMeaning": "The United States responds to capitalist crisis with public jobs, social insurance, labor rights, regulation, and a larger democratic state.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "New_Deal",
     "sources": [
       {
         "title": "New Deal / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/New_Deal",
-        "note": "Source lead for U.S. crisis response, public works, labor law, and social insurance."
+        "note": "Source lead for U.S. crisis response, public works, labor law, and social insurance. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Social Security Act / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Social_Security_Act",
-        "note": "Source lead for U.S. social insurance."
+        "note": "Source lead for U.S. social insurance. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -381,7 +428,11 @@
         "answer": "Because it shows public spending, labor rights, and social insurance expanding inside a capitalist democracy without abolishing private markets."
       }
     },
-    "ideaPills": ["public-spending", "welfare-state", "labor-politics"],
+    "ideaPills": [
+      "public-spending",
+      "welfare-state",
+      "labor-politics"
+    ],
     "discussionTopic": "New Deal, Social Security, and Labor Law"
   },
   {
@@ -391,18 +442,20 @@
     "timelineTitle": "Civil Rights, Housing, and Racial Capitalism",
     "timelineMeaning": "Segregation, redlining, labor exclusion, policing, schools, housing, and property access shape who gets wealth and citizenship in American capitalism.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Civil_rights_movement",
     "sources": [
       {
         "title": "Civil rights movement / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Civil_rights_movement",
-        "note": "Source lead for civil rights and citizenship struggles."
+        "note": "Source lead for civil rights and citizenship struggles. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Redlining / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Redlining",
-        "note": "Source lead for housing discrimination and property access."
+        "note": "Source lead for housing discrimination and property access. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -423,7 +476,11 @@
         "answer": "Because property, credit, neighborhood access, and public policy shape who can accumulate wealth and who is excluded from it."
       }
     },
-    "ideaPills": ["racial-capitalism", "private-property", "public-goods"],
+    "ideaPills": [
+      "racial-capitalism",
+      "private-property",
+      "public-goods"
+    ],
     "discussionTopic": "Civil Rights, Housing, and Racial Capitalism"
   },
   {
@@ -433,13 +490,14 @@
     "timelineTitle": "Neoliberal Turn",
     "timelineMeaning": "Deregulation, privatization, anti-union politics, tax cuts, global finance, and market-first policy reshape capitalism after the postwar settlement.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Neoliberalism",
     "sources": [
       {
         "title": "Neoliberalism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Neoliberalism",
-        "note": "Source lead for deregulation, privatization, and market-first policy."
+        "note": "Source lead for deregulation, privatization, and market-first policy. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -460,7 +518,11 @@
         "answer": "A market-first policy turn that favored deregulation, privatization, lower taxes, weaker labor power in many cases, and limits on broad state economic management."
       }
     },
-    "ideaPills": ["market-liberalism", "private-property", "capitalism"],
+    "ideaPills": [
+      "market-liberalism",
+      "private-property",
+      "capitalism"
+    ],
     "discussionTopic": "Neoliberal Turn"
   },
   {
@@ -470,13 +532,14 @@
     "timelineTitle": "Cold War",
     "timelineMeaning": "Capitalism, communism, empire, decolonization, proxy wars, nuclear fear, and propaganda shape global political language.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Cold_War",
     "sources": [
       {
         "title": "Cold War / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Cold_War",
-        "note": "Source lead for capitalism, communism, proxy conflict, and political language."
+        "note": "Source lead for capitalism, communism, proxy conflict, and political language. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -497,7 +560,10 @@
         "answer": "Because it turned words like socialism, communism, capitalism, freedom, and democracy into weapons in a global struggle."
       }
     },
-    "ideaPills": ["anti-communism", "mixed-economy"],
+    "ideaPills": [
+      "anti-communism",
+      "mixed-economy"
+    ],
     "discussionTopic": "Cold War"
   },
   {
@@ -507,13 +573,14 @@
     "timelineTitle": "Social Democracy and Welfare States",
     "timelineMeaning": "Many democracies combine markets, unions, taxation, public goods, social insurance, and electoral competition.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Welfare_state",
     "sources": [
       {
         "title": "Welfare state / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Welfare_state",
-        "note": "Source lead for public goods, social insurance, taxation, and mixed economies."
+        "note": "Source lead for public goods, social insurance, taxation, and mixed economies. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -534,7 +601,10 @@
         "answer": "Because it can use taxes and public services inside a mixed economy with markets, elections, and private property still operating."
       }
     },
-    "ideaPills": ["welfare-state", "public-goods"],
+    "ideaPills": [
+      "welfare-state",
+      "public-goods"
+    ],
     "discussionTopic": "Social Democracy and Welfare States"
   },
   {
@@ -544,13 +614,14 @@
     "timelineTitle": "Fall of the Soviet Union",
     "timelineMeaning": "The collapse reshapes arguments about planning, party-state rule, capitalism, democracy, and what communism meant in practice.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "Dissolution_of_the_Soviet_Union",
     "sources": [
       {
         "title": "Dissolution of the Soviet Union / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
-        "note": "Source lead for the collapse of the Soviet state and post-1991 political argument."
+        "note": "Source lead for the collapse of the Soviet state and post-1991 political argument. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -571,7 +642,10 @@
         "answer": "Whether a system claiming socialism can preserve democracy, economic legitimacy, dissent, and institutional flexibility under party-state rule."
       }
     },
-    "ideaPills": ["planned-economy", "party-state"],
+    "ideaPills": [
+      "planned-economy",
+      "party-state"
+    ],
     "discussionTopic": "Fall of the Soviet Union"
   },
   {
@@ -581,18 +655,20 @@
     "timelineTitle": "Present-Day Word Confusion",
     "timelineMeaning": "Socialism, communism, capitalism, public spending, markets, and welfare state language are often used as weapons.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "wikiPage": "",
     "sources": [
       {
         "title": "Socialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Socialism",
-        "note": "Source lead for modern vocabulary disputes around socialism."
+        "note": "Source lead for modern vocabulary disputes around socialism. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Capitalism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Capitalism",
-        "note": "Source lead for modern vocabulary disputes around capitalism."
+        "note": "Source lead for modern vocabulary disputes around capitalism. Supports the broad event framing; exact passages can be pinned later.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "lesson": {
@@ -613,7 +689,10 @@
         "answer": "Ask which meaning they are using before agreeing, disagreeing, or comparing it to communism or capitalism."
       }
     },
-    "ideaPills": ["democratic-socialism", "mixed-economy"],
+    "ideaPills": [
+      "democratic-socialism",
+      "mixed-economy"
+    ],
     "discussionTopic": "Present-Day Word Confusion"
   }
 ]
