@@ -250,20 +250,6 @@
       text-transform: uppercase;
     }
 
-    .featured-player {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      gap: 16px;
-      align-items: center;
-      margin-top: 18px;
-      padding: 18px;
-      border: 1px solid rgba(226, 183, 102, .26);
-      background: rgba(226, 183, 102, .07);
-    }
-
-    .featured-player b { display: block; }
-    .featured-player span { color: var(--muted); font-size: 13px; }
-
     audio {
       width: 100%;
       min-width: 220px;
@@ -370,7 +356,7 @@
       .hero, .split { grid-template-columns: 1fr; }
       .hero { min-height: auto; padding-top: 14px; }
       .hero-image { min-height: 300px; }
-      .module-head, .featured-player { grid-template-columns: 1fr; display: grid; align-items: start; }
+      .module-head { grid-template-columns: 1fr; display: grid; align-items: start; }
       .track { grid-template-columns: 1fr; }
       .card-grid { grid-template-columns: 1fr; }
       .hero-actions, .topline, .nav-links { align-items: stretch; flex-direction: column; }
@@ -416,14 +402,6 @@
           <p>Thirty-one ordered listening files from the Adam's Sphere Machine Record.</p>
         </div>
         <div class="status">31 files / about 11.5 hours</div>
-      </div>
-
-      <div class="featured-player" id="opening">
-        <div>
-          <b>Start here: MR-001 - Opening Record</b>
-          <span>The archive opens in the attic and begins speaking.</span>
-        </div>
-        <audio controls preload="none" src="audio/MR_001_Opening_Record.mp3"></audio>
       </div>
 
       <div class="track-list" aria-label="Machine Record podcast episodes">
