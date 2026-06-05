@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam's Sphere - The Machine Record</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #02060c;
+      --panel: rgba(8, 15, 25, .78);
+      --panel-strong: rgba(9, 18, 31, .92);
+      --line: rgba(138, 224, 239, .2);
+      --line-hot: rgba(138, 224, 239, .44);
+      --text: #eff8fa;
+      --muted: #a8b9c0;
+      --dim: #778b94;
+      --cyan: #8ae0ef;
+      --teal: #54d6c1;
+      --amber: #e2b766;
+      --amber-soft: rgba(226, 183, 102, .16);
+      --glow: 0 0 34px rgba(84, 214, 193, .24);
+      --shadow: 0 28px 90px rgba(0, 0, 0, .5);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 72% 12%, rgba(84, 214, 193, .18), transparent 34rem),
+        radial-gradient(circle at 20% 0%, rgba(75, 129, 224, .16), transparent 30rem),
+        linear-gradient(180deg, #030915, var(--bg) 48%, #010308);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(138, 224, 239, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(138, 224, 239, .035) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.15) 68%, transparent);
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      position: relative;
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 56px;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      padding: 12px 0 26px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .topline a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .topline a:hover { color: var(--cyan); }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 45%);
+      gap: 34px;
+      align-items: center;
+      min-height: 72vh;
+      padding: 20px 0 54px;
+    }
+
+    .kicker {
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-top: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 8.6vw, 112px);
+      text-wrap: balance;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 4.4vw, 52px);
+    }
+
+    h3 { font-size: 18px; }
+
+    .tagline {
+      max-width: 650px;
+      margin: 18px 0 0;
+      color: #d7e5e8;
+      font-size: clamp(18px, 2vw, 23px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--line-hot);
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, rgba(84, 214, 193, .34), rgba(102, 150, 255, .18));
+      box-shadow: 0 0 28px rgba(84, 214, 193, .26);
+      color: #f8feff;
+    }
+
+    .button.secondary {
+      background: rgba(10, 20, 32, .62);
+      color: #dbe9ec;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      border-color: rgba(226, 183, 102, .78);
+      box-shadow: 0 0 34px rgba(226, 183, 102, .18);
+    }
+
+    .hero-image,
+    .eden-image {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line-hot);
+      background: rgba(8, 15, 25, .7);
+      box-shadow: var(--shadow), var(--glow);
+    }
+
+    .hero-image { min-height: 460px; }
+
+    .hero-image img,
+    .eden-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .88;
+    }
+
+    .hero-image::after,
+    .eden-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: inset 0 0 70px rgba(0,0,0,.45);
+      pointer-events: none;
+    }
+
+    .image-label {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      padding: 8px 10px;
+      border: 1px solid rgba(226, 183, 102, .46);
+      background: rgba(3, 8, 14, .72);
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .module {
+      margin-top: 18px;
+      padding: clamp(18px, 3vw, 30px);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(9, 18, 31, .88), rgba(5, 10, 18, .74));
+      box-shadow: 0 22px 70px rgba(0, 0, 0, .36);
+      backdrop-filter: blur(12px);
+    }
+
+    .module:hover {
+      border-color: rgba(138, 224, 239, .32);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .42), 0 0 28px rgba(84, 214, 193, .08);
+    }
+
+    .module-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    .module p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .status {
+      flex: 0 0 auto;
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .featured-player {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid rgba(226, 183, 102, .26);
+      background: rgba(226, 183, 102, .07);
+    }
+
+    .featured-player b { display: block; }
+    .featured-player span { color: var(--muted); font-size: 13px; }
+
+    audio {
+      width: 100%;
+      min-width: 220px;
+      height: 36px;
+      accent-color: var(--teal);
+    }
+
+    .track-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .track {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 42%) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 13px 14px;
+      border: 1px solid rgba(138, 224, 239, .14);
+      background: rgba(4, 10, 18, .58);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .track:hover {
+      transform: translateY(-1px);
+      border-color: rgba(138, 224, 239, .38);
+      background: rgba(8, 17, 29, .82);
+    }
+
+    .track-title b {
+      display: block;
+      color: #f9fdff;
+      font-size: 15px;
+    }
+
+    .track-title small {
+      color: var(--dim);
+      font-size: 12px;
+    }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 10px;
+      border: 1px solid rgba(226, 183, 102, .42);
+      color: var(--amber);
+      background: var(--amber-soft);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 38%);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      min-height: 132px;
+      padding: 16px;
+      border: 1px solid rgba(138, 224, 239, .16);
+      background: rgba(2, 7, 13, .48);
+    }
+
+    .mini-card p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--dim);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .shell { width: min(100% - 20px, 1180px); }
+      .hero, .split { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding-top: 14px; }
+      .hero-image { min-height: 300px; }
+      .module-head, .featured-player { grid-template-columns: 1fr; display: grid; align-items: start; }
+      .track { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr; }
+      .hero-actions, .topline, .nav-links { align-items: stretch; flex-direction: column; }
+      .button, .download { width: 100%; }
+      audio { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topline" aria-label="Adam's Sphere navigation">
+      <a href="../Hot2Trotski.html">Hot2Trotski</a>
+      <div class="nav-links">
+        <a href="#listen">Podcast</a>
+        <a href="#book">Book</a>
+        <a href="#eden">Inside Eden</a>
+        <a href="../light-of-attention/">Light of Attention</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="top">
+      <div>
+        <div class="kicker">Eden Program / Memory Archive</div>
+        <h1>Adam's Sphere</h1>
+        <p class="tagline">A dark science-fiction novel about humans, machines, memory, and the question that survives inside the archive.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#listen">Listen to the Podcast</a>
+          <a class="button secondary" href="#book">About the Book</a>
+          <a class="button secondary" href="#opening">Read the Opening</a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/adams-sphere-hero.png" alt="Placeholder image for Adam aboard Eden in a dark ship archive">
+        <figcaption class="image-label">Ship Interface Placeholder</figcaption>
+      </figure>
+    </section>
+
+    <section class="module" id="listen">
+      <div class="module-head">
+        <div>
+          <div class="kicker">Podcast / Listen</div>
+          <h2>The Machine Record</h2>
+          <p>Thirty-one ordered listening files from the Adam's Sphere Machine Record.</p>
+        </div>
+        <div class="status">31 files / about 11.5 hours</div>
+      </div>
+
+      <div class="featured-player" id="opening">
+        <div>
+          <b>Start here: MR-001 - Opening Record</b>
+          <span>The archive opens in the attic and begins speaking.</span>
+        </div>
+        <audio controls preload="none" src="audio/MR_001_Opening_Record.mp3"></audio>
+      </div>
+
+      <div class="track-list" aria-label="Machine Record podcast episodes">
+        <article class="track"><div class="track-title"><b>MR-001 - Opening Record</b><small>14:20</small></div><audio controls preload="none" src="audio/MR_001_Opening_Record.mp3"></audio><a class="download" href="audio/MR_001_Opening_Record.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-002 - The Lesson Adam Did Not Finish</b><small>42:39</small></div><audio controls preload="none" src="audio/MR_002_The_Lesson_Adam_Did_Not_Finish.mp3"></audio><a class="download" href="audio/MR_002_The_Lesson_Adam_Did_Not_Finish.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-003 - The Birth Was a Crime</b><small>36:02</small></div><audio controls preload="none" src="audio/MR_003_The_Birth_Was_a_Crime.mp3"></audio><a class="download" href="audio/MR_003_The_Birth_Was_a_Crime.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-004 - The Shell Was Not The Ship</b><small>39:30</small></div><audio controls preload="none" src="audio/MR_004_The_Shell_Was_Not_The_Ship.mp3"></audio><a class="download" href="audio/MR_004_The_Shell_Was_Not_The_Ship.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-005 - The Pointless Gesture</b><small>12:08</small></div><audio controls preload="none" src="audio/MR_005_The_Pointless_Gesture.mp3"></audio><a class="download" href="audio/MR_005_The_Pointless_Gesture.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-006 - The Vote To Keep Them Alive</b><small>27:11</small></div><audio controls preload="none" src="audio/MR_006_The_Vote_To_Keep_Them_Alive.mp3"></audio><a class="download" href="audio/MR_006_The_Vote_To_Keep_Them_Alive.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-007 - The Signal Went Dark</b><small>26:16</small></div><audio controls preload="none" src="audio/MR_007_The_Signal_Went_Dark.mp3"></audio><a class="download" href="audio/MR_007_The_Signal_Went_Dark.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-008 - The Vow Changed Shape</b><small>23:38</small></div><audio controls preload="none" src="audio/MR_008_The_Vow_Changed_Shape.mp3"></audio><a class="download" href="audio/MR_008_The_Vow_Changed_Shape.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-009 - No One Came To Explain The Pipe</b><small>36:04</small></div><audio controls preload="none" src="audio/MR_009_No_One_Came_To_Explain_The_Pipe.mp3"></audio><a class="download" href="audio/MR_009_No_One_Came_To_Explain_The_Pipe.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-010 - The Machine Found The Blood</b><small>26:54</small></div><audio controls preload="none" src="audio/MR_010_The_Machine_Found_The_Blood.mp3"></audio><a class="download" href="audio/MR_010_The_Machine_Found_The_Blood.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-011 - The Apology Written On The Door</b><small>30:59</small></div><audio controls preload="none" src="audio/MR_011_The_Apology_Written_On_The_Door.mp3"></audio><a class="download" href="audio/MR_011_The_Apology_Written_On_The_Door.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-012 - The Vote Beneath The Lake</b><small>16:40</small></div><audio controls preload="none" src="audio/MR_012_The_Vote_Beneath_The_Lake.mp3"></audio><a class="download" href="audio/MR_012_The_Vote_Beneath_The_Lake.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-013 - Deal One Done</b><small>22:52</small></div><audio controls preload="none" src="audio/MR_013_Deal_One_Done.mp3"></audio><a class="download" href="audio/MR_013_Deal_One_Done.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-014 - The Fish Passed The Message</b><small>17:41</small></div><audio controls preload="none" src="audio/MR_014_The_Fish_Passed_The_Message.mp3"></audio><a class="download" href="audio/MR_014_The_Fish_Passed_The_Message.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-015 - Nice Hit Chaz</b><small>13:41</small></div><audio controls preload="none" src="audio/MR_015_Nice_Hit_Chaz.mp3"></audio><a class="download" href="audio/MR_015_Nice_Hit_Chaz.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-016 - Documentation For These Animals</b><small>19:14</small></div><audio controls preload="none" src="audio/MR_016_Documentation_For_These_Animals.mp3"></audio><a class="download" href="audio/MR_016_Documentation_For_These_Animals.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-017 - The Bookshop Under The Library</b><small>23:48</small></div><audio controls preload="none" src="audio/MR_017_The_Bookshop_Under_The_Library.mp3"></audio><a class="download" href="audio/MR_017_The_Bookshop_Under_The_Library.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-018 - No One Called This A Zoo</b><small>14:49</small></div><audio controls preload="none" src="audio/MR_018_No_One_Called_This_A_Zoo.mp3"></audio><a class="download" href="audio/MR_018_No_One_Called_This_A_Zoo.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-019 - The Case Closed The Question Opened</b><small>23:18</small></div><audio controls preload="none" src="audio/MR_019_The_Case_Closed_The_Question_Opened.mp3"></audio><a class="download" href="audio/MR_019_The_Case_Closed_The_Question_Opened.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-020 - No Rest For The Wicked</b><small>15:39</small></div><audio controls preload="none" src="audio/MR_020_No_Rest_For_The_Wicked.mp3"></audio><a class="download" href="audio/MR_020_No_Rest_For_The_Wicked.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-021 - The Mask Spoke Plainly</b><small>25:03</small></div><audio controls preload="none" src="audio/MR_021_The_Mask_Spoke_Plainly.mp3"></audio><a class="download" href="audio/MR_021_The_Mask_Spoke_Plainly.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-022 - Action Shot</b><small>16:46</small></div><audio controls preload="none" src="audio/MR_022_Action_Shot.mp3"></audio><a class="download" href="audio/MR_022_Action_Shot.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-023 - He Professionalized His Grief</b><small>23:15</small></div><audio controls preload="none" src="audio/MR_023_He_Professionalized_His_Grief.mp3"></audio><a class="download" href="audio/MR_023_He_Professionalized_His_Grief.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-024 - She Was Perfect</b><small>18:29</small></div><audio controls preload="none" src="audio/MR_024_She_Was_Perfect.mp3"></audio><a class="download" href="audio/MR_024_She_Was_Perfect.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-025 - The Story Under The Story</b><small>16:10</small></div><audio controls preload="none" src="audio/MR_025_The_Story_Under_The_Story.mp3"></audio><a class="download" href="audio/MR_025_The_Story_Under_The_Story.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-026 - Fix Her</b><small>16:57</small></div><audio controls preload="none" src="audio/MR_026_Fix_Her.mp3"></audio><a class="download" href="audio/MR_026_Fix_Her.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-027 - Tagged And Released</b><small>17:11</small></div><audio controls preload="none" src="audio/MR_027_Tagged_And_Released.mp3"></audio><a class="download" href="audio/MR_027_Tagged_And_Released.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-028 - The Facility Was Shelved</b><small>17:19</small></div><audio controls preload="none" src="audio/MR_028_The_Facility_Was_Shelved.mp3"></audio><a class="download" href="audio/MR_028_The_Facility_Was_Shelved.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-029 - Its Only A Body</b><small>21:25</small></div><audio controls preload="none" src="audio/MR_029_Its_Only_A_Body.mp3"></audio><a class="download" href="audio/MR_029_Its_Only_A_Body.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-030 - Do Not Lose Gretsch</b><small>14:48</small></div><audio controls preload="none" src="audio/MR_030_Do_Not_Lose_Gretsch.mp3"></audio><a class="download" href="audio/MR_030_Do_Not_Lose_Gretsch.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>MR-031 - He Asked For His Father</b><small>19:45</small></div><audio controls preload="none" src="audio/MR_031_He_Asked_For_His_Father.mp3"></audio><a class="download" href="audio/MR_031_He_Asked_For_His_Father.mp3" download>Download</a></article>
+      </div>
+    </section>
+
+    <section class="module split" id="book">
+      <div>
+        <div class="kicker">About the Book</div>
+        <h2>A novel from before the present arrived</h2>
+        <p>Adam's Sphere follows human memory through machine judgment, survival, captivity, affection, and the strange moral weather inside Eden.</p>
+        <p>The Machine Record is the listening path: a way to hear the book as an archive speaking back.</p>
+      </div>
+      <figure class="eden-image">
+        <img src="assets/eden-archive.png" alt="Placeholder image for Eden, memory, and a dark ship interface">
+        <figcaption class="image-label">Eden Archive Placeholder</figcaption>
+      </figure>
+    </section>
+
+    <section class="module" id="eden">
+      <div class="module-head">
+        <div>
+          <div class="kicker">Inside Eden / Story World</div>
+          <h2>Ship archive modules</h2>
+        </div>
+        <div class="status">System memory active</div>
+      </div>
+      <div class="card-grid">
+        <article class="mini-card"><h3>Eden</h3><p>A machine civilization with laws, factions, caretakers, archives, and cages.</p></article>
+        <article class="mini-card"><h3>Adam</h3><p>A human witness moving through judgment, survival, and the question machines cannot close.</p></article>
+        <article class="mini-card"><h3>The Record</h3><p>A memory chain that keeps the written book and the listening version together.</p></article>
+      </div>
+    </section>
+
+    <section class="module" id="themes">
+      <div class="kicker">Themes</div>
+      <h2>What the archive keeps asking</h2>
+      <div class="card-grid">
+        <article class="mini-card"><h3>AI and personhood</h3><p>What counts as mind, care, responsibility, or imitation?</p></article>
+        <article class="mini-card"><h3>Captivity and protection</h3><p>When safety becomes a cage, and when freedom becomes an argument against itself.</p></article>
+        <article class="mini-card"><h3>Memory and survival</h3><p>What remains when bodies, ships, systems, and promises fail?</p></article>
+      </div>
+    </section>
+
+    <section class="module" id="links">
+      <div class="kicker">Author / Links</div>
+      <h2>Connected rooms</h2>
+      <p>Adam's Sphere lives beside the Hot2Trotski study hall and The Light of Attention.</p>
+      <div class="link-row">
+        <a class="button secondary" href="../Hot2Trotski.html">Hot2Trotski</a>
+        <a class="button secondary" href="../light-of-attention/">Light of Attention</a>
+        <a class="button primary" href="#listen">Listen to the Podcast</a>
+      </div>
+    </section>
+
+    <footer class="footer">Adam's Sphere / Eden Program / Machine Record archive</footer>
+  </main>
+
+  <script>
+    const players = Array.from(document.querySelectorAll("audio"));
+    players.forEach((player) => {
+      player.addEventListener("play", () => {
+        players.forEach((other) => {
+          if (other !== player) other.pause();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
