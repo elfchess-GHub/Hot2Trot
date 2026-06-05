@@ -168,7 +168,8 @@
     }
 
     .hero-image,
-    .eden-image {
+    .eden-image,
+    .world-image {
       position: relative;
       overflow: hidden;
       border: 1px solid var(--line-hot);
@@ -179,7 +180,8 @@
     .hero-image { min-height: 460px; }
 
     .hero-image img,
-    .eden-image img {
+    .eden-image img,
+    .world-image img {
       display: block;
       width: 100%;
       height: 100%;
@@ -188,7 +190,8 @@
     }
 
     .hero-image::after,
-    .eden-image::after {
+    .eden-image::after,
+    .world-image::after {
       content: "";
       position: absolute;
       inset: 0;
@@ -325,6 +328,11 @@
       align-items: stretch;
     }
 
+    .world-image {
+      min-height: 360px;
+      margin-top: 18px;
+    }
+
     .card-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -395,8 +403,8 @@
         </div>
       </div>
       <figure class="hero-image">
-        <img src="assets/adams-sphere-hero.png" alt="Placeholder image for Adam aboard Eden in a dark ship archive">
-        <figcaption class="image-label">Ship Interface Placeholder</figcaption>
+        <img src="assets/adams-sphere-bedroom-window.png" alt="Adam lying in a dark ship room beneath the Adam's Sphere title, with a nebula visible through the window">
+        <figcaption class="image-label">Adam / Eden Window</figcaption>
       </figure>
     </section>
 
@@ -461,8 +469,8 @@
         <p>The Machine Record is the listening path: a way to hear the book as an archive speaking back.</p>
       </div>
       <figure class="eden-image">
-        <img src="assets/eden-archive.png" alt="Placeholder image for Eden, memory, and a dark ship interface">
-        <figcaption class="image-label">Eden Archive Placeholder</figcaption>
+        <img src="assets/adams-sphere-greenhouse.png" alt="Adam standing in an Eden greenhouse under the Adam's Sphere title">
+        <figcaption class="image-label">Eden Biosphere</figcaption>
       </figure>
     </section>
 
@@ -479,6 +487,10 @@
         <article class="mini-card"><h3>Adam</h3><p>A human witness moving through judgment, survival, and the question machines cannot close.</p></article>
         <article class="mini-card"><h3>The Record</h3><p>A memory chain that keeps the written book and the listening version together.</p></article>
       </div>
+      <figure class="world-image">
+        <img src="assets/adams-sphere-bubbles-crash.png" alt="Adam standing in a strange field of glowing bubbles beside a crashed Eden vessel">
+        <figcaption class="image-label">Planet Surface / Archive Log</figcaption>
+      </figure>
     </section>
 
     <section class="module" id="themes">
