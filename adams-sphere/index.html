@@ -603,6 +603,15 @@
           if (other !== player) other.pause();
         });
       });
+
+      player.addEventListener("ended", () => {
+        const nextPlayer = players[players.indexOf(player) + 1];
+        if (nextPlayer) {
+          nextPlayer.play().catch(() => {
+            nextPlayer.controls = true;
+          });
+        }
+      });
     });
   </script>
 </body>
