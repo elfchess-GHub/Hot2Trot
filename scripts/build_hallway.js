@@ -47,6 +47,7 @@ function firstName(fullName) {
 function termId(term) {
   return String(term)
     .toLowerCase()
+    .replace(/&amp;/g, " and ")
     .replace(/&/g, " and ")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
@@ -54,6 +55,12 @@ function termId(term) {
 
 function existingIdeaIds() {
   const ids = new Set();
+  const ideasDir = path.join(repoRoot, "ideas");
+  if (fs.existsSync(ideasDir)) {
+    for (const file of fs.readdirSync(ideasDir)) {
+      if (file.endsWith(".html")) ids.add(path.basename(file, ".html"));
+    }
+  }
   for (const hallwayId of hallwayIndex) {
     const file = path.join(repoRoot, "data", "hallways", `${hallwayId}.json`);
     if (!fs.existsSync(file)) continue;
@@ -115,13 +122,147 @@ function renderExtraSections(idea) {
 }
 
 const knownIdeaIds = existingIdeaIds();
+const packetIdeaIds = new Set((packet.ideas || []).map((idea) => idea.id));
+const previewIdeaDependencies = new Set();
+
+const keyTermAliases = {
+  "accountability": "democracy",
+  "anti-collectivism": "objectivism",
+  "anti-war-prosecution": "labor-politics",
+  "atlas-shrugged": "objectivism",
+  "berkshire-hathaway": "investment-capital",
+  "bolshevism": "vanguard-party",
+  "bourgeoisie": "class-struggle",
+  "brand-licensing": "brand-politics",
+  "capital": "capitalism",
+  "central-banking": "monetarism",
+  "chinese-revolution": "maoism",
+  "class-antagonism": "class-struggle",
+  "class-solidarity": "class-struggle",
+  "collectivization": "central-planning",
+  "commercial-society": "market",
+  "compounding": "investment-capital",
+  "corporate-ownership": "shareholder-power",
+  "credit": "finance-capital",
+  "debt": "finance-capital",
+  "demand": "fiscal-policy",
+  "democratic-centralism": "vanguard-party",
+  "dictatorship-of-the-proletariat": "dictatorship-debate",
+  "dissent": "democratic-dissent",
+  "elections": "democracy",
+  "entitlement-theory": "private-property",
+  "euphemism": "political-language",
+  "exchange": "market",
+  "factory-system": "industrial-capitalism",
+  "federal-reserve": "finance-capital",
+  "global-health": "philanthropy-capital",
+  "gold-standard": "monetarism",
+  "gradualism": "democratic-reform",
+  "health-care": "public-goods",
+  "historical-materialism": "class-struggle",
+  "imperialism": "colonialism",
+  "indian-removal-act": "removal-policy",
+  "individual-rights": "liberalism",
+  "industrial-consolidation": "monopoly-power",
+  "industrialization": "industrial-capitalism",
+  "inequality": "capitalism",
+  "information": "knowledge-problem",
+  "inheritance": "private-property",
+  "insurance-float": "investment-capital",
+  "intellectual-property": "private-property",
+  "internationalism": "permanent-revolution",
+  "j-p-morgan-and-co": "finance-capital",
+  "jacksonian-democracy": "democracy",
+  "labor-rights": "labor",
+  "laissez-faire-capitalism": "laissez-faire",
+  "land-reform": "land-dispossession",
+  "lenin-debate": "dictatorship-debate",
+  "limited-dissent": "democratic-dissent",
+  "limited-government": "liberalism",
+  "long-run": "fiscal-policy",
+  "market-prices": "price-signals",
+  "marxism-leninism": "vanguard-party",
+  "marxist-collaboration": "scientific-socialism",
+  "media-spectacle": "brand-politics",
+  "microsoft": "software-monopoly",
+  "money-supply": "monetarism",
+  "moral-philosophy": "natural-liberty",
+  "movement": "reform",
+  "network-effects": "monopoly-power",
+  "oil-refining": "oil-capital",
+  "panic-of-1907": "panic-management",
+  "parliament": "democracy",
+  "participation": "democracy",
+  "party": "party-state",
+  "party-organization": "vanguard-party",
+  "party-power": "party-state",
+  "party-rule": "party-state",
+  "philanthropy": "philanthropy-capital",
+  "plain-speech": "political-language",
+  "planning": "planned-economy",
+  "political-economy": "market",
+  "political-office": "political-capitalism",
+  "private-philanthropy": "philanthropy-capital",
+  "proletariat": "working-class",
+  "property-rights": "property",
+  "public-accountability": "democracy",
+  "public-truth": "political-language",
+  "railroad-rebates": "railroad-capitalism",
+  "railroad-reorganization": "finance-capital",
+  "railroads": "railroad-capitalism",
+  "real-estate": "real-estate-capital",
+  "redistribution": "public-spending",
+  "reform-or-revolution": "revolution",
+  "second-international": "social-democracy",
+  "securities-regulation": "state-contracts",
+  "security-institutions": "state-violence",
+  "self-interest": "natural-liberty",
+  "settler-expansion": "settler-state",
+  "slavery": "plantation-capitalism",
+  "social-contract": "consent",
+  "socialism-critique": "economic-calculation",
+  "sovereignty": "state-power",
+  "soviet-state": "state-power",
+  "soviet-union": "party-state",
+  "spacex": "state-contracts",
+  "specialization": "division-of-labor",
+  "speech": "political-language",
+  "spontaneous-order": "market-coordination",
+  "stabilization": "fiscal-policy",
+  "standard-oil": "oil-capital",
+  "stock-wealth": "investment-capital",
+  "taxation": "public-spending",
+  "tesla": "state-contracts",
+  "the-fountainhead": "objectivism",
+  "trail-of-tears": "removal-policy",
+  "trade-unions": "unionism",
+  "trust": "trust-power",
+  "unemployment": "fiscal-policy",
+  "utopian-socialism": "socialism",
+  "value-investing": "investment-capital",
+  "working-class-action": "labor-politics",
+  "x-twitter": "attention-platform"
+};
 
 function renderKeyTerm(term) {
   const id = termId(term);
-  if (knownIdeaIds.has(id)) {
-    return `<a class="term" href="../ideas/${escapeHtml(id)}.html">${escapeHtml(term)}</a>`;
+  const targetId = knownIdeaIds.has(id) ? id : keyTermAliases[id];
+  if (targetId && knownIdeaIds.has(targetId)) {
+    if (!packetIdeaIds.has(targetId)) {
+      const liveIdeaPath = path.join(repoRoot, "ideas", `${targetId}.html`);
+      if (fs.existsSync(liveIdeaPath)) previewIdeaDependencies.add(targetId);
+    }
+    return `<a class="term" href="../ideas/${escapeHtml(targetId)}.html">${escapeHtml(term)}</a>`;
   }
-  return `<div class="term">${escapeHtml(term)}</div>`;
+  return `<a class="term" href="../Hot2Trotski.html#ideas" title="Open the idea atlas for this term">${escapeHtml(term)}</a>`;
+}
+
+function copyPreviewIdeaDependency(id) {
+  const sourcePath = path.join(repoRoot, "ideas", `${id}.html`);
+  const outPath = path.join(outputRoot, "ideas", `${id}.html`);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.copyFileSync(sourcePath, outPath);
+  return outPath;
 }
 
 function buildFigure() {
@@ -166,7 +307,11 @@ function buildIdea(idea) {
   return writeFile(path.join("ideas", `${idea.id}.html`), html);
 }
 
-const written = [buildFigure(), ...packet.ideas.map(buildIdea)];
+const written = [
+  buildFigure(),
+  ...packet.ideas.map(buildIdea),
+  ...[...previewIdeaDependencies].map(copyPreviewIdeaDependency)
+];
 
 console.log(`Generated ${written.length} file(s) into ${path.relative(repoRoot, outputRoot)}:`);
 for (const file of written) {
