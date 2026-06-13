@@ -79,18 +79,7 @@
       background:
         linear-gradient(90deg, rgba(5, 10, 16, 0.96), rgba(5, 10, 16, 0.72) 42%, rgba(5, 10, 16, 0.28)),
         url("assets/elfchess-games-hero-crop.png") center / cover no-repeat;
-      display: grid;
-      min-height: 34rem;
-      padding: 4rem max(1rem, calc((100vw - 74rem) / 2 + 3rem));
-    }
-
-    .hero-panel {
-      align-self: center;
-      background: rgba(7, 15, 23, 0.78);
-      border: 1px solid rgba(216, 155, 66, 0.78);
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.48);
-      max-width: 38rem;
-      padding: 1.5rem;
+      min-height: 18rem;
     }
 
     h1 {
@@ -100,20 +89,6 @@
       line-height: 0.92;
       margin: 0 0 0.85rem;
       text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
-    }
-
-    .hero p {
-      color: #ffe0a1;
-      font-size: clamp(1.18rem, 2.6vw, 1.55rem);
-      font-weight: bold;
-      margin: 0 0 1.25rem;
-      max-width: 31rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
     }
 
     .button.secondary {
@@ -258,8 +233,7 @@
       }
 
       .hero {
-        min-height: 30rem;
-        padding-top: 3rem;
+        min-height: 14rem;
       }
 
       .game-grid,
@@ -283,15 +257,6 @@
         width: 100%;
       }
 
-      .hero {
-        min-height: 28rem;
-      }
-
-      .hero-panel {
-        padding: 1rem;
-      }
-
-      .hero-actions,
       .card-actions {
         flex-direction: column;
       }
@@ -318,16 +283,7 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="Elfchess Games introduction">
-        <div class="hero-panel">
-          <h1>Elfchess Games</h1>
-          <p>Download pages and art previews for Jeremy's playable builds, prototypes, and board-game experiments.</p>
-          <div class="hero-actions">
-            <a class="button" href="#games">Explore Games</a>
-            <a class="button secondary" href="../light-of-attention/links.html">Project Links</a>
-          </div>
-        </div>
-      </section>
+      <section class="hero" aria-label="Elfchess Games artwork"></section>
 
       <section class="section" id="games">
         <div class="section-heading">
