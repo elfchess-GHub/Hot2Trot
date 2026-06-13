@@ -72,6 +72,37 @@
       padding: 2rem min(6vw, 4rem) 3rem;
     }
 
+    .intro {
+      margin: 0 auto 2rem;
+      max-width: 76rem;
+    }
+
+    .intro-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 1rem;
+    }
+
+    .intro-card {
+      background: rgba(12, 8, 14, 0.62);
+      border: 1px solid rgba(189, 134, 80, 0.72);
+      padding: 1rem;
+    }
+
+    .intro-card h3 {
+      color: #ffd99b;
+      font-size: 1.25rem;
+      line-height: 1.1;
+      margin: 0 0 0.5rem;
+    }
+
+    .intro-card p,
+    .intro p {
+      font-size: 1.12rem;
+      margin: 0;
+    }
+
     .feature {
       align-items: start;
       display: grid;
@@ -109,6 +140,10 @@
       .feature {
         grid-template-columns: 1fr;
       }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -127,6 +162,26 @@
     </section>
 
     <section class="content" id="gameplay">
+      <div class="intro">
+        <h2>What SphinxLite Is</h2>
+        <p>SphinxLite is a lighter rebuild of Sphinx, built to keep the art, characters, and core card-play feeling while making debate easier to read. Instead of simple damage racing, the game treats an argument as a run of cards: what you open with, what you chain next, what stays on the board, and what changes the direction of the debate.</p>
+
+        <div class="intro-grid">
+          <article class="intro-card">
+            <h3>Four Schools</h3>
+            <p>Logic, Empathy, Rhetoric, and Meta shape how cards pressure resolve, composure, clarity, and momentum.</p>
+          </article>
+          <article class="intro-card">
+            <h3>Chained Turns</h3>
+            <p>You begin a line with an Opener, then keep playing as long as the next card legally chains from the current run.</p>
+          </article>
+          <article class="intro-card">
+            <h3>Visible Debate</h3>
+            <p>Lasting cards remain on the run board so the debate has a visible memory instead of disappearing into hidden math.</p>
+          </article>
+        </div>
+      </div>
+
       <div class="feature">
         <img src="assets/sphinxlite/gameplay.png" alt="SphinxLite deck review screen with debate cards and character sheet">
         <div>
