@@ -18,7 +18,9 @@
     }
 
     .hero {
-      background: linear-gradient(90deg, rgba(20, 10, 14, 0.88), rgba(20, 10, 14, 0.52) 48%, rgba(20, 10, 14, 0.18)), url("assets/sphinxlite/hero.png") center / cover no-repeat;
+      background:
+        linear-gradient(90deg, rgba(20, 10, 14, 0.9), rgba(20, 10, 14, 0.58) 48%, rgba(20, 10, 14, 0.18)),
+        url("assets/sphinxlite/hero.png") center / cover no-repeat;
       min-height: 76vh;
       padding: 2rem min(6vw, 4rem);
     }
@@ -26,11 +28,12 @@
     .back {
       color: #f2dcc0;
       display: inline-block;
+      font-weight: bold;
       margin-bottom: 3rem;
     }
 
     .hero-copy {
-      max-width: 38rem;
+      max-width: 42rem;
     }
 
     h1 {
@@ -68,47 +71,16 @@
     }
 
     .content {
-      background: #211824;
+      background:
+        radial-gradient(circle at top left, rgba(113, 66, 33, 0.32), transparent 26rem),
+        linear-gradient(180deg, #211824 0%, #160d12 100%);
       padding: 2rem min(6vw, 4rem) 3rem;
     }
 
-    .intro {
-      margin: 0 auto 2rem;
-      max-width: 76rem;
-    }
-
-    .intro-grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-top: 1rem;
-    }
-
-    .intro-card {
-      background: rgba(12, 8, 14, 0.62);
-      border: 1px solid rgba(189, 134, 80, 0.72);
-      padding: 1rem;
-    }
-
-    .intro-card h3 {
-      color: #ffd99b;
-      font-size: 1.25rem;
-      line-height: 1.1;
-      margin: 0 0 0.5rem;
-    }
-
-    .intro-card p,
-    .intro p {
-      font-size: 1.12rem;
-      margin: 0;
-    }
-
-    .feature {
-      align-items: start;
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: minmax(18rem, 34rem) minmax(0, 1fr);
-      margin: 0 auto;
+    .intro,
+    .feature,
+    .gallery-wrap {
+      margin: 0 auto 2.25rem;
       max-width: 76rem;
     }
 
@@ -119,9 +91,44 @@
       margin: 0 0 0.75rem;
     }
 
-    .feature p {
-      font-size: 1.15rem;
+    p {
+      font-size: 1.12rem;
       margin: 0 0 1rem;
+    }
+
+    .intro-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 1rem;
+    }
+
+    .intro-card,
+    .feature-text {
+      background: rgba(12, 8, 14, 0.66);
+      border: 1px solid rgba(189, 134, 80, 0.72);
+      padding: 1rem;
+    }
+
+    .intro-card h3,
+    .gallery h3 {
+      color: #ffd99b;
+      font-size: 1.25rem;
+      line-height: 1.1;
+      margin: 0 0 0.5rem;
+    }
+
+    .intro-card p,
+    .feature-text p,
+    .gallery p {
+      margin: 0;
+    }
+
+    .feature {
+      align-items: start;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: minmax(18rem, 34rem) minmax(0, 1fr);
     }
 
     img {
@@ -132,16 +139,34 @@
       max-width: 100%;
     }
 
-    @media (max-width: 760px) {
+    .gallery {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .gallery article {
+      background: rgba(12, 8, 14, 0.58);
+      border: 1px solid rgba(189, 134, 80, 0.58);
+      display: grid;
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+
+    .gallery img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @media (max-width: 860px) {
       .hero {
         min-height: 34rem;
       }
 
-      .feature {
-        grid-template-columns: 1fr;
-      }
-
-      .intro-grid {
+      .feature,
+      .intro-grid,
+      .gallery {
         grid-template-columns: 1fr;
       }
     }
@@ -153,7 +178,7 @@
       <a class="back" href="index.html">Back to Elfchess Games</a>
       <div class="hero-copy">
         <h1>SphinxLite</h1>
-        <p class="tagline">A debate-card adventure about arguments, pressure, and the shape of a run.</p>
+        <p class="tagline">A clearer rebuild of Sphinx with map travel, camp, deck-building, and readable debate combat.</p>
         <div class="actions">
           <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/sphinxlite/latest.zip">Latest download</a>
           <a class="button secondary" href="#gameplay">View gameplay</a>
@@ -164,30 +189,78 @@
     <section class="content" id="gameplay">
       <div class="intro">
         <h2>What SphinxLite Is</h2>
-        <p>SphinxLite is a lighter rebuild of Sphinx, built to keep the art, characters, and core card-play feeling while making debate easier to read. Instead of simple damage racing, the game treats an argument as a run of cards: what you open with, what you chain next, what stays on the board, and what changes the direction of the debate.</p>
+        <p>SphinxLite is the active Sphinx Lite 2.0 Windows build. It keeps the Sphinx art, identity, map, camp, deck, and debate feel while rebuilding combat so the player can read what each card does, why a card is legal, and why a debate ended.</p>
 
         <div class="intro-grid">
           <article class="intro-card">
-            <h3>Four Schools</h3>
-            <p>Logic, Empathy, Rhetoric, and Meta shape how cards pressure resolve, composure, clarity, and momentum.</p>
+            <h3>Map, Camp, Deck</h3>
+            <p>Move through the game route, use camp and deck screens, and prepare the cards you want before the next encounter.</p>
           </article>
           <article class="intro-card">
-            <h3>Chained Turns</h3>
-            <p>You begin a line with an Opener, then keep playing as long as the next card legally chains from the current run.</p>
+            <h3>Readable Card Rules</h3>
+            <p>Cards use roles, needs, setup rules, and chain rules. Left-click previews a card and right-click opens a full-card zoom.</p>
           </article>
           <article class="intro-card">
-            <h3>Visible Debate</h3>
-            <p>Lasting cards remain on the run board so the debate has a visible memory instead of disappearing into hidden math.</p>
+            <h3>Shared Debate Rules</h3>
+            <p>Player and enemy use the same core play rules. Outcomes explain whether the debate ends by Alignment, Exposure, Withdrawal, Pressure Win, Escalation, or Stalemate.</p>
           </article>
         </div>
       </div>
 
       <div class="feature">
-        <img src="assets/sphinxlite/gameplay.png" alt="SphinxLite deck review screen with debate cards and character sheet">
-        <div>
-          <h2>Debate As Card Play</h2>
-          <p>Build a deck, review your reserve, and carry the argument from camp into the next debate.</p>
-          <p>The current download is the latest SphinxLite Windows build.</p>
+        <img src="assets/sphinxlite/gameplay.png" alt="SphinxLite debate screen with rendered cards, debate status, and character panel">
+        <div class="feature-text">
+          <h2>How The Debate Plays</h2>
+          <p>A fresh line starts with an Opener or Setup unless a card can answer the enemy run. After that, the next card must legally chain, answer the enemy, start a new angle, use active setup, or satisfy a Needs rule.</p>
+          <p>Lasting cards stay on the run board. Instant cards resolve and go to discard, but still count for same-turn sequence memory.</p>
+        </div>
+      </div>
+
+      <div class="gallery-wrap">
+        <h2>Game Screens</h2>
+        <div class="gallery">
+          <article>
+            <img src="assets/sphinxlite/screenshot-start.png" alt="SphinxLite start screen">
+            <div>
+              <h3>Start</h3>
+              <p>Launch into the current Windows build.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/sphinxlite/screenshot-map.png" alt="SphinxLite route map screen">
+            <div>
+              <h3>Map</h3>
+              <p>Follow the route into encounters.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/sphinxlite/screenshot-debate.png" alt="SphinxLite debate encounter screen">
+            <div>
+              <h3>Debate</h3>
+              <p>Play cards against the encounter using shared rules.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/sphinxlite/screenshot-run-board.png" alt="SphinxLite run board with card sequence">
+            <div>
+              <h3>Run Board</h3>
+              <p>Track the visible line of argument as cards remain in play.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/sphinxlite/screenshot-card-zoom.png" alt="SphinxLite full card zoom view">
+            <div>
+              <h3>Card Zoom</h3>
+              <p>Inspect full card art and rule text before playing.</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/sphinxlite/screenshot-outcome.png" alt="SphinxLite outcome screen">
+            <div>
+              <h3>Outcome</h3>
+              <p>See why the debate ended and what route mattered.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
