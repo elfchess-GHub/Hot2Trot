@@ -34,6 +34,34 @@
       z-index: 1;
     }
 
+    .top-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+      max-width: 58rem;
+    }
+
+    .top-nav a,
+    .action-link {
+      background: linear-gradient(180deg, #12354b, #0a2536);
+      border: 1px solid #d79d47;
+      color: inherit;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.6rem 0.85rem;
+      text-decoration: none;
+    }
+
+    .top-nav a:focus,
+    .top-nav a:hover,
+    .action-link:focus,
+    .action-link:hover {
+      background: linear-gradient(180deg, #1f506d, #12354b);
+      outline: 2px solid #ffe0a1;
+      outline-offset: 3px;
+    }
+
     .panel {
       background: rgba(9, 18, 28, 0.76);
       border: 1px solid rgba(218, 158, 67, 0.75);
@@ -56,6 +84,13 @@
     h2 {
       font-size: 1.6rem;
       margin: 0 0 0.75rem;
+    }
+
+    h3 {
+      color: #ffe0a1;
+      font-size: 1.25rem;
+      line-height: 1.15;
+      margin: 0 0 0.5rem;
     }
 
     ul {
@@ -87,6 +122,31 @@
       outline-offset: 3px;
     }
 
+    .sections {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 1.5rem;
+      max-width: 58rem;
+    }
+
+    .info-card {
+      background: rgba(244, 218, 172, 0.9);
+      border: 1px solid rgba(218, 158, 67, 0.9);
+      color: #24170f;
+      padding: 1rem;
+    }
+
+    .info-card p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .info-card a {
+      color: #12354b;
+      font-weight: bold;
+    }
+
     @media (max-width: 720px) {
       body {
         background-attachment: scroll;
@@ -100,22 +160,55 @@
       .panel {
         max-width: none;
       }
+
+      .sections {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
   <main>
-    <section class="panel">
+    <nav class="top-nav" aria-label="Elfchess Games navigation">
+      <a href="#top">Home</a>
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="panel" id="top">
       <h1>Elfchess Games</h1>
       <p>Latest game builds and download pages.</p>
+      <p><a class="action-link" href="#games">Explore Games</a></p>
 
-      <h2>Games</h2>
+      <h2 id="games">Games</h2>
       <ul>
         <li><a class="game-link" href="sphinxlite.html">SphinxLite</a></li>
         <li><a class="game-link" href="horse-trader.html">Horse trader</a></li>
         <li><a class="game-link" href="shape-azoid.html">Shape-Azoid</a></li>
         <li><a class="game-link" href="draken3d.html">Draken3d</a></li>
       </ul>
+    </section>
+
+    <section class="sections" aria-label="Elfchess Games page sections">
+      <article class="info-card" id="about">
+        <h3>About</h3>
+        <p>Elfchess Games collects Jeremy's playable builds, prototypes, and board-game experiments in one place.</p>
+      </article>
+      <article class="info-card" id="gallery">
+        <h3>Gallery</h3>
+        <p>Game pages now carry their own art previews. Open a game above to see its current web art.</p>
+      </article>
+      <article class="info-card" id="news">
+        <h3>News</h3>
+        <p>SphinxLite, Horse trader, and Shape-Azoid have current download links. More game pages can be filled in as their builds are ready.</p>
+      </article>
+      <article class="info-card" id="contact">
+        <h3>Contact</h3>
+        <p>For now, use the <a href="../light-of-attention/links.html">Light of Attention links page</a> as the project hub.</p>
+      </article>
     </section>
   </main>
 </body>
