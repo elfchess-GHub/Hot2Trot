@@ -9,35 +9,53 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      background: #081821;
-      color: #f7e7ba;
+      background: #07131b;
+      color: #f8e6bd;
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.5;
       margin: 0;
     }
 
+    a {
+      color: inherit;
+    }
+
     .hero {
-      background: linear-gradient(90deg, rgba(2, 11, 18, 0.88), rgba(2, 11, 18, 0.5) 48%, rgba(2, 11, 18, 0.18)), url("assets/shape-azoid/hero.png") center / cover no-repeat;
-      min-height: 76vh;
+      background:
+        linear-gradient(90deg, rgba(4, 12, 18, 0.92), rgba(4, 12, 18, 0.64) 46%, rgba(4, 12, 18, 0.18)),
+        url("assets/shape-azoid/character-poster-web.jpg") center / cover no-repeat;
+      min-height: 82vh;
       padding: 2rem min(6vw, 4rem);
     }
 
     .back {
-      color: #f7e7ba;
+      color: #f8e6bd;
       display: inline-block;
+      font-weight: bold;
       margin-bottom: 3rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     }
 
     .hero-copy {
-      max-width: 38rem;
+      background: rgba(6, 15, 22, 0.76);
+      border: 1px solid rgba(244, 208, 138, 0.78);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
+      max-width: 42rem;
+      padding: 1.35rem;
     }
 
     h1 {
+      color: #fff2c9;
       font-size: clamp(3rem, 10vw, 7rem);
       letter-spacing: 0;
       line-height: 0.9;
       margin: 0 0 1rem;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.72);
     }
 
     .tagline {
@@ -47,7 +65,8 @@
       margin: 0 0 1.5rem;
     }
 
-    .actions {
+    .actions,
+    .card-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
@@ -64,33 +83,71 @@
     }
 
     .button.secondary {
-      background: rgba(19, 65, 78, 0.92);
+      background: rgba(19, 65, 78, 0.94);
+    }
+
+    .button:focus,
+    .button:hover {
+      background: #d45b31;
+      outline: 2px solid #fff2c9;
+      outline-offset: 3px;
     }
 
     .content {
-      background: #0d2430;
+      background:
+        radial-gradient(circle at top left, rgba(177, 73, 40, 0.28), transparent 24rem),
+        radial-gradient(circle at top right, rgba(42, 142, 114, 0.22), transparent 26rem),
+        linear-gradient(180deg, #0d2430 0%, #07131b 100%);
       padding: 2rem min(6vw, 4rem) 3rem;
     }
 
-    .feature {
-      align-items: start;
-      display: grid;
-      gap: 1.5rem;
-      grid-template-columns: minmax(18rem, 34rem) minmax(0, 1fr);
-      margin: 0 auto;
-      max-width: 76rem;
+    .section {
+      margin: 0 auto 2.5rem;
+      max-width: 78rem;
+    }
+
+    .section-heading {
+      align-items: end;
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 1rem;
     }
 
     h2 {
       color: #ffe59f;
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1;
-      margin: 0 0 0.75rem;
+      margin: 0;
     }
 
-    .feature p {
-      font-size: 1.15rem;
+    p {
+      font-size: 1.12rem;
       margin: 0 0 1rem;
+    }
+
+    .section-heading p {
+      margin: 0;
+      max-width: 42rem;
+    }
+
+    .feature {
+      align-items: start;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: minmax(19rem, 43rem) minmax(0, 1fr);
+    }
+
+    .panel,
+    .rule-card {
+      background: rgba(7, 16, 24, 0.76);
+      border: 1px solid rgba(217, 170, 85, 0.7);
+      padding: 1rem;
+    }
+
+    .panel p:last-child,
+    .rule-card p:last-child {
+      margin-bottom: 0;
     }
 
     img {
@@ -101,14 +158,84 @@
       max-width: 100%;
     }
 
-    @media (max-width: 760px) {
+    .rule-grid,
+    .gallery-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rule-card h3,
+    .gallery-card h3 {
+      color: #ffe59f;
+      font-size: 1.28rem;
+      line-height: 1.1;
+      margin: 0 0 0.5rem;
+    }
+
+    .gallery-card {
+      background: rgba(7, 16, 24, 0.68);
+      border: 1px solid rgba(217, 170, 85, 0.62);
+      display: grid;
+      gap: 0.75rem;
+      padding: 0.75rem;
+    }
+
+    .gallery-card img {
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .poster-row {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .poster-row img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @media (max-width: 880px) {
       .hero {
         background-position: center top;
-        min-height: 36rem;
+        min-height: 38rem;
       }
 
-      .feature {
+      .feature,
+      .rule-grid,
+      .gallery-grid,
+      .poster-row {
         grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .hero {
+        min-height: 34rem;
+        padding: 1.5rem 1rem;
+      }
+
+      .hero-copy {
+        padding: 1rem;
+      }
+
+      .actions,
+      .card-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        text-align: center;
+        width: 100%;
       }
     }
   </style>
@@ -119,7 +246,7 @@
       <a class="back" href="index.html">Back to Elfchess Games</a>
       <div class="hero-copy">
         <h1>Shape-Azoid</h1>
-        <p class="tagline">A 1-6 player shape-control card game with color, motion, and strange space travelers.</p>
+        <p class="tagline">A 1-6 player shape-control card game with pass-and-play seats, AI players, Zoids, Penta-Zoids, and colorful space-board chaos.</p>
         <div class="actions">
           <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/shape-azoid/latest.zip">Latest download</a>
           <a class="button secondary" href="#gameplay">View gameplay</a>
@@ -128,12 +255,104 @@
     </section>
 
     <section class="content" id="gameplay">
-      <div class="feature">
-        <img src="assets/shape-azoid/gameplay.png" alt="Shape-Azoid gameplay board with colored geometric territories">
-        <div>
+      <div class="section feature">
+        <img src="assets/shape-azoid/web-gameplay-web.jpg" alt="Shape-Azoid gameplay board with colored geometric territories and player cards">
+        <div class="panel">
           <h2>Shape Control In Space</h2>
-          <p>Place hexes, squares, triangles, lines, Zoids, and Penta-Zoids to build a shifting board of color and control.</p>
-          <p>The current download is the latest portable Shape-Azoid build.</p>
+          <p>Choose 1 to 6 players, set human or AI seats, and play cards that place colored hexes, squares, triangles, Zoids, Penta-Zoids, lines, and wild cards onto a growing board.</p>
+          <p>The board starts with the first shape. Later shapes attach to exposed sides. Line cards open walls so Zoids can travel through the shape system and change control as they move.</p>
+          <div class="card-actions">
+            <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/shape-azoid/latest.zip">Download portable build</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-heading">
+          <h2>How It Plays</h2>
+          <p>Shape-Azoid is easy to read at a glance: build the board, open routes, let the Zoids move, and score the colors you control.</p>
+        </div>
+        <div class="rule-grid">
+          <article class="rule-card">
+            <h3>Cards Build The Board</h3>
+            <p>Hex, square, and triangle cards place those shapes in the card color. Wild cards can be right-clicked to cycle their card type for the round.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Zoids Change Control</h3>
+            <p>Zoids bounce inside the shape system. Wherever a Zoid travels, it can change shape control to its own color.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Penta-Zoids Eat Zoids</h3>
+            <p>Penta-Zoids are larger star balls. They score more, eat normal Zoids they touch, and disappear if two Penta-Zoids collide.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Round Deck Variation</h3>
+            <p>At the start of each round, three card types are drawn like a slot machine to add extra sets or make one card type wild.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Color Scoring</h3>
+            <p>Score played shapes, controlled shapes, Zoids, Penta-Zoids, and lit same-color connections.</p>
+          </article>
+          <article class="rule-card">
+            <h3>Theme System</h3>
+            <p>Version 0.7 adds visual themes that change the background, panels, buttons, card slots, and atmosphere while keeping the same rules.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section poster-row">
+        <img src="assets/shape-azoid/character-poster-web.jpg" alt="Shape-Azoid character poster with six color-coded space characters">
+        <img src="assets/shape-azoid/ufo-flight-web.jpg" alt="Shape-Azoid UFO flight preview">
+      </div>
+
+      <div class="section">
+        <div class="section-heading">
+          <h2>Game Examples</h2>
+          <p>Current previews show the active board, character art, UFO events, and the theme system that gives the same game different visual moods.</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/atomic-dark-gameplay-web.jpg" alt="Atomic Dark gameplay preview">
+            <div>
+              <h3>Atomic Dark</h3>
+              <p>A darker theme with the full play surface, deck, hand, and side panel visible.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/rocket-garden-web.jpg" alt="Rocket Garden theme preview">
+            <div>
+              <h3>Rocket Garden</h3>
+              <p>A brighter space-race theme for the same board and rules.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/olive-party-web.jpg" alt="Olive Party Platter gameplay preview">
+            <div>
+              <h3>Olive Party Platter</h3>
+              <p>A different skin that keeps the shape-control board readable.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/gameplay.png" alt="Shape-Azoid board with geometric territories">
+            <div>
+              <h3>Shape Network</h3>
+              <p>Colored shapes connect into a board of routes, control, and motion.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/portrait-preview-web.jpg" alt="Shape-Azoid active player portrait preview">
+            <div>
+              <h3>Player Portraits</h3>
+              <p>Color-coded characters anchor each seat and turn.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <img src="assets/shape-azoid/hero.png" alt="Shape-Azoid title and character art">
+            <div>
+              <h3>Original Web Art</h3>
+              <p>The first web art still works as a strong title image.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
