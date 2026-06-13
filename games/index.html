@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Elfchess Games</title>
   <style>
+    :root {
+      --ink: #080706;
+      --cream: #fff1cf;
+      --paper: #f0d8aa;
+      --paper2: #e7c68f;
+      --brick: #32140f;
+      --red: #b9442c;
+      --gold: #d5a33a;
+      --blue: #88aabd;
+      --deep-blue: #08111a;
+      --shadow: rgba(0, 0, 0, 0.42);
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -14,10 +27,14 @@
     }
 
     body {
-      background: #08111a;
-      color: #f7e5bc;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.5;
+      background-color: var(--brick);
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.28)),
+        url("../light-of-attention/assets/brick-tile.png");
+      background-repeat: repeat;
+      color: var(--cream);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
       margin: 0;
       min-height: 100vh;
     }
@@ -26,117 +43,129 @@
       color: inherit;
     }
 
-    .topbar {
-      align-items: center;
-      background: rgba(5, 12, 19, 0.96);
-      border-bottom: 1px solid rgba(216, 155, 66, 0.6);
-      display: flex;
-      gap: 1rem;
-      justify-content: space-between;
-      padding: 1rem max(1rem, calc((100vw - 74rem) / 2 + 3rem));
-      position: sticky;
-      top: 0;
-      z-index: 2;
+    .page {
+      margin: 0 auto;
+      max-width: 1240px;
+      padding: 18px;
     }
 
-    .brand {
-      color: #fff1cf;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-decoration: none;
-      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75);
-    }
-
-    .nav {
+    .site-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: flex-end;
+      gap: 12px;
+      justify-content: center;
+      margin: 0 auto 18px;
     }
 
-    .nav a,
-    .button {
-      background: linear-gradient(180deg, #174158, #0b2839);
-      border: 1px solid #d89b42;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-      color: #ffe8ad;
+    .site-nav a,
+    .paper-button {
+      background: var(--paper);
+      border: 4px solid var(--ink);
+      box-shadow: 5px 5px 0 var(--shadow);
+      color: var(--ink);
       display: inline-block;
-      font-weight: bold;
-      padding: 0.62rem 0.9rem;
+      font-weight: 950;
+      letter-spacing: 0.05em;
+      padding: 11px 16px;
       text-decoration: none;
+      text-transform: uppercase;
+      transform: rotate(-0.45deg);
+      transition: filter 0.12s ease, transform 0.12s ease;
     }
 
-    .nav a:focus,
-    .nav a:hover,
-    .button:focus,
-    .button:hover {
-      background: linear-gradient(180deg, #245d79, #12374c);
-      outline: 2px solid #ffe0a1;
-      outline-offset: 3px;
+    .site-nav a:nth-child(even),
+    .paper-button.alt {
+      background: var(--gold);
+      transform: rotate(0.55deg);
+    }
+
+    .site-nav a.active,
+    .paper-button.red {
+      background: var(--red);
+      color: var(--cream);
+    }
+
+    .site-nav a:focus,
+    .site-nav a:hover,
+    .paper-button:focus,
+    .paper-button:hover,
+    .game-card:focus-within,
+    .game-card:hover {
+      filter: brightness(1.05);
+      transform: translateY(-3px) rotate(0deg);
     }
 
     .hero {
-      background:
-        linear-gradient(90deg, rgba(5, 10, 16, 0.96), rgba(5, 10, 16, 0.72) 42%, rgba(5, 10, 16, 0.28)),
-        url("assets/elfchess-games-hero-crop.png") center / cover no-repeat;
-      min-height: 18rem;
+      background: var(--ink);
+      border: 6px solid var(--ink);
+      border-radius: 14px;
+      box-shadow: 8px 8px 0 var(--shadow);
+      margin-bottom: 18px;
+      overflow: hidden;
+      position: relative;
     }
 
-    h1 {
-      color: #fff1cf;
-      font-size: clamp(3rem, 8vw, 6rem);
-      letter-spacing: 0;
-      line-height: 0.92;
-      margin: 0 0 0.85rem;
-      text-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+    .hero img {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
-    .button.secondary {
-      background: rgba(86, 53, 31, 0.92);
-    }
-
-    .section {
-      margin: 0 auto;
-      max-width: 74rem;
-      padding: 2.5rem min(5vw, 3rem);
-    }
-
-    .section-heading {
+    .hero-title {
       align-items: end;
+      background: linear-gradient(0deg, rgba(8, 7, 6, 0.86), rgba(8, 7, 6, 0));
+      bottom: 0;
       display: flex;
-      gap: 1rem;
+      flex-wrap: wrap;
+      gap: 14px;
       justify-content: space-between;
-      margin-bottom: 1rem;
+      left: 0;
+      padding: min(6vw, 38px);
+      position: absolute;
+      right: 0;
     }
 
-    h2 {
-      color: #ffe0a1;
-      font-size: clamp(2rem, 5vw, 3.25rem);
-      line-height: 1;
+    .hero-title h1 {
+      color: var(--cream);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(3rem, 8vw, 6.4rem);
+      letter-spacing: 0.04em;
+      line-height: 0.88;
       margin: 0;
+      text-transform: uppercase;
+      text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.62);
     }
 
-    .section-heading p,
-    .about p,
-    .news p {
-      font-size: 1.08rem;
+    .hero-title p {
+      color: #e8d2aa;
+      font-size: 1.05rem;
+      font-weight: 850;
       margin: 0;
-      max-width: 40rem;
+      max-width: 30rem;
     }
 
     .game-grid {
       display: grid;
-      gap: 1rem;
+      gap: 18px;
       grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 18px;
     }
 
     .game-card {
-      background: rgba(244, 222, 184, 0.94);
-      border: 1px solid rgba(216, 155, 66, 0.9);
-      color: #25170e;
+      background: var(--ink);
+      border: 6px solid var(--ink);
+      border-radius: 14px;
+      box-shadow: 8px 8px 0 var(--shadow);
+      color: var(--ink);
       display: grid;
-      min-height: 14rem;
       overflow: hidden;
+      text-decoration: none;
+      transform: rotate(-0.25deg);
+      transition: filter 0.12s ease, transform 0.12s ease;
+    }
+
+    .game-card:nth-child(even) {
+      transform: rotate(0.35deg);
     }
 
     .game-card.featured {
@@ -152,107 +181,98 @@
     }
 
     .game-card-content {
+      background: rgba(240, 216, 170, 0.97);
       display: grid;
-      gap: 0.7rem;
-      padding: 1rem;
+      gap: 12px;
+      padding: 16px;
     }
 
-    .game-card h3 {
-      color: #132c3a;
-      font-size: 1.45rem;
-      line-height: 1.1;
+    .game-card h2 {
+      color: var(--ink);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(1.9rem, 4vw, 3rem);
+      letter-spacing: 0.04em;
+      line-height: 0.92;
       margin: 0;
+      text-transform: uppercase;
     }
 
     .game-card p {
+      color: #25170e;
+      font-size: 1.02rem;
+      font-weight: 750;
       margin: 0;
     }
 
     .card-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: auto;
+      gap: 10px;
+      margin-top: 2px;
     }
 
-    .card-actions a,
-    .card-actions span {
-      background: #12354b;
-      border: 1px solid #9f6e2e;
-      color: #ffe8ad;
-      display: inline-block;
-      font-weight: bold;
-      padding: 0.5rem 0.7rem;
-      text-decoration: none;
+    .card-actions .paper-button {
+      font-size: 0.86rem;
+      padding: 8px 11px;
     }
 
-    .card-actions span {
-      background: #5a5148;
-      color: #ead7b0;
+    .paper-panel {
+      background: rgba(240, 216, 170, 0.96);
+      border: 6px solid var(--ink);
+      border-radius: 14px;
+      box-shadow: 8px 8px 0 var(--shadow);
+      color: var(--ink);
+      margin: 22px auto 0;
+      max-width: 900px;
+      padding: 20px;
+      text-align: center;
     }
 
-    .info-row {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+    .paper-panel h2 {
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      letter-spacing: 0.04em;
+      line-height: 0.92;
+      margin: 0 0 10px;
+      text-transform: uppercase;
     }
 
-    .about,
-    .news {
-      background: rgba(8, 18, 28, 0.82);
-      border: 1px solid rgba(216, 155, 66, 0.75);
-      padding: 1rem;
+    .paper-panel p {
+      font-size: 1.08rem;
+      font-weight: 750;
+      margin: 0;
     }
 
     footer {
-      border-top: 1px solid rgba(216, 155, 66, 0.55);
-      margin: 0 auto;
-      max-width: 74rem;
-      padding: 1.5rem min(5vw, 3rem) 2rem;
-    }
-
-    footer nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-    }
-
-    footer a {
-      color: #ffe0a1;
-      font-weight: bold;
+      color: #e8d2aa;
+      font-weight: 850;
+      margin: 24px 0 0;
+      text-align: center;
     }
 
     @media (max-width: 860px) {
-      .topbar {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav {
-        justify-content: flex-start;
-      }
-
-      .hero {
-        min-height: 14rem;
-      }
-
       .game-grid,
-      .info-row {
+      .game-card.featured {
+        grid-column: auto;
+      }
+
+      .game-grid {
         grid-template-columns: 1fr;
       }
 
-      .game-card.featured {
-        grid-column: auto;
+      .hero-title {
+        position: static;
+        background: var(--ink);
       }
     }
 
     @media (max-width: 520px) {
-      .topbar {
-        position: static;
+      .page {
+        padding: 12px;
       }
 
-      .nav a,
-      .button {
+      .site-nav a,
+      .paper-button {
         text-align: center;
         width: 100%;
       }
@@ -260,121 +280,92 @@
       .card-actions {
         flex-direction: column;
       }
-
-      .card-actions a,
-      .card-actions span {
-        text-align: center;
-        width: 100%;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#top">Elfchess Games</a>
-      <nav class="nav" aria-label="Elfchess Games navigation">
-        <a href="../index.html">Home</a>
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="../light-of-attention/links.html">Contact</a>
-      </nav>
-    </header>
+  <main class="page" id="top">
+    <nav class="site-nav" aria-label="Elfchess Games navigation">
+      <a href="../index.html">Home</a>
+      <a class="active" href="#top">Elfchess Games</a>
+      <a href="../light-of-attention/links.html">Contact</a>
+    </nav>
 
-    <main id="top">
-      <section class="hero" aria-label="Elfchess Games artwork"></section>
+    <section class="hero" aria-label="Elfchess Games artwork">
+      <img src="assets/elfchess-games-hero-crop.png" alt="Elfchess Games attic tower artwork">
+      <div class="hero-title">
+        <h1>Elfchess Games</h1>
+        <p>Open the game pages from here. Downloads use the current GitHub links where builds are ready.</p>
+      </div>
+    </section>
 
-      <section class="section" id="games">
-        <div class="section-heading">
-          <h2>Games</h2>
-          <p>Each game card opens its page. Current builds use GitHub raw download links so the zipped files download correctly.</p>
+    <section class="game-grid" id="games" aria-label="Elfchess game pages">
+      <article class="game-card featured">
+        <img src="assets/sphinxlite/hero.png" alt="SphinxLite illustrated game art">
+        <div class="game-card-content">
+          <h2>SphinxLite</h2>
+          <p>A debate-card adventure about arguments, pressure, and the shape of a run.</p>
+          <div class="card-actions">
+            <a class="paper-button red" href="sphinxlite.html">Open page</a>
+            <a class="paper-button alt" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/sphinxlite/latest.zip">Download</a>
+          </div>
         </div>
+      </article>
 
-        <div class="game-grid">
-          <article class="game-card featured">
-            <img src="assets/sphinxlite/hero.png" alt="SphinxLite illustrated game art">
-            <div class="game-card-content">
-              <h3>SphinxLite</h3>
-              <p>A debate-card adventure about arguments, pressure, and the shape of a run.</p>
-              <div class="card-actions">
-                <a href="sphinxlite.html">Open page</a>
-                <a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/sphinxlite/latest.zip">Download</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <img src="assets/horse-trader/board.png" alt="Horse trader board game art">
-            <div class="game-card-content">
-              <h3>Horse trader</h3>
-              <p>A board-game page using the current Horse trader web art.</p>
-              <div class="card-actions">
-                <a href="horse-trader.html">Open page</a>
-                <a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/horse-trader/latest.zip">Download</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <img src="assets/shape-azoid/hero.png" alt="Shape-Azoid game art">
-            <div class="game-card-content">
-              <h3>Shape-Azoid</h3>
-              <p>A shape-driven arcade prototype with a current downloadable build.</p>
-              <div class="card-actions">
-                <a href="shape-azoid.html">Open page</a>
-                <a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/shape-azoid/latest.zip">Download</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <img src="assets/dubious-dungeons/dd-cover-wide.webp" alt="DubiouSDungeons splash art">
-            <div class="game-card-content">
-              <h3>DubiouSDungeons</h3>
-              <p>A dungeon board-game prototype for local pass-and-play and early network rooms.</p>
-              <div class="card-actions">
-                <a href="dubious-dungeons.html">Open page</a>
-                <a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/dubious-dungeons/latest.zip">Download</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card">
-            <img src="assets/elfchess-games-background.png" alt="Elfchess Games artwork detail">
-            <div class="game-card-content">
-              <h3>Draken3d</h3>
-              <p>A page is ready, with the downloadable build still to be added.</p>
-              <div class="card-actions">
-                <a href="draken3d.html">Open page</a>
-                <span>Download coming soon</span>
-              </div>
-            </div>
-          </article>
+      <article class="game-card">
+        <img src="assets/horse-trader/board.png" alt="Horse trader board game art">
+        <div class="game-card-content">
+          <h2>Horse trader</h2>
+          <p>A board-game page using the current Horse trader web art.</p>
+          <div class="card-actions">
+            <a class="paper-button red" href="horse-trader.html">Open page</a>
+            <a class="paper-button alt" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/horse-trader/latest.zip">Download</a>
+          </div>
         </div>
-      </section>
+      </article>
 
-      <section class="section info-row">
-        <article class="about" id="about">
-          <h2>About</h2>
-          <p>Elfchess Games is the hub for current playable builds and the web pages that show each project as it gets ready.</p>
-        </article>
-        <article class="news" id="news">
-          <h2>News</h2>
-          <p>SphinxLite, Horse trader, Shape-Azoid, and DubiouSDungeons have current download links. Draken3d stays listed while its build is prepared.</p>
-        </article>
-      </section>
-    </main>
+      <article class="game-card">
+        <img src="assets/shape-azoid/hero.png" alt="Shape-Azoid game art">
+        <div class="game-card-content">
+          <h2>Shape-Azoid</h2>
+          <p>A shape-driven arcade prototype with a current downloadable build.</p>
+          <div class="card-actions">
+            <a class="paper-button red" href="shape-azoid.html">Open page</a>
+            <a class="paper-button alt" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/shape-azoid/latest.zip">Download</a>
+          </div>
+        </div>
+      </article>
 
-    <footer>
-      <nav aria-label="Footer navigation">
-        <a href="../index.html">Home</a>
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="../light-of-attention/links.html">Contact</a>
-      </nav>
-    </footer>
-  </div>
+      <article class="game-card">
+        <img src="assets/dubious-dungeons/dd-cover-wide.webp" alt="DubiouSDungeons splash art">
+        <div class="game-card-content">
+          <h2>DubiouSDungeons</h2>
+          <p>A dungeon board-game prototype for local pass-and-play and early network rooms.</p>
+          <div class="card-actions">
+            <a class="paper-button red" href="dubious-dungeons.html">Open page</a>
+            <a class="paper-button alt" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/dubious-dungeons/latest.zip">Download</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game-card">
+        <img src="assets/elfchess-games-background.png" alt="Elfchess Games artwork detail">
+        <div class="game-card-content">
+          <h2>Draken3d</h2>
+          <p>Draken3d</p>
+          <div class="card-actions">
+            <a class="paper-button red" href="draken3d.html">Open page</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="paper-panel" id="about">
+      <h2>About</h2>
+      <p>Elfchess Games is the hub for the current game pages, downloads, screenshots, boards, cards, and playable builds.</p>
+    </section>
+
+    <footer>The games stay here. The pieces keep moving.</footer>
+  </main>
 </body>
 </html>
