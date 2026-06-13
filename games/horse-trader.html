@@ -5,13 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Horse trader - Elfchess Games</title>
   <style>
-    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 2rem auto; max-width: 760px; padding: 0 1rem; }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #24170f;
+      color: #2d180c;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .hero {
+      background: linear-gradient(90deg, rgba(28, 16, 8, 0.86), rgba(28, 16, 8, 0.44)), url("assets/horse-trader/board.png") center / cover no-repeat;
+      color: #fff2cd;
+      min-height: 72vh;
+      padding: 2rem min(6vw, 4rem);
+    }
+
+    .back {
+      color: #fff2cd;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    .hero-copy {
+      max-width: 37rem;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 10vw, 7rem);
+      line-height: 0.9;
+      margin: 0 0 1rem;
+    }
+
+    .tagline {
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      font-weight: bold;
+      margin: 0 0 1.5rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .button {
+      background: #7d2f1b;
+      border: 2px solid #f4d08a;
+      color: #fff2cd;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: rgba(23, 54, 62, 0.9);
+    }
+
+    .content {
+      background: #f1d9a8;
+      padding: 2rem min(6vw, 4rem) 3rem;
+    }
+
+    .feature {
+      align-items: start;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: minmax(0, 1fr) minmax(18rem, 32rem);
+      margin: 0 auto;
+      max-width: 72rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      margin: 0 0 0.75rem;
+    }
+
+    .feature p {
+      font-size: 1.15rem;
+      margin: 0 0 1rem;
+    }
+
+    img {
+      border: 3px solid #6a3519;
+      box-shadow: 0 18px 48px rgba(55, 31, 13, 0.35);
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        min-height: 34rem;
+      }
+
+      .feature {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <p><a href="index.html">Back to Elfchess Games</a></p>
-  <h1>Horse trader</h1>
-  <p>Download the latest Horse trader build.</p>
-  <p><a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/horse-trader/latest.zip">Latest download</a></p>
+  <main>
+    <section class="hero">
+      <a class="back" href="index.html">Back to Elfchess Games</a>
+      <div class="hero-copy">
+        <h1>Horse trader</h1>
+        <p class="tagline">A horse-market trading game for 2-6 players.</p>
+        <div class="actions">
+          <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/horse-trader/latest.zip">Latest download</a>
+          <a class="button secondary" href="#coming-soon">Board game coming soon</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content" id="coming-soon">
+      <div class="feature">
+        <div>
+          <h2>Board Game Coming Soon</h2>
+          <p>Bring your hay to market, trade for horses, and play clever turns of phrase before the market closes.</p>
+          <p>The current download is the latest playable digital build. The board-game version is being prepared here next.</p>
+        </div>
+        <img src="assets/horse-trader/coming-soon.png" alt="Horse Trader Market Day board game coming soon artwork">
+      </div>
+    </section>
+  </main>
 </body>
 </html>
