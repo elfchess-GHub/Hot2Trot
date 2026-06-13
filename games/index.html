@@ -5,37 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Elfchess Games</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      background: #071019 url("assets/elfchess-games-background.png") center top / cover no-repeat fixed;
+      color: #f8e6bd;
+      font-family: Georgia, "Times New Roman", serif;
       line-height: 1.5;
-      margin: 2rem auto;
-      max-width: 760px;
-      padding: 0 1rem;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    body::before {
+      background: linear-gradient(90deg, rgba(4, 8, 13, 0.82), rgba(4, 8, 13, 0.4) 48%, rgba(4, 8, 13, 0.18));
+      content: "";
+      inset: 0;
+      pointer-events: none;
+      position: fixed;
+      z-index: 0;
+    }
+
+    main {
+      min-height: 100vh;
+      padding: 4rem min(6vw, 4rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    .panel {
+      background: rgba(9, 18, 28, 0.76);
+      border: 1px solid rgba(218, 158, 67, 0.75);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+      max-width: 33rem;
+      padding: 1.5rem;
     }
 
     h1 {
-      margin-bottom: 0.25rem;
+      font-size: clamp(2.5rem, 9vw, 5.5rem);
+      line-height: 0.92;
+      margin: 0 0 0.75rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 0 0 0.75rem;
     }
 
     ul {
-      padding-left: 1.25rem;
+      display: grid;
+      gap: 0.75rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
-    li {
-      margin: 0.5rem 0;
+    a {
+      color: inherit;
+    }
+
+    .game-link {
+      background: linear-gradient(180deg, #12354b, #0a2536);
+      border: 1px solid #d79d47;
+      display: block;
+      font-size: 1.25rem;
+      font-weight: bold;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+    }
+
+    .game-link:focus,
+    .game-link:hover {
+      background: linear-gradient(180deg, #1f506d, #12354b);
+      outline: 2px solid #ffe0a1;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        background-attachment: scroll;
+        background-position: center top;
+      }
+
+      main {
+        padding: 2rem 1rem;
+      }
+
+      .panel {
+        max-width: none;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Elfchess Games</h1>
-  <p>Latest game builds and download pages.</p>
+  <main>
+    <section class="panel">
+      <h1>Elfchess Games</h1>
+      <p>Latest game builds and download pages.</p>
 
-  <h2>Games</h2>
-  <ul>
-    <li><a href="sphinxlite.html">SphinxLite</a></li>
-    <li><a href="horse-trader.html">Horse trader</a></li>
-    <li><a href="shape-azoid.html">Shape-Azoid</a></li>
-    <li><a href="draken3d.html">Draken3d</a></li>
-  </ul>
+      <h2>Games</h2>
+      <ul>
+        <li><a class="game-link" href="sphinxlite.html">SphinxLite</a></li>
+        <li><a class="game-link" href="horse-trader.html">Horse trader</a></li>
+        <li><a class="game-link" href="shape-azoid.html">Shape-Azoid</a></li>
+        <li><a class="game-link" href="draken3d.html">Draken3d</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
