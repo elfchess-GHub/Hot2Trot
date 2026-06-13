@@ -8,4 +8,5 @@ for these files rather than relative GitHub Pages paths.
 - `sphinxlite/latest.zip`
 - `horse-trader/latest.zip`
 - `shape-azoid/latest.zip`
+- `dubious-dungeons/latest.zip`
 - `draken3d/latest.zip`
