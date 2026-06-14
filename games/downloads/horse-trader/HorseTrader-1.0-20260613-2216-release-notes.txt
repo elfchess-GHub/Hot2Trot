@@ -1,0 +1,18 @@
+HorseTrader 1.0 build 20260613-2216
+
+Public desktop multiplayer test build.
+
+Changes:
+- Improved desktop multiplayer host flow so the host app shows the LAN address other players should use.
+- Kept room-code join behavior for desktop multiplayer.
+- Fixed desktop multiplayer action submission so movement and actions are sent to the server.
+- Added BUILD_ID.txt to the package.
+- Added Update HorseTrader.ps1 and changed Play HorseTrader.cmd to check the published build marker before downloading updates.
+- Kept latest.zip matched to this build.
+
+Tested:
+- Python compile check.
+- Server smoke test.
+- AI scenario tests.
+- Packaged exe launch smoke.
+- Folder-wrapped zip layout.
