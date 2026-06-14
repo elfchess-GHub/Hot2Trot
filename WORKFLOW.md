@@ -189,3 +189,19 @@ Promote the generated main-hall cards with:
 `node scripts/promote_hall_cards.js`
 
 That command rebuilds `dist-preview/hall-cards.html`, verifies that generated timeline and figure card sections exist, then replaces only the Timeline Road and Figure Gallery sections inside `Hot2Trotski.html`.
+
+### Source Library Automation
+
+The Source Library should be generated from hallway packets and timeline stops, not maintained by hand.
+
+Build the source shelf preview with:
+
+`node scripts/build_source_library.js`
+
+Promote the generated source shelf with:
+
+`node scripts/promote_source_library.js`
+
+That command rebuilds `dist-preview/source-library.html`, verifies that the preview has source groups and source items, then replaces only the Source Library list inside `Hot2Trotski.html`.
+
+Use this whenever source notes or audit labels change in `data/hallways/*.json` or `data/timeline-stops.json`.
