@@ -32,8 +32,8 @@
       {
         "title": "Luxemburg / The Russian Revolution",
         "url": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm",
-        "note": "Source lead for socialist democracy and criticism of party-state methods.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: socialist democracy and criticism of party-state methods; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Rosa Luxemburg / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Rosa Luxemburg",
     "discussionText": "This is the planned debate room for Luxemburg: socialist democracy, mass strike, revolution, party power, participation, and dissent.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1918/1919",
     "timelineTitle": "Luxemburg and Socialist Democracy",
     "timelineMeaning": "A revolutionary socialist argument insists that mass participation, dissent, and democracy cannot be treated as optional.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["socialist-democracy", "mass-strike", "democratic-dissent"],
     "sortYear": 1918.5
   },

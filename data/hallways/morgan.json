@@ -38,32 +38,32 @@
       {
         "title": "Panic of 1907 / Federal Reserve History",
         "url": "https://www.federalreservehistory.org/essays/panic-of-1907",
-        "note": "Source lead for panic, private banking intervention, and Federal Reserve context.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: panic, private banking intervention, and Federal Reserve context; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Panic of 1907 / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Panic_of_1907",
-        "note": "Source lead for Morgan's role in the 1907 crisis.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: Morgan's role in the 1907 crisis; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "J.P. Morgan & Co. / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/J.P._Morgan_%26_Co.",
-        "note": "Source lead for the banking institution.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: banking institution context; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "J. P. Morgan",
     "discussionText": "This is the planned debate room for Morgan: finance capital, railroad reorganization, industrial consolidation, private banking power, the Panic of 1907, and the Money Trust debate.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1890s-1907",
     "timelineTitle": "J. P. Morgan and Finance Capital",
     "timelineMeaning": "Banking power organizes railroads, steel, mergers, credit, panic response, and the political question of who controls money.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["finance-capital", "money-trust", "panic-management"],
     "sortYear": 1890
   },

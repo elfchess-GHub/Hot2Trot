@@ -38,32 +38,32 @@
       {
         "title": "Berkshire Hathaway / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Berkshire_Hathaway",
-        "note": "Source lead for Berkshire Hathaway, ownership, and corporate structure.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Berkshire Hathaway, ownership, and corporate structure; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Forbes / Warren Buffett profile",
         "url": "https://www.forbes.com/profile/warren-buffett",
-        "note": "Source lead for wealth and Berkshire Hathaway framing.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for wealth and Berkshire Hathaway framing; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "The Giving Pledge / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/The_Giving_Pledge",
-        "note": "Source lead for Buffett, Gates, and philanthropy pledge.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for philanthropy pledge context; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Warren Buffett",
     "discussionText": "This is the planned debate room for Buffett: investment capital, compounding, shareholder power, Berkshire Hathaway, taxation, philanthropy, and the Giving Pledge.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1956+",
     "timelineTitle": "Warren Buffett and Investment Capital",
     "timelineMeaning": "Berkshire Hathaway, compounding, insurance float, shareholder ownership, corporate control, and philanthropy become a quieter capitalism hallway.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["investment-capital", "shareholder-power", "giving-pledge"],
     "sortYear": 1956
   },

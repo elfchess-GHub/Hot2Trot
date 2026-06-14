@@ -32,8 +32,8 @@
       {
         "title": "Keynes / A Tract on Monetary Reform",
         "url": "https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm",
-        "note": "Source lead for Keynes's policy urgency and long-run argument.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for policy urgency and long-run argument; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "John Maynard Keynes / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "John Maynard Keynes",
     "discussionText": "This is the planned debate room for Keynes: markets, crisis, public spending, mixed economies, unemployment, and what counts as socialism.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1930s",
     "timelineTitle": "Keynes and Managed Capitalism",
     "timelineMeaning": "Economic crisis pushes democracies toward public spending, stabilization policy, and mixed-economy arguments.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["mixed-economy", "public-spending", "fiscal-policy"],
     "sortYear": 1930
   },

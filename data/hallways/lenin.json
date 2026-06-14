@@ -32,8 +32,8 @@
       {
         "title": "Lenin / What Is To Be Done?",
         "url": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
-        "note": "Source lead for revolutionary theory and party organization.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: revolutionary theory and party organization; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Vladimir Lenin / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Vladimir Lenin",
     "discussionText": "This is the planned debate room for Lenin: vanguard party, revolutionary theory, state power, Soviet institutions, and the difference between socialism, communism, and Leninism.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1917",
     "timelineTitle": "Lenin and Revolution Becomes Government",
     "timelineMeaning": "The Bolshevik victory turns revolutionary theory into a problem of state power, party authority, civil conflict, and institutions.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["vanguard-party", "revolutionary-theory", "state-power"],
     "sortYear": 1917
   },

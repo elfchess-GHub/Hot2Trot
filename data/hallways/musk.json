@@ -38,38 +38,38 @@
       {
         "title": "Forbes / Elon Musk profile",
         "url": "https://www.forbes.com/profile/elon-musk",
-        "note": "Source lead for wealth and company ownership framing.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for wealth and company-ownership framing; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "NASA / Commercial Crew Program",
         "url": "https://www.nasa.gov/humans-in-space/commercial-space/commercial-crew-program/commercial-crew-program-essentials/",
-        "note": "Source lead for NASA commercial crew contracts.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for NASA commercial crew contract pathway; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "SEC / Statement on Musk and Tesla settlements",
         "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-settlements-elon-musk-tesla",
-        "note": "Source lead for securities-regulation conflict.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for securities-regulation conflict; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Acquisition of Twitter by Elon Musk / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Acquisition_of_Twitter_by_Elon_Musk",
-        "note": "Source lead for the Twitter/X acquisition.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Twitter/X acquisition pathway; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Elon Musk",
     "discussionText": "This is the planned debate room for Musk: founder control, state contracts, platform ownership, securities regulation, public speech, and billionaire power.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "2002+",
     "timelineTitle": "Elon Musk and Founder-Control Capitalism",
     "timelineMeaning": "Tesla, SpaceX, X, stock wealth, state contracts, and platform ownership show capitalist power moving through firms, government, markets, and media.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["founder-control", "state-contracts", "attention-platform"],
     "sortYear": 2002
   },

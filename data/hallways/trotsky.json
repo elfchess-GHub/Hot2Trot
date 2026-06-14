@@ -32,8 +32,8 @@
       {
         "title": "Trotsky / The Permanent Revolution",
         "url": "https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm",
-        "note": "Source lead for permanent revolution and national/international revolution claims.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: permanent revolution and national/international revolution claims; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Leon Trotsky / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Leon Trotsky",
     "discussionText": "This is the planned debate room for Trotsky: permanent revolution, Soviet opposition, bureaucracy, exile, dissent, and what revolutionary power does after victory.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1930s",
     "timelineTitle": "Trotsky and Soviet Opposition",
     "timelineMeaning": "The revolutionary road turns into a dispute over bureaucracy, centralization, dissent, and whether Soviet power remained accountable.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["permanent-revolution", "bureaucracy", "soviet-opposition"],
     "sortYear": 1930
   },

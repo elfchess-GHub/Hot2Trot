@@ -38,32 +38,32 @@
       {
         "title": "Business career of Donald Trump / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Business_career_of_Donald_Trump",
-        "note": "Source lead for real estate and business path.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for real estate and business path; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "The Trump Organization / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/The_Trump_Organization",
-        "note": "Source lead for corporate structure and business areas.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for corporate structure and business areas; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Forbes / Donald Trump profile",
         "url": "https://www.forbes.com/profile/donald-trump/",
-        "note": "Source lead for wealth and real-estate origin framing.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for wealth and real-estate origin framing; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Donald Trump",
     "discussionText": "This is the planned debate room for Trump: real estate, brand, media, inherited capital, debt, presidential power, and conflicts between private interest and public office.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1970s+",
     "timelineTitle": "Donald Trump and Brand-Political Capital",
     "timelineMeaning": "Real estate, inherited capital, brand licensing, television, debt, law, and presidential power become one modern capitalism doorway.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["real-estate-capital", "brand-politics", "political-capitalism"],
     "sortYear": 1970
   },

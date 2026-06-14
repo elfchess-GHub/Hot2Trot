@@ -32,8 +32,8 @@
       {
         "title": "Orwell / Politics and the English Language",
         "url": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
-        "note": "Source lead for political language, euphemism, and public truth.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: political language, euphemism, and public truth; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "George Orwell / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "George Orwell",
     "discussionText": "This is the planned debate room for Orwell: political language, propaganda, socialism, authoritarianism, and how words can clarify or hide power.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1940s",
     "timelineTitle": "Orwell and Political Language",
     "timelineMeaning": "A democratic socialist warning about propaganda, euphemism, authoritarian language, and the need for public truth.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["political-language", "propaganda", "democratic-socialism"],
     "sortYear": 1940
   },

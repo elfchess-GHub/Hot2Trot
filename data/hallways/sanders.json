@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Bernie Sanders",
     "discussionText": "This is the planned debate room for Sanders: democratic socialism, public goods, taxes, health care, inequality, elections, and political labels.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "2016+",
     "timelineTitle": "Democratic Socialism Returns to U.S. Campaigns",
     "timelineMeaning": "Sanders and younger voters reopen fights over health care, inequality, billionaires, public goods, taxes, and political labels.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["democratic-socialism", "public-goods", "public-spending"],
     "sortYear": 2016
   },

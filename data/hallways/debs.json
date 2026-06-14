@@ -32,8 +32,8 @@
       {
         "title": "Eugene Debs / Statement to the Court",
         "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
-        "note": "Primary source lead for Debs's class-solidarity statement and court speech; exact passages still need pinning.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: class solidarity, prison/court speech, and American socialism; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Eugene V. Debs / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Eugene V. Debs",
     "discussionText": "This is the planned debate room for Debs: unions, American socialism, elections, prison, free speech, war, and working-class solidarity.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1900s",
     "timelineTitle": "Debs and American Socialism",
     "timelineMeaning": "Labor politics, elections, unions, railroads, prisons, and public speech bring socialist language into U.S. democratic life.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["unionism", "american-socialism", "labor-politics"],
     "sortYear": 1900
   },

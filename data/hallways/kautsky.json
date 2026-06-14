@@ -32,8 +32,8 @@
       {
         "title": "Kautsky / The Dictatorship of the Proletariat",
         "url": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
-        "note": "Source lead for democracy and dictatorship debate.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: democracy and dictatorship debate; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Karl Kautsky / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Karl Kautsky",
     "discussionText": "This is the planned debate room for Kautsky: Marxism, democracy, dictatorship, Lenin, party rule, and accountability.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1918",
     "timelineTitle": "Kautsky and the Democracy Split",
     "timelineMeaning": "A major Marxist dispute asks whether socialist politics can abandon democracy and still claim liberation.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["orthodox-marxism", "democracy", "dictatorship-debate"],
     "sortYear": 1918
   },

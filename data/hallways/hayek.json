@@ -32,8 +32,8 @@
       {
         "title": "Hayek / The Use of Knowledge in Society",
         "url": "https://www.econlib.org/library/Essays/hykKnw.html",
-        "note": "Source lead for dispersed knowledge and price signals.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: dispersed knowledge and price signals; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Friedrich Hayek / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Friedrich Hayek",
     "discussionText": "This is the planned debate room for Hayek: prices, knowledge, markets, planning, liberalism, and what central planners can or cannot know.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1945",
     "timelineTitle": "Hayek and the Knowledge Problem",
     "timelineMeaning": "The market-road argument says prices can coordinate dispersed information that planners cannot easily gather.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["knowledge-problem", "price-signals", "market-coordination"],
     "sortYear": 1945
   },

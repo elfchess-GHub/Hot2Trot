@@ -32,8 +32,8 @@
       {
         "title": "Friedman / Inflation: True and False",
         "url": "https://www.hoover.org/research/inflation-true-and-false",
-        "note": "Source lead for inflation and monetarist framing.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for inflation and monetarist framing; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Milton Friedman / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Milton Friedman",
     "discussionText": "This is the planned debate room for Friedman: monetarism, inflation, markets, public spending, incentives, and limited government.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1960s-1980s",
     "timelineTitle": "Friedman and Market Liberalism",
     "timelineMeaning": "Inflation, money, incentives, and market freedom become central arguments against broad state control.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["monetarism", "inflation", "market-liberalism"],
     "sortYear": 1960
   },

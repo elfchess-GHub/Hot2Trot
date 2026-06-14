@@ -38,26 +38,26 @@
       {
         "title": "Objectivism / Britannica",
         "url": "https://www.britannica.com/topic/objectivism-philosophy",
-        "note": "Source lead for Objectivism, ethical egoism, individualism, and laissez-faire capitalism.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Objectivism, individualism, and laissez-faire capitalism; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Atlas Shrugged / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Atlas_Shrugged",
-        "note": "Source lead for Rand's fictional presentation of Objectivism.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for fictional presentation of Objectivism; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Ayn Rand",
     "discussionText": "This is the planned debate room for Rand: Objectivism, selfishness, achievement, property rights, laissez-faire capitalism, and whether a moral defense of capitalism can stay honest about power.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1943-1957",
     "timelineTitle": "Ayn Rand and Capitalism as Moral Story",
     "timelineMeaning": "Objectivism turns capitalism into an argument about individual rights, achievement, property, self-interest, and anti-collectivism.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["objectivism", "laissez-faire", "rational-self-interest"],
     "sortYear": 1943
   },

@@ -38,32 +38,32 @@
       {
         "title": "DOJ / U.S. v. Microsoft Findings of Fact",
         "url": "https://www.justice.gov/atr/cases/f3800/msjudgex.htm",
-        "note": "Source lead for antitrust and Microsoft market-power claims.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Microsoft antitrust and market-power claims; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Gates Foundation / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Gates_Foundation",
-        "note": "Source lead for foundation scale and philanthropic role.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for foundation scale and philanthropic role; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Forbes / Bill Gates profile",
         "url": "https://www.forbes.com/profile/bill-gates",
-        "note": "Source lead for wealth and Microsoft/investment framing.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for wealth and Microsoft/investment framing; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Bill Gates",
     "discussionText": "This is the planned debate room for Gates: software monopoly, antitrust, philanthropy, global health, intellectual property, and billionaire power.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1975+",
     "timelineTitle": "Bill Gates and Software Capital",
     "timelineMeaning": "Microsoft turns software, operating systems, network effects, antitrust fights, and philanthropy into a modern capitalism hallway.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["software-monopoly", "antitrust", "philanthropy-capital"],
     "sortYear": 1975
   },

@@ -32,8 +32,8 @@
       {
         "title": "Stalin / Questions of Leninism",
         "url": "https://www.marxists.org/reference/archive/stalin/works/1926/01/25.htm",
-        "note": "Source lead for Stalin's Leninism and party-state language.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Stalin's party-state and Leninism language; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Joseph Stalin / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Joseph Stalin",
     "discussionText": "This is the planned debate room for Stalin: Soviet state consolidation, party-state power, planning, industrialization, coercive institutions, and political language.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1920s-1953",
     "timelineTitle": "Stalin and Soviet State Consolidation",
     "timelineMeaning": "The Soviet system centralizes party authority, planning, industrial policy, security institutions, and limits on dissent.",
     "lane": "black",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["party-state", "central-planning", "stalinism"],
     "sortYear": 1924
   },

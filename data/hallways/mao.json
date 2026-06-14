@@ -32,8 +32,8 @@
       {
         "title": "Mao / Quotations, War and Peace",
         "url": "https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm",
-        "note": "Source lead for Mao's political power and armed struggle language.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: political power and armed struggle language; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Mao Zedong / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Mao Zedong",
     "discussionText": "This is the planned debate room for Mao: rural revolution, Maoism, party rule, land struggle, mass campaigns, and Chinese state transformation.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1949",
     "timelineTitle": "Mao and China",
     "timelineMeaning": "Marxism-Leninism is adapted to rural revolution, party rule, land struggle, mass campaigns, and state-led transformation.",
     "lane": "red",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["maoism", "peasant-revolution", "mass-campaigns"],
     "sortYear": 1949
   },

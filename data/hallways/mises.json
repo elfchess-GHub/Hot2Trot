@@ -38,32 +38,32 @@
       {
         "title": "Economic Calculation Problem / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Economic_calculation_problem",
-        "note": "Source lead for the calculation debate.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for calculation debate context; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Economic Calculation in the Socialist Commonwealth / Britannica",
         "url": "https://www.britannica.com/topic/Economic-Calculation-in-the-Socialist-Commonwealth",
-        "note": "Source lead for Mises's 1920 argument.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Mises's 1920 calculation argument; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Austrian School of Economics / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Austrian_school_of_economics",
-        "note": "Source lead for Austrian School context.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for Austrian School context; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Ludwig von Mises",
     "discussionText": "This is the planned debate room for Mises: Austrian economics, prices, calculation, interventionism, private property, socialism, and whether markets solve coordination better than planners.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1920+",
     "timelineTitle": "Mises and the Calculation Problem",
     "timelineMeaning": "The Austrian critique says socialism faces a price-and-calculation problem when planners replace private property and market exchange.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["austrian-economics", "economic-calculation", "interventionism"],
     "sortYear": 1920
   },

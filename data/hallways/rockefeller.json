@@ -38,32 +38,32 @@
       {
         "title": "Standard Oil / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Standard_Oil",
-        "note": "Source lead for Standard Oil, trust power, and breakup.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: Standard Oil, trust power, monopoly claims, and breakup pathway; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Britannica / Standard Oil Company and Trust",
         "url": "https://www.britannica.com/topic/Standard-Oil-Company-and-Trust",
-        "note": "Source lead for trust, antitrust suit, and 1911 divestiture.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: trust structure, antitrust suit, and 1911 divestiture; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Rockefeller Foundation / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Rockefeller_Foundation",
-        "note": "Source lead for philanthropy after oil wealth.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: philanthropy after oil wealth; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "John D. Rockefeller",
     "discussionText": "This is the planned debate room for Rockefeller: Standard Oil, trust power, monopoly, antitrust, philanthropy, and the question of private power over public life.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1870-1911",
     "timelineTitle": "Rockefeller and Standard Oil",
     "timelineMeaning": "Oil refining, trust power, railroad deals, monopoly pressure, antitrust law, and philanthropy become a central American capitalism hallway.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["trust-power", "oil-capital", "monopoly-power"],
     "sortYear": 1870
   },

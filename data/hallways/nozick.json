@@ -32,8 +32,8 @@
       {
         "title": "Nozick / Stanford Encyclopedia",
         "url": "https://plato.stanford.edu/entries/nozick-political/index.html",
-        "note": "Source lead for Nozick's rights, property, and minimal-state theory.",
-        "auditStatus": "[needs verification]"
+        "note": "source lead checked for rights, property, entitlement, and minimal-state theory; exact passages still need pinning.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Robert Nozick / Wikipedia",
@@ -44,14 +44,14 @@
     ],
     "discussionTopic": "Robert Nozick",
     "discussionText": "This is the planned debate room for Nozick: rights, property, taxation, redistribution, consent, libertarianism, and the minimal state.",
-    "auditStatus": "[needs verification]"
+    "auditStatus": "[source lead checked]"
   },
   "hallCard": {
     "timelineDate": "1974",
     "timelineTitle": "Nozick and Libertarian Rights",
     "timelineMeaning": "A rights-based argument says redistribution and broad state power may violate individual entitlement and consent.",
     "lane": "blue",
-    "auditStatus": "[needs verification]",
+    "auditStatus": "[source lead checked]",
     "ideaPills": ["libertarianism", "private-property", "minimal-state"],
     "sortYear": 1974
   },
