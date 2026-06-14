@@ -152,7 +152,9 @@
     .path-chip{font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:var(--accent);border:1px solid rgba(216,175,85,.32);border-radius:999px;padding:4px 6px}
     .path-ladder{display:grid;gap:7px;margin:10px 0}
     .path-step{display:flex;justify-content:space-between;gap:8px;padding:7px 8px;border:1px solid rgba(255,255,255,.08);border-radius:8px;background:rgba(255,255,255,.03)}
+    .path-step.done{border-color:rgba(216,175,85,.45);background:rgba(216,175,85,.08);color:var(--ivory)}
     .path-step b{color:var(--accent);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+    .path-note{border-left:3px solid var(--accent);padding-left:9px;color:var(--ivory)}
     .lesson-steps{display:grid;gap:9px;margin:10px 0}
     .lesson-step{border:1px solid rgba(255,255,255,.09);border-radius:9px;background:rgba(5,6,8,.5);padding:10px}
     .lesson-step h5{margin:0 0 5px;font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
@@ -1268,6 +1270,8 @@
     function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();}}
     function titleCase(text){return text.replace(/\b\w/g, c=>c.toUpperCase());}
     function compactLabel(text){return text.replace(/\s+/g,' ').trim();}
+    function goldBadges(){return state.badges.filter(name=>!/Idea Badge$|Path Badge$/.test(name));}
+    function pathMedalName(path){return path.label+' Path Medal';}
     function pathScore(path){
       const ideaHits=path.ideas.filter(item=>state.ideas.includes(item)).length;
       const figureHits=path.figures.filter(figure=>state.figures.some(item=>item.toLowerCase().includes(figure.toLowerCase()))).length;
@@ -1277,8 +1281,20 @@
       const points=started + Math.min(2, ideaHits) + Math.min(2, figureHits) + testHit + sourceHit;
       return {points,total:7,ideaHits,figureHits,testHit,sourceHit,started};
     }
+    function pathMedalReady(score){return score.started && score.ideaHits>=2 && score.figureHits>=2 && score.sourceHit && score.testHit;}
+    function maybeAwardPathMedals(){
+      let changed=false;
+      Object.values(learningPaths).forEach(path=>{
+        const medal=pathMedalName(path);
+        if(pathMedalReady(pathScore(path)) && !state.badges.includes(medal)){
+          state.badges.push(medal);
+          changed=true;
+        }
+      });
+      if(changed) save();
+    }
     function rankTitle(){
-      const count=state.badges.length;
+      const count=goldBadges().length;
       if(count>=40) return 'Archivist of the Whole Mess';
       if(count>=28) return 'Source-Shelf Operator';
       if(count>=18) return 'Road Scholar';
@@ -1286,7 +1302,7 @@
       if(count>=5) return 'Badge Apprentice';
       return 'Apprentice of the Timeline';
     }
-    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);}save();renderState();showIdeaDetail(name);}
+    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);}save();maybeAwardPathMedals();renderState();showIdeaDetail(name);}
     function showIdeaDetail(name){
       const detail=ideaDetails[name] || {definition:`${name} is on the study map. Follow its idea room or source path to place it beside the figures, events, and debates that use it.`, figures:['Source Library'], sources:[['Source Library','#texts']]};
       document.getElementById('ideaDetailTitle').textContent=titleCase(name);
@@ -1300,7 +1316,7 @@
       const path=learningPaths[key];
       if(!path) return;
       if(!state.paths.includes(key)) state.paths.push(key);
-      addBadge(path.label+' Path Badge');
+      save();
       renderPathDetail(key);
       renderState();
       document.getElementById('pathDetail').scrollIntoView({behavior:'smooth',block:'nearest'});
@@ -1341,7 +1357,9 @@
         ['Check one path source', score.sourceHit],
         ['Pass the path test', score.testHit]
       ];
-      document.getElementById('pathDetail').innerHTML=`<h4>${path.label}</h4><p>${path.summary}</p><div class="lesson-steps">${lessonSteps.map(([title,body,links])=>`<div class="lesson-step"><h5>${title}</h5><p>${body}</p>${links?`<div class="link-cloud">${links}</div>`:''}</div>`).join('')}</div><div class="path-ladder">${ladder.map(([label,done])=>`<div class="path-step"><span>${label}</span><b>${done?'Done':'Open'}</b></div>`).join('')}</div><div class="path-chips">${chips.map(x=>`<span class="path-chip">${x}</span>`).join('')}</div>`;
+      const medalEarned=state.badges.includes(pathMedalName(path));
+      const medalCopy=medalEarned ? 'Path medal earned.' : 'Path medal unlocks after ideas, figure rooms, one source, and the test.';
+      document.getElementById('pathDetail').innerHTML=`<h4>${path.label}</h4><p>${path.summary}</p><p class="path-note">${medalCopy}</p><div class="lesson-steps">${lessonSteps.map(([title,body,links])=>`<div class="lesson-step"><h5>${title}</h5><p>${body}</p>${links?`<div class="link-cloud">${links}</div>`:''}</div>`).join('')}</div><div class="path-ladder">${ladder.map(([label,done])=>`<div class="path-step ${done?'done':''}"><span>${label}</span><b>${done?'Done':'Open'}</b></div>`).join('')}</div><div class="path-chips">${chips.map(x=>`<span class="path-chip">${x}</span>`).join('')}</div>`;
     }
     function answerTest(btn, ok, badge){
       const card=btn.closest('.test-card');
@@ -1352,11 +1370,12 @@
         box.textContent=`Correct: ${btn.textContent.trim()} Badge unlocked.`;
         addBadge(badge || 'Test Badge');
       }else{box.textContent='Not this one. Look back at the road, then try again.';}
+      maybeAwardPathMedals();
       save();renderState();
     }
-    function addFigureBadge(label){if(!label) return; if(!state.figures.includes(label)) state.figures.push(label); addBadge(label+' Figure Badge');}
+    function addFigureBadge(label){if(!label) return; if(!state.figures.includes(label)) state.figures.push(label); addBadge(label+' Figure Badge'); maybeAwardPathMedals(); renderState();}
     function addTruthBadge(label){if(!label) return; if(!state.truths.includes(label)) state.truths.push(label); addBadge(label+' Truth Badge');}
-    function addSourceBadge(label){const clean=compactLabel(label || 'Source Library'); if(!state.sources.includes(clean)) state.sources.push(clean); addBadge(clean+' Source Badge');}
+    function addSourceBadge(label){const clean=compactLabel(label || 'Source Library'); if(!state.sources.includes(clean)) state.sources.push(clean); addBadge(clean+' Source Badge'); maybeAwardPathMedals(); renderState();}
     function setScholarName(){const n=prompt('Local profile name:', state.name || 'Guest Scholar'); if(n && n.trim()){state.name=n.trim();save();renderState();}}
     function resetProgress(){
       if(!confirm('Clear all local study marks, medals, tests, paths, and profile progress?')) return;
@@ -1366,19 +1385,21 @@
       document.getElementById('pathDetail').innerHTML='<h4>Choose a path</h4><p>Pick a road to open a study mission: what to read first, which rooms to visit, what source shelf to check, and which test proves the road.</p><div class="path-chips"><span class="path-chip">read</span><span class="path-chip">compare</span><span class="path-chip">source check</span><span class="path-chip">test</span></div>';
     }
     function renderState(){
+      const earnedGold=goldBadges();
+      const pathMedals=state.badges.filter(name=>/Path Medal$/.test(name));
       document.getElementById('scholarName').textContent=state.name || 'Guest Scholar';
       document.getElementById('rankTitle').textContent=rankTitle();
-      document.getElementById('badgeCount').textContent=state.badges.length;
+      document.getElementById('badgeCount').textContent=earnedGold.length;
       document.getElementById('ideaCount').textContent=state.ideas.length;
       document.getElementById('pathCount').textContent=state.paths.length;
       document.getElementById('ideaBadges').textContent=state.ideas.length;
-      document.getElementById('pathBadges').textContent=state.paths.length;
+      document.getElementById('pathBadges').textContent=pathMedals.length;
       document.getElementById('figBadges').textContent=state.figures.length;
       document.getElementById('truthBadges').textContent=state.truths.length;
       document.getElementById('sourceBadges').textContent=state.sources.length;
       document.getElementById('testBadges').textContent=state.tests.length;
       document.getElementById('badgeIdeas').textContent=state.ideas.length;
-      document.getElementById('badgePaths').textContent=state.paths.length;
+      document.getElementById('badgePaths').textContent=pathMedals.length;
       document.getElementById('badgeFigures').textContent=state.figures.length;
       document.getElementById('badgeTruths').textContent=state.truths.length;
       document.getElementById('badgeSources').textContent=state.sources.length;
@@ -1387,37 +1408,38 @@
         const status=btn.querySelector('b');
         if(status) status.textContent=state.paths.includes(btn.dataset.path) ? 'Open' : 'Start';
       });
-      const pct=Math.min(100, 18 + state.badges.length*5 + state.ideas.length*2 + state.paths.length*4 + state.tests.length*4);
+      const pct=Math.min(100, 18 + earnedGold.length*5 + state.ideas.length*2 + state.paths.length*3 + state.tests.length*4);
       document.getElementById('progressMeter').style.width=pct+'%';
       const studyMarks=document.getElementById('studyMarks');
       const recentIdeas=state.ideas.slice(-30).reverse();
       studyMarks.innerHTML=(recentIdeas.length?recentIdeas:['No idea marks yet']).map(x=>`<span class="study-mark">${titleCase(x)}</span>`).join('');
       const medals=document.getElementById('medals');
-      const earned=state.badges.filter(name=>!/Idea Badge$/.test(name)).slice(-9).reverse();
+      const earned=earnedGold.slice(-9).reverse();
       const medalClass=name=>{
         if(name==='Locked') return 'locked';
-        if(/Path Badge$/.test(name)) return 'path';
+        if(/Path Medal$/.test(name)) return 'path';
         if(/Figure Badge$/.test(name)) return 'figure';
         if(/Truth Badge$/.test(name)) return 'truth';
         if(/Source Badge$/.test(name)) return 'source';
         if(/Badge$/.test(name)) return 'test';
         return '';
       };
-      const medalLabel=name=>name==='Locked' ? 'Locked' : name.replace(/\s+(Path|Figure|Truth|Source|Test)?\s*Badge$/,'').trim();
+      const medalLabel=name=>name==='Locked' ? 'Locked' : name.replace(/\s+(Path\s+Medal|Path|Figure|Truth|Source|Test)?\s*Badge$/,'').replace(/\s+Path\s+Medal$/,'').trim();
       const slots=[...earned]; while(slots.length<9) slots.push('Locked');
       medals.innerHTML=slots.map(x=>`<div class="medal ${medalClass(x)}">${medalLabel(x)}</div>`).join('');
       document.getElementById('pathProgress').innerHTML=Object.entries(learningPaths).map(([key,path])=>{
         const score=pathScore(path);
         const pct=Math.round((score.points/score.total)*100);
-        return `<div class="path-progress-row"><span>${path.label}</span><b>${score.points}/${score.total}</b><div class="mini-meter"><span style="width:${pct}%"></span></div></div>`;
+        const medal=state.badges.includes(pathMedalName(path)) ? 'Medal' : `${score.points}/${score.total}`;
+        return `<div class="path-progress-row"><span>${path.label}</span><b>${medal}</b><div class="mini-meter"><span style="width:${pct}%"></span></div></div>`;
       }).join('');
       const goals=[];
-      if(state.paths.length<3) goals.push('Start three learning paths');
+      if(pathMedals.length<3) goals.push('Earn three path medals');
       if(state.ideas.length<8) goals.push('Open eight idea rooms');
       if(state.figures.length<5) goals.push('Open five figure study cards');
       if(state.truths.length<3) goals.push('Study three truth checks');
       if(state.sources.length<3) goals.push('Open three source shelf items');
-      if(state.tests.length<6) goals.push('Pass all six subject tests');
+      if(state.tests.length<7) goals.push('Pass all seven subject tests');
       document.getElementById('nextBadges').innerHTML=(goals.length?goals:['Medal case complete']).map(goal=>`<div class="tracker-row"><span>${goal}</span><b>${goals.length?'Next':'Done'}</b></div>`).join('');
     }
     function buildIdeaCloud(){
