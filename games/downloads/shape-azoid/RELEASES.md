@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.4 - 2026-06-14
+
+Workspace cleanup and canonical-source build.
+
+- Archived the stale local `C:\cardgameJ\Shape-Azoid` folder and made the current source live at that clean canonical path.
+- Moved runtime-generated server files and preview images out of the source root.
+- Moved diagnostic launchers into source `support_scripts`; the release package still keeps them under `Shape-Azoid Support`.
+- Updated the PyInstaller spec and README commands to use `C:\cardgameJ\Shape-Azoid`.
+- Rebuilt `Shape-Azoid.exe` from the canonical source path.
+- Verified the saved server-file join probe still passes from the canonical source folder.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.4.zip`
+
 ## v0.7.3 - 2026-06-14
 
 Single-entry multiplayer test build.
