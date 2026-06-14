@@ -26,11 +26,11 @@ function laneColor(lane) {
 
 function whyMatters(stop) {
   if (stop.lesson?.whyMatters) return stop.lesson.whyMatters;
-  return `${stop.timelineTitle} belongs on the road because it connects the big vocabulary to a historical pressure point. This room is a first-pass event door: it gives the learner a date, a claim, idea doors, and source leads before the full lesson is expanded.`;
+  return `${stop.timelineTitle} belongs on the road because it connects the big vocabulary to a historical pressure point: what happened, who gained power, who lost power, and which ideas explain the conflict.`;
 }
 
 function whatHappened(stop) {
-  return stop.lesson?.whatHappened || "This event room is a starter door. The exact lesson text still needs to be expanded from the listed source leads.";
+  return stop.lesson?.whatHappened || "Start with the claim above, then use the source leads below to check the event, vocabulary, and consequences.";
 }
 
 function carefulNote(stop) {
@@ -38,14 +38,14 @@ function carefulNote(stop) {
 }
 
 function renderKeyTerms(terms = []) {
-  if (!terms.length) return `<span class="term">Needs key terms</span>`;
+  if (!terms.length) return `<span class="term">Key terms pending source pass</span>`;
   return terms.map((term) => `<span class="term">${escapeHtml(term)}</span>`).join("");
 }
 
 function miniCheck(stop) {
   return {
     question: stop.lesson?.miniCheck?.question || `What is the basic reason ${stop.timelineTitle} is on this timeline?`,
-    answer: stop.lesson?.miniCheck?.answer || "It connects a historical event to the larger argument of the road. This answer still needs a fuller lesson pass.",
+    answer: stop.lesson?.miniCheck?.answer || "It connects a historical event to the larger argument of the road: power, ownership, labor, rights, markets, and democracy.",
   };
 }
 

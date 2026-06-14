@@ -78,7 +78,7 @@
     </section>
   </main>
   <script>
-    async function hydratePhotos(){for(const box of document.querySelectorAll('[data-wiki]')){try{const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(box.dataset.wiki)}`);const data=await r.json();if(data.thumbnail?.source){box.innerHTML=`<img src="${data.thumbnail.source}" alt="${(data.title||box.dataset.wiki).replace(/"/g,'&quot;')}">`;}}catch(e){box.textContent='Wiki image placeholder';}}}
+    async function hydratePhotos(){for(const box of document.querySelectorAll('[data-wiki]')){try{const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(box.dataset.wiki)}`);const data=await r.json();if(data.thumbnail?.source){box.innerHTML=`<img src="${data.thumbnail.source}" alt="${(data.title||box.dataset.wiki).replace(/"/g,'&quot;')}">`;}}catch(e){box.textContent='Image unavailable';}}}
     hydratePhotos();
   </script>
 </body>
