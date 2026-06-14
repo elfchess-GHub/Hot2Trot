@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.3 - 2026-06-14
+
+Single-entry multiplayer test build.
+
+- Restored `Shape-Azoid.exe` as the intended player-facing entry point for regular play, online hosting, and online joining.
+- Moved online host/join launchers out of the package top level and into `Shape-Azoid Support` for diagnostics only.
+- Added in-game local server startup: on the Online screen, the host clicks Create and the game starts the server, writes the saved server address files, and creates the room.
+- Kept joiners on the saved-server-file pattern: put the host address in `Shape_Azoid_Network_Server.txt`, open `Shape-Azoid.exe`, click Online, type the room code, and Join.
+- Rebuilt `Shape-Azoid.exe` from the fixed source.
+- Verified the release zip top level contains only `Shape-Azoid.exe`, `README.md`, and `Install_Shape_Azoid_Requirements.cmd`.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.3.zip`
+
 ## v0.7.2 - 2026-06-14
 
 Multiplayer test build focused on the saved-server-file join flow.
