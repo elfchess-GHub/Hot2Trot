@@ -14,8 +14,14 @@
     ],
     "cleanIdea": "Markets can coordinate many separate choices through exchange and prices, but that does not make markets morally complete or politically automatic.",
     "badgePaths": [
-      { "label": "Market Badge", "ideaId": "market" },
-      { "label": "Division of Labor Badge", "ideaId": "division-of-labor" }
+      {
+        "label": "Market Badge",
+        "ideaId": "market"
+      },
+      {
+        "label": "Division of Labor Badge",
+        "ideaId": "division-of-labor"
+      }
     ],
     "keyTerms": [
       "Market",
@@ -37,8 +43,8 @@
       {
         "title": "Adam Smith / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Adam_Smith",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, basic biography, Wealth of Nations, political economy, division of labor, and free-market vocabulary.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Adam Smith",
@@ -51,7 +57,10 @@
     "timelineMeaning": "Market coordination, specialization, commerce, and moral philosophy become a foundation for later arguments about capitalism.",
     "lane": "blue",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["division-of-labor", "market"],
+    "ideaPills": [
+      "division-of-labor",
+      "market"
+    ],
     "sortYear": 1776
   },
   "hooks": {
@@ -67,14 +76,50 @@
       "plainDefinition": "A market is a system where people exchange goods, labor, money, or services through prices, supply, demand, and choice.",
       "context": "In the Smith path, markets are coordination machines: they can organize many separate decisions without one central planner.",
       "whyMatters": "Smith matters because market language becomes one foundation for capitalism. Later socialist arguments ask what markets coordinate well, what they hide, and who carries the cost when market freedom becomes worker dependency.",
-      "relatedFigures": [{ "label": "Adam Smith", "id": "smith" }],
-      "relatedIdeas": ["division-of-labor"],
+      "carefulVersion": "Markets can coordinate information and opportunity. They can also hide coercion, monopoly, exclusion, pollution, debt pressure, and unequal starting points. A truth-first page has to study both the coordination power and the ledger of harm.",
+      "keyTerms": [
+        "Market Coordination",
+        "Price Signals",
+        "Competition",
+        "Capitalism",
+        "Mixed Economy",
+        "Public Goods"
+      ],
+      "relatedFigures": [
+        {
+          "label": "Adam Smith",
+          "id": "smith"
+        },
+        {
+          "label": "Friedrich Hayek",
+          "id": "hayek"
+        },
+        {
+          "label": "Milton Friedman",
+          "id": "friedman"
+        }
+      ],
+      "relatedIdeas": [
+        "division-of-labor"
+      ],
       "sources": [
         {
           "title": "Smith / Wealth of Nations",
           "url": "https://www.gutenberg.org/files/3300/3300-h/3300-h.htm",
           "note": "supports: market exchange, self-interest, and limits on state direction of capital.",
           "auditStatus": "[passage pinned]"
+        },
+        {
+          "title": "Market / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Market_(economics)",
+          "note": "supports: buyers, sellers, prices, and exchange definition.",
+          "auditStatus": "[source lead checked]"
+        },
+        {
+          "title": "Market economy / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Market_economy",
+          "note": "supports: allocation through supply-demand price signals.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -84,8 +129,15 @@
       "plainDefinition": "Division of labor means breaking work into specialized tasks so production becomes faster, more skilled, or more efficient.",
       "context": "In the Smith path, specialization helps explain modern productivity and the rise of commercial society.",
       "whyMatters": "Division of labor is one bridge from Smith to the Industrial Revolution. It helps explain why production can explode, while also setting up later questions about repetitive work, dependence, skill, wages, and worker power.",
-      "relatedFigures": [{ "label": "Adam Smith", "id": "smith" }],
-      "relatedIdeas": ["market"],
+      "relatedFigures": [
+        {
+          "label": "Adam Smith",
+          "id": "smith"
+        }
+      ],
+      "relatedIdeas": [
+        "market"
+      ],
       "sources": [
         {
           "title": "Smith / Wealth of Nations",

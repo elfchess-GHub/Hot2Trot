@@ -14,9 +14,18 @@
     ],
     "cleanIdea": "If a movement claims liberation but throws away democratic accountability, the word socialism starts to split.",
     "badgePaths": [
-      { "label": "Orthodox Marxism Badge", "ideaId": "orthodox-marxism" },
-      { "label": "Democracy Badge", "ideaId": "democracy" },
-      { "label": "Dictatorship Debate Badge", "ideaId": "dictatorship-debate" }
+      {
+        "label": "Orthodox Marxism Badge",
+        "ideaId": "orthodox-marxism"
+      },
+      {
+        "label": "Democracy Badge",
+        "ideaId": "democracy"
+      },
+      {
+        "label": "Dictatorship Debate Badge",
+        "ideaId": "dictatorship-debate"
+      }
     ],
     "keyTerms": [
       "Orthodox Marxism",
@@ -38,8 +47,8 @@
       {
         "title": "Karl Kautsky / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Karl_Kautsky",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, Second International Marxism, Die Neue Zeit, orthodox Marxism, democracy, and anti-Bolshevik dispute.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Karl Kautsky",
@@ -52,7 +61,11 @@
     "timelineMeaning": "A major Marxist dispute asks whether socialist politics can abandon democracy and still claim liberation.",
     "lane": "blue",
     "auditStatus": "[source lead checked]",
-    "ideaPills": ["orthodox-marxism", "democracy", "dictatorship-debate"],
+    "ideaPills": [
+      "orthodox-marxism",
+      "democracy",
+      "dictatorship-debate"
+    ],
     "sortYear": 1918
   },
   "hooks": {
@@ -68,8 +81,20 @@
       "plainDefinition": "Orthodox Marxism means a current that tried to preserve Marxist theory while disputing both revisionism and anti-democratic dictatorship.",
       "context": "In the Kautsky path, orthodox Marxism is not automatically Leninism. It includes disputes about democracy and party rule.",
       "whyMatters": "Orthodox Marxism matters because it keeps the map from pretending Marxism had only one political road.",
-      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Karl Marx", "id": "marx" }],
-      "relatedIdeas": ["democracy", "dictatorship-debate"],
+      "relatedFigures": [
+        {
+          "label": "Karl Kautsky",
+          "id": "kautsky"
+        },
+        {
+          "label": "Karl Marx",
+          "id": "marx"
+        }
+      ],
+      "relatedIdeas": [
+        "democracy",
+        "dictatorship-debate"
+      ],
       "sources": [
         {
           "title": "Kautsky / The Dictatorship of the Proletariat",
@@ -85,8 +110,20 @@
       "plainDefinition": "Democracy means public power remains answerable through participation, rights, elections, dissent, and institutions that can remove rulers.",
       "context": "In the Kautsky path, democracy is the line between socialist emancipation and a ruling party speaking over society.",
       "whyMatters": "Democracy matters because the project is about truth and self-government, not just who claims to act for the people.",
-      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Eduard Bernstein", "id": "bernstein" }],
-      "relatedIdeas": ["dictatorship-debate", "democratic-reform"],
+      "relatedFigures": [
+        {
+          "label": "Karl Kautsky",
+          "id": "kautsky"
+        },
+        {
+          "label": "Eduard Bernstein",
+          "id": "bernstein"
+        }
+      ],
+      "relatedIdeas": [
+        "dictatorship-debate",
+        "democratic-reform"
+      ],
       "sources": [
         {
           "title": "Kautsky / The Dictatorship of the Proletariat",
@@ -102,8 +139,20 @@
       "plainDefinition": "The dictatorship debate asks whether revolutionary state power can suspend democracy and still remain a movement for liberation.",
       "context": "In the Kautsky path, this is not an academic side issue. It is the question that separates democratic socialism from party-state command.",
       "whyMatters": "The dictatorship debate matters because it stops the page from flattening socialism into communism or communism into any public program.",
-      "relatedFigures": [{ "label": "Karl Kautsky", "id": "kautsky" }, { "label": "Leon Trotsky", "id": "trotsky" }],
-      "relatedIdeas": ["democracy", "orthodox-marxism"],
+      "relatedFigures": [
+        {
+          "label": "Karl Kautsky",
+          "id": "kautsky"
+        },
+        {
+          "label": "Leon Trotsky",
+          "id": "trotsky"
+        }
+      ],
+      "relatedIdeas": [
+        "democracy",
+        "orthodox-marxism"
+      ],
       "sources": [
         {
           "title": "Kautsky / The Dictatorship of the Proletariat",

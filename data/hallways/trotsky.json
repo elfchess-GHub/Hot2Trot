@@ -14,9 +14,18 @@
     ],
     "cleanIdea": "The revolution question is not only how power is won. It is also how power is organized, checked, and criticized after victory.",
     "badgePaths": [
-      { "label": "Permanent Revolution Badge", "ideaId": "permanent-revolution" },
-      { "label": "Bureaucracy Badge", "ideaId": "bureaucracy" },
-      { "label": "Soviet Opposition Badge", "ideaId": "soviet-opposition" }
+      {
+        "label": "Permanent Revolution Badge",
+        "ideaId": "permanent-revolution"
+      },
+      {
+        "label": "Bureaucracy Badge",
+        "ideaId": "bureaucracy"
+      },
+      {
+        "label": "Soviet Opposition Badge",
+        "ideaId": "soviet-opposition"
+      }
     ],
     "keyTerms": [
       "Permanent revolution",
@@ -38,8 +47,8 @@
       {
         "title": "Leon Trotsky / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Leon_Trotsky",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, Russian Revolution, Soviet role, exile in 1929, assassination in 1940, and opposition pathway.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Leon Trotsky",
@@ -52,7 +61,11 @@
     "timelineMeaning": "The revolutionary road turns into a dispute over bureaucracy, centralization, dissent, and whether Soviet power remained accountable.",
     "lane": "red",
     "auditStatus": "[source lead checked]",
-    "ideaPills": ["permanent-revolution", "bureaucracy", "soviet-opposition"],
+    "ideaPills": [
+      "permanent-revolution",
+      "bureaucracy",
+      "soviet-opposition"
+    ],
     "sortYear": 1930
   },
   "hooks": {
@@ -68,14 +81,44 @@
       "plainDefinition": "Permanent revolution is Trotsky's argument that socialist revolution cannot be sealed inside one national box and must keep moving internationally.",
       "context": "In the Trotsky path, permanent revolution is both a theory of revolution and a warning against treating one state as the final answer.",
       "whyMatters": "Permanent revolution matters because it shows why revolution, nationalism, state power, and internationalism collide.",
-      "relatedFigures": [{ "label": "Leon Trotsky", "id": "trotsky" }],
-      "relatedIdeas": ["bureaucracy", "soviet-opposition"],
+      "carefulVersion": "Do not reduce permanent revolution to \"never stop fighting.\" The theory is about uneven development, class leadership, democratic and socialist tasks, and the international limits of isolated revolution. Exact claims need primary-source pinning before being taught as quotes.",
+      "keyTerms": [
+        "Trotskyism",
+        "Soviet Opposition",
+        "Bureaucracy",
+        "Revolution",
+        "Stalinism"
+      ],
+      "relatedFigures": [
+        {
+          "label": "Leon Trotsky",
+          "id": "trotsky"
+        },
+        {
+          "label": "Joseph Stalin",
+          "id": "stalin"
+        },
+        {
+          "label": "Vladimir Lenin",
+          "id": "lenin"
+        }
+      ],
+      "relatedIdeas": [
+        "bureaucracy",
+        "soviet-opposition"
+      ],
       "sources": [
         {
           "title": "Trotsky / The Permanent Revolution",
-          "url": "https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm",
-          "note": "Source lead for permanent revolution.",
+          "url": "https://www.marxists.org/archive/trotsky/1931/tpr/index.htm",
+          "note": "primary source lead for permanent revolution; exact passages still need pinning.",
           "auditStatus": "[needs verification]"
+        },
+        {
+          "title": "Permanent revolution / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Permanent_revolution",
+          "note": "supports: Trotsky, international development, and theory context.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -85,8 +128,20 @@
       "plainDefinition": "Bureaucracy means rule through offices, files, command chains, appointments, procedures, and administrators that can drift away from public accountability.",
       "context": "In the Trotsky path, bureaucracy is the warning that a revolutionary state can become its own ruling layer.",
       "whyMatters": "Bureaucracy matters because it keeps the study guide focused on power in practice, not just ideals on paper.",
-      "relatedFigures": [{ "label": "Leon Trotsky", "id": "trotsky" }, { "label": "Karl Kautsky", "id": "kautsky" }],
-      "relatedIdeas": ["soviet-opposition", "permanent-revolution"],
+      "relatedFigures": [
+        {
+          "label": "Leon Trotsky",
+          "id": "trotsky"
+        },
+        {
+          "label": "Karl Kautsky",
+          "id": "kautsky"
+        }
+      ],
+      "relatedIdeas": [
+        "soviet-opposition",
+        "permanent-revolution"
+      ],
       "sources": [
         {
           "title": "Trotsky / The Permanent Revolution",
@@ -102,14 +157,26 @@
       "plainDefinition": "Soviet opposition means organized criticism of Soviet leadership, centralization, bureaucracy, and limits on dissent from inside or near the revolutionary tradition.",
       "context": "In the Trotsky path, Soviet opposition is not automatically anti-socialism. It is a dispute over what revolutionary power became.",
       "whyMatters": "Soviet opposition matters because it prevents the page from treating every left-wing critique of Stalin's system as the same thing as anti-communist propaganda.",
-      "relatedFigures": [{ "label": "Leon Trotsky", "id": "trotsky" }, { "label": "Karl Kautsky", "id": "kautsky" }],
-      "relatedIdeas": ["bureaucracy", "dictatorship-debate"],
+      "relatedFigures": [
+        {
+          "label": "Leon Trotsky",
+          "id": "trotsky"
+        },
+        {
+          "label": "Karl Kautsky",
+          "id": "kautsky"
+        }
+      ],
+      "relatedIdeas": [
+        "bureaucracy",
+        "dictatorship-debate"
+      ],
       "sources": [
         {
           "title": "Leon Trotsky / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Leon_Trotsky",
-          "note": "Topic source lead for exile and conflict with Stalinism.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: portrait/image, dates, Russian Revolution, Soviet role, exile in 1929, assassination in 1940, and opposition pathway.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     }

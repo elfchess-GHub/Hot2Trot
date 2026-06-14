@@ -14,9 +14,18 @@
     ],
     "cleanIdea": "If socialism is going to tell the truth, it has to look at how people actually live and work inside industrial capitalism, not only at abstract ideals.",
     "badgePaths": [
-      { "label": "Working Class Badge", "ideaId": "working-class" },
-      { "label": "Industrial Capitalism Badge", "ideaId": "industrial-capitalism" },
-      { "label": "Scientific Socialism Badge", "ideaId": "scientific-socialism" }
+      {
+        "label": "Working Class Badge",
+        "ideaId": "working-class"
+      },
+      {
+        "label": "Industrial Capitalism Badge",
+        "ideaId": "industrial-capitalism"
+      },
+      {
+        "label": "Scientific Socialism Badge",
+        "ideaId": "scientific-socialism"
+      }
     ],
     "keyTerms": [
       "Working class",
@@ -38,14 +47,14 @@
       {
         "title": "Engels / The Condition of the Working Class in England",
         "url": "https://www.marxists.org/archive/marx/works/1845/condition-working-class/",
-        "note": "Source lead for industrial labor conditions.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: Engels primary-text lead for industrial proletariat, great towns, competition, labor movements, mining labor, and bourgeois attitudes.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Friedrich Engels / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Friedrich_Engels",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, basic biography, collaboration with Marx, Communist Manifesto, Marxism, and Manchester industrial context.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Friedrich Engels",
@@ -58,7 +67,11 @@
     "timelineMeaning": "Engels frames modern socialism as a response to industrial class antagonisms, not just a dream of fairness.",
     "lane": "red",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["working-class", "industrial-capitalism", "scientific-socialism"],
+    "ideaPills": [
+      "working-class",
+      "industrial-capitalism",
+      "scientific-socialism"
+    ],
     "sortYear": 1880
   },
   "hooks": {
@@ -74,14 +87,26 @@
       "plainDefinition": "The working class means people who live mainly by selling their labor rather than by owning productive property.",
       "context": "In the Engels path, working-class life is not a background detail. It is the evidence that makes the labor question concrete.",
       "whyMatters": "Working class matters for Engels because his socialism begins from real industrial conditions: wages, housing, work discipline, poverty, injury, and class power.",
-      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
-      "relatedIdeas": ["class-struggle", "industrial-capitalism"],
+      "relatedFigures": [
+        {
+          "label": "Friedrich Engels",
+          "id": "engels"
+        },
+        {
+          "label": "Karl Marx",
+          "id": "marx"
+        }
+      ],
+      "relatedIdeas": [
+        "class-struggle",
+        "industrial-capitalism"
+      ],
       "sources": [
         {
           "title": "Engels / The Condition of the Working Class in England",
           "url": "https://www.marxists.org/archive/marx/works/1845/condition-working-class/",
-          "note": "Source lead for working-class conditions.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: Engels primary-text lead for industrial proletariat, great towns, competition, labor movements, mining labor, and bourgeois attitudes.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -91,8 +116,20 @@
       "plainDefinition": "Industrial capitalism is an economic system built around private capital, factories, wage labor, machinery, competition, and mass production.",
       "context": "In the Engels path, industrial capitalism is the historical pressure cooker that turns poverty, production, ownership, and class power into one problem.",
       "whyMatters": "Industrial capitalism matters because Engels is watching socialism emerge from a factory world, not from a clean classroom definition.",
-      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
-      "relatedIdeas": ["working-class", "means-of-production"],
+      "relatedFigures": [
+        {
+          "label": "Friedrich Engels",
+          "id": "engels"
+        },
+        {
+          "label": "Karl Marx",
+          "id": "marx"
+        }
+      ],
+      "relatedIdeas": [
+        "working-class",
+        "means-of-production"
+      ],
       "sources": [
         {
           "title": "Engels / Socialism: Utopian and Scientific",
@@ -108,8 +145,20 @@
       "plainDefinition": "Scientific socialism is Engels's and Marx's claim that socialism should be explained through historical and economic forces, not only moral wishes or ideal plans.",
       "context": "In the Engels path, this term marks a break from utopian schemes toward arguments about capitalism's structure and development.",
       "whyMatters": "Scientific socialism matters because it shows why Engels is not only describing suffering. He is trying to explain where that suffering comes from and why the system changes.",
-      "relatedFigures": [{ "label": "Friedrich Engels", "id": "engels" }, { "label": "Karl Marx", "id": "marx" }],
-      "relatedIdeas": ["class-struggle", "industrial-capitalism"],
+      "relatedFigures": [
+        {
+          "label": "Friedrich Engels",
+          "id": "engels"
+        },
+        {
+          "label": "Karl Marx",
+          "id": "marx"
+        }
+      ],
+      "relatedIdeas": [
+        "class-struggle",
+        "industrial-capitalism"
+      ],
       "sources": [
         {
           "title": "Engels / Socialism: Utopian and Scientific",

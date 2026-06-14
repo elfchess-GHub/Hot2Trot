@@ -14,9 +14,18 @@
     ],
     "cleanIdea": "Debs asks whether democracy can hear working people when wealth, courts, employers, and war pressure push the other way. He is the American labor doorway because he connects railroad work, union defeat, Socialist Party campaigns, public speech, anti-war prosecution, and class solidarity in one life.",
     "badgePaths": [
-      { "label": "Unionism Badge", "ideaId": "unionism" },
-      { "label": "American Socialism Badge", "ideaId": "american-socialism" },
-      { "label": "Labor Politics Badge", "ideaId": "labor-politics" }
+      {
+        "label": "Unionism Badge",
+        "ideaId": "unionism"
+      },
+      {
+        "label": "American Socialism Badge",
+        "ideaId": "american-socialism"
+      },
+      {
+        "label": "Labor Politics Badge",
+        "ideaId": "labor-politics"
+      }
     ],
     "keyTerms": [
       "Unionism",
@@ -32,14 +41,14 @@
       {
         "title": "Eugene Debs / Statement to the Court",
         "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
-        "note": "supports: class solidarity, prison/court speech, and American socialism; exact passages still need pinning.",
+        "note": "supports: Debs primary-text lead for labor, class solidarity, anti-war prosecution, and American socialist voice.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Eugene V. Debs / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Eugene_V._Debs",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, trade-union background, Socialist Party campaigns, IWW founding, and American socialist politics.",
+        "auditStatus": "[source lead checked]"
       }
     ],
     "discussionTopic": "Eugene V. Debs",
@@ -52,7 +61,11 @@
     "timelineMeaning": "Labor politics, elections, unions, railroads, prisons, and public speech bring socialist language into U.S. democratic life.",
     "lane": "red",
     "auditStatus": "[source lead checked]",
-    "ideaPills": ["unionism", "american-socialism", "labor-politics"],
+    "ideaPills": [
+      "unionism",
+      "american-socialism",
+      "labor-politics"
+    ],
     "sortYear": 1900
   },
   "hooks": {
@@ -69,15 +82,34 @@
       "context": "In the Debs path, unionism is the practical doorway from individual frustration to organized labor power.",
       "whyMatters": "Unionism matters because socialism in the United States often enters politics through labor organization, not abstract theory first. The worker does not face the employer as an equal isolated individual; the union is one way workers create bargaining power together.",
       "carefulVersion": "A union is not automatically socialist, and every union is not automatically just. Some unions have been democratic and solidaristic; some have been exclusionary, conservative, corrupt, or narrow. The important lesson is that unionism turns labor from private complaint into organized power.",
-      "keyTerms": ["Collective bargaining", "Strike", "Railroad labor", "Labor solidarity", "Employer power", "Union democracy"],
-      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }, { "label": "Friedrich Engels", "id": "engels" }],
-      "relatedIdeas": ["american-socialism", "labor-politics"],
+      "keyTerms": [
+        "Collective bargaining",
+        "Strike",
+        "Railroad labor",
+        "Labor solidarity",
+        "Employer power",
+        "Union democracy"
+      ],
+      "relatedFigures": [
+        {
+          "label": "Eugene V. Debs",
+          "id": "debs"
+        },
+        {
+          "label": "Friedrich Engels",
+          "id": "engels"
+        }
+      ],
+      "relatedIdeas": [
+        "american-socialism",
+        "labor-politics"
+      ],
       "sources": [
         {
           "title": "Eugene Debs / Statement to the Court",
           "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
-          "note": "Primary source lead for labor and class-solidarity language; exact passages still need pinning.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: Debs primary-text lead for labor, class solidarity, anti-war prosecution, and American socialist voice.",
+          "auditStatus": "[source lead checked]"
         },
         {
           "title": "Trade union / Wikipedia",
@@ -94,27 +126,49 @@
       "context": "In the Debs path, American socialism is not imported as a cartoon. It is part of U.S. labor and democratic history.",
       "whyMatters": "American socialism matters because it keeps the project from letting anti-communist shorthand erase U.S. labor history. Debs shows that socialism in America included elections, courts, unions, prisons, anti-war speech, and constitutional public argument.",
       "carefulVersion": "American socialism is not one thing. It includes labor parties, electoral campaigns, public ownership debates, democratic-socialist language, union organizing, and anti-capitalist critique. Do not collapse it into Soviet communism, and do not pretend it has no history here.",
-      "keyTerms": ["Socialist Party", "Labor politics", "Public ownership debate", "Anti-war speech", "Class solidarity", "Elections"],
-      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }, { "label": "Bernie Sanders", "id": "sanders" }],
-      "relatedIdeas": ["unionism", "labor-politics", "democratic-socialism", "anti-communism", "class-struggle"],
+      "keyTerms": [
+        "Socialist Party",
+        "Labor politics",
+        "Public ownership debate",
+        "Anti-war speech",
+        "Class solidarity",
+        "Elections"
+      ],
+      "relatedFigures": [
+        {
+          "label": "Eugene V. Debs",
+          "id": "debs"
+        },
+        {
+          "label": "Bernie Sanders",
+          "id": "sanders"
+        }
+      ],
+      "relatedIdeas": [
+        "unionism",
+        "labor-politics",
+        "democratic-socialism",
+        "anti-communism",
+        "class-struggle"
+      ],
       "sources": [
         {
           "title": "Eugene V. Debs / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Eugene_V._Debs",
-          "note": "supports: Debs's campaigns, Socialist Party role, labor background, and anti-war prosecution pathway.",
+          "note": "supports: portrait/image, dates, trade-union background, Socialist Party campaigns, IWW founding, and American socialist politics.",
           "auditStatus": "[source lead checked]"
         },
         {
           "title": "Debs / Statement to the Court",
           "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
-          "note": "primary source lead for Debs's own political voice; exact passages still need pinning.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: Debs primary-text lead for labor, class solidarity, anti-war prosecution, and American socialist voice.",
+          "auditStatus": "[source lead checked]"
         },
         {
           "title": "Socialist Party of America / Wikipedia",
           "url": "https://en.wikipedia.org/wiki/Socialist_Party_of_America",
-          "note": "source lead for the party history and Debs-era American socialism.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: party history, Debs-era American socialism, electoral socialism, and Socialist Party context.",
+          "auditStatus": "[source lead checked]"
         }
       ]
     },
@@ -125,15 +179,34 @@
       "context": "In the Debs path, labor politics connects shop-floor conflict to elections and public argument.",
       "whyMatters": "Labor politics matters because it shows democracy is not only voting. It is also the struggle over whether ordinary workers can organize power at work, in courts, in parties, in public speech, and in the street.",
       "carefulVersion": "Labor politics can be reformist or radical, narrow or broad, democratic or machine-like. The point is not to romanticize labor automatically. The point is to study how people without large property try to build leverage against people and institutions that do have it.",
-      "keyTerms": ["Strike politics", "Labor party", "Free speech", "Courts", "Class power", "Public pressure"],
-      "relatedFigures": [{ "label": "Eugene V. Debs", "id": "debs" }, { "label": "Eduard Bernstein", "id": "bernstein" }],
-      "relatedIdeas": ["unionism", "democratic-reform"],
+      "keyTerms": [
+        "Strike politics",
+        "Labor party",
+        "Free speech",
+        "Courts",
+        "Class power",
+        "Public pressure"
+      ],
+      "relatedFigures": [
+        {
+          "label": "Eugene V. Debs",
+          "id": "debs"
+        },
+        {
+          "label": "Eduard Bernstein",
+          "id": "bernstein"
+        }
+      ],
+      "relatedIdeas": [
+        "unionism",
+        "democratic-reform"
+      ],
       "sources": [
         {
           "title": "Eugene Debs / Statement to the Court",
           "url": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
-          "note": "Primary source lead for class solidarity and political speech; exact passages still need pinning.",
-          "auditStatus": "[needs verification]"
+          "note": "supports: Debs primary-text lead for labor, class solidarity, anti-war prosecution, and American socialist voice.",
+          "auditStatus": "[source lead checked]"
         },
         {
           "title": "Labour movement / Wikipedia",

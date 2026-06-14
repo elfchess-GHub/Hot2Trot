@@ -14,10 +14,22 @@
     ],
     "cleanIdea": "If people have natural rights, including property, then government exists to protect those rights, and loses legitimacy when it violates them.",
     "badgePaths": [
-      { "label": "Property Badge", "ideaId": "property" },
-      { "label": "Consent Badge", "ideaId": "consent" },
-      { "label": "Liberalism Badge", "ideaId": "liberalism" },
-      { "label": "Natural Rights Badge", "ideaId": "natural-rights" }
+      {
+        "label": "Property Badge",
+        "ideaId": "property"
+      },
+      {
+        "label": "Consent Badge",
+        "ideaId": "consent"
+      },
+      {
+        "label": "Liberalism Badge",
+        "ideaId": "liberalism"
+      },
+      {
+        "label": "Natural Rights Badge",
+        "ideaId": "natural-rights"
+      }
     ],
     "keyTerms": [
       "Property",
@@ -45,8 +57,8 @@
       {
         "title": "John Locke / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/John_Locke",
-        "note": "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.",
-        "auditStatus": "[needs verification]"
+        "note": "supports: portrait/image, dates, basic biography, liberalism, toleration, consent of government, and Two Treatises pathway.",
+        "auditStatus": "[source lead checked]"
       },
       {
         "title": "Stanford Encyclopedia: Locke's Political Philosophy",
@@ -71,7 +83,12 @@
     "timelineMeaning": "Locke helps build one side of the bridge: natural rights, property, consent of government, toleration, and the right to resist tyranny.",
     "lane": "blue",
     "auditStatus": "[source supports this]",
-    "ideaPills": ["property", "liberalism", "consent", "natural-rights"],
+    "ideaPills": [
+      "property",
+      "liberalism",
+      "consent",
+      "natural-rights"
+    ],
     "sortYear": 1689
   },
   "hooks": {
@@ -87,8 +104,17 @@
       "plainDefinition": "Property means the things people can claim as theirs, use, protect, transfer, or exclude others from using.",
       "context": "In the Locke path, property is not just \"stuff I own.\" It connects labor, liberty, personhood, and limits on government.",
       "whyMatters": "Locke makes property part of the liberal freedom argument: if people have natural rights, government should protect property instead of treating all land, labor, and wealth as the ruler's prize. The socialist question arrives later: what happens when property rights protect owners more strongly than workers?",
-      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
-      "relatedIdeas": ["liberalism", "consent", "natural-rights"],
+      "relatedFigures": [
+        {
+          "label": "John Locke",
+          "id": "locke"
+        }
+      ],
+      "relatedIdeas": [
+        "liberalism",
+        "consent",
+        "natural-rights"
+      ],
       "sources": [
         {
           "title": "Locke / Two Treatises of Government",
@@ -104,8 +130,17 @@
       "plainDefinition": "Liberalism is a political tradition built around rights, law, consent, toleration, and limits on arbitrary power.",
       "context": "Hot2Trotski uses Locke to show one early liberal foundation that socialism later argues with, not to turn Locke into the whole story of capitalism.",
       "whyMatters": "Locke gives the road a rights-and-limits vocabulary: people are not born to obey kings automatically, and government has to answer to rights, law, and consent. That vocabulary becomes part of the liberal defense of markets and property, then becomes something socialist critics test against industrial inequality.",
-      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
-      "relatedIdeas": ["property", "consent", "natural-rights"],
+      "relatedFigures": [
+        {
+          "label": "John Locke",
+          "id": "locke"
+        }
+      ],
+      "relatedIdeas": [
+        "property",
+        "consent",
+        "natural-rights"
+      ],
       "sources": [
         {
           "title": "Stanford Encyclopedia / Locke's Political Philosophy",
@@ -121,8 +156,17 @@
       "plainDefinition": "Consent means political authority is legitimate because people agree to it, not because rulers automatically own obedience.",
       "context": "This is the anti-divine-right door into the modern political road.",
       "whyMatters": "Locke ties government to consent so power has a test: it must protect the people and their rights. If government violates that trust, it loses legitimacy. That idea matters later because democratic movements, liberal reformers, and socialist organizers all argue over who really counts in that consent.",
-      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
-      "relatedIdeas": ["property", "liberalism", "natural-rights"],
+      "relatedFigures": [
+        {
+          "label": "John Locke",
+          "id": "locke"
+        }
+      ],
+      "relatedIdeas": [
+        "property",
+        "liberalism",
+        "natural-rights"
+      ],
       "sources": [
         {
           "title": "Locke / Two Treatises of Government",
@@ -138,8 +182,17 @@
       "plainDefinition": "Natural rights are rights people are treated as having before government grants permission.",
       "context": "In the Locke path, life, liberty, property, conscience, and resistance to tyranny become part of the ground government must answer to.",
       "whyMatters": "Natural rights are the reason Locke can put limits on government. If rights come before the state, then the state is not the source of all political truth. Later arguments about capitalism and socialism keep returning to this pressure point: which rights are protected, and whose freedom becomes real in daily life?",
-      "relatedFigures": [{ "label": "John Locke", "id": "locke" }],
-      "relatedIdeas": ["property", "liberalism", "consent"],
+      "relatedFigures": [
+        {
+          "label": "John Locke",
+          "id": "locke"
+        }
+      ],
+      "relatedIdeas": [
+        "property",
+        "liberalism",
+        "consent"
+      ],
       "sources": [
         {
           "title": "Britannica / John Locke",
