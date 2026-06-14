@@ -1,5 +1,19 @@
 # Shape-Azoid Releases
 
+## v0.7.5 - 2026-06-14
+
+Complete single-entry online runtime build.
+
+- Bundled the Python server runtime under `Shape-Azoid Support\.venv` so a fresh extracted package can host online without a separate setup step.
+- Kept `Shape-Azoid.exe` as the player-facing entry point.
+- Verified from a fresh extracted package that Online Create starts the local server, creates a room code, and writes `Shape_Azoid_Network_Server.txt`.
+- Verified the saved server-file join probe still passes.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.5.zip`
+
 ## v0.7.4 - 2026-06-14
 
 Workspace cleanup and canonical-source build.
