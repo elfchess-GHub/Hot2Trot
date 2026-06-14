@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.7 - 2026-06-14
+
+Online join screen cleanup build.
+
+- Added a visible editable Server Address field to the Online screen.
+- Joiners can now type the host server address and the room code directly in the game.
+- Kept `Shape_Azoid_Network_Server.txt` as an optional saved shortcut, not the only join path.
+- Updated in-game help and README text to match the visible host-address plus room-code flow.
+- Verified the direct Server Address join path from source and from a fresh extracted package.
+- Verified the packaged host Create path still starts the bundled server and writes `HOST_SERVER_ADDRESS.txt`.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.7.zip`
+
 ## v0.7.6 - 2026-06-14
 
 Display and online-server cleanup build.
