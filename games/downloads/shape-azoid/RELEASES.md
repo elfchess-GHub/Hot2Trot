@@ -1,5 +1,20 @@
 # Shape-Azoid Releases
 
+## v0.7.6 - 2026-06-14
+
+Display and online-server cleanup build.
+
+- Removed Pygame scaled-window mode so portraits, cards, and UI text render sharply instead of being softened by automatic display scaling.
+- Silenced the local online server access log spam during lobby polling.
+- Kept the bundled online runtime under `Shape-Azoid Support\.venv`.
+- Verified from a fresh extracted package that Online Create starts the bundled server, creates a room, writes `Shape_Azoid_Network_Server.txt`, and leaves zero polling log lines.
+- Verified the saved server-file join probe still passes.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.6.zip`
+
 ## v0.7.5 - 2026-06-14
 
 Complete single-entry online runtime build.
