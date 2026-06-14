@@ -9,7 +9,7 @@ Changes:
 - Fixed network-client host address handling so the desktop multiplayer UI works for joined and waiting players.
 - Kept the desktop app as the real playable version; browser work remains separate.
 - Cleaned the public ZIP name to HorseTrader-v1.0.0-windows-20260614-1216.zip.
-- Kept latest.zip matched to this build.
+- Kept latest.zip matched to this build for the updater.
 
 Tested:
 - Python compile check.
