@@ -12,7 +12,7 @@
       {
         "title": "Enclosure / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Enclosure",
-        "note": "Source lead for enclosure and land-law background. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: enclosure, common land, private control, and land-law background.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -53,13 +53,13 @@
       {
         "title": "Atlantic slave trade / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Atlantic_slave_trade",
-        "note": "Source lead for slavery, trade, shipping, and Atlantic extraction. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: transatlantic slave trade, forced migration, shipping, and Atlantic extraction.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Plantation economy / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Plantation_economy",
-        "note": "Source lead for plantation labor and export production. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: plantation labor systems, export crops, and plantation economy structure.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -102,7 +102,7 @@
       {
         "title": "Colonialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Colonialism",
-        "note": "Source lead for empire, extraction, and colonial rule. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: colonial rule, empire, extraction, settlement, and political domination.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -144,7 +144,7 @@
       {
         "title": "French Revolution / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/French_Revolution",
-        "note": "Source lead for rights, citizenship, class conflict, and revolution. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: revolution, rights, citizenship, class conflict, monarchy, and political rupture.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -227,7 +227,7 @@
       {
         "title": "Utopian socialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Utopian_socialism",
-        "note": "Source lead for Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: Saint-Simon, Fourier, Owen, and pre-Marx socialist experiments.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -269,7 +269,7 @@
       {
         "title": "Revolutions of 1848 / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848",
-        "note": "Source lead for the wider revolutionary setting around the Manifesto. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: Europe-wide uprisings, liberal demands, national movements, and the 1848 setting.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -311,13 +311,13 @@
       {
         "title": "Trade union / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Trade_union",
-        "note": "Source lead for labor organization and collective bargaining. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: trade unions, worker organization, strikes, and collective bargaining.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Labor movement / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Labour_movement",
-        "note": "Source lead for worker organization and labor politics. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: labor movement history, worker organization, and labor politics.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -359,7 +359,7 @@
       {
         "title": "Paris Commune / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Paris_Commune",
-        "note": "Source lead for the 1871 revolutionary government and later socialist memory. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: the 1871 Commune, revolutionary government, suppression, and later socialist memory.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -400,13 +400,13 @@
       {
         "title": "New Deal / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/New_Deal",
-        "note": "Source lead for U.S. crisis response, public works, labor law, and social insurance. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: Great Depression response, public works, regulation, relief, and labor policy.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Social Security Act / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Social_Security_Act",
-        "note": "Source lead for U.S. social insurance. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: Social Security, U.S. social insurance, and New Deal welfare policy.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -448,13 +448,13 @@
       {
         "title": "Civil rights movement / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Civil_rights_movement",
-        "note": "Source lead for civil rights and citizenship struggles. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: civil rights struggle, segregation, citizenship, voting, and public protest.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Redlining / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Redlining",
-        "note": "Source lead for housing discrimination and property access. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: redlining, housing discrimination, credit access, and property exclusion.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -496,7 +496,7 @@
       {
         "title": "Neoliberalism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Neoliberalism",
-        "note": "Source lead for deregulation, privatization, and market-first policy. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: deregulation, privatization, market-centered policy, and neoliberal vocabulary.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -538,7 +538,7 @@
       {
         "title": "Cold War / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Cold_War",
-        "note": "Source lead for capitalism, communism, proxy conflict, and political language. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: U.S.-Soviet rivalry, capitalism/communism language, proxy conflict, and propaganda.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -579,7 +579,7 @@
       {
         "title": "Welfare state / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Welfare_state",
-        "note": "Source lead for public goods, social insurance, taxation, and mixed economies. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: welfare states, social insurance, taxation, public services, and mixed economies.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -620,7 +620,7 @@
       {
         "title": "Dissolution of the Soviet Union / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
-        "note": "Source lead for the collapse of the Soviet state and post-1991 political argument. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: Soviet dissolution, political crisis, reform attempts, and post-1991 argument.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -661,13 +661,13 @@
       {
         "title": "Socialism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Socialism",
-        "note": "Source lead for modern vocabulary disputes around socialism. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: socialism vocabulary, public/social ownership language, and modern disputes.",
         "auditStatus": "[source lead checked]"
       },
       {
         "title": "Capitalism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Capitalism",
-        "note": "Source lead for modern vocabulary disputes around capitalism. Supports the broad event framing; exact passages can be pinned later.",
+        "note": "Supports: capitalism vocabulary, private ownership, markets, profit, and modern disputes.",
         "auditStatus": "[source lead checked]"
       }
     ],

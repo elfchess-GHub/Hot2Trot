@@ -111,12 +111,25 @@ function sourceNote(source) {
   return note;
 }
 
+function noteRank(note = "") {
+  if (/^supports:/i.test(note)) return 4;
+  if (/\bsupports\b/i.test(note)) return 3;
+  if (/source lead for/i.test(note)) return 2;
+  if (/source lead checked|passage pinned|source supports/i.test(note)) return 2;
+  if (/image and basic biography source lead/i.test(note)) return 1;
+  return 0;
+}
+
 function mergeSource(existing, incoming) {
   if (!existing) return { ...incoming };
   const oldRank = auditRank.get(existing.auditStatus) ?? 0;
   const newRank = auditRank.get(incoming.auditStatus) ?? 0;
   if (newRank > oldRank) existing.auditStatus = incoming.auditStatus;
-  if ((incoming.note || "").length > (existing.note || "").length) existing.note = incoming.note;
+  const existingNoteRank = noteRank(existing.note);
+  const incomingNoteRank = noteRank(incoming.note);
+  if (incomingNoteRank > existingNoteRank || (incomingNoteRank === existingNoteRank && (incoming.note || "").length > (existing.note || "").length)) {
+    existing.note = incoming.note;
+  }
   if (!existing.title || incoming.title.length < existing.title.length) existing.title = incoming.title;
   return existing;
 }

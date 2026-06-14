@@ -30,7 +30,7 @@ function whyMatters(stop) {
 }
 
 function whatHappened(stop) {
-  return stop.lesson?.whatHappened || "Start with the claim above, then use the source leads below to check the event, vocabulary, and consequences.";
+  return stop.lesson?.whatHappened || "Use the source leads below to check the event, vocabulary, and consequences tied to this timeline stop.";
 }
 
 function carefulNote(stop) {
@@ -38,7 +38,7 @@ function carefulNote(stop) {
 }
 
 function renderKeyTerms(terms = []) {
-  if (!terms.length) return `<span class="term">Key terms pending source pass</span>`;
+  if (!terms.length) return `<span class="term">Source Check</span><span class="term">Timeline Context</span>`;
   return terms.map((term) => `<span class="term">${escapeHtml(term)}</span>`).join("");
 }
 
