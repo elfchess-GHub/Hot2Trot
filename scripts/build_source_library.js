@@ -103,6 +103,14 @@ function sourceTag(source) {
   return "Source lead";
 }
 
+function sourceNote(source) {
+  const note = String(source.note || "").trim();
+  if (/^Topic summary and image pathway\.?$/i.test(note)) {
+    return "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.";
+  }
+  return note;
+}
+
 function mergeSource(existing, incoming) {
   if (!existing) return { ...incoming };
   const oldRank = auditRank.get(existing.auditStatus) ?? 0;
@@ -134,7 +142,7 @@ function addSource(bucket, source) {
 
 function renderItem(source) {
   const auditClass = source.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
-  return `<article class="source-item"><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a><p><span class="source-tag">${escapeHtml(sourceTag(source))}</span> <span class="${auditClass}">${escapeHtml(source.auditStatus)}</span> ${escapeHtml(source.note)}</p></article>`;
+  return `<article class="source-item"><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a><p><span class="source-tag">${escapeHtml(sourceTag(source))}</span> <span class="${auditClass}">${escapeHtml(source.auditStatus)}</span> ${escapeHtml(sourceNote(source))}</p></article>`;
 }
 
 function renderGroup(group, sources) {

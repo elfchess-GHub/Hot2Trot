@@ -86,16 +86,26 @@ function laneColor() {
   }[lane] || "#2f74d0";
 }
 
+function sourceNote(source) {
+  const note = String(source.note || "").trim();
+  if (/^Topic summary and image pathway\.?$/i.test(note)) {
+    return "Image and basic biography source lead; core claims use the primary and reference sources listed beside it.";
+  }
+  return note;
+}
+
 function renderSources(sources, block = true) {
   if (block) {
     return sources.map((source) => {
-      const note = source.note ? ` ${escapeHtml(source.note)}` : "";
+      const noteText = sourceNote(source);
+      const note = noteText ? ` ${escapeHtml(noteText)}` : "";
       return `<div class="source-item"><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a><p><span class="audit-label">${escapeHtml(source.auditStatus)}</span>${note}</p></div>`;
     }).join("\n        ");
   }
 
   return sources.map((source) => {
-    const note = source.note ? ` ${escapeHtml(source.note)}` : "";
+    const noteText = sourceNote(source);
+    const note = noteText ? ` ${escapeHtml(noteText)}` : "";
     return `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a> <span class="audit">${escapeHtml(source.auditStatus)}</span>${note}</p>`;
   }).join("\n      ");
 }
