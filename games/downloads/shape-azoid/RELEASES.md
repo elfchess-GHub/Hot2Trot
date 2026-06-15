@@ -1,5 +1,20 @@
 # Shape-Azoid Releases
 
+## v0.7.8 - 2026-06-14
+
+Keyboard control cleanup build.
+
+- Removed the hidden `R` hotkey that could reset, refresh, or restart while a player was typing.
+- Restored the intentional `F11` display toggle and `Esc` back/quit behavior.
+- Documented the remaining intentional keys in README and in-game Help.
+- Verified no `R` key handler remains in the current source.
+- Verified online UI probes, saved server-file join probe, and fresh packaged direct Server Address join.
+
+Published files:
+
+- `latest.zip`
+- `shape-azoid-v0.7.8.zip`
+
 ## v0.7.7 - 2026-06-14
 
 Online join screen cleanup build.
