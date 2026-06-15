@@ -1,5 +1,20 @@
 # Shape-Azoid Releases
 
+## v0.7.10 - 2026-06-14
+
+Updater bug-fix build.
+
+- Fixed the updater copy step so it expands package contents correctly when an update is actually needed.
+- Avoided overwriting an existing `Play Shape-Azoid.exe` while the launcher may be running.
+- Kept the ability to add `Play Shape-Azoid.exe` when updating a folder that does not already have it.
+- Verified a temporary stale install updated from the public package and received `BUILD_ID.txt`, `Play Shape-Azoid.cmd`, `Play Shape-Azoid.exe`, `Shape-Azoid.exe`, and `Update Shape-Azoid.ps1`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.10.zip`
+
 ## v0.7.9 - 2026-06-14
 
 Update-launcher package build.
