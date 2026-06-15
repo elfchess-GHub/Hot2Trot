@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.9 - 2026-06-14
+
+Update-launcher package build.
+
+- Added `Play Shape-Azoid.exe` as the intended player-facing starter.
+- Added `Update Shape-Azoid.ps1`, `Play Shape-Azoid.cmd`, and `BUILD_ID.txt` to the package.
+- `Play Shape-Azoid.exe` checks `latest-build.txt`, downloads `latest.zip` when the public build changes, updates the local folder, then starts `Shape-Azoid.exe`.
+- Kept `Shape-Azoid.exe` beside the launcher as the underlying game executable; opening it directly bypasses the update check.
+- Published `latest-build.txt` to match the package `BUILD_ID.txt`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.9.zip`
+
 ## v0.7.8 - 2026-06-14
 
 Keyboard control cleanup build.
