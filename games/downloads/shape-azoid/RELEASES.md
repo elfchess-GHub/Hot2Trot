@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.10 rebuild - 2026-06-16
+
+Multiplayer recovery package rebuild.
+
+- Rebuilt `Shape-Azoid.exe` from the current source after server-owned multiplayer fixes.
+- Included `shape_azoid_core.py` under `Shape-Azoid Support` so the packaged server can import the headless multiplayer rules.
+- Fixed the updater so a newer local build is not downgraded by an older public `latest-build.txt`.
+- Verified the rebuilt portable package with packaged network-file join, HTTP multiplayer, startup online, online UI, and online AI probes.
+- Published build marker `v0.7.10-20260615-2219`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.10.zip`
+
 ## v0.7.10 - 2026-06-14
 
 Updater bug-fix build.
