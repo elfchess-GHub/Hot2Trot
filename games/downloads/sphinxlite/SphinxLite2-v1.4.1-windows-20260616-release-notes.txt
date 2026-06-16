@@ -1,0 +1,20 @@
+SphinxLite2 v1.4.1 Windows build
+Date: 2026-06-16
+
+Package:
+- SphinxLite2-v1.4.1-windows-20260616.zip
+- latest.zip is matched to this build.
+
+Source freeze:
+- SphinxLite2.0 commit 43a8750 Freeze SphinxLite 1.4.1 build version
+
+Included recent changes:
+- Main debate focus tabs for Run Board, Conversation, and Action Log.
+- Mousewheel scrolling routed for all three debate focus tabs.
+- Compact debate header and aligned side character panels.
+- Tightened side-panel lower spacing and removed redundant enemy inspect helper text.
+
+Package notes:
+- Windows portable package.
+- Includes compressed package copies of art/music.
+- Source originals were not modified by package conversion.
