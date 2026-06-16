@@ -1,5 +1,23 @@
 # Shape-Azoid Releases
 
+## v0.7.11 online-room flow rebuild - 2026-06-16
+
+Multiplayer connection-flow repair after comparing Shape-Azoid with the DubiouSDungeons host-address plus room-code model.
+
+- Added a visible Player Name field to the Online screen so joiners do not silently inherit the host/default machine name.
+- Server joins now force unique seat names, preventing ambiguous lobbies where two seats both appear as the same player.
+- Online room/game polling now uses short timeouts and avoids automatic empty-room polling while players are typing, reducing lag when a server address is wrong or unreachable.
+- Host creation now keeps port `8765` stable and reports a busy port instead of silently switching to a random port.
+- Rebuilt `Shape-Azoid.exe` and the portable package from the current source.
+- Verified source and packaged network-file join, HTTP multiplayer, online UI, online AI, startup online, and packaged LAN-address health probes.
+- Published build marker `v0.7.11-20260616-1305`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.11.zip`
+
 ## v0.7.10 connection-timeout rebuild - 2026-06-16
 
 Connection message and package refresh.
