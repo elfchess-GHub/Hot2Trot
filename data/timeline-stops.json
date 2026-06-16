@@ -306,7 +306,7 @@
     "timelineMeaning": "Workers organize strikes, unions, parties, and bargaining power against long hours, unsafe work, low wages, and employer domination.",
     "lane": "red",
     "auditStatus": "[source lead checked]",
-    "wikiPage": "Trade_union",
+    "wikiPage": "Strike_action",
     "sources": [
       {
         "title": "Trade union / Wikipedia",
@@ -318,6 +318,12 @@
         "title": "Labor movement / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Labour_movement",
         "note": "Supports: labor movement history, worker organization, and labor politics.",
+        "auditStatus": "[source lead checked]"
+      },
+      {
+        "title": "Strike action / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Strike_action",
+        "note": "Image and topic lead for strikes as a labor-movement tactic.",
         "auditStatus": "[source lead checked]"
       }
     ],
@@ -491,12 +497,18 @@
     "timelineMeaning": "Deregulation, privatization, anti-union politics, tax cuts, global finance, and market-first policy reshape capitalism after the postwar settlement.",
     "lane": "blue",
     "auditStatus": "[source lead checked]",
-    "wikiPage": "Neoliberalism",
+    "wikiPage": "Reaganomics",
     "sources": [
       {
         "title": "Neoliberalism / Wikipedia",
         "url": "https://en.wikipedia.org/wiki/Neoliberalism",
         "note": "Supports: deregulation, privatization, market-centered policy, and neoliberal vocabulary.",
+        "auditStatus": "[source lead checked]"
+      },
+      {
+        "title": "Reaganomics / Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Reaganomics",
+        "note": "Image and policy-era lead for tax cuts, deregulation, and the 1980s market turn.",
         "auditStatus": "[source lead checked]"
       }
     ],
