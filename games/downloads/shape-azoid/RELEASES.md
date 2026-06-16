@@ -1,5 +1,24 @@
 # Shape-Azoid Releases
 
+## v0.7.12 lobby join/color repair - 2026-06-16
+
+Multiplayer lobby repair focused on duplicate joins, color assignment, and stale host-address files.
+
+- Join requests now reclaim an existing seat token instead of adding another seat for the same player.
+- Online colors are chosen in the lobby after joining. A joined player can click their own color dot to cycle to an unused color before Host Start.
+- The server owns lobby seat color data and starts the game from that lobby assignment.
+- The host now writes the actual current server address for joiners. Port `8765` is preferred, but a busy port no longer blocks the host path if another available port can be used.
+- Saved server-address files are ignored on startup unless the saved server is reachable, preventing stale addresses from steering the Online screen.
+- The updater now removes runtime server-address/log files after future updates.
+- Verified source and packaged room-service, network-file join, HTTP multiplayer, online UI, startup online, online AI, and static import probes.
+- Published build marker `v0.7.12-20260616-1500`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.12.zip`
+
 ## v0.7.11 online-room flow rebuild - 2026-06-16
 
 Multiplayer connection-flow repair after comparing Shape-Azoid with the DubiouSDungeons host-address plus room-code model.
