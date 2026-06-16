@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.10 connection-timeout rebuild - 2026-06-16
+
+Connection message and package refresh.
+
+- Increased the online HTTP client timeout from 2 seconds to 5 seconds.
+- Replaced raw `urlopen` timeout text with clearer connection timeout/reachability messages.
+- Rebuilt `Shape-Azoid.exe` and the portable package from the current source.
+- Verified packaged network-file join, HTTP multiplayer, and online AI probes.
+- Published build marker `v0.7.10-20260616-1233`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.10.zip`
+
 ## v0.7.10 rebuild - 2026-06-16
 
 Multiplayer recovery package rebuild.
