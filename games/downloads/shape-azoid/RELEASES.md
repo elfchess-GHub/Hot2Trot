@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.14 online selection and join-address repair - 2026-06-16
+
+Multiplayer playability repair after live two-computer testing showed the host screen still displayed the private loopback address and online polling cleared card selection during play.
+
+- Host Create now switches the visible Server Address field to the LAN address when that address answers locally, so the host screen shows the address joiners need instead of `127.0.0.1`.
+- Online board refresh now preserves the selected card while it is still the same player's turn and the same card is still in hand.
+- The Online UI probe now verifies that a server refresh does not immediately deselect a selected card.
+- The Online UI probe now starts rooms through the real in-game host path and shuts down its temporary server afterward.
+- Verified source and packaged Online UI, network-file join, HTTP multiplayer, startup online, online AI, room-service, and static import probes.
+- Published build marker `v0.7.14-20260616-1608`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.14.zip`
+
 ## v0.7.13 host-port repair - 2026-06-16
 
 Multiplayer host repair for the repeated "target machine actively refused" port confusion.
