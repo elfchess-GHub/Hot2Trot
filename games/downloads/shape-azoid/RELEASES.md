@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.13 host-port repair - 2026-06-16
+
+Multiplayer host repair for the repeated "target machine actively refused" port confusion.
+
+- Fixed the port availability test to match the actual server bind address. The game now checks `0.0.0.0`, not only `127.0.0.1`, before deciding whether port `8765` is free.
+- Host Create no longer silently attaches to another leftover Shape-Azoid server. If this game window does not own the existing server, it starts its own server on an available port and writes/shows that actual address.
+- Removed the Online screen's Local button so joiners are not nudged toward their own `127.0.0.1` address when they need the host computer's LAN address.
+- Improved refused-connection text for local/localhost mistakes and dead host addresses.
+- Verified source and packaged startup-online, network-file join, HTTP multiplayer, Online UI, online AI, room-service, and static import probes.
+- Published build marker `v0.7.13-20260616-1532`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.13.zip`
+
 ## v0.7.12 lobby join/color repair - 2026-06-16
 
 Multiplayer lobby repair focused on duplicate joins, color assignment, and stale host-address files.
