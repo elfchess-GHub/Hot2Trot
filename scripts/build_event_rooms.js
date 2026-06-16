@@ -60,6 +60,11 @@ function renderSourceLinks(sources = []) {
   }).join("");
 }
 
+function renderEventImage(stop) {
+  if (!stop.wikiPage) return "";
+  return `<div class="event-image" data-wiki-image="${escapeHtml(stop.wikiPage)}">Loading source image</div>`;
+}
+
 function renderStop(template, stop) {
   const check = miniCheck(stop);
   const replacements = {
@@ -78,6 +83,7 @@ function renderStop(template, stop) {
     ideaLinks: renderIdeaLinks(stop.ideaPills),
     sourceLinks: renderSourceLinks(stop.sources),
     discussionTopic: escapeHtml(stop.discussionTopic || stop.timelineTitle),
+    eventImageSection: renderEventImage(stop),
   };
 
   return Object.entries(replacements).reduce((html, [key, value]) => {
@@ -106,7 +112,11 @@ for (const stop of stops) {
     continue;
   }
   const outputPath = path.join(outputDir, `${stop.id}.html`);
-  fs.writeFileSync(outputPath, renderStop(template, stop));
+  const html = renderStop(template, stop)
+    .split(/\r?\n/)
+    .map((line) => line.replace(/[ \t]+$/g, ""))
+    .join("\n");
+  fs.writeFileSync(outputPath, html);
   written.push(path.relative(repoRoot, outputPath));
 }
 

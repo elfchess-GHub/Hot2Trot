@@ -9,20 +9,23 @@
     :root{--black:#050608;--panel:#111722;--line:#2b3444;--text:#f1efe8;--muted:#c3bcae;--red:#d33a32;--blue:#2f74d0;--accent:#d8af55;--shadow:0 20px 60px rgba(0,0,0,.42)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top left,rgba(211,58,50,.16),transparent 34rem),radial-gradient(circle at top right,rgba(47,116,208,.14),transparent 35rem),var(--black);color:var(--text);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.6}
     a{color:inherit}.topbar{background:rgba(5,6,8,.92);border-bottom:1px solid rgba(216,175,85,.35)}.topbar-inner,main{max-width:1040px;margin:0 auto;padding:14px 18px}.topbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.brand{font-family:Cinzel,serif;color:var(--accent);font-weight:800;text-decoration:none;letter-spacing:.08em}
-    .panel{background:linear-gradient(180deg,rgba(23,29,41,.97),rgba(10,14,21,.97));border:1px solid var(--line);border-left:6px solid {{laneColor}};box-shadow:var(--shadow);border-radius:10px;padding:18px;margin-top:18px}h1,h2,h3{font-family:Cinzel,serif;color:#fff;line-height:1.05;margin:0 0 10px}h1{font-size:clamp(42px,7vw,76px)}.kicker{font-family:Inter,sans-serif;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.meta,.plain{color:var(--muted)}.pill{display:inline-flex;margin:4px 6px 0 0;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0a0e15;font-family:Inter,sans-serif;font-size:13px;font-weight:800;text-decoration:none}.audit{display:inline-flex;margin:6px 0 8px;padding:4px 7px;border-radius:999px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;border:1px solid rgba(211,58,50,.6);background:#0a0e15;color:#ffc3bd}.source-list{display:grid;gap:10px}.source-item{border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(5,6,8,.52)}.source-item a{font-family:Inter,sans-serif;font-weight:800}
-    .term-grid{display:flex;flex-wrap:wrap;gap:8px}.term{border:1px solid rgba(216,175,85,.34);border-radius:999px;padding:7px 9px;background:#0a0e15;color:var(--accent);font-family:Inter,sans-serif;font-size:13px;font-weight:800}.check-card{border:1px solid rgba(216,175,85,.32);border-radius:10px;padding:12px;background:rgba(216,175,85,.06)}
+    .panel{background:linear-gradient(180deg,rgba(23,29,41,.97),rgba(10,14,21,.97));border:1px solid var(--line);border-left:6px solid {{laneColor}};box-shadow:var(--shadow);border-radius:10px;padding:18px;margin-top:18px}.event-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,36%);gap:18px;align-items:stretch}.event-hero .panel{margin-top:0}.event-image{min-height:360px;border:1px solid rgba(216,175,85,.35);border-left:0;border-radius:10px;background:linear-gradient(135deg,#111,#333 46%,#090909);display:grid;place-items:center;overflow:hidden;color:var(--muted);font-family:Inter,sans-serif;font-weight:800;text-align:center}.event-image img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.07)}h1,h2,h3{font-family:Cinzel,serif;color:#fff;line-height:1.05;margin:0 0 10px}h1{font-size:clamp(42px,7vw,76px)}.kicker{font-family:Inter,sans-serif;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.meta,.plain{color:var(--muted)}.pill{display:inline-flex;margin:4px 6px 0 0;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0a0e15;font-family:Inter,sans-serif;font-size:13px;font-weight:800;text-decoration:none}.audit{display:inline-flex;margin:6px 0 8px;padding:4px 7px;border-radius:999px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;border:1px solid rgba(211,58,50,.6);background:#0a0e15;color:#ffc3bd}.source-list{display:grid;gap:10px}.source-item{border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(5,6,8,.52)}.source-item a{font-family:Inter,sans-serif;font-weight:800}
+    .term-grid{display:flex;flex-wrap:wrap;gap:8px}.term{border:1px solid rgba(216,175,85,.34);border-radius:999px;padding:7px 9px;background:#0a0e15;color:var(--accent);font-family:Inter,sans-serif;font-size:13px;font-weight:800}.check-card{border:1px solid rgba(216,175,85,.32);border-radius:10px;padding:12px;background:rgba(216,175,85,.06)}@media (max-width:780px){.event-hero{grid-template-columns:1fr}.event-image{min-height:260px}}
   </style>
 </head>
 <body>
   <div class="topbar"><div class="topbar-inner"><a class="brand" href="../Hot2Trotski.html">Hot2Trotski</a><a class="pill" href="../Hot2Trotski.html">Back to Hot2Trotski Hall</a><a class="pill" href="../Hot2Trotski.html#timeline">Timeline</a><a class="pill" href="../Hot2Trotski.html#texts">Source Library</a></div></div>
   <main>
-    <section class="panel">
-      <div class="kicker">Timeline Event Room</div>
-      <h1>{{eventTitle}}</h1>
-      <p class="meta">{{eventDate}} | {{eventLane}} road</p>
-      <p>{{eventMeaning}}</p>
-      <span class="audit">{{auditStatus}}</span>
-    </section>
+    <div class="event-hero">
+      <section class="panel">
+        <div class="kicker">Timeline Event Room</div>
+        <h1>{{eventTitle}}</h1>
+        <p class="meta">{{eventDate}} | {{eventLane}} road</p>
+        <p>{{eventMeaning}}</p>
+        <span class="audit">{{auditStatus}}</span>
+      </section>
+      {{eventImageSection}}
+    </div>
     <section class="panel">
       <h2>What Happened?</h2>
       <p class="plain">{{whatHappened}}</p>
@@ -58,5 +61,25 @@
     </section>
     <section class="panel"><a class="pill" href="../Hot2Trotski.html">Back to Hot2Trotski Hall</a></section>
   </main>
+  <script>
+    async function hydrateEventImages(){
+      for(const box of document.querySelectorAll('[data-wiki-image]')){
+        try{
+          const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(box.dataset.wikiImage)}`);
+          const data=await r.json();
+          const src=data.originalimage?.source || data.thumbnail?.source;
+          if(src){
+            const alt=(data.title||box.dataset.wikiImage).replace(/"/g,'&quot;');
+            box.innerHTML=`<img src="${src}" alt="${alt}">`;
+          }else{
+            box.textContent='Image source listed below';
+          }
+        }catch(e){
+          box.textContent='Image source listed below';
+        }
+      }
+    }
+    hydrateEventImages();
+  </script>
 </body>
 </html>
