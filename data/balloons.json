@@ -1,0 +1,326 @@
+[
+  {
+    "id": "locke",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "Every Man has a Property in his own Person.",
+    "sourceTitle": "Locke / Second Treatise, Chapter V",
+    "sourceUrl": "https://press-pubs.uchicago.edu/founders/documents/v1ch16s3.html",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "smith",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "The division of labour... occasions... increase of the productive powers of labour.",
+    "sourceTitle": "Adam Smith / Wealth of Nations, Chapter I",
+    "sourceUrl": "https://www.adamsmithworks.org/documents/chapter-1-of-the-division-of-labour",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "marx",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "The history of all hitherto existing society is the history of class struggles.",
+    "sourceTitle": "Marx and Engels / Communist Manifesto, Chapter I",
+    "sourceUrl": "https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch01.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "engels",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "Modern Socialism is... the direct product of... class antagonisms.",
+    "sourceTitle": "Engels / Socialism: Utopian and Scientific",
+    "sourceUrl": "https://www.marxists.org/archive/marx/works/1880/soc-utop/ch01.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "bernstein",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "The movement is everything.",
+    "sourceTitle": "Bernstein / Evolutionary Socialism",
+    "sourceUrl": "https://www.marxists.org/reference/archive/bernstein/works/1899/evsoc/ch04-conc.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "kautsky",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "Democracy is the essential basis for building up a Socialist system of production.",
+    "sourceTitle": "Kautsky / The Dictatorship of the Proletariat",
+    "sourceUrl": "https://www.marxists.org/archive/kautsky/1918/dictprole/ch05.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "debs",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "while there is a lower class, I am in it",
+    "sourceTitle": "Debs / Statement to the Court",
+    "sourceUrl": "https://en.wikisource.org/wiki/Eugene_Debs%27_Statement_to_the_Court",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "trotsky",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "The peasant follows either the worker or the bourgeois.",
+    "sourceTitle": "Trotsky / The Permanent Revolution",
+    "sourceUrl": "https://www.marxists.org/archive/trotsky/1931/tpr/pr10.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "lenin",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "Without revolutionary theory there can be no revolutionary movement.",
+    "sourceTitle": "Lenin / What Is To Be Done?",
+    "sourceUrl": "https://www.marxists.org/archive/lenin/works/1901/witbd/i.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "luxemburg",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "This dictatorship consists in the manner of applying democracy, not in its elimination.",
+    "sourceTitle": "Luxemburg / The Russian Revolution",
+    "sourceUrl": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch08.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "mao",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "Political power grows out of the barrel of a gun.",
+    "sourceTitle": "Mao / Quotations, War and Peace",
+    "sourceUrl": "https://www.marxists.org/reference/archive/mao/works/red-book/ch05.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "orwell",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "make lies sound truthful and murder respectable",
+    "sourceTitle": "Orwell / Politics and the English Language",
+    "sourceUrl": "https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "hayek",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "knowledge... never exists in concentrated or integrated form",
+    "sourceTitle": "Hayek / The Use of Knowledge in Society",
+    "sourceUrl": "https://www.econlib.org/library/Essays/hykKnw.html",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "keynes",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "In the long run we are all dead.",
+    "sourceTitle": "Keynes / A Tract on Monetary Reform",
+    "sourceUrl": "https://www.gutenberg.org/files/65278/old/65278-h/65278-h.htm",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "sanders",
+    "type": "exact",
+    "label": "Exact excerpt",
+    "text": "quality care for all as a human right",
+    "sourceTitle": "Sanders / Senate Op-Ed",
+    "sourceUrl": "https://www.sanders.senate.gov/op-eds/its-time-to-guarantee-healthcare-to-all-americans-as-a-human-right/",
+    "auditStatus": "[passage pinned]"
+  },
+  {
+    "id": "friedman",
+    "type": "exact",
+    "label": "Exact quote",
+    "text": "Inflation is always and everywhere a monetary phenomenon.",
+    "sourceTitle": "Hoover / Inflation: True and False",
+    "sourceUrl": "https://www.hoover.org/research/inflation-true-and-false",
+    "auditStatus": "[source lead checked]"
+  },
+  {
+    "id": "enclosure-primitive-accumulation",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Public land enters. Private rules leave with the rent.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "colonial-extraction-empire",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Empire calls it discovery. The ledger calls it extraction.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "industrial-revolution",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "The machine is fast. The paycheck is negotiable.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "utopian-socialists",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "What if society tried planning before panic?",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "labor-movement-unions",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Boss says family. Time clock says otherwise.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "paris-commune",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Seventy-two days. Centuries of arguments.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "new-deal-social-security-labor-law",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Not revolution. Still a very large receipt.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "neoliberal-turn",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "The market is free. Terms and conditions may apply.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "cold-war",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Two systems enter. Everyone else gets the bill.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "social-democracy-welfare-states",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Capitalism, but with receipts and seatbelts.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "fall-of-soviet-union",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "A state can be huge and still run out of glue.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "present-day-word-confusion",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Define the word before throwing the word.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "rockefeller",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Competition is fun until the trust arrives.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "morgan",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "When banks panic, the banker becomes weather.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "mises",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Before planning, show me the prices.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "rand",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "I brought a novel to an economics fight.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "buffett",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Compound interest has entered the chat.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "gates",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Software scales. So do antitrust questions.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "musk",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Founder control: very fast, very loud.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "trump",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Brand, debt, media, state power. Subtle? No.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  }
+]

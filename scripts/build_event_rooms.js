@@ -62,7 +62,7 @@ function renderSourceLinks(sources = []) {
 
 function renderEventImage(stop) {
   if (!stop.wikiPage) return "";
-  return `<div class="event-image" data-wiki-image="${escapeHtml(stop.wikiPage)}">Loading source image</div>`;
+  return `<div class="event-visual"><div class="event-image" data-wiki-image="${escapeHtml(stop.wikiPage)}" data-balloon-id="${escapeHtml(stop.id || "")}">Loading source image</div></div>`;
 }
 
 function renderStop(template, stop) {

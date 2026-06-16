@@ -205,3 +205,20 @@ Promote the generated source shelf with:
 That command rebuilds `dist-preview/source-library.html`, verifies that the preview has source groups and source items, then replaces only the Source Library list inside `Hot2Trotski.html`.
 
 Use this whenever source notes or audit labels change in `data/hallways/*.json` or `data/timeline-stops.json`.
+
+### Thought Balloon Automation
+
+Thought balloons live in:
+
+`data/balloons.json`
+
+Each balloon entry should use an `id` that matches a figure id or timeline stop id. Use `type: "exact"` only for short pinned source language. Use `type: "caption"` for Hot2Trotski voice, paraphrase, or comic commentary.
+
+Rules:
+
+- Exact quotes or excerpts need a source title, source URL, and an honest audit status such as `[passage pinned]`.
+- Commentary captions should use `[commentary]` and must be visibly labeled under the image as `Hot2Trotski caption, not a quote`.
+- Do not put citations inside the bubble. The source or caption label belongs under the image.
+- Keep bubble text short enough to fit the picture area.
+- Sensitive subjects can be deliberately left without a balloon. Example: Atlantic Slavery and Plantation Capitalism should not use a comic bubble.
+- After editing balloons, rebuild hall cards and event rooms, then run link checks and a browser spacing check.
