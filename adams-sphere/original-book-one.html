@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adam's Sphere - Original Manuscript Book One</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #02060c;
+      --panel: rgba(8, 15, 25, .78);
+      --panel-strong: rgba(9, 18, 31, .92);
+      --line: rgba(138, 224, 239, .2);
+      --line-hot: rgba(138, 224, 239, .44);
+      --text: #eff8fa;
+      --muted: #a8b9c0;
+      --dim: #778b94;
+      --cyan: #8ae0ef;
+      --teal: #54d6c1;
+      --amber: #e2b766;
+      --amber-soft: rgba(226, 183, 102, .16);
+      --glow: 0 0 34px rgba(84, 214, 193, .24);
+      --shadow: 0 28px 90px rgba(0, 0, 0, .5);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 72% 12%, rgba(84, 214, 193, .18), transparent 34rem),
+        radial-gradient(circle at 20% 0%, rgba(75, 129, 224, .16), transparent 30rem),
+        linear-gradient(180deg, #030915, var(--bg) 48%, #010308);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(138, 224, 239, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(138, 224, 239, .035) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.15) 68%, transparent);
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      position: relative;
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 20px 0 56px;
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      padding: 12px 0 26px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .topline a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .topline a:hover { color: var(--cyan); }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 45%);
+      gap: 34px;
+      align-items: center;
+      min-height: 72vh;
+      padding: 20px 0 54px;
+    }
+
+    .kicker {
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin-top: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 8.6vw, 112px);
+      text-wrap: balance;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 4.4vw, 52px);
+    }
+
+    h3 { font-size: 18px; }
+
+    .tagline {
+      max-width: 650px;
+      margin: 18px 0 0;
+      color: #d7e5e8;
+      font-size: clamp(18px, 2vw, 23px);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border: 1px solid var(--line-hot);
+      border-radius: 999px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+
+    .button.primary {
+      background: linear-gradient(135deg, rgba(84, 214, 193, .34), rgba(102, 150, 255, .18));
+      box-shadow: 0 0 28px rgba(84, 214, 193, .26);
+      color: #f8feff;
+    }
+
+    .button.secondary {
+      background: rgba(10, 20, 32, .62);
+      color: #dbe9ec;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      border-color: rgba(226, 183, 102, .78);
+      box-shadow: 0 0 34px rgba(226, 183, 102, .18);
+    }
+
+    .hero-image,
+    .eden-image,
+    .world-image {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line-hot);
+      background: rgba(8, 15, 25, .7);
+      box-shadow: var(--shadow), var(--glow);
+    }
+
+    .hero-image { min-height: 460px; }
+
+    .hero-image img,
+    .eden-image img,
+    .world-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .88;
+    }
+
+    .hero-image::after,
+    .eden-image::after,
+    .world-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: inset 0 0 70px rgba(0,0,0,.45);
+      pointer-events: none;
+    }
+
+    .image-label {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      padding: 8px 10px;
+      border: 1px solid rgba(226, 183, 102, .46);
+      background: rgba(3, 8, 14, .72);
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .module {
+      margin-top: 18px;
+      padding: clamp(18px, 3vw, 30px);
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(9, 18, 31, .88), rgba(5, 10, 18, .74));
+      box-shadow: 0 22px 70px rgba(0, 0, 0, .36);
+      backdrop-filter: blur(12px);
+    }
+
+    .module:hover {
+      border-color: rgba(138, 224, 239, .32);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .42), 0 0 28px rgba(84, 214, 193, .08);
+    }
+
+    .module-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+
+    .module p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .status {
+      flex: 0 0 auto;
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    audio {
+      width: 100%;
+      min-width: 220px;
+      height: 36px;
+      accent-color: var(--teal);
+    }
+
+    .track-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .book-divider {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border: 1px solid rgba(226, 183, 102, .34);
+      background: rgba(226, 183, 102, .1);
+      color: var(--amber);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .track {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 42%) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 13px 14px;
+      border: 1px solid rgba(138, 224, 239, .14);
+      background: rgba(4, 10, 18, .58);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .track:hover {
+      transform: translateY(-1px);
+      border-color: rgba(138, 224, 239, .38);
+      background: rgba(8, 17, 29, .82);
+    }
+
+    .track-title b {
+      display: block;
+      color: #f9fdff;
+      font-size: 15px;
+    }
+
+    .track-title small {
+      color: var(--dim);
+      font-size: 12px;
+    }
+
+    .download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 0 10px;
+      border: 1px solid rgba(226, 183, 102, .42);
+      color: var(--amber);
+      background: var(--amber-soft);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 38%);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .world-image {
+      min-height: 360px;
+      margin-top: 18px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mini-card {
+      min-height: 132px;
+      padding: 16px;
+      border: 1px solid rgba(138, 224, 239, .16);
+      background: rgba(2, 7, 13, .48);
+    }
+
+    .mini-card p {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      color: var(--dim);
+      font-size: 13px;
+    }
+
+    @media (max-width: 860px) {
+      .shell { width: min(100% - 20px, 1180px); }
+      .hero, .split { grid-template-columns: 1fr; }
+      .hero { min-height: auto; padding-top: 14px; }
+      .hero-image { min-height: 300px; }
+      .module-head { grid-template-columns: 1fr; display: grid; align-items: start; }
+      .track { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr; }
+      .hero-actions, .topline, .nav-links { align-items: stretch; flex-direction: column; }
+      .button, .download { width: 100%; }
+      audio { min-width: 0; }
+    }
+  
+
+    .library-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .cover-card {
+      display: grid;
+      grid-template-rows: 230px 1fr;
+      overflow: hidden;
+      border: 1px solid rgba(138, 224, 239, .18);
+      background: rgba(4, 10, 18, .66);
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .cover-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(226, 183, 102, .62);
+      box-shadow: 0 24px 70px rgba(0,0,0,.44), 0 0 28px rgba(226, 183, 102, .12);
+    }
+
+    .cover-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .9;
+    }
+
+    .cover-card-body {
+      padding: 16px;
+    }
+
+    .cover-card-body h3 {
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .cover-card-body p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .listen-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 34%);
+      gap: 24px;
+      align-items: center;
+      padding: 18px 0 34px;
+    }
+
+    .listen-cover {
+      min-height: 360px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line-hot);
+      background: rgba(8, 15, 25, .7);
+      box-shadow: var(--shadow), var(--glow);
+    }
+
+    .listen-cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .9;
+    }
+
+    @media (max-width: 1100px) {
+      .library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 860px) {
+      .library-grid { grid-template-columns: 1fr; }
+      .cover-card { grid-template-rows: 280px 1fr; }
+      .listen-hero { grid-template-columns: 1fr; }
+      .listen-cover { min-height: 280px; }
+    }
+</style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topline" aria-label="Adam's Sphere navigation">
+      <a href="index.html">Adam's Sphere</a>
+      <div class="nav-links">
+        <a href="index.html#library">Library</a>
+        <a href="index.html#book">Book</a>
+        <a href="../light-of-attention/">Light of Attention</a>
+      </div>
+    </nav>
+
+    <section class="listen-hero">
+      <div>
+        <div class="kicker">Original Manuscript / Book One</div>
+        <h1>Original Manuscript: Book One</h1>
+        <p class="tagline">Adam aboard Eden, the first archive of the human-facing manuscript.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#tracks">Listen</a>
+          <a class="button secondary" href="index.html#library">All Adam's Sphere Audio</a>
+        </div>
+      </div>
+      <figure class="listen-cover">
+        <img src="assets/adams-sphere-bedroom-window.png" alt="Adam's Sphere cover image for Original Manuscript Book One">
+        <figcaption class="image-label">Original Manuscript</figcaption>
+      </figure>
+    </section>
+
+    <section class="module" id="tracks">
+      <div class="module-head">
+        <div>
+          <div class="kicker">Listen</div>
+          <h2>Book One</h2>
+          <p>32 audio files, about 5.3 hours.</p>
+        </div>
+        <div class="status">32 files</div>
+      </div>
+      <div class="track-list" aria-label="Original Manuscript Book One audio tracks">
+        <article class="track"><div class="track-title"><b>Book One 002 - Chapter 1</b><small>15:40</small></div><audio controls preload="none" src="audio/original-manuscript/OM_002_chapter-1.mp3"></audio><a class="download" href="audio/original-manuscript/OM_002_chapter-1.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 003 - Chapter 2</b><small>10:43</small></div><audio controls preload="none" src="audio/original-manuscript/OM_003_chapter-2.mp3"></audio><a class="download" href="audio/original-manuscript/OM_003_chapter-2.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 004 - Chapter 3</b><small>16:44</small></div><audio controls preload="none" src="audio/original-manuscript/OM_004_chapter-3.mp3"></audio><a class="download" href="audio/original-manuscript/OM_004_chapter-3.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 005 - Chapter 4.</b><small>1:55</small></div><audio controls preload="none" src="audio/original-manuscript/OM_005_chapter-4.mp3"></audio><a class="download" href="audio/original-manuscript/OM_005_chapter-4.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 006 - Chapter 5.</b><small>12:45</small></div><audio controls preload="none" src="audio/original-manuscript/OM_006_chapter-5.mp3"></audio><a class="download" href="audio/original-manuscript/OM_006_chapter-5.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 007 - Fragment 4</b><small>25:37</small></div><audio controls preload="none" src="audio/original-manuscript/OM_007_4.mp3"></audio><a class="download" href="audio/original-manuscript/OM_007_4.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 008 - Fragment 7</b><small>7:43</small></div><audio controls preload="none" src="audio/original-manuscript/OM_008_7.mp3"></audio><a class="download" href="audio/original-manuscript/OM_008_7.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 009 - Fragment 8</b><small>23:59</small></div><audio controls preload="none" src="audio/original-manuscript/OM_009_8.mp3"></audio><a class="download" href="audio/original-manuscript/OM_009_8.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 010 - Scene 01</b><small>5:25</small></div><audio controls preload="none" src="audio/original-manuscript/OM_010_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_010_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 011 - Scene 02</b><small>18:51</small></div><audio controls preload="none" src="audio/original-manuscript/OM_011_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_011_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 012 - Scene 03</b><small>10:25</small></div><audio controls preload="none" src="audio/original-manuscript/OM_012_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_012_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 013 - Scene 04</b><small>4:14</small></div><audio controls preload="none" src="audio/original-manuscript/OM_013_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_013_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 014 - Scene 05</b><small>6:03</small></div><audio controls preload="none" src="audio/original-manuscript/OM_014_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_014_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 015 - Scene 06</b><small>7:45</small></div><audio controls preload="none" src="audio/original-manuscript/OM_015_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_015_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 016 - Scene 07</b><small>3:56</small></div><audio controls preload="none" src="audio/original-manuscript/OM_016_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_016_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 017 - Scene 08</b><small>11:09</small></div><audio controls preload="none" src="audio/original-manuscript/OM_017_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_017_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 018 - Scene 09</b><small>11:12</small></div><audio controls preload="none" src="audio/original-manuscript/OM_018_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_018_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 019 - Scene 10</b><small>16:28</small></div><audio controls preload="none" src="audio/original-manuscript/OM_019_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_019_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 020 - Scene 11</b><small>3:50</small></div><audio controls preload="none" src="audio/original-manuscript/OM_020_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_020_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 021 - Scene 12</b><small>4:17</small></div><audio controls preload="none" src="audio/original-manuscript/OM_021_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_021_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 022 - Scene 13</b><small>13:31</small></div><audio controls preload="none" src="audio/original-manuscript/OM_022_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_022_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 023 - Scene 14</b><small>9:02</small></div><audio controls preload="none" src="audio/original-manuscript/OM_023_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_023_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 024 - Scene 15</b><small>5:14</small></div><audio controls preload="none" src="audio/original-manuscript/OM_024_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_024_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 025 - Scene 16</b><small>8:37</small></div><audio controls preload="none" src="audio/original-manuscript/OM_025_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_025_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 026 - Scene 17</b><small>8:02</small></div><audio controls preload="none" src="audio/original-manuscript/OM_026_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_026_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 027 - Scene 18</b><small>7:44</small></div><audio controls preload="none" src="audio/original-manuscript/OM_027_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_027_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 028 - Scene 19</b><small>4:30</small></div><audio controls preload="none" src="audio/original-manuscript/OM_028_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_028_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 029 - Scene 20</b><small>6:41</small></div><audio controls preload="none" src="audio/original-manuscript/OM_029_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_029_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 030 - Scene 21</b><small>14:17</small></div><audio controls preload="none" src="audio/original-manuscript/OM_030_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_030_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 031 - Scene 22</b><small>9:12</small></div><audio controls preload="none" src="audio/original-manuscript/OM_031_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_031_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 032 - Scene 23</b><small>4:52</small></div><audio controls preload="none" src="audio/original-manuscript/OM_032_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_032_section.mp3" download>Download</a></article>
+        <article class="track"><div class="track-title"><b>Book One 033 - Scene 24</b><small>7:44</small></div><audio controls preload="none" src="audio/original-manuscript/OM_033_section.mp3"></audio><a class="download" href="audio/original-manuscript/OM_033_section.mp3" download>Download</a></article>
+      </div>
+    </section>
+
+    <footer class="footer">Adam's Sphere / Original Manuscript / Book One</footer>
+  </main>
+
+  <script>
+    const players = Array.from(document.querySelectorAll("audio"));
+    players.forEach((player) => {
+      player.addEventListener("play", () => {
+        players.forEach((other) => {
+          if (other !== player) other.pause();
+        });
+      });
+
+      player.addEventListener("ended", () => {
+        const nextPlayer = players[players.indexOf(player) + 1];
+        if (nextPlayer) {
+          nextPlayer.play().catch(() => {
+            nextPlayer.controls = true;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
