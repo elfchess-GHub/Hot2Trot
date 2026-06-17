@@ -306,14 +306,20 @@
     .info-row {
       display: grid;
       gap: 1rem;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .about,
-    .news {
+    .news,
+    .support {
       background: rgba(8, 18, 28, 0.82);
       border: 1px solid rgba(216, 155, 66, 0.75);
       padding: 1rem;
+    }
+
+    .support a {
+      color: #ffe0a1;
+      font-weight: bold;
     }
 
     footer {
@@ -385,12 +391,12 @@
         <a class="hotspot nav-button nav-games" href="#games"><img src="assets/elfchess-buttons/games.png" alt="Games"></a>
         <a class="hotspot nav-button nav-about" href="#about"><img src="assets/elfchess-buttons/about.png" alt="About"></a>
         <a class="hotspot nav-button nav-gallery" href="#games"><img src="assets/elfchess-buttons/gallery.png" alt="Gallery"></a>
-        <a class="hotspot nav-button nav-news" href="#news"><img src="assets/elfchess-buttons/news.png" alt="News"></a>
+        <a class="hotspot nav-button nav-news" href="devlog.html"><img src="assets/elfchess-buttons/news.png" alt="News"></a>
         <a class="hotspot nav-button nav-contact" href="../light-of-attention/links.html"><img src="assets/elfchess-buttons/contact.png" alt="Contact"></a>
         <a class="hotspot action-button explore-link" href="#games"><img src="assets/elfchess-buttons/explore-games.png" alt="Explore Games"></a>
         <a class="hotspot action-button view-all-link" href="#games"><img src="assets/elfchess-buttons/view-all-games.png" alt="View All Games"></a>
         <a class="hotspot action-button learn-more-link" href="#about"><img src="assets/elfchess-buttons/learn-more.png" alt="Learn More"></a>
-        <a class="hotspot action-button read-more-link" href="#news"><img src="assets/elfchess-buttons/read-more.png" alt="Read More"></a>
+        <a class="hotspot action-button read-more-link" href="devlog.html"><img src="assets/elfchess-buttons/read-more.png" alt="Read More"></a>
         <a class="hotspot action-button subscribe-link" href="mailto:elfchess@gmail.com?subject=Elfchess%20Games%20Newsletter&body=Please%20add%20me%20to%20the%20Elfchess%20Games%20newsletter." aria-label="Email Elfchess to subscribe"></a>
       </div>
     </section>
@@ -442,7 +448,7 @@
           <img src="assets/dubious-dungeons/dd-cover-wide.webp" alt="DubiouSDungeons splash art">
           <div class="game-card-content">
             <h3>DubiouSDungeons</h3>
-            <p>A dungeon board-game prototype for local pass-and-play and early network rooms.</p>
+            <p>A dungeon board game for local pass-and-play dungeon runs.</p>
             <div class="card-actions">
               <a href="dubious-dungeons.html">Open page</a>
               <a href="https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/dubious-dungeons/latest.zip">Download</a>
@@ -471,7 +477,11 @@
       </article>
       <article class="news" id="news">
         <h2>News</h2>
-        <p>SphinxLite, Horse Trader, Shape-Azoid, and DubiouSDungeons have current download links. Draken3d stays listed while its build is prepared.</p>
+        <p>SphinxLite, Horse Trader, Shape-Azoid, and DubiouSDungeons have current download links. <a href="devlog.html">Read the devlog</a> for build notes and site updates.</p>
+      </article>
+      <article class="support">
+        <h2>Reports</h2>
+        <p>Players can <a href="community.html">report bugs or send feedback</a> through GitHub forms.</p>
       </article>
     </section>
   </main>
@@ -481,7 +491,8 @@
       <a href="../index.html">Home</a>
       <a href="#games">Games</a>
       <a href="#about">About</a>
-      <a href="#news">News</a>
+      <a href="devlog.html">News</a>
+      <a href="community.html">Reports</a>
       <a href="../light-of-attention/links.html">Contact</a>
     </nav>
   </footer>

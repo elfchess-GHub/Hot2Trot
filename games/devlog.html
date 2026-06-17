@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devlog - Elfchess Games</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 80% 8%, rgba(122, 77, 33, 0.32), transparent 22rem),
+        radial-gradient(circle at 12% 20%, rgba(38, 94, 113, 0.36), transparent 24rem),
+        linear-gradient(180deg, #071019 0%, #121820 100%);
+      color: #f8e6bd;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 74rem;
+      padding: 2rem min(6vw, 4rem) 4rem;
+    }
+
+    .back {
+      color: #ffe0a1;
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      color: #ffe0a1;
+      font-size: clamp(3rem, 9vw, 6rem);
+      letter-spacing: 0;
+      line-height: 0.9;
+      margin: 0 0 1rem;
+    }
+
+    .lead {
+      font-size: clamp(1.2rem, 3vw, 1.65rem);
+      margin: 0 0 2rem;
+      max-width: 48rem;
+    }
+
+    .post-list {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    article,
+    .note {
+      background: rgba(244, 222, 184, 0.95);
+      border: 2px solid rgba(216, 155, 66, 0.9);
+      color: #25170e;
+      padding: 1rem;
+    }
+
+    time {
+      color: #68421f;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.35rem;
+    }
+
+    h2 {
+      color: #132c3a;
+      font-size: clamp(1.6rem, 4vw, 2.25rem);
+      line-height: 1.05;
+      margin: 0 0 0.65rem;
+    }
+
+    p {
+      margin: 0 0 0.8rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .button {
+      background: #12354b;
+      border: 1px solid #9f6e2e;
+      color: #ffe8ad;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.65rem 0.85rem;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: #6d4225;
+    }
+
+    .button:focus,
+    .button:hover {
+      background: #1d5472;
+      outline: 2px solid #ffe0a1;
+      outline-offset: 3px;
+    }
+
+    .note {
+      background: rgba(8, 18, 28, 0.82);
+      border-color: rgba(216, 155, 66, 0.75);
+      color: #f8e6bd;
+    }
+
+    .note a {
+      color: #ffe0a1;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to Elfchess Games</a>
+    <h1>Devlog</h1>
+    <p class="lead">Build notes, download updates, and short project posts for the Elfchess games.</p>
+
+    <section class="post-list" aria-label="Devlog posts">
+      <article>
+        <time datetime="2026-06-17">June 17, 2026</time>
+        <h2>Reports and Feedback Opened</h2>
+        <p>The site now has GitHub bug and feedback forms so playtest notes can be tracked in one place.</p>
+        <div class="button-row">
+          <a class="button" href="community.html">Open reports page</a>
+          <a class="button secondary" href="https://github.com/elfchess-GHub/Hot2Trot/issues/new?template=bug_report.yml">Report a bug</a>
+        </div>
+      </article>
+
+      <article>
+        <time datetime="2026-06-17">June 17, 2026</time>
+        <h2>Current Game Pages</h2>
+        <p>SphinxLite, Horse Trader, Shape-Azoid, and DubiouSDungeons have game pages with current download links. Draken3d stays listed while its build is prepared.</p>
+        <div class="button-row">
+          <a class="button" href="index.html#games">View games</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="note">
+      <p>For now this is a simple static devlog. Longer player conversations can move to <a href="https://github.com/elfchess-GHub/Hot2Trot/discussions">GitHub Discussions</a> once Discussions is enabled for the repository.</p>
+    </section>
+  </main>
+</body>
+</html>

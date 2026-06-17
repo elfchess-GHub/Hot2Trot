@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comments and Reports - Elfchess</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 18% 8%, rgba(44, 95, 112, 0.42), transparent 24rem),
+        radial-gradient(circle at 82% 4%, rgba(134, 88, 34, 0.32), transparent 22rem),
+        linear-gradient(180deg, #071019 0%, #101820 100%);
+      color: #f8e6bd;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    main {
+      margin: 0 auto;
+      max-width: 74rem;
+      padding: 2rem min(6vw, 4rem) 4rem;
+    }
+
+    .back {
+      color: #ffe0a1;
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      color: #ffe0a1;
+      font-size: clamp(3rem, 9vw, 6rem);
+      letter-spacing: 0;
+      line-height: 0.9;
+      margin: 0 0 1rem;
+    }
+
+    .lead {
+      font-size: clamp(1.2rem, 3vw, 1.65rem);
+      margin: 0 0 2rem;
+      max-width: 50rem;
+    }
+
+    .action-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      margin-bottom: 2rem;
+    }
+
+    .action-card {
+      background: rgba(244, 222, 184, 0.95);
+      border: 2px solid rgba(216, 155, 66, 0.9);
+      color: #25170e;
+      display: grid;
+      gap: 0.75rem;
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #132c3a;
+      font-size: 1.55rem;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .button {
+      background: #12354b;
+      border: 1px solid #9f6e2e;
+      color: #ffe8ad;
+      display: inline-block;
+      font-weight: bold;
+      justify-self: start;
+      padding: 0.65rem 0.85rem;
+      text-decoration: none;
+    }
+
+    .button:focus,
+    .button:hover {
+      background: #1d5472;
+      outline: 2px solid #ffe0a1;
+      outline-offset: 3px;
+    }
+
+    .note {
+      background: rgba(8, 18, 28, 0.82);
+      border: 1px solid rgba(216, 155, 66, 0.75);
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">Back to Elfchess</a>
+    <h1>Comments and Reports</h1>
+    <p class="lead">Reader comments, game bugs, and player feedback go through GitHub forms so they can be tracked instead of disappearing into a static webpage.</p>
+
+    <section class="action-grid" aria-label="Comment and report links">
+      <article class="action-card">
+        <h2>Reader Comments</h2>
+        <p>Use this for Adam's Sphere, The Throne Bridge, audiobook chapters, reading notes, typo notes, or reader questions.</p>
+        <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/issues/new?template=reader_comment.yml">Open reader form</a>
+      </article>
+      <article class="action-card">
+        <h2>Game Bugs</h2>
+        <p>Use this for crashes, broken downloads, launcher problems, multiplayer problems, or broken game pages.</p>
+        <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/issues/new?template=bug_report.yml">Open bug form</a>
+      </article>
+      <article class="action-card">
+        <h2>Game Comments</h2>
+        <p>Use this for player comments, playtest notes, game ideas, balance comments, or general site feedback.</p>
+        <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/issues/new?template=player_feedback.yml">Open comment form</a>
+      </article>
+      <article class="action-card">
+        <h2>Discussions</h2>
+        <p>Use this for open community conversation once GitHub Discussions is enabled for the repository.</p>
+        <a class="button" href="https://github.com/elfchess-GHub/Hot2Trot/discussions">Open discussions</a>
+      </article>
+    </section>
+
+    <section class="note">
+      <p>The website stays static. GitHub stores the actual comments, reports, and reader notes.</p>
+    </section>
+  </main>
+</body>
+</html>

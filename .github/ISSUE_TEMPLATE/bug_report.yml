@@ -1,0 +1,75 @@
+name: Bug Report
+description: Report a problem with an Elfchess game build, download, or webpage.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for bugs, broken downloads, launcher problems, crashes, multiplayer problems, or website problems.
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game or page
+      options:
+        - SphinxLite
+        - Horse Trader
+        - Shape-Azoid
+        - DubiouSDungeons
+        - Draken3d
+        - Elfchess Games website
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What went wrong?
+      description: Describe the bug in plain language.
+      placeholder: Tell us what broke, what looked wrong, or what did not work.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to repeat it
+      description: List the exact actions that led to the problem.
+      placeholder: |
+        1. Opened...
+        2. Clicked...
+        3. Saw...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: The game should have...
+    validations:
+      required: false
+  - type: input
+    id: build
+    attributes:
+      label: Build, version, or download page
+      description: Add the version number, latest.zip link, launcher path, or webpage URL if you have it.
+      placeholder: v1.4.1, latest.zip, Play Game.exe, or a page URL
+    validations:
+      required: false
+  - type: dropdown
+    id: system
+    attributes:
+      label: Where did it happen?
+      options:
+        - Windows 11
+        - Windows 10
+        - Browser page
+        - GitHub download
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, logs, or extra notes
+      description: Drag screenshots here or paste any error text.
+    validations:
+      required: false

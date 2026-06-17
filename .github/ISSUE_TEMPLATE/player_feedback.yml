@@ -1,0 +1,49 @@
+name: Player Feedback
+description: Share playtest notes, ideas, balance feedback, or website feedback.
+title: "[Feedback]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for ideas, playtest notes, confusing rules, balance comments, or website suggestions.
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game or page
+      options:
+        - SphinxLite
+        - Horse Trader
+        - Shape-Azoid
+        - DubiouSDungeons
+        - Draken3d
+        - Elfchess Games website
+        - General Elfchess feedback
+    validations:
+      required: true
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback type
+      options:
+        - Playtest note
+        - Game idea
+        - Balance or rules
+        - Website
+        - Download or update flow
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What should we know?
+      placeholder: Tell us what you noticed, liked, disliked, or would change.
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build, version, or page
+      placeholder: v1.4.1, latest.zip, or a page URL
+    validations:
+      required: false

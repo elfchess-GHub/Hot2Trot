@@ -1,0 +1,59 @@
+name: Reader Comment
+description: Leave a comment about a book, audiobook chapter, or reading page.
+title: "[Reader comment]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for book comments, audiobook notes, chapter reactions, typo notes, confusing passages, or reader questions.
+  - type: dropdown
+    id: work
+    attributes:
+      label: Book or page
+      options:
+        - Adam's Sphere
+        - Adam's Sphere - Original Manuscript
+        - Adam's Sphere - Machine Record
+        - The Throne Bridge
+        - Light of Attention post
+        - Other site page
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Exact page, book, chapter, or URL
+      placeholder: Book One, Chapter 12, or paste the page URL
+    validations:
+      required: false
+  - type: dropdown
+    id: comment_type
+    attributes:
+      label: Comment type
+      options:
+        - General comment
+        - Reader reaction
+        - Typo or correction
+        - Confusing section
+        - Audio problem
+        - Question
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      placeholder: Write the reader note here.
+    validations:
+      required: true
+  - type: dropdown
+    id: spoilers
+    attributes:
+      label: Does this include spoilers?
+      options:
+        - No
+        - Yes
+        - Not sure
+    validations:
+      required: true
