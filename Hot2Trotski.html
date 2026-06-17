@@ -141,6 +141,7 @@
     .sidebox{background:rgba(17,23,34,.9);border:1px solid var(--line);padding:14px;border-radius:10px;margin-bottom:14px}
     .sidebox h3{font-size:17px;color:var(--accent);margin-bottom:10px}
     .path,.tracker-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.07);font-family:Inter,sans-serif;font-size:13px;color:var(--muted)}
+    .tracker-row.study-flash{animation:studyFlash .75s ease}
     button.path{width:100%;border:0;background:transparent;text-align:left;cursor:pointer}
     button.path:hover,button.path.active{color:var(--ivory)}
     button.path b{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
@@ -180,12 +181,15 @@
       cursor:pointer;
     }
     .pill.idea{border-color:rgba(216,175,85,.42);color:#f4d891}
+    .pill.idea:active{background:#e5e7eb;color:#080a0f}
     .pill.figure{border-color:rgba(47,116,208,.55);color:#b9d7ff}
     .pill.date{border-color:rgba(216,175,85,.7);color:var(--accent)}
     .pill.source{text-decoration:underline;border-color:rgba(255,255,255,.22);color:var(--ivory)}
     .pill.test{border-color:rgba(211,58,50,.55);color:#ffc3bd}
     .pill.discuss{border-color:rgba(255,255,255,.28);color:#e5e7eb;background:#151515}
     .pill:hover{transform:translateY(-1px);filter:brightness(1.1)}
+    .pill.idea.study-flash{animation:studyFlash .75s ease}
+    .pill.source.source-stamp{animation:sourceStamp .8s ease}
     .timeline-road{display:grid;gap:13px}
     .stop{display:grid;grid-template-columns:152px 150px minmax(0,1fr);gap:14px;align-items:stretch;background:rgba(17,23,34,.92);border:1px solid var(--line);border-left:6px solid var(--blue);padding:12px;border-radius:10px}
     .stop.red{border-left-color:var(--red)}.stop.blue{border-left-color:var(--blue)}.stop.black{border-left-color:#111}
@@ -210,7 +214,7 @@
     .thought-balloon.caption::after{background:rgba(10,14,21,.96);border-color:rgba(47,116,208,.78)}
     .photo-stack{position:relative;z-index:2;display:flex;flex-direction:column;gap:4px;align-self:start}.balloon-photo-source{display:block;margin:0;font-family:Inter,sans-serif;font-size:10px;line-height:1.15;font-weight:800;color:#d8af55;text-align:center;text-decoration:none}.balloon-photo-source:hover{text-decoration:underline}.balloon-photo-source.caption-note{color:#9fc8ff}
     [data-balloon-id]{position:relative;overflow:visible}.photo-link{overflow:visible}.photo:hover .thought-balloon,.photo:focus-within .thought-balloon,.photo-link:hover .thought-balloon,.photo-link:focus-within .thought-balloon,.photo-stack:hover .thought-balloon,.photo.is-balloon-open .thought-balloon{opacity:1;transform:translate(-50%,0) scale(1)}
-    .photo.is-balloon-open>.thought-balloon,.event-image.is-balloon-open>.thought-balloon,[data-balloon-id]:hover>.thought-balloon,[data-balloon-id]:focus-within>.thought-balloon{opacity:1!important;transform:translate(-50%,0) rotate(-1deg) scale(1)!important}
+    .photo.is-balloon-open>.thought-balloon,.event-image.is-balloon-open>.thought-balloon,[data-balloon-id]:hover>.thought-balloon,[data-balloon-id]:focus-within>.thought-balloon{opacity:1!important;transform:translate(-50%,0) rotate(-1deg) scale(1)!important;animation:bubblePop .26s ease}
     .stop h3{font-size:22px;margin-bottom:6px}
     .stop p{margin:0 0 8px;color:var(--muted)}
     .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
@@ -260,7 +264,10 @@
     .mini-meter{grid-column:1/-1;height:7px;border-radius:999px;overflow:hidden;background:#05070b;border:1px solid rgba(255,255,255,.08)}
     .mini-meter span{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--blue),var(--accent))}
     .medals{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
-    .medal{aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medal{position:relative;overflow:hidden;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;text-align:center;padding:8px;font-family:Inter,sans-serif;font-size:11px;font-weight:800;color:#2a1b03;background:radial-gradient(circle at 30% 25%,#fff2ba,var(--accent) 48%,var(--accent2));border:2px solid #f3d57b;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+    .medal:not(.locked)::after{content:"";position:absolute;inset:-40%;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.72) 50%,transparent 65%);transform:translateX(-120%) rotate(14deg);opacity:0}
+    .medal.medal-shine{animation:medalDrop .52s ease}
+    .medal.medal-shine::after{animation:medalShine .95s ease}
     .medal.path{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(47,116,208,.24)}
     .medal.figure{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(255,255,255,.22)}
     .medal.truth{box-shadow:0 8px 22px rgba(0,0,0,.35), inset 0 0 0 5px rgba(5,6,8,.24)}
@@ -278,6 +285,17 @@
     .present-mirror{background:linear-gradient(90deg,rgba(211,58,50,.12),rgba(47,116,208,.12));border:1px solid rgba(216,175,85,.28);border-radius:12px;padding:18px}
     .mirror-questions{columns:2;column-gap:28px;color:var(--muted)}
     footer{border-top:1px solid rgba(216,175,85,.3);padding:28px 18px 40px;text-align:center;color:var(--muted)}
+    .reveal-ready{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease,box-shadow .55s ease}
+    .reveal-ready.is-visible{opacity:1;transform:translateY(0)}
+    .stop.reveal-ready.is-visible,.card.reveal-ready.is-visible{box-shadow:0 14px 36px rgba(0,0,0,.34)}
+    .stop.reveal-ready.is-visible .date-medal{animation:dateStamp .48s ease}
+    @keyframes studyFlash{0%{box-shadow:0 0 0 0 rgba(229,231,235,.75);background:#e5e7eb;color:#080a0f}70%{box-shadow:0 0 0 8px rgba(229,231,235,0)}100%{box-shadow:none}}
+    @keyframes sourceStamp{0%{box-shadow:0 0 0 0 rgba(216,175,85,.7);transform:scale(.96)}45%{box-shadow:0 0 0 7px rgba(216,175,85,.18);transform:scale(1.04)}100%{box-shadow:0 0 0 0 rgba(216,175,85,0);transform:scale(1)}}
+    @keyframes bubblePop{0%{transform:translate(-50%,8px) rotate(-4deg) scale(.84)}70%{transform:translate(-50%,-2px) rotate(1deg) scale(1.04)}100%{transform:translate(-50%,0) rotate(-1deg) scale(1)}}
+    @keyframes dateStamp{0%{transform:scale(.92);box-shadow:0 0 0 0 rgba(216,175,85,.55)}60%{transform:scale(1.03);box-shadow:0 0 0 8px rgba(216,175,85,.08)}100%{transform:scale(1);box-shadow:none}}
+    @keyframes medalDrop{0%{transform:translateY(-8px) scale(.92)}65%{transform:translateY(2px) scale(1.05)}100%{transform:translateY(0) scale(1)}}
+    @keyframes medalShine{0%{opacity:0;transform:translateX(-120%) rotate(14deg)}25%{opacity:1}100%{opacity:0;transform:translateX(120%) rotate(14deg)}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal-ready{opacity:1;transform:none}}
     @media (max-width:1180px){.shell{grid-template-columns:1fr}.leftbar,.rightbar{position:static;max-height:none}.sidebox{display:block}.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media (max-width:760px){body{font-size:16px}.topbar-inner{display:block}.brand{display:block;margin-bottom:8px}.hero-inner{padding-top:44px}.stop{grid-template-columns:1fr}.grid,.atlas,.truth-grid,.tests,.badges,.source-list{grid-template-columns:1fr}.medals,.medal-shelf{grid-template-columns:repeat(2,1fr)}.mirror-questions{columns:1}nav a{font-size:11px;padding:6px 7px}}
   </style>
@@ -1285,7 +1303,15 @@
     const state = Object.assign({ideas:[],badges:[],name:'Guest Scholar',paths:[],figures:[],truths:[],tests:[],sources:[]}, storedState);
     ['ideas','badges','paths','figures','truths','tests','sources'].forEach(key=>{if(!Array.isArray(state[key])) state[key]=[];});
     function save(){localStorage.setItem('h2tState', JSON.stringify(state));}
-    function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();}}
+    function pulseElement(el, className){
+      if(!el) return;
+      el.classList.remove(className);
+      void el.offsetWidth;
+      el.classList.add(className);
+      setTimeout(()=>el.classList.remove(className),1100);
+    }
+    function animateNewMedals(){document.querySelectorAll('#medals .medal:not(.locked)').forEach(el=>pulseElement(el,'medal-shine'));}
+    function addBadge(name){if(!state.badges.includes(name)){state.badges.push(name);save();renderState();animateNewMedals();}}
     function titleCase(text){return text.replace(/\b\w/g, c=>c.toUpperCase());}
     function compactLabel(text){return text.replace(/\s+/g,' ').trim();}
     function goldBadges(){return state.badges.filter(name=>!/Idea Badge$|Path Badge$/.test(name));}
@@ -1320,7 +1346,13 @@
       if(count>=5) return 'Badge Apprentice';
       return 'Apprentice of the Timeline';
     }
-    function clickIdea(name){if(!state.ideas.includes(name)){state.ideas.push(name);}save();maybeAwardPathMedals();renderState();showIdeaDetail(name);}
+    function clickIdea(name, trigger){
+      if(!state.ideas.includes(name)){state.ideas.push(name);}
+      pulseElement(trigger,'study-flash');
+      pulseElement(document.getElementById('ideaCount')?.closest('.tracker-row'),'study-flash');
+      pulseElement(document.getElementById('ideaBadges')?.closest('.tracker-row'),'study-flash');
+      save();maybeAwardPathMedals();renderState();showIdeaDetail(name);
+    }
     function showIdeaDetail(name){
       const detail=ideaDetails[name] || {definition:`${name} is on the study map. Follow its idea room or source path to place it beside the figures, events, and debates that use it.`, figures:['Source Library'], sources:[['Source Library','#texts']]};
       document.getElementById('ideaDetailTitle').textContent=titleCase(name);
@@ -1463,7 +1495,7 @@
     function buildIdeaCloud(){
       const cloud=document.getElementById('ideaCloud');
       cloud.innerHTML=ideaNames.map(name=>ideaPageMap[name] ? `<a class="pill idea" data-idea="${name}" href="${ideaPageMap[name]}">${name}</a>` : `<button class="pill idea" data-idea="${name}">${name}</button>`).join('');
-      document.querySelectorAll('[data-idea]').forEach(el=>el.addEventListener('click',()=>clickIdea(el.dataset.idea)));
+      document.querySelectorAll('[data-idea]').forEach(el=>el.addEventListener('click',()=>clickIdea(el.dataset.idea, el)));
     }
     function cardTopic(el){return el.dataset.topic || el.closest('article')?.querySelector('h3')?.textContent?.trim() || el.textContent.trim() || 'Open thread';}
     function clearHighlights(){document.querySelectorAll('.is-highlighted').forEach(el=>el.classList.remove('is-highlighted'));}
@@ -1536,12 +1568,12 @@
         if(figureName && !/Open Study Page/i.test(figureName)) addFigureBadge(figureName);
       }
       const sourceLink=event.target.closest('a.source,.source-item a');
-      if(sourceLink) addSourceBadge(sourceLink.textContent);
+      if(sourceLink){pulseElement(sourceLink,'source-stamp');addSourceBadge(sourceLink.textContent);}
       const button=event.target.closest('button');
       if(!button) return;
       if(button.classList.contains('discuss')){openDiscussion(cardTopic(button));}
       if(button.classList.contains('test') && !button.closest('.test-card')){selectTest(button.textContent.trim(), cardTopic(button));}
-      if(button.classList.contains('source')){const topic=cardTopic(button);addSourceBadge(topic);openSources(topic);}
+      if(button.classList.contains('source')){const topic=cardTopic(button);pulseElement(button,'source-stamp');addSourceBadge(topic);openSources(topic);}
       if(button.classList.contains('figure')){openFigure(cardTopic(button));}
     });
     async function hydratePhotos(){
@@ -1591,6 +1623,30 @@
         });
       }catch(e){}
     }
+    function initScrollReveals(){
+      const items=[...document.querySelectorAll('.stop,#figures .card,.truth-card,.test-card,.badge-case')];
+      items.forEach(el=>el.classList.add('reveal-ready'));
+      if(!('IntersectionObserver' in window)){
+        items.forEach(el=>el.classList.add('is-visible'));
+        return;
+      }
+      const observer=new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },{threshold:.14,rootMargin:'0px 0px -8% 0px'});
+      items.forEach(el=>{
+        observer.observe(el);
+        const rect=el.getBoundingClientRect();
+        if(rect.top < window.innerHeight*.92 && rect.bottom > 0){
+          el.classList.add('is-visible');
+          observer.unobserve(el);
+        }
+      });
+    }
     document.addEventListener('pointerdown', event=>{
       const host=event.target.closest('[data-balloon-id]');
       document.querySelectorAll('.is-balloon-open').forEach(item=>{
@@ -1607,6 +1663,7 @@
     async function initHot2Trotski(){
       buildIdeaCloud();
       renderState();
+      initScrollReveals();
       await hydrateBalloons();
       await hydratePhotos();
       await hydrateBalloons();
