@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.16 rebuilt executable and background physics - 2026-06-16
+
+Repair after v0.7.15 updated the support/server files but did not rebuild the top-level player executable before packaging.
+
+- The portable build script now rebuilds `Shape-Azoid.exe` with PyInstaller before making the portable folder and ZIP.
+- The hosted online server now runs a 60 FPS background room physics loop instead of only advancing Zoids when clients poll snapshots.
+- Room HTTP endpoints share a lock with the background physics loop to prevent request/tick races.
+- The background tick probe verifies that a hosted Zoid moves between snapshots without repeated manual refresh requests.
+- Verified source and packaged background tick, HTTP multiplayer, Online UI, network-file join, startup online, online AI, command seam, and static import probes.
+- Published build marker `v0.7.16-20260616-1909`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.16.zip`
+
 ## v0.7.15 online playability and line-card repair - 2026-06-16
 
 Multiplayer playability repair after a live two-computer test connected but showed line cards failing during real play and heavy stutter during online turns.
