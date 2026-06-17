@@ -1,5 +1,23 @@
 # Shape-Azoid Releases
 
+## v0.7.18 late-game online stability - 2026-06-16
+
+Follow-up to the WebSocket live-state build after a real multiplayer run was faster and mostly stable but still stuck later in the game.
+
+- WebSocket frames now use a lighter live snapshot and trim old action-log entries instead of streaming the full room history every frame.
+- Stream rate is now 12 FPS while clients continue animating locally between authoritative frames.
+- Online score snapshots now move clients to the Victory Board instead of leaving them in the play screen.
+- Next Round is now a server-owned online command, so connected clients do not split into separate local rounds after scoring.
+- Added a late-game WebSocket stress probe covering larger room state, score-mode streaming, and server-owned next round.
+- Verified source and packaged stress, WebSocket, Online UI, background tick, network-file join, startup online, online AI, HTTP multiplayer, room-service, command seam, and static import probes.
+- Published build marker `v0.7.18-20260616-2217`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.18.zip`
+
 ## v0.7.17 WebSocket live-state stream - 2026-06-16
 
 First vertical slice replacing online play's fast-changing board state polling with a pushed WebSocket stream.
