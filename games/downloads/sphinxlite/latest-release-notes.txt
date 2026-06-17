@@ -6,13 +6,15 @@ Package:
 - latest.zip is matched to this build.
 
 Source freeze:
-- SphinxLite2.0 commit 43a8750 Freeze SphinxLite 1.4.1 build version
+- SphinxLite2.0 commit 42e20b7 Raise topic overlay and brighten close button
 
 Included recent changes:
 - Main debate focus tabs for Run Board, Conversation, and Action Log.
 - Mousewheel scrolling routed for all three debate focus tabs.
 - Compact debate header and aligned side character panels.
 - Tightened side-panel lower spacing and removed redundant enemy inspect helper text.
+- Topic overlay fitted over the center card area, nudged up under the Run Board tabs, with a brighter Close button.
+- Topic overlay uses mousewheel scrolling without the bright native white scrollbar.
 
 Package notes:
 - Windows portable package.
