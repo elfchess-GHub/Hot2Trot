@@ -1,12 +1,12 @@
 SphinxLite2 v1.4.1 Windows build
-Date: 2026-06-16
+Date: 2026-06-17
 
 Package:
 - SphinxLite2-v1.4.1-windows-20260616.zip
 - latest.zip is matched to this build.
 
 Source freeze:
-- SphinxLite2.0 commit 42e20b7 Raise topic overlay and brighten close button
+- SphinxLite2.0 commit 91fedf2 Fit topic overlay top edge
 
 Included recent changes:
 - Main debate focus tabs for Run Board, Conversation, and Action Log.
@@ -14,6 +14,7 @@ Included recent changes:
 - Compact debate header and aligned side character panels.
 - Tightened side-panel lower spacing and removed redundant enemy inspect helper text.
 - Topic overlay fitted over the center card area, nudged up under the Run Board tabs, with a brighter Close button.
+- Topic overlay title now wraps before the Close button, and its top edge is measured to start exactly under the Run Board tab row.
 - Topic overlay uses mousewheel scrolling without the bright native white scrollbar.
 
 Package notes:
