@@ -284,6 +284,7 @@ function buildFigure() {
     topic: escapeHtml(figure.topic),
     era: escapeHtml(figure.era),
     role: escapeHtml(figure.role),
+    figureId: escapeHtml(figure.id),
     wikiPage: escapeHtml(figure.wikiPage),
     laneColor: laneColor(),
     whyHere: figure.whyHere.map((text) => `<p>${escapeHtml(text)}</p>`).join("\n      "),

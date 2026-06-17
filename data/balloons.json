@@ -270,6 +270,15 @@
     "auditStatus": "[commentary]"
   },
   {
+    "id": "jackson",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Land, law, and force belong in the ledger.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
     "id": "mises",
     "type": "caption",
     "label": "Hot2Trotski caption",
@@ -288,6 +297,15 @@
     "auditStatus": "[commentary]"
   },
   {
+    "id": "nozick",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "Rights are limits, not confetti.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
     "id": "buffett",
     "type": "caption",
     "label": "Hot2Trotski caption",
@@ -301,6 +319,15 @@
     "type": "caption",
     "label": "Hot2Trotski caption",
     "text": "Software scales. So do antitrust questions.",
+    "sourceTitle": "Commentary caption",
+    "sourceUrl": "",
+    "auditStatus": "[commentary]"
+  },
+  {
+    "id": "stalin",
+    "type": "caption",
+    "label": "Hot2Trotski caption",
+    "text": "When dissent disappears, the road has changed.",
     "sourceTitle": "Commentary caption",
     "sourceUrl": "",
     "auditStatus": "[commentary]"
