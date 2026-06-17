@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.17 WebSocket live-state stream - 2026-06-16
+
+First vertical slice replacing online play's fast-changing board state polling with a pushed WebSocket stream.
+
+- Added a room snapshot WebSocket endpoint on the FastAPI server.
+- Added a desktop client WebSocket receiver thread so Pygame can consume pushed state without blocking the main loop.
+- Kept HTTP create, join, start, and command requests in place, with HTTP snapshot polling as a fallback if the stream drops.
+- Added a client WebSocket check to the Online UI probe so the actual Pygame path proves it receives streamed snapshots.
+- Verified source and packaged WebSocket, Online UI, background tick, network-file join, startup online, online AI, HTTP multiplayer, room-service, command seam, and static import probes.
+- Published build marker `v0.7.17-20260616-2100`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.17.zip`
+
 ## v0.7.16 rebuilt executable and background physics - 2026-06-16
 
 Repair after v0.7.15 updated the support/server files but did not rebuild the top-level player executable before packaging.
