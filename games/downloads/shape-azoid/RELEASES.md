@@ -1,5 +1,24 @@
 # Shape-Azoid Releases
 
+## v0.7.15 online playability and line-card repair - 2026-06-16
+
+Multiplayer playability repair after a live two-computer test connected but showed line cards failing during real play and heavy stutter during online turns.
+
+- Line cards now accept a wider near-click on closed shared walls while normal shape attachment keeps its tighter side-click tolerance.
+- Empty online card selections now fail as a normal "Select a card first" command instead of risking a server exception.
+- Online play/discard/end-turn commands now return the updated board in the same response, removing the extra immediate refresh request after a move.
+- Online polling now waits longer while the active player has a card selected, so refreshes are less likely to fight placement.
+- Server-side room ticks are throttled and reduced so two connected clients do not multiply simulation bursts just by refreshing snapshots.
+- Online clients animate Zoids locally between authoritative server snapshots to reduce visible freeze-and-jump movement.
+- Verified source and packaged Online UI, network-file join, HTTP multiplayer, startup online, online AI, room-service, command seam, and static import probes.
+- Published build marker `v0.7.15-20260616-1713`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.15.zip`
+
 ## v0.7.14 online selection and join-address repair - 2026-06-16
 
 Multiplayer playability repair after live two-computer testing showed the host screen still displayed the private loopback address and online polling cleared card selection during play.
