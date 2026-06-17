@@ -66,11 +66,18 @@
       for(const box of document.querySelectorAll('[data-wiki-image]')){
         const balloon=box.querySelector('.thought-balloon');
         try{
-          const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(box.dataset.wikiImage)}`);
-          const data=await r.json();
-          const src=data.originalimage?.source || data.thumbnail?.source;
+          const pages=[box.dataset.wikiImage,box.dataset.wikiFallback].filter(Boolean);
+          let data=null;
+          let src="";
+          for(const page of pages){
+            const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(page)}`);
+            if(!r.ok) continue;
+            data=await r.json();
+            src=data.originalimage?.source || data.thumbnail?.source || "";
+            if(src) break;
+          }
           if(src){
-            const alt=(data.title||box.dataset.wikiImage).replace(/"/g,'&quot;');
+            const alt=(data?.title||box.dataset.wikiImage).replace(/"/g,'&quot;');
             box.innerHTML=`<img src="${src}" alt="${alt}">`;
           }else{
             box.textContent='Image source listed below';

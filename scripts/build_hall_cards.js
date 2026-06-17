@@ -53,8 +53,12 @@ function renderTimelineStop(stop) {
   const ideaPills = renderTimelineIdeaPills(stop.ideaPills || []);
   const auditClass = stop.auditStatus === "[needs verification]" ? "audit-label" : "audit-label ok";
   const eventPath = stop.id ? `events/${escapeHtml(stop.id)}.html` : "";
-  const photo = stop.wikiPage
-    ? `<div class="photo-stack">${eventPath ? `<a class="photo-link" href="${eventPath}">` : ""}<div class="photo" data-wiki="${escapeHtml(stop.wikiPage)}" data-balloon-id="${escapeHtml(stop.id || "")}">Loading Wiki image</div>${eventPath ? "</a>" : ""}</div>`
+  const imagePage = stop.imageWikiPage || stop.wikiPage;
+  const fallback = stop.imageWikiPage && stop.wikiPage && stop.imageWikiPage !== stop.wikiPage
+    ? ` data-wiki-fallback="${escapeHtml(stop.wikiPage)}"`
+    : "";
+  const photo = imagePage
+    ? `<div class="photo-stack">${eventPath ? `<a class="photo-link" href="${eventPath}">` : ""}<div class="photo" data-wiki="${escapeHtml(imagePage)}"${fallback} data-balloon-id="${escapeHtml(stop.id || "")}">Loading source image</div>${eventPath ? "</a>" : ""}</div>`
     : `<div class="photo-stack"><div class="photo">Timeline source space</div></div>`;
   const title = eventPath ? `<a href="${eventPath}">${escapeHtml(stop.timelineTitle)}</a>` : escapeHtml(stop.timelineTitle);
   const eventLink = eventPath ? `<a class="pill figure" href="${eventPath}">Open Event Room</a>` : "";

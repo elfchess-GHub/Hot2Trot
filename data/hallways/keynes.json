@@ -84,7 +84,7 @@
       "title": "Public Spending",
       "plainDefinition": "Public spending is government spending on services, infrastructure, benefits, wages, defense, or public investment.",
       "context": "In the Keynes path, public spending can be a stabilization tool inside a market economy.",
-      "whyMatters": "Public spending matters because tax-funded spending is a broad category; it is not automatically communism, socialism, or capitalism by itself.",
+      "whyMatters": "Public spending matters because tax-funded spending is a broad category. It can support public services, private contracts, social insurance, crisis policy, or military spending, so the page has to name the actual structure before applying a political label.",
       "relatedFigures": [{ "label": "John Maynard Keynes", "id": "keynes" }, { "label": "Bernie Sanders", "id": "sanders" }],
       "relatedIdeas": ["mixed-economy", "public-goods"],
       "sources": [

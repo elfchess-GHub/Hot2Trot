@@ -6,53 +6,59 @@
   <title>Mixed Economy - Hot2Trotski</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <style>
-    :root{--black:#050608;--panel:#111722;--line:#2b3444;--text:#f1efe8;--muted:#c3bcae;--blue:#2f74d0;--red:#d33a32;--lane:#2f74d0;--accent:#d8af55;--shadow:0 20px 60px rgba(0,0,0,.42)}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,color-mix(in srgb,var(--lane) 18%,transparent),transparent 34rem),var(--black);color:var(--text);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.6}.topbar{background:rgba(5,6,8,.92);border-bottom:1px solid rgba(216,175,85,.35)}.topbar-inner,main{max-width:980px;margin:0 auto;padding:14px 18px}.topbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.brand,a{color:inherit}.brand{font-family:Cinzel,serif;color:var(--accent);font-weight:800;text-decoration:none}.panel{background:linear-gradient(180deg,rgba(23,29,41,.97),rgba(10,14,21,.97));border:1px solid var(--line);border-left:6px solid var(--lane);box-shadow:var(--shadow);border-radius:10px;padding:18px;margin-top:18px}h1,h2{font-family:Cinzel,serif;color:#fff;line-height:1.05}.kicker{font-family:Inter,sans-serif;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.pill{display:inline-flex;margin:4px 6px 0 0;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0a0e15;font-family:Inter,sans-serif;font-size:13px;font-weight:800;text-decoration:none}.audit{color:#ffc3bd;font-family:Inter,sans-serif;font-size:12px;font-weight:800}.plain{color:var(--muted)}
+    :root{--black:#050608;--panel:#111722;--line:#2b3444;--text:#f1efe8;--muted:#c3bcae;--blue:#2f74d0;--red:#d33a32;--lane:#2f74d0;--accent:#d8af55;--shadow:0 20px 60px rgba(0,0,0,.42)}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,color-mix(in srgb,var(--lane) 18%,transparent),transparent 34rem),var(--black);color:var(--text);font-family:"Source Serif 4",Georgia,serif;font-size:18px;line-height:1.6}.topbar{background:rgba(5,6,8,.92);border-bottom:1px solid rgba(216,175,85,.35)}.topbar-inner,main{max-width:1080px;margin:0 auto;padding:14px 18px}.topbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.brand,a{color:inherit}.brand{font-family:Cinzel,serif;color:var(--accent);font-weight:800;text-decoration:none}.panel{background:linear-gradient(180deg,rgba(23,29,41,.97),rgba(10,14,21,.97));border:1px solid var(--line);border-left:6px solid var(--lane);box-shadow:var(--shadow);border-radius:10px;padding:18px;margin-top:18px}.idea-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,34%);gap:18px;align-items:stretch}.idea-hero .panel{margin-top:18px}.idea-visual{margin-top:18px;display:flex;flex-direction:column;gap:6px}.idea-image{min-height:290px;border:1px solid rgba(216,175,85,.38);border-radius:10px;background:linear-gradient(135deg,#111,#303030 48%,#090909);display:grid;place-items:center;overflow:hidden;color:var(--muted);font-family:Inter,sans-serif;font-weight:800;text-align:center;padding:18px}.idea-image img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.07)}.idea-source-note{font-family:Inter,sans-serif;font-size:11px;line-height:1.25;font-weight:800;color:var(--accent);text-align:center;text-decoration:none}.idea-source-note:hover{text-decoration:underline}h1,h2{font-family:Cinzel,serif;color:#fff;line-height:1.05}h1{font-size:clamp(42px,7vw,76px);margin:.1em 0 .35em}.kicker{font-family:Inter,sans-serif;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}.pill{display:inline-flex;margin:4px 6px 0 0;padding:8px 10px;border:1px solid var(--line);border-radius:999px;background:#0a0e15;font-family:Inter,sans-serif;font-size:13px;font-weight:800;text-decoration:none}.audit{color:#ffc3bd;font-family:Inter,sans-serif;font-size:12px;font-weight:800}.plain{color:var(--muted)}@media (max-width:760px){.idea-hero{grid-template-columns:1fr}.idea-image{min-height:240px}}
   </style>
 </head>
 <body>
   <div class="topbar"><div class="topbar-inner"><a class="brand" href="../Hot2Trotski.html">Hot2Trotski</a><a class="pill" href="../Hot2Trotski.html">Back to Hot2Trotski Hall</a></div></div>
   <main>
-    <section class="panel">
-      <div class="kicker">Idea Room</div>
-      <h1>Mixed Economy</h1>
-      <p><strong>Plain definition:</strong> A mixed economy combines markets, private firms, public rules, taxes, public services, and social insurance.</p>
-      <p class="plain">In the Keynes path, mixed economy means capitalism with public policy tools, not automatic socialism.</p>
-    </section>
+    <div class="idea-hero">
+      <section class="panel">
+        <div class="kicker">Idea Room</div>
+        <h1>Mixed Economy</h1>
+        <p><strong>Plain definition:</strong> A mixed economy combines markets, private firms, public rules, taxes, public services, and social insurance.</p>
+        <p class="plain">In the Keynes path, mixed economy means capitalism with public policy tools, not automatic socialism.</p>
+      </section>
+      <aside class="idea-visual">
+        <div class="idea-image" data-wiki-image="John_Maynard_Keynes">Loading source image</div>
+        <a class="idea-source-note" href="https://en.wikipedia.org/wiki/John_Maynard_Keynes" target="_blank" rel="noopener">image/source lead: John Maynard Keynes / image lead</a>
+      </aside>
+    </div>
     <section class="panel">
       <h2>Why It Matters Here</h2>
-      <p>Mixed economy matters because it names the real structure many democracies use: private markets still exist, but public budgets, central banks, labor law, welfare programs, infrastructure, and regulation shape the road.</p>
-      <p class="plain">This is the room that keeps the page honest when people say a country is either purely capitalist or purely socialist. Most modern systems are mixtures.</p>
+      <p>Mixed economy matters because it names the real structure many democracies use.</p>
     </section>
-    <section class="panel">
-      <h2>Core Features</h2>
-      <p><strong>Private sector:</strong> firms, markets, investment, wages, profit, entrepreneurship, and private property.</p>
-      <p><strong>Public sector:</strong> taxes, law, public services, social insurance, infrastructure, central banking, and regulation.</p>
-      <p><strong>Political fight:</strong> how much should be private, how much should be public, who pays, who benefits, and who controls the rules?</p>
-    </section>
-    <section class="panel">
-      <h2>Key Distinction</h2>
-      <p>A mixed economy is not a dodge word. It is often the most accurate description. The United States, Great Britain, Canada, France, Germany, and many other countries combine capitalist markets with tax-funded public programs and state rules.</p>
-    </section>
-    <section class="panel">
-      <h2>What To Be Careful About</h2>
-      <p>Do not call every public program socialism in the same sense, and do not pretend public programs are outside capitalism. A military contract paid by taxes can socialize funding while the contractor remains a private capitalist firm.</p>
-    </section>
-    <section class="panel">
-      <h2>Mini-Check</h2>
-      <p><strong>Question:</strong> Why is “mixed economy” useful for the socialism/capitalism argument?</p>
-      <p><strong>Answer:</strong> It separates market ownership from public funding and regulation, so the debate can name the actual mechanism.</p>
-    </section>
+
     <section class="panel">
       <h2>Related Links</h2>
-      <a class="pill" href="../figures/keynes.html">John Maynard Keynes</a><a class="pill" href="../figures/sanders.html">Bernie Sanders</a><a class="pill" href="public-goods.html">Public Goods</a><a class="pill" href="public-spending.html">Public Spending</a><a class="pill" href="capitalism.html">Capitalism</a><a class="pill" href="socialism.html">Socialism</a><a class="pill" href="fiscal-policy.html">Fiscal Policy</a>
+      <a class="pill" href="../figures/keynes.html">John Maynard Keynes</a><a class="pill" href="../figures/sanders.html">Bernie Sanders</a><a class="pill" href="public-spending.html">Public Spending</a><a class="pill" href="fiscal-policy.html">Fiscal Policy</a>
     </section>
     <section class="panel">
       <h2>Source / Audit Status</h2>
-      <p><a href="https://en.wikipedia.org/wiki/Mixed_economy" target="_blank" rel="noopener">Mixed economy / Wikipedia</a> <span class="audit">[source lead checked]</span> supports: combination of markets with state intervention/public sector.</p>
-      <p><a href="https://en.wikipedia.org/wiki/John_Maynard_Keynes" target="_blank" rel="noopener">John Maynard Keynes / Wikipedia</a> <span class="audit">[source lead checked]</span> Topic source lead for Keynes and modern macroeconomic policy.</p>
-      <p><a href="https://en.wikipedia.org/wiki/Welfare_state" target="_blank" rel="noopener">Welfare state / Wikipedia</a> <span class="audit">[source lead checked]</span> source lead for social insurance and public programs.</p>
+      <p><a href="https://en.wikipedia.org/wiki/John_Maynard_Keynes" target="_blank" rel="noopener">John Maynard Keynes / Wikipedia</a> <span class="audit">[needs verification]</span> Topic source lead for Keynes and modern macroeconomic policy.</p>
     </section>
     <section class="panel"><a class="pill" href="../Hot2Trotski.html">Back to Hot2Trotski Hall</a></section>
   </main>
+  <script>
+    async function hydrateIdeaImages(){
+      for(const box of document.querySelectorAll('[data-wiki-image]')){
+        try{
+          const r=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(box.dataset.wikiImage)}`);
+          if(!r.ok) throw new Error('wiki');
+          const data=await r.json();
+          const src=data.originalimage?.source || data.thumbnail?.source;
+          if(src){
+            const alt=(data.title||box.dataset.wikiImage).replace(/"/g,'&quot;');
+            box.innerHTML=`<img src="${src}" alt="${alt}">`;
+          }else{
+            box.textContent='Source image listed below';
+          }
+        }catch(e){
+          box.textContent='Source image listed below';
+        }
+      }
+    }
+    hydrateIdeaImages();
+  </script>
 </body>
 </html>

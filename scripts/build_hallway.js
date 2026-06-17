@@ -53,6 +53,12 @@ function termId(term) {
     .replace(/^-+|-+$/g, "");
 }
 
+function titleCase(id) {
+  return String(id ?? "")
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
 function existingIdeaIds() {
   const ids = new Set();
   const ideasDir = path.join(repoRoot, "ideas");
@@ -74,7 +80,7 @@ function existingIdeaIds() {
 
 function ideaTitle(id) {
   const idea = packet.ideas.find((item) => item.id === id);
-  return idea ? idea.title : id;
+  return idea ? idea.title : titleCase(id);
 }
 
 function laneColor() {
@@ -108,6 +114,50 @@ function renderSources(sources, block = true) {
     const note = noteText ? ` ${escapeHtml(noteText)}` : "";
     return `<p><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener">${escapeHtml(source.title)}</a> <span class="audit">${escapeHtml(source.auditStatus)}</span>${note}</p>`;
   }).join("\n      ");
+}
+
+function wikiPageFromUrl(url) {
+  const text = String(url || "");
+  const match = text.match(/^https:\/\/en\.wikipedia\.org\/wiki\/([^#?]+)/i);
+  return match ? decodeURIComponent(match[1]) : "";
+}
+
+function ideaImageLead(idea) {
+  if (idea.imageWikiPage) {
+    return {
+      page: idea.imageWikiPage,
+      title: idea.imageTitle || `${idea.title} / image lead`,
+      url: `https://en.wikipedia.org/wiki/${encodeURIComponent(idea.imageWikiPage).replace(/%2F/g, "/")}`
+    };
+  }
+
+  if (packet.figure?.wikiPage) {
+    return {
+      page: packet.figure.wikiPage,
+      title: `${packet.figure.name} / image lead`,
+      url: `https://en.wikipedia.org/wiki/${encodeURIComponent(packet.figure.wikiPage).replace(/%2F/g, "/")}`
+    };
+  }
+
+  const wikiSource = (idea.sources || []).find((source) => wikiPageFromUrl(source.url));
+  if (wikiSource) {
+    return {
+      page: wikiPageFromUrl(wikiSource.url),
+      title: wikiSource.title,
+      url: wikiSource.url
+    };
+  }
+
+  return null;
+}
+
+function renderIdeaImage(idea) {
+  const lead = ideaImageLead(idea);
+  if (!lead) return "";
+  return `<aside class="idea-visual">
+        <div class="idea-image" data-wiki-image="${escapeHtml(lead.page)}">Loading source image</div>
+        <a class="idea-source-note" href="${escapeHtml(lead.url)}" target="_blank" rel="noopener">image/source lead: ${escapeHtml(lead.title)}</a>
+      </aside>`;
 }
 
 function renderExtraSections(idea) {
@@ -310,6 +360,7 @@ function buildIdea(idea) {
     laneColor: laneColor(),
     plainDefinition: escapeHtml(idea.plainDefinition),
     context: escapeHtml(idea.context),
+    ideaImageSection: renderIdeaImage(idea),
     whyMatters: escapeHtml(idea.whyMatters),
     extraSections: renderExtraSections(idea),
     relatedLinks: [...relatedFigureLinks, ...relatedIdeaLinks].join(""),

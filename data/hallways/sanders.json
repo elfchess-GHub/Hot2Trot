@@ -101,7 +101,7 @@
       "title": "Public Spending",
       "plainDefinition": "Public spending is government spending on services, infrastructure, benefits, wages, defense, or public investment.",
       "context": "In the Sanders path, public spending is part of democratic debate over what people fund together.",
-      "whyMatters": "Public spending matters because collective funding is real, but the page still has to name the specific policy and ownership structure.",
+      "whyMatters": "Public spending matters because collective funding is real. The next honest question is what kind of public action it is: funding, ownership, regulation, direct service, private contract, or social insurance.",
       "relatedFigures": [{ "label": "Bernie Sanders", "id": "sanders" }, { "label": "John Maynard Keynes", "id": "keynes" }],
       "relatedIdeas": ["public-goods", "mixed-economy"],
       "sources": [
