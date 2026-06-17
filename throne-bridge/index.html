@@ -1,0 +1,2487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Throne Bridge Audiobook</title>
+  <style>
+    :root {
+      --paper: #f3ead8;
+      --paper-2: #e3d1af;
+      --ink: #211912;
+      --muted: #6d5d49;
+      --line: rgba(70, 48, 27, .2);
+      --line-strong: rgba(70, 48, 27, .38);
+      --wine: #813b34;
+      --gold: #a77e32;
+      --green: #4f6045;
+      --blue: #526c7c;
+      --white: #fffaf0;
+      --shadow: 0 22px 70px rgba(45, 31, 16, .24);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: #cbb789;
+      background-image: url("assets/throne-bridge-manuscript-background-v1.png");
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    body.viewer-open {
+      overflow: hidden;
+    }
+
+    a { color: inherit; }
+
+    .page {
+      width: min(1180px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 24px 0 56px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .topbar a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .topbar a:hover { border-color: currentColor; }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: end;
+      margin-bottom: 28px;
+    }
+
+    .kicker {
+      color: var(--wine);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .hero-kicker {
+      display: inline-block;
+      padding: 4px 8px 3px;
+      background-color: rgba(255, 248, 226, .68);
+      border: 1px solid rgba(167, 126, 50, .42);
+      box-shadow: 0 6px 16px rgba(45, 31, 16, .14);
+      text-shadow: 0 1px 0 rgba(255, 250, 232, .75);
+    }
+
+    h1 {
+      margin: 8px 0 0;
+      font-size: clamp(42px, 7vw, 84px);
+      line-height: .96;
+      font-weight: 500;
+      letter-spacing: 0;
+      display: flex;
+      align-items: flex-end;
+      gap: .06em;
+      flex-wrap: wrap;
+    }
+
+    .title-initial {
+      display: inline-grid;
+      place-items: center;
+      border: 1px solid rgba(66, 42, 23, .56);
+      color: #f4e5ad;
+      background-color: rgba(113, 45, 37, .86);
+      box-shadow:
+        inset 0 0 0 4px rgba(193, 154, 67, .76),
+        inset 0 0 0 7px rgba(255, 248, 221, .28),
+        0 8px 20px rgba(43, 27, 14, .22);
+      text-shadow: 0 1px 0 rgba(35, 20, 10, .6);
+    }
+
+    .title-initial {
+      width: .84em;
+      height: .88em;
+      margin-bottom: -.05em;
+      font-size: 1.22em;
+      line-height: .74;
+    }
+
+    .reader {
+      display: grid;
+      grid-template-columns: minmax(0, 760px) minmax(280px, 1fr);
+      gap: 24px;
+      align-items: start;
+      margin-bottom: 34px;
+    }
+
+    .plate-panel,
+    .listen-panel,
+    .library {
+      border: 1px solid var(--line-strong);
+      background-color: rgba(255, 252, 241, .88);
+      box-shadow: 0 18px 52px rgba(45, 31, 16, .20);
+    }
+
+    .plate-panel {
+      position: relative;
+      padding: clamp(14px, 2vw, 22px);
+    }
+
+    .plate-panel::before,
+    .listen-panel::before,
+    .library::before {
+      content: "";
+      display: block;
+      height: 4px;
+      margin: -1px -1px 16px;
+      background-color: rgba(129, 59, 52, .78);
+      box-shadow: 0 2px 0 rgba(167, 126, 50, .65);
+    }
+
+    .chapter-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 14px;
+    }
+
+    .chapter-number {
+      color: var(--wine);
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 3px 0 0;
+      font-size: clamp(31px, 5vw, 58px);
+      line-height: 1.02;
+      font-weight: 500;
+    }
+
+    .duration {
+      color: var(--muted);
+      white-space: nowrap;
+      font-size: 15px;
+    }
+
+    .image-frame {
+      min-height: 460px;
+      display: grid;
+      place-items: center;
+      background-color: rgba(211, 187, 125, .38);
+      border: 1px solid var(--line);
+      padding: 12px;
+      box-shadow: inset 0 0 0 5px rgba(255, 248, 226, .28);
+    }
+
+    .image-frame.is-zoomable {
+      cursor: zoom-in;
+    }
+
+    .image-frame img {
+      max-width: 100%;
+      max-height: 760px;
+      display: block;
+      border: 1px solid rgba(53, 36, 20, .3);
+      box-shadow: 0 18px 44px rgba(43, 30, 17, .28);
+    }
+
+    .image-empty {
+      max-width: 30rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .listen-panel {
+      padding: 20px;
+      position: sticky;
+      top: 16px;
+    }
+
+    .chapter-select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line-strong);
+      background: var(--white);
+      color: var(--ink);
+      font: inherit;
+      padding: 0 10px;
+      margin-bottom: 14px;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 44px 1fr 44px;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .nav-button {
+      position: relative;
+      overflow: hidden;
+      background-color: rgba(242, 222, 165, .92);
+      background-image: none;
+      border-color: rgba(83, 57, 31, .50);
+    }
+
+    .nav-button::before,
+    .nav-button::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 19px;
+      height: 19px;
+      border: 1px solid rgba(79, 96, 69, .62);
+      transform: translate(-50%, -50%) rotate(45deg);
+      pointer-events: none;
+    }
+
+    .nav-button::after {
+      width: 29px;
+      height: 29px;
+      border-color: rgba(129, 59, 52, .48);
+    }
+
+    .nav-button span {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      width: 22px;
+      height: 28px;
+      background-color: rgba(242, 222, 165, .88);
+      font-size: 24px;
+      line-height: 1;
+      color: rgba(38, 27, 17, .92);
+      text-shadow: 0 1px 0 rgba(255, 248, 226, .78);
+    }
+
+    button,
+    .download-button {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 44px;
+      border: 1px solid rgba(93, 63, 28, .45);
+      background-color: rgba(232, 203, 126, .88);
+      background-image: none;
+      color: var(--ink);
+      font: 700 15px Georgia, "Times New Roman", serif;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 7px 18px rgba(62, 40, 18, .16);
+    }
+
+    button:hover,
+    .download-button:hover {
+      transform: translateY(-1px);
+    }
+
+    button:focus-visible,
+    .download-button:focus-visible,
+    .image-frame.is-zoomable:focus-visible {
+      outline: 2px solid rgba(129, 59, 52, .72);
+      outline-offset: 3px;
+    }
+
+    .play-main {
+      width: 100%;
+      margin-bottom: 12px;
+      background-color: rgba(211, 174, 78, .90);
+      border-color: rgba(92, 58, 24, .58);
+      box-shadow:
+        inset 0 0 0 3px rgba(255, 242, 196, .34),
+        0 8px 18px rgba(62, 40, 18, .16);
+    }
+
+    .play-main::before,
+    .download-button::before {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      border-top: 1px solid rgba(129, 59, 52, .35);
+      border-bottom: 1px solid rgba(79, 96, 69, .25);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .play-main::after,
+    .download-button::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      width: 7px;
+      height: 7px;
+      border: 1px solid rgba(129, 59, 52, .52);
+      transform: translateY(-50%) rotate(45deg);
+      pointer-events: none;
+    }
+
+    .download-button {
+      width: 100%;
+      margin-top: 12px;
+      background-color: rgba(255, 250, 240, .78);
+      border-color: rgba(93, 63, 28, .36);
+      box-shadow: inset 0 0 0 3px rgba(211, 174, 78, .14);
+    }
+
+    audio {
+      width: 100%;
+      display: block;
+      margin: 12px 0 0;
+    }
+
+    .panel-note {
+      margin-top: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .library {
+      padding: clamp(16px, 2vw, 24px);
+    }
+
+    .library-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 14px;
+      margin-bottom: 12px;
+    }
+
+    .library h2 {
+      font-size: clamp(28px, 4vw, 44px);
+    }
+
+    .audio-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .audio-row {
+      display: grid;
+      grid-template-columns: minmax(240px, .9fr) minmax(280px, 1.1fr);
+      gap: 14px;
+      align-items: center;
+      padding: 12px;
+      border: 1px solid var(--line);
+      background-color: rgba(255, 253, 246, .56);
+    }
+
+    .image-viewer {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      gap: 14px;
+      padding: clamp(14px, 3vw, 30px);
+      background-color: rgba(23, 18, 12, .88);
+      backdrop-filter: blur(2px);
+    }
+
+    .image-viewer[hidden] {
+      display: none;
+    }
+
+    .viewer-close {
+      justify-self: end;
+      min-width: 96px;
+      background-color: rgba(255, 248, 226, .92);
+    }
+
+    .viewer-image-wrap {
+      min-height: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .viewer-image-wrap img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      border: 1px solid rgba(244, 229, 173, .62);
+      background-color: rgba(255, 248, 226, .24);
+      box-shadow: 0 22px 70px rgba(0, 0, 0, .45);
+    }
+
+    .audio-title {
+      min-width: 0;
+    }
+
+    .audio-title b {
+      display: block;
+      overflow-wrap: anywhere;
+    }
+
+    .audio-title span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .reader {
+        grid-template-columns: 1fr;
+      }
+
+      .listen-panel {
+        position: static;
+      }
+
+      .image-frame {
+        min-height: 280px;
+      }
+
+      .audio-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        width: min(100% - 20px, 1180px);
+        padding-top: 14px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .chapter-heading,
+      .library-header {
+        display: block;
+      }
+
+      h1 {
+        gap: .08em;
+      }
+
+      .duration {
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav class="topbar" aria-label="Page navigation">
+      <a href="../">Hot2Trot</a>
+      <a href="#all-audio">All audio chapters</a>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="kicker hero-kicker">Illustrated audiobook</div>
+        <h1 aria-label="The Throne Bridge"><span class="title-initial" aria-hidden="true">T</span><span aria-hidden="true">he Throne Bridge</span></h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="reader" aria-label="Featured chapter player">
+        <div class="plate-panel">
+          <div class="chapter-heading">
+            <div class="chapter-number" id="chapterNumber">Chapter</div>
+            <div class="duration" id="chapterDuration"></div>
+          </div>
+          <div class="image-frame" id="imageFrame">
+            <img id="chapterImage" src="assets/images/chapter_010_otan_and_danon_trust.jpg" alt="">
+          </div>
+        </div>
+
+        <aside class="listen-panel">
+          <label class="kicker" for="chapterSelect">Choose chapter</label>
+          <select class="chapter-select" id="chapterSelect">
+            <option value="0">Chapter 1: Shadows in the Mirror</option>
+            <option value="1">Chapter 2: Danon the Quick</option>
+            <option value="2">Chapter 3: Unforeseen Consequences</option>
+            <option value="3">Chapter 4: Road&#x27;s End</option>
+            <option value="4">Chapter 5: Another Small Gamble</option>
+            <option value="5">Chapter 6: Dark Awakening</option>
+            <option value="6">Chapter 7: Danon Spots the Cro</option>
+            <option value="7">Chapter 8: Otan of the Cro</option>
+            <option value="8">Chapter 9: Kylanis</option>
+            <option value="9">Chapter 10: Otan and Danon Trust</option>
+            <option value="10">Chapter 11: A Boy&#x27;s Peaches</option>
+            <option value="11">Chapter 12: Otan&#x27;s Village Destroyed</option>
+            <option value="12">Chapter 13: Kylanis Goes to Town</option>
+            <option value="13">Chapter 14: Otan&#x27;s Capture</option>
+            <option value="14">Chapter 15: Kaleb Grows Up</option>
+            <option value="15">Chapter 16: Artisanimus</option>
+            <option value="16">Chapter 17: Danon and Selda</option>
+            <option value="17">Chapter 18: Palin and the Prince</option>
+            <option value="18">Chapter 19: Rescue</option>
+            <option value="19">Chapter 20: The Prince Searches In Vain</option>
+            <option value="20">Chapter 21: The Three Part Ways</option>
+            <option value="21">Chapter 22: The Battle</option>
+            <option value="22">Chapter 23: Danon&#x27;s rescue</option>
+            <option value="23">Chapter 24: Kaleb and the Goblyns</option>
+            <option value="24">Chapter 25: Danon and Kylanis Meet</option>
+            <option value="25">Chapter 26: Killing</option>
+            <option value="26">Chapter 27: Grukhan and the Scorpion</option>
+            <option value="27">Chapter 28: The Song of the Night</option>
+            <option value="28">Chapter 29: Under the Bridge</option>
+            <option value="29">Chapter 30: History</option>
+            <option value="30">Chapter 31: Children&#x27;s Games</option>
+            <option value="31">Chapter 32: The Tower Guard</option>
+            <option value="32">Chapter 33: Death Blade</option>
+            <option value="33">Chapter 34: The Death Card and Loyal Friend</option>
+            <option value="34">Chapter 35: Run</option>
+            <option value="35">Chapter 36: Wisdom</option>
+            <option value="36">Chapter 37: The War Bone</option>
+            <option value="37">Chapter 38: The White Sail</option>
+            <option value="38">Chapter 39: The Angel</option>
+            <option value="39">Chapter 40: We will not need to follow him</option>
+            <option value="40">Chapter 41: The Inn</option>
+            <option value="41">Chapter 42: The Atlin Giant</option>
+            <option value="42">Chapter 43: The Shadow&#x27;s Curse</option>
+            <option value="43">Chapter 44: Between Death and Sleep</option>
+            <option value="44">Chapter 45: Let&#x27;s Not Talk About Our Parents</option>
+            <option value="45">Chapter 46: Flee</option>
+            <option value="46">Chapter 47: The Throne</option>
+            <option value="47">Chapter 48: Safety</option>
+            <option value="48">Chapter 49: Sharky</option>
+            <option value="49">Chapter 50: The Stockade</option>
+            <option value="50">Chapter 51: The Kiss</option>
+            <option value="51">Chapter 52: Brother Sinus</option>
+            <option value="52">Chapter 53: Nothing</option>
+            <option value="53">Chapter 54: The Carriage</option>
+            <option value="54">Chapter 55: The Guti-nina</option>
+            <option value="55">Chapter 56: Something Very Valuable</option>
+            <option value="56">Chapter 57: Reason</option>
+            <option value="57">Chapter 58: Her People</option>
+            <option value="58">Chapter 59: Bozworth and Brother Peter</option>
+            <option value="59">Chapter 60: The Way of the Clan</option>
+            <option value="60">Chapter 61: Westholm</option>
+            <option value="61">Chapter 62: The Dream, the Nightmare and the Snake</option>
+            <option value="62">Chapter 63: A Witch</option>
+            <option value="63">Chapter 64: The Price</option>
+            <option value="64">Chapter 65: The Mob of Evil</option>
+            <option value="65">Chapter 66: Not Ever Again</option>
+            <option value="66">Chapter 67: The Misunderstanding</option>
+            <option value="67">Chapter 68: PART 11</option>
+            <option value="68">Chapter 69: The War of Three Forces</option>
+            <option value="69">Chapter 70: Dance With Me</option>
+            <option value="70">Chapter 71: Two Riders</option>
+            <option value="71">Chapter 72: Wisdom</option>
+            <option value="72">Chapter 73: The Truce</option>
+            <option value="73">Chapter 74: Practice</option>
+            <option value="74">Chapter 75: Anger</option>
+            <option value="75">Chapter 76: Neither a Warrior Nor a Wizard</option>
+            <option value="76">Chapter 77: The Froud</option>
+            <option value="77">Chapter 78: Playing with Horses</option>
+            <option value="78">Chapter 79: The Garden</option>
+            <option value="79">Chapter 80: Words of War</option>
+            <option value="80">Chapter 81: We Will Need Their Help</option>
+            <option value="81">Chapter 82: Rangers</option>
+            <option value="82">Chapter 83: I am a Queen</option>
+            <option value="83">Chapter 84: Seeds</option>
+            <option value="84">Chapter 85: The Oubliette</option>
+            <option value="85">Chapter 86: The Fool</option>
+            <option value="86">Chapter 87: Twelve Barrels</option>
+            <option value="87">Chapter 88: The Yearling Colt and a Horse</option>
+            <option value="88">Chapter 89: No Mistakes</option>
+            <option value="89">Chapter 90: Death Blade</option>
+            <option value="90">Chapter 91: Healer Protector</option>
+            <option value="91">Chapter 92: To Laugh</option>
+            <option value="92">Chapter 93: Glak and Otak Promise</option>
+            <option value="93">Chapter 94: Vande&#x27;he Rangers</option>
+            <option value="94">Chapter 95: Made Him Swear Not to Leave</option>
+            <option value="95">Chapter 96: The Rite of the War Bone</option>
+            <option value="96">Chapter 97: Bleating Goat&#x27;s Udder</option>
+            <option value="97">Chapter 98: The Alliance - Kaleb Smiled</option>
+            <option value="98">Chapter 99: The Greater Evil</option>
+            <option value="99">Chapter 100: The Mirror</option>
+            <option value="100">Chapter 101: The Bridge</option>
+            <option value="101">Chapter 102: The Sprite</option>
+            <option value="102">Chapter 103: To Kill a Snake</option>
+            <option value="103">Chapter 104: The Bridge of Thrones</option>
+            <option value="104">Chapter 105: The End</option>
+          </select>
+          <div class="controls">
+            <button type="button" class="nav-button" id="prevButton" aria-label="Previous chapter"><span aria-hidden="true">&lsaquo;</span></button>
+            <button type="button" class="play-main" id="playButton">Play chapter</button>
+            <button type="button" class="nav-button" id="nextButton" aria-label="Next chapter"><span aria-hidden="true">&rsaquo;</span></button>
+          </div>
+          <audio id="featureAudio" controls preload="none"></audio>
+          <a class="download-button" id="imageDownload" href="#" download>Download image</a>
+          <p class="panel-note" id="panelNote">Images are available for selected illustrated chapters. The full audiobook list is below.</p>
+        </aside>
+      </section>
+
+      <section class="library" id="all-audio">
+        <div class="library-header">
+          <div>
+            <div class="kicker">Complete audiobook</div>
+            <h2>All audio chapters</h2>
+          </div>
+          <div class="duration">105 files</div>
+        </div>
+        <div class="audio-list">
+          <article class="audio-row" data-chapter="1">
+            <div class="audio-title">
+              <b>Chapter 1: Shadows in the Mirror</b>
+              <span>0:49</span>
+            </div>
+            <audio controls preload="none" src="audio/001_Shadows_in_the_Mirror/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="2">
+            <div class="audio-title">
+              <b>Chapter 2: Danon the Quick</b>
+              <span>2:43</span>
+            </div>
+            <audio controls preload="none" src="audio/002_Danon_the_Quick/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="3">
+            <div class="audio-title">
+              <b>Chapter 3: Unforeseen Consequences</b>
+              <span>3:38</span>
+            </div>
+            <audio controls preload="none" src="audio/003_Unforeseen_Consequences/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="4">
+            <div class="audio-title">
+              <b>Chapter 4: Road&#x27;s End</b>
+              <span>3:05</span>
+            </div>
+            <audio controls preload="none" src="audio/004_Roads_End/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="5">
+            <div class="audio-title">
+              <b>Chapter 5: Another Small Gamble</b>
+              <span>3:56</span>
+            </div>
+            <audio controls preload="none" src="audio/005_Another_Small_Gamble/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="6">
+            <div class="audio-title">
+              <b>Chapter 6: Dark Awakening</b>
+              <span>3:02</span>
+            </div>
+            <audio controls preload="none" src="audio/006_Dark_Awakening/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="7">
+            <div class="audio-title">
+              <b>Chapter 7: Danon Spots the Cro</b>
+              <span>1:07</span>
+            </div>
+            <audio controls preload="none" src="audio/007_Danon_Spots_the_Cro/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="8">
+            <div class="audio-title">
+              <b>Chapter 8: Otan of the Cro</b>
+              <span>6:06</span>
+            </div>
+            <audio controls preload="none" src="audio/008_Otan_of_the_Cro/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="9">
+            <div class="audio-title">
+              <b>Chapter 9: Kylanis</b>
+              <span>4:43</span>
+            </div>
+            <audio controls preload="none" src="audio/009_Kylanis/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="10">
+            <div class="audio-title">
+              <b>Chapter 10: Otan and Danon Trust</b>
+              <span>9:46</span>
+            </div>
+            <audio controls preload="none" src="audio/010_Otan_and_Danon_Trust/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="11">
+            <div class="audio-title">
+              <b>Chapter 11: A Boy&#x27;s Peaches</b>
+              <span>3:57</span>
+            </div>
+            <audio controls preload="none" src="audio/011_A_Boys_Peaches/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="12">
+            <div class="audio-title">
+              <b>Chapter 12: Otan&#x27;s Village Destroyed</b>
+              <span>3:41</span>
+            </div>
+            <audio controls preload="none" src="audio/012_Otans_Village_Destroyed/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="13">
+            <div class="audio-title">
+              <b>Chapter 13: Kylanis Goes to Town</b>
+              <span>7:29</span>
+            </div>
+            <audio controls preload="none" src="audio/013_Kylanis_Goes_to_Town/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="14">
+            <div class="audio-title">
+              <b>Chapter 14: Otan&#x27;s Capture</b>
+              <span>3:52</span>
+            </div>
+            <audio controls preload="none" src="audio/014_Otans_Capture/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="15">
+            <div class="audio-title">
+              <b>Chapter 15: Kaleb Grows Up</b>
+              <span>7:44</span>
+            </div>
+            <audio controls preload="none" src="audio/015_Kaleb_Grows_Up/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="16">
+            <div class="audio-title">
+              <b>Chapter 16: Artisanimus</b>
+              <span>7:13</span>
+            </div>
+            <audio controls preload="none" src="audio/016_Artisanimus/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="17">
+            <div class="audio-title">
+              <b>Chapter 17: Danon and Selda</b>
+              <span>16:06</span>
+            </div>
+            <audio controls preload="none" src="audio/017_Danon_and_Selda/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="18">
+            <div class="audio-title">
+              <b>Chapter 18: Palin and the Prince</b>
+              <span>3:26</span>
+            </div>
+            <audio controls preload="none" src="audio/018_Palin_and_the_Prince/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="19">
+            <div class="audio-title">
+              <b>Chapter 19: Rescue</b>
+              <span>3:52</span>
+            </div>
+            <audio controls preload="none" src="audio/019_Rescue/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="20">
+            <div class="audio-title">
+              <b>Chapter 20: The Prince Searches In Vain</b>
+              <span>3:30</span>
+            </div>
+            <audio controls preload="none" src="audio/020_The_Prince_Searches_In_Vain/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="21">
+            <div class="audio-title">
+              <b>Chapter 21: The Three Part Ways</b>
+              <span>3:54</span>
+            </div>
+            <audio controls preload="none" src="audio/021_The_Three_Part_Ways/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="22">
+            <div class="audio-title">
+              <b>Chapter 22: The Battle</b>
+              <span>3:16</span>
+            </div>
+            <audio controls preload="none" src="audio/022_The_Battle/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="23">
+            <div class="audio-title">
+              <b>Chapter 23: Danon&#x27;s rescue</b>
+              <span>5:19</span>
+            </div>
+            <audio controls preload="none" src="audio/023_Danons_rescue/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="24">
+            <div class="audio-title">
+              <b>Chapter 24: Kaleb and the Goblyns</b>
+              <span>12:05</span>
+            </div>
+            <audio controls preload="none" src="audio/024_Kaleb_and_the_Goblyns/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="25">
+            <div class="audio-title">
+              <b>Chapter 25: Danon and Kylanis Meet</b>
+              <span>17:18</span>
+            </div>
+            <audio controls preload="none" src="audio/025_Danon_and_Kylanis_Meet/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="26">
+            <div class="audio-title">
+              <b>Chapter 26: Killing</b>
+              <span>2:46</span>
+            </div>
+            <audio controls preload="none" src="audio/026_Killing/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="27">
+            <div class="audio-title">
+              <b>Chapter 27: Grukhan and the Scorpion</b>
+              <span>11:12</span>
+            </div>
+            <audio controls preload="none" src="audio/027_Grukhan_and_the_Scorpion/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="28">
+            <div class="audio-title">
+              <b>Chapter 28: The Song of the Night</b>
+              <span>10:33</span>
+            </div>
+            <audio controls preload="none" src="audio/028_The_Song_of_the_Night/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="29">
+            <div class="audio-title">
+              <b>Chapter 29: Under the Bridge</b>
+              <span>4:44</span>
+            </div>
+            <audio controls preload="none" src="audio/029_Under_the_Bridge/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="30">
+            <div class="audio-title">
+              <b>Chapter 30: History</b>
+              <span>4:55</span>
+            </div>
+            <audio controls preload="none" src="audio/030_History/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="31">
+            <div class="audio-title">
+              <b>Chapter 31: Children&#x27;s Games</b>
+              <span>8:31</span>
+            </div>
+            <audio controls preload="none" src="audio/031_Childrens_Games/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="32">
+            <div class="audio-title">
+              <b>Chapter 32: The Tower Guard</b>
+              <span>3:13</span>
+            </div>
+            <audio controls preload="none" src="audio/032_The_Tower_Guard/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="33">
+            <div class="audio-title">
+              <b>Chapter 33: Death Blade</b>
+              <span>10:20</span>
+            </div>
+            <audio controls preload="none" src="audio/033_Death_Blade/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="34">
+            <div class="audio-title">
+              <b>Chapter 34: The Death Card and Loyal Friend</b>
+              <span>10:09</span>
+            </div>
+            <audio controls preload="none" src="audio/034_The_Death_Card_and_Loyal_Friend/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="35">
+            <div class="audio-title">
+              <b>Chapter 35: Run</b>
+              <span>3:36</span>
+            </div>
+            <audio controls preload="none" src="audio/035_Run/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="36">
+            <div class="audio-title">
+              <b>Chapter 36: Wisdom</b>
+              <span>3:07</span>
+            </div>
+            <audio controls preload="none" src="audio/036_Wisdom/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="37">
+            <div class="audio-title">
+              <b>Chapter 37: The War Bone</b>
+              <span>10:08</span>
+            </div>
+            <audio controls preload="none" src="audio/037_The_War_Bone/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="38">
+            <div class="audio-title">
+              <b>Chapter 38: The White Sail</b>
+              <span>7:54</span>
+            </div>
+            <audio controls preload="none" src="audio/038_The_White_Sail/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="39">
+            <div class="audio-title">
+              <b>Chapter 39: The Angel</b>
+              <span>3:00</span>
+            </div>
+            <audio controls preload="none" src="audio/039_The_Angel/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="40">
+            <div class="audio-title">
+              <b>Chapter 40: We will not need to follow him</b>
+              <span>2:23</span>
+            </div>
+            <audio controls preload="none" src="audio/040_We_will_not_need_to_follow_him/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="41">
+            <div class="audio-title">
+              <b>Chapter 41: The Inn</b>
+              <span>4:21</span>
+            </div>
+            <audio controls preload="none" src="audio/041_The_Inn/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="42">
+            <div class="audio-title">
+              <b>Chapter 42: The Atlin Giant</b>
+              <span>12:02</span>
+            </div>
+            <audio controls preload="none" src="audio/042_The_Atlin_Giant/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="43">
+            <div class="audio-title">
+              <b>Chapter 43: The Shadow&#x27;s Curse</b>
+              <span>8:14</span>
+            </div>
+            <audio controls preload="none" src="audio/043_The_Shadows_Curse/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="44">
+            <div class="audio-title">
+              <b>Chapter 44: Between Death and Sleep</b>
+              <span>3:32</span>
+            </div>
+            <audio controls preload="none" src="audio/044_Between_Death_and_Sleep/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="45">
+            <div class="audio-title">
+              <b>Chapter 45: Let&#x27;s Not Talk About Our Parents</b>
+              <span>3:05</span>
+            </div>
+            <audio controls preload="none" src="audio/045_Lets_Not_Talk_About_Our_Parents/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="46">
+            <div class="audio-title">
+              <b>Chapter 46: Flee</b>
+              <span>4:58</span>
+            </div>
+            <audio controls preload="none" src="audio/046_Flee/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="47">
+            <div class="audio-title">
+              <b>Chapter 47: The Throne</b>
+              <span>5:46</span>
+            </div>
+            <audio controls preload="none" src="audio/047_The_Throne/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="48">
+            <div class="audio-title">
+              <b>Chapter 48: Safety</b>
+              <span>2:12</span>
+            </div>
+            <audio controls preload="none" src="audio/048_Safety/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="49">
+            <div class="audio-title">
+              <b>Chapter 49: Sharky</b>
+              <span>6:18</span>
+            </div>
+            <audio controls preload="none" src="audio/049_Sharky/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="50">
+            <div class="audio-title">
+              <b>Chapter 50: The Stockade</b>
+              <span>3:10</span>
+            </div>
+            <audio controls preload="none" src="audio/050_The_Stockade/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="51">
+            <div class="audio-title">
+              <b>Chapter 51: The Kiss</b>
+              <span>2:27</span>
+            </div>
+            <audio controls preload="none" src="audio/051_The_Kiss/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="52">
+            <div class="audio-title">
+              <b>Chapter 52: Brother Sinus</b>
+              <span>5:47</span>
+            </div>
+            <audio controls preload="none" src="audio/052_Brother_Sinus/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="53">
+            <div class="audio-title">
+              <b>Chapter 53: Nothing</b>
+              <span>2:52</span>
+            </div>
+            <audio controls preload="none" src="audio/053_Nothing/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="54">
+            <div class="audio-title">
+              <b>Chapter 54: The Carriage</b>
+              <span>5:10</span>
+            </div>
+            <audio controls preload="none" src="audio/054_The_Carriage/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="55">
+            <div class="audio-title">
+              <b>Chapter 55: The Guti-nina</b>
+              <span>5:34</span>
+            </div>
+            <audio controls preload="none" src="audio/055_The_Guti-nina/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="56">
+            <div class="audio-title">
+              <b>Chapter 56: Something Very Valuable</b>
+              <span>5:08</span>
+            </div>
+            <audio controls preload="none" src="audio/056_Something_Very_Valuable/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="57">
+            <div class="audio-title">
+              <b>Chapter 57: Reason</b>
+              <span>2:58</span>
+            </div>
+            <audio controls preload="none" src="audio/057_Reason/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="58">
+            <div class="audio-title">
+              <b>Chapter 58: Her People</b>
+              <span>4:47</span>
+            </div>
+            <audio controls preload="none" src="audio/058_Her_People/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="59">
+            <div class="audio-title">
+              <b>Chapter 59: Bozworth and Brother Peter</b>
+              <span>7:57</span>
+            </div>
+            <audio controls preload="none" src="audio/059_Bozworth_and_Brother_Peter/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="60">
+            <div class="audio-title">
+              <b>Chapter 60: The Way of the Clan</b>
+              <span>3:38</span>
+            </div>
+            <audio controls preload="none" src="audio/060_The_Way_of_the_Clan/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="61">
+            <div class="audio-title">
+              <b>Chapter 61: Westholm</b>
+              <span>5:15</span>
+            </div>
+            <audio controls preload="none" src="audio/061_Westholm/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="62">
+            <div class="audio-title">
+              <b>Chapter 62: The Dream, the Nightmare and the Snake</b>
+              <span>6:12</span>
+            </div>
+            <audio controls preload="none" src="audio/062_The_Dream_the_Nightmare_and_the_Snake/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="63">
+            <div class="audio-title">
+              <b>Chapter 63: A Witch</b>
+              <span>5:30</span>
+            </div>
+            <audio controls preload="none" src="audio/063_A_Witch/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="64">
+            <div class="audio-title">
+              <b>Chapter 64: The Price</b>
+              <span>8:25</span>
+            </div>
+            <audio controls preload="none" src="audio/064_The_Price/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="65">
+            <div class="audio-title">
+              <b>Chapter 65: The Mob of Evil</b>
+              <span>3:48</span>
+            </div>
+            <audio controls preload="none" src="audio/065_The_Mob_of_Evil/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="66">
+            <div class="audio-title">
+              <b>Chapter 66: Not Ever Again</b>
+              <span>4:32</span>
+            </div>
+            <audio controls preload="none" src="audio/066_Not_Ever_Again/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="67">
+            <div class="audio-title">
+              <b>Chapter 67: The Misunderstanding</b>
+              <span>11:28</span>
+            </div>
+            <audio controls preload="none" src="audio/067_The_Misunderstanding/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="68">
+            <div class="audio-title">
+              <b>Chapter 68: PART 11</b>
+              <span>0:03</span>
+            </div>
+            <audio controls preload="none" src="audio/068_PART_11/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="69">
+            <div class="audio-title">
+              <b>Chapter 69: The War of Three Forces</b>
+              <span>2:48</span>
+            </div>
+            <audio controls preload="none" src="audio/069_The_War_of_Three_Forces/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="70">
+            <div class="audio-title">
+              <b>Chapter 70: Dance With Me</b>
+              <span>9:28</span>
+            </div>
+            <audio controls preload="none" src="audio/070_Dance_With_Me/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="71">
+            <div class="audio-title">
+              <b>Chapter 71: Two Riders</b>
+              <span>7:34</span>
+            </div>
+            <audio controls preload="none" src="audio/071_Two_Riders/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="72">
+            <div class="audio-title">
+              <b>Chapter 72: Wisdom</b>
+              <span>6:01</span>
+            </div>
+            <audio controls preload="none" src="audio/072_Wisdom/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="73">
+            <div class="audio-title">
+              <b>Chapter 73: The Truce</b>
+              <span>3:08</span>
+            </div>
+            <audio controls preload="none" src="audio/073_The_Truce/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="74">
+            <div class="audio-title">
+              <b>Chapter 74: Practice</b>
+              <span>9:34</span>
+            </div>
+            <audio controls preload="none" src="audio/074_Practice/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="75">
+            <div class="audio-title">
+              <b>Chapter 75: Anger</b>
+              <span>5:18</span>
+            </div>
+            <audio controls preload="none" src="audio/075_Anger/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="76">
+            <div class="audio-title">
+              <b>Chapter 76: Neither a Warrior Nor a Wizard</b>
+              <span>11:27</span>
+            </div>
+            <audio controls preload="none" src="audio/076_Neither_a_Warrior_Nor_a_Wizard/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="77">
+            <div class="audio-title">
+              <b>Chapter 77: The Froud</b>
+              <span>9:21</span>
+            </div>
+            <audio controls preload="none" src="audio/077_The_Froud/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="78">
+            <div class="audio-title">
+              <b>Chapter 78: Playing with Horses</b>
+              <span>5:11</span>
+            </div>
+            <audio controls preload="none" src="audio/078_Playing_with_Horses/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="79">
+            <div class="audio-title">
+              <b>Chapter 79: The Garden</b>
+              <span>4:58</span>
+            </div>
+            <audio controls preload="none" src="audio/079_The_Garden/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="80">
+            <div class="audio-title">
+              <b>Chapter 80: Words of War</b>
+              <span>14:55</span>
+            </div>
+            <audio controls preload="none" src="audio/080_Words_of_War/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="81">
+            <div class="audio-title">
+              <b>Chapter 81: We Will Need Their Help</b>
+              <span>7:58</span>
+            </div>
+            <audio controls preload="none" src="audio/081_We_Will_Need_Their_Help/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="82">
+            <div class="audio-title">
+              <b>Chapter 82: Rangers</b>
+              <span>6:39</span>
+            </div>
+            <audio controls preload="none" src="audio/082_Rangers/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="83">
+            <div class="audio-title">
+              <b>Chapter 83: I am a Queen</b>
+              <span>7:05</span>
+            </div>
+            <audio controls preload="none" src="audio/083_I_am_a_Queen/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="84">
+            <div class="audio-title">
+              <b>Chapter 84: Seeds</b>
+              <span>8:58</span>
+            </div>
+            <audio controls preload="none" src="audio/084_Seeds/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="85">
+            <div class="audio-title">
+              <b>Chapter 85: The Oubliette</b>
+              <span>8:19</span>
+            </div>
+            <audio controls preload="none" src="audio/085_The_Oubliette/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="86">
+            <div class="audio-title">
+              <b>Chapter 86: The Fool</b>
+              <span>4:08</span>
+            </div>
+            <audio controls preload="none" src="audio/086_The_Fool/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="87">
+            <div class="audio-title">
+              <b>Chapter 87: Twelve Barrels</b>
+              <span>2:05</span>
+            </div>
+            <audio controls preload="none" src="audio/087_Twelve_Barrels/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="88">
+            <div class="audio-title">
+              <b>Chapter 88: The Yearling Colt and a Horse</b>
+              <span>6:15</span>
+            </div>
+            <audio controls preload="none" src="audio/088_The_Yearling_Colt_and_a_Horse/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="89">
+            <div class="audio-title">
+              <b>Chapter 89: No Mistakes</b>
+              <span>2:35</span>
+            </div>
+            <audio controls preload="none" src="audio/089_No_Mistakes/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="90">
+            <div class="audio-title">
+              <b>Chapter 90: Death Blade</b>
+              <span>5:22</span>
+            </div>
+            <audio controls preload="none" src="audio/090_Death_Blade/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="91">
+            <div class="audio-title">
+              <b>Chapter 91: Healer Protector</b>
+              <span>2:02</span>
+            </div>
+            <audio controls preload="none" src="audio/091_Healer_Protector/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="92">
+            <div class="audio-title">
+              <b>Chapter 92: To Laugh</b>
+              <span>4:10</span>
+            </div>
+            <audio controls preload="none" src="audio/092_To_Laugh/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="93">
+            <div class="audio-title">
+              <b>Chapter 93: Glak and Otak Promise</b>
+              <span>11:27</span>
+            </div>
+            <audio controls preload="none" src="audio/093_Glak_and_Otak_Promise/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="94">
+            <div class="audio-title">
+              <b>Chapter 94: Vande&#x27;he Rangers</b>
+              <span>1:38</span>
+            </div>
+            <audio controls preload="none" src="audio/094_Vandehe_Rangers/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="95">
+            <div class="audio-title">
+              <b>Chapter 95: Made Him Swear Not to Leave</b>
+              <span>1:36</span>
+            </div>
+            <audio controls preload="none" src="audio/095_Made_Him_Swear_Not_to_Leave/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="96">
+            <div class="audio-title">
+              <b>Chapter 96: The Rite of the War Bone</b>
+              <span>4:05</span>
+            </div>
+            <audio controls preload="none" src="audio/096_The_Rite_of_the_War_Bone/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="97">
+            <div class="audio-title">
+              <b>Chapter 97: Bleating Goat&#x27;s Udder</b>
+              <span>6:25</span>
+            </div>
+            <audio controls preload="none" src="audio/097_Bleating_Goats_Udder/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="98">
+            <div class="audio-title">
+              <b>Chapter 98: The Alliance - Kaleb Smiled</b>
+              <span>6:59</span>
+            </div>
+            <audio controls preload="none" src="audio/098_The_Alliance_-_Kaleb_Smiled/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="99">
+            <div class="audio-title">
+              <b>Chapter 99: The Greater Evil</b>
+              <span>5:24</span>
+            </div>
+            <audio controls preload="none" src="audio/099_The_Greater_Evil/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="100">
+            <div class="audio-title">
+              <b>Chapter 100: The Mirror</b>
+              <span>5:01</span>
+            </div>
+            <audio controls preload="none" src="audio/100_The_Mirror/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="101">
+            <div class="audio-title">
+              <b>Chapter 101: The Bridge</b>
+              <span>6:24</span>
+            </div>
+            <audio controls preload="none" src="audio/101_The_Bridge/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="102">
+            <div class="audio-title">
+              <b>Chapter 102: The Sprite</b>
+              <span>6:05</span>
+            </div>
+            <audio controls preload="none" src="audio/102_The_Sprite/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="103">
+            <div class="audio-title">
+              <b>Chapter 103: To Kill a Snake</b>
+              <span>4:19</span>
+            </div>
+            <audio controls preload="none" src="audio/103_To_Kill_a_Snake/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="104">
+            <div class="audio-title">
+              <b>Chapter 104: The Bridge of Thrones</b>
+              <span>4:15</span>
+            </div>
+            <audio controls preload="none" src="audio/104_The_Bridge_of_Thrones/episode_small.mp3"></audio>
+          </article>
+          <article class="audio-row" data-chapter="105">
+            <div class="audio-title">
+              <b>Chapter 105: The End</b>
+              <span>0:03</span>
+            </div>
+            <audio controls preload="none" src="audio/105_The_End/episode_small.mp3"></audio>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="image-viewer" id="imageViewer" role="dialog" aria-modal="true" aria-label="Full-size chapter image" hidden>
+    <button type="button" class="viewer-close" id="viewerClose">Close</button>
+    <div class="viewer-image-wrap" id="viewerImageWrap">
+      <img id="viewerImage" alt="">
+    </div>
+  </div>
+
+  <script>
+    const chapters = [
+  {
+    "number": "1",
+    "title": "Shadows in the Mirror",
+    "label": "Chapter 1: Shadows in the Mirror",
+    "audio": "audio/001_Shadows_in_the_Mirror/episode_small.mp3",
+    "image": "",
+    "duration": "0:49",
+    "hasAudio": "true"
+  },
+  {
+    "number": "2",
+    "title": "Danon the Quick",
+    "label": "Chapter 2: Danon the Quick",
+    "audio": "audio/002_Danon_the_Quick/episode_small.mp3",
+    "image": "",
+    "duration": "2:43",
+    "hasAudio": "true"
+  },
+  {
+    "number": "3",
+    "title": "Unforeseen Consequences",
+    "label": "Chapter 3: Unforeseen Consequences",
+    "audio": "audio/003_Unforeseen_Consequences/episode_small.mp3",
+    "image": "",
+    "duration": "3:38",
+    "hasAudio": "true"
+  },
+  {
+    "number": "4",
+    "title": "Road's End",
+    "label": "Chapter 4: Road's End",
+    "audio": "audio/004_Roads_End/episode_small.mp3",
+    "image": "",
+    "duration": "3:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "5",
+    "title": "Another Small Gamble",
+    "label": "Chapter 5: Another Small Gamble",
+    "audio": "audio/005_Another_Small_Gamble/episode_small.mp3",
+    "image": "",
+    "duration": "3:56",
+    "hasAudio": "true"
+  },
+  {
+    "number": "6",
+    "title": "Dark Awakening",
+    "label": "Chapter 6: Dark Awakening",
+    "audio": "audio/006_Dark_Awakening/episode_small.mp3",
+    "image": "",
+    "duration": "3:02",
+    "hasAudio": "true"
+  },
+  {
+    "number": "7",
+    "title": "Danon Spots the Cro",
+    "label": "Chapter 7: Danon Spots the Cro",
+    "audio": "audio/007_Danon_Spots_the_Cro/episode_small.mp3",
+    "image": "",
+    "duration": "1:07",
+    "hasAudio": "true"
+  },
+  {
+    "number": "8",
+    "title": "Otan of the Cro",
+    "label": "Chapter 8: Otan of the Cro",
+    "audio": "audio/008_Otan_of_the_Cro/episode_small.mp3",
+    "image": "",
+    "duration": "6:06",
+    "hasAudio": "true"
+  },
+  {
+    "number": "9",
+    "title": "Kylanis",
+    "label": "Chapter 9: Kylanis",
+    "audio": "audio/009_Kylanis/episode_small.mp3",
+    "image": "",
+    "duration": "4:43",
+    "hasAudio": "true"
+  },
+  {
+    "number": "10",
+    "title": "Otan and Danon Trust",
+    "label": "Chapter 10: Otan and Danon Trust",
+    "audio": "audio/010_Otan_and_Danon_Trust/episode_small.mp3",
+    "image": "assets/images/chapter_010_otan_and_danon_trust.jpg",
+    "duration": "9:46",
+    "hasAudio": "true"
+  },
+  {
+    "number": "11",
+    "title": "A Boy's Peaches",
+    "label": "Chapter 11: A Boy's Peaches",
+    "audio": "audio/011_A_Boys_Peaches/episode_small.mp3",
+    "image": "assets/images/chapter_011_a_boys_peaches.jpg",
+    "duration": "3:57",
+    "hasAudio": "true"
+  },
+  {
+    "number": "12",
+    "title": "Otan's Village Destroyed",
+    "label": "Chapter 12: Otan's Village Destroyed",
+    "audio": "audio/012_Otans_Village_Destroyed/episode_small.mp3",
+    "image": "",
+    "duration": "3:41",
+    "hasAudio": "true"
+  },
+  {
+    "number": "13",
+    "title": "Kylanis Goes to Town",
+    "label": "Chapter 13: Kylanis Goes to Town",
+    "audio": "audio/013_Kylanis_Goes_to_Town/episode_small.mp3",
+    "image": "assets/images/chapter_013_kylanis_goes_to_town.jpg",
+    "duration": "7:29",
+    "hasAudio": "true"
+  },
+  {
+    "number": "14",
+    "title": "Otan's Capture",
+    "label": "Chapter 14: Otan's Capture",
+    "audio": "audio/014_Otans_Capture/episode_small.mp3",
+    "image": "assets/images/chapter_014_otans_capture.jpg",
+    "duration": "3:52",
+    "hasAudio": "true"
+  },
+  {
+    "number": "15",
+    "title": "Kaleb Grows Up",
+    "label": "Chapter 15: Kaleb Grows Up",
+    "audio": "audio/015_Kaleb_Grows_Up/episode_small.mp3",
+    "image": "assets/images/chapter_015_kaleb_grows_up.jpg",
+    "duration": "7:44",
+    "hasAudio": "true"
+  },
+  {
+    "number": "16",
+    "title": "Artisanimus",
+    "label": "Chapter 16: Artisanimus",
+    "audio": "audio/016_Artisanimus/episode_small.mp3",
+    "image": "assets/images/chapter_016_artisanimus.jpg",
+    "duration": "7:13",
+    "hasAudio": "true"
+  },
+  {
+    "number": "17",
+    "title": "Danon and Selda",
+    "label": "Chapter 17: Danon and Selda",
+    "audio": "audio/017_Danon_and_Selda/episode_small.mp3",
+    "image": "assets/images/chapter_017_danon_and_selda.jpg",
+    "duration": "16:06",
+    "hasAudio": "true"
+  },
+  {
+    "number": "18",
+    "title": "Palin and the Prince",
+    "label": "Chapter 18: Palin and the Prince",
+    "audio": "audio/018_Palin_and_the_Prince/episode_small.mp3",
+    "image": "assets/images/chapter_018_palin_and_the_prince.jpg",
+    "duration": "3:26",
+    "hasAudio": "true"
+  },
+  {
+    "number": "19",
+    "title": "Rescue",
+    "label": "Chapter 19: Rescue",
+    "audio": "audio/019_Rescue/episode_small.mp3",
+    "image": "",
+    "duration": "3:52",
+    "hasAudio": "true"
+  },
+  {
+    "number": "20",
+    "title": "The Prince Searches In Vain",
+    "label": "Chapter 20: The Prince Searches In Vain",
+    "audio": "audio/020_The_Prince_Searches_In_Vain/episode_small.mp3",
+    "image": "",
+    "duration": "3:30",
+    "hasAudio": "true"
+  },
+  {
+    "number": "21",
+    "title": "The Three Part Ways",
+    "label": "Chapter 21: The Three Part Ways",
+    "audio": "audio/021_The_Three_Part_Ways/episode_small.mp3",
+    "image": "",
+    "duration": "3:54",
+    "hasAudio": "true"
+  },
+  {
+    "number": "22",
+    "title": "The Battle",
+    "label": "Chapter 22: The Battle",
+    "audio": "audio/022_The_Battle/episode_small.mp3",
+    "image": "",
+    "duration": "3:16",
+    "hasAudio": "true"
+  },
+  {
+    "number": "23",
+    "title": "Danon's rescue",
+    "label": "Chapter 23: Danon's rescue",
+    "audio": "audio/023_Danons_rescue/episode_small.mp3",
+    "image": "",
+    "duration": "5:19",
+    "hasAudio": "true"
+  },
+  {
+    "number": "24",
+    "title": "Kaleb and the Goblyns",
+    "label": "Chapter 24: Kaleb and the Goblyns",
+    "audio": "audio/024_Kaleb_and_the_Goblyns/episode_small.mp3",
+    "image": "",
+    "duration": "12:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "25",
+    "title": "Danon and Kylanis Meet",
+    "label": "Chapter 25: Danon and Kylanis Meet",
+    "audio": "audio/025_Danon_and_Kylanis_Meet/episode_small.mp3",
+    "image": "",
+    "duration": "17:18",
+    "hasAudio": "true"
+  },
+  {
+    "number": "26",
+    "title": "Killing",
+    "label": "Chapter 26: Killing",
+    "audio": "audio/026_Killing/episode_small.mp3",
+    "image": "",
+    "duration": "2:46",
+    "hasAudio": "true"
+  },
+  {
+    "number": "27",
+    "title": "Grukhan and the Scorpion",
+    "label": "Chapter 27: Grukhan and the Scorpion",
+    "audio": "audio/027_Grukhan_and_the_Scorpion/episode_small.mp3",
+    "image": "",
+    "duration": "11:12",
+    "hasAudio": "true"
+  },
+  {
+    "number": "28",
+    "title": "The Song of the Night",
+    "label": "Chapter 28: The Song of the Night",
+    "audio": "audio/028_The_Song_of_the_Night/episode_small.mp3",
+    "image": "",
+    "duration": "10:33",
+    "hasAudio": "true"
+  },
+  {
+    "number": "29",
+    "title": "Under the Bridge",
+    "label": "Chapter 29: Under the Bridge",
+    "audio": "audio/029_Under_the_Bridge/episode_small.mp3",
+    "image": "",
+    "duration": "4:44",
+    "hasAudio": "true"
+  },
+  {
+    "number": "30",
+    "title": "History",
+    "label": "Chapter 30: History",
+    "audio": "audio/030_History/episode_small.mp3",
+    "image": "",
+    "duration": "4:55",
+    "hasAudio": "true"
+  },
+  {
+    "number": "31",
+    "title": "Children's Games",
+    "label": "Chapter 31: Children's Games",
+    "audio": "audio/031_Childrens_Games/episode_small.mp3",
+    "image": "",
+    "duration": "8:31",
+    "hasAudio": "true"
+  },
+  {
+    "number": "32",
+    "title": "The Tower Guard",
+    "label": "Chapter 32: The Tower Guard",
+    "audio": "audio/032_The_Tower_Guard/episode_small.mp3",
+    "image": "",
+    "duration": "3:13",
+    "hasAudio": "true"
+  },
+  {
+    "number": "33",
+    "title": "Death Blade",
+    "label": "Chapter 33: Death Blade",
+    "audio": "audio/033_Death_Blade/episode_small.mp3",
+    "image": "",
+    "duration": "10:20",
+    "hasAudio": "true"
+  },
+  {
+    "number": "34",
+    "title": "The Death Card and Loyal Friend",
+    "label": "Chapter 34: The Death Card and Loyal Friend",
+    "audio": "audio/034_The_Death_Card_and_Loyal_Friend/episode_small.mp3",
+    "image": "",
+    "duration": "10:09",
+    "hasAudio": "true"
+  },
+  {
+    "number": "35",
+    "title": "Run",
+    "label": "Chapter 35: Run",
+    "audio": "audio/035_Run/episode_small.mp3",
+    "image": "",
+    "duration": "3:36",
+    "hasAudio": "true"
+  },
+  {
+    "number": "36",
+    "title": "Wisdom",
+    "label": "Chapter 36: Wisdom",
+    "audio": "audio/036_Wisdom/episode_small.mp3",
+    "image": "",
+    "duration": "3:07",
+    "hasAudio": "true"
+  },
+  {
+    "number": "37",
+    "title": "The War Bone",
+    "label": "Chapter 37: The War Bone",
+    "audio": "audio/037_The_War_Bone/episode_small.mp3",
+    "image": "",
+    "duration": "10:08",
+    "hasAudio": "true"
+  },
+  {
+    "number": "38",
+    "title": "The White Sail",
+    "label": "Chapter 38: The White Sail",
+    "audio": "audio/038_The_White_Sail/episode_small.mp3",
+    "image": "",
+    "duration": "7:54",
+    "hasAudio": "true"
+  },
+  {
+    "number": "39",
+    "title": "The Angel",
+    "label": "Chapter 39: The Angel",
+    "audio": "audio/039_The_Angel/episode_small.mp3",
+    "image": "",
+    "duration": "3:00",
+    "hasAudio": "true"
+  },
+  {
+    "number": "40",
+    "title": "We will not need to follow him",
+    "label": "Chapter 40: We will not need to follow him",
+    "audio": "audio/040_We_will_not_need_to_follow_him/episode_small.mp3",
+    "image": "",
+    "duration": "2:23",
+    "hasAudio": "true"
+  },
+  {
+    "number": "41",
+    "title": "The Inn",
+    "label": "Chapter 41: The Inn",
+    "audio": "audio/041_The_Inn/episode_small.mp3",
+    "image": "",
+    "duration": "4:21",
+    "hasAudio": "true"
+  },
+  {
+    "number": "42",
+    "title": "The Atlin Giant",
+    "label": "Chapter 42: The Atlin Giant",
+    "audio": "audio/042_The_Atlin_Giant/episode_small.mp3",
+    "image": "",
+    "duration": "12:02",
+    "hasAudio": "true"
+  },
+  {
+    "number": "43",
+    "title": "The Shadow's Curse",
+    "label": "Chapter 43: The Shadow's Curse",
+    "audio": "audio/043_The_Shadows_Curse/episode_small.mp3",
+    "image": "",
+    "duration": "8:14",
+    "hasAudio": "true"
+  },
+  {
+    "number": "44",
+    "title": "Between Death and Sleep",
+    "label": "Chapter 44: Between Death and Sleep",
+    "audio": "audio/044_Between_Death_and_Sleep/episode_small.mp3",
+    "image": "",
+    "duration": "3:32",
+    "hasAudio": "true"
+  },
+  {
+    "number": "45",
+    "title": "Let's Not Talk About Our Parents",
+    "label": "Chapter 45: Let's Not Talk About Our Parents",
+    "audio": "audio/045_Lets_Not_Talk_About_Our_Parents/episode_small.mp3",
+    "image": "",
+    "duration": "3:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "46",
+    "title": "Flee",
+    "label": "Chapter 46: Flee",
+    "audio": "audio/046_Flee/episode_small.mp3",
+    "image": "",
+    "duration": "4:58",
+    "hasAudio": "true"
+  },
+  {
+    "number": "47",
+    "title": "The Throne",
+    "label": "Chapter 47: The Throne",
+    "audio": "audio/047_The_Throne/episode_small.mp3",
+    "image": "",
+    "duration": "5:46",
+    "hasAudio": "true"
+  },
+  {
+    "number": "48",
+    "title": "Safety",
+    "label": "Chapter 48: Safety",
+    "audio": "audio/048_Safety/episode_small.mp3",
+    "image": "",
+    "duration": "2:12",
+    "hasAudio": "true"
+  },
+  {
+    "number": "49",
+    "title": "Sharky",
+    "label": "Chapter 49: Sharky",
+    "audio": "audio/049_Sharky/episode_small.mp3",
+    "image": "",
+    "duration": "6:18",
+    "hasAudio": "true"
+  },
+  {
+    "number": "50",
+    "title": "The Stockade",
+    "label": "Chapter 50: The Stockade",
+    "audio": "audio/050_The_Stockade/episode_small.mp3",
+    "image": "",
+    "duration": "3:10",
+    "hasAudio": "true"
+  },
+  {
+    "number": "51",
+    "title": "The Kiss",
+    "label": "Chapter 51: The Kiss",
+    "audio": "audio/051_The_Kiss/episode_small.mp3",
+    "image": "",
+    "duration": "2:27",
+    "hasAudio": "true"
+  },
+  {
+    "number": "52",
+    "title": "Brother Sinus",
+    "label": "Chapter 52: Brother Sinus",
+    "audio": "audio/052_Brother_Sinus/episode_small.mp3",
+    "image": "",
+    "duration": "5:47",
+    "hasAudio": "true"
+  },
+  {
+    "number": "53",
+    "title": "Nothing",
+    "label": "Chapter 53: Nothing",
+    "audio": "audio/053_Nothing/episode_small.mp3",
+    "image": "",
+    "duration": "2:52",
+    "hasAudio": "true"
+  },
+  {
+    "number": "54",
+    "title": "The Carriage",
+    "label": "Chapter 54: The Carriage",
+    "audio": "audio/054_The_Carriage/episode_small.mp3",
+    "image": "",
+    "duration": "5:10",
+    "hasAudio": "true"
+  },
+  {
+    "number": "55",
+    "title": "The Guti-nina",
+    "label": "Chapter 55: The Guti-nina",
+    "audio": "audio/055_The_Guti-nina/episode_small.mp3",
+    "image": "",
+    "duration": "5:34",
+    "hasAudio": "true"
+  },
+  {
+    "number": "56",
+    "title": "Something Very Valuable",
+    "label": "Chapter 56: Something Very Valuable",
+    "audio": "audio/056_Something_Very_Valuable/episode_small.mp3",
+    "image": "",
+    "duration": "5:08",
+    "hasAudio": "true"
+  },
+  {
+    "number": "57",
+    "title": "Reason",
+    "label": "Chapter 57: Reason",
+    "audio": "audio/057_Reason/episode_small.mp3",
+    "image": "",
+    "duration": "2:58",
+    "hasAudio": "true"
+  },
+  {
+    "number": "58",
+    "title": "Her People",
+    "label": "Chapter 58: Her People",
+    "audio": "audio/058_Her_People/episode_small.mp3",
+    "image": "",
+    "duration": "4:47",
+    "hasAudio": "true"
+  },
+  {
+    "number": "59",
+    "title": "Bozworth and Brother Peter",
+    "label": "Chapter 59: Bozworth and Brother Peter",
+    "audio": "audio/059_Bozworth_and_Brother_Peter/episode_small.mp3",
+    "image": "",
+    "duration": "7:57",
+    "hasAudio": "true"
+  },
+  {
+    "number": "60",
+    "title": "The Way of the Clan",
+    "label": "Chapter 60: The Way of the Clan",
+    "audio": "audio/060_The_Way_of_the_Clan/episode_small.mp3",
+    "image": "",
+    "duration": "3:38",
+    "hasAudio": "true"
+  },
+  {
+    "number": "61",
+    "title": "Westholm",
+    "label": "Chapter 61: Westholm",
+    "audio": "audio/061_Westholm/episode_small.mp3",
+    "image": "",
+    "duration": "5:15",
+    "hasAudio": "true"
+  },
+  {
+    "number": "62",
+    "title": "The Dream, the Nightmare and the Snake",
+    "label": "Chapter 62: The Dream, the Nightmare and the Snake",
+    "audio": "audio/062_The_Dream_the_Nightmare_and_the_Snake/episode_small.mp3",
+    "image": "",
+    "duration": "6:12",
+    "hasAudio": "true"
+  },
+  {
+    "number": "63",
+    "title": "A Witch",
+    "label": "Chapter 63: A Witch",
+    "audio": "audio/063_A_Witch/episode_small.mp3",
+    "image": "",
+    "duration": "5:30",
+    "hasAudio": "true"
+  },
+  {
+    "number": "64",
+    "title": "The Price",
+    "label": "Chapter 64: The Price",
+    "audio": "audio/064_The_Price/episode_small.mp3",
+    "image": "",
+    "duration": "8:25",
+    "hasAudio": "true"
+  },
+  {
+    "number": "65",
+    "title": "The Mob of Evil",
+    "label": "Chapter 65: The Mob of Evil",
+    "audio": "audio/065_The_Mob_of_Evil/episode_small.mp3",
+    "image": "",
+    "duration": "3:48",
+    "hasAudio": "true"
+  },
+  {
+    "number": "66",
+    "title": "Not Ever Again",
+    "label": "Chapter 66: Not Ever Again",
+    "audio": "audio/066_Not_Ever_Again/episode_small.mp3",
+    "image": "",
+    "duration": "4:32",
+    "hasAudio": "true"
+  },
+  {
+    "number": "67",
+    "title": "The Misunderstanding",
+    "label": "Chapter 67: The Misunderstanding",
+    "audio": "audio/067_The_Misunderstanding/episode_small.mp3",
+    "image": "",
+    "duration": "11:28",
+    "hasAudio": "true"
+  },
+  {
+    "number": "68",
+    "title": "PART 11",
+    "label": "Chapter 68: PART 11",
+    "audio": "audio/068_PART_11/episode_small.mp3",
+    "image": "",
+    "duration": "0:03",
+    "hasAudio": "true"
+  },
+  {
+    "number": "69",
+    "title": "The War of Three Forces",
+    "label": "Chapter 69: The War of Three Forces",
+    "audio": "audio/069_The_War_of_Three_Forces/episode_small.mp3",
+    "image": "",
+    "duration": "2:48",
+    "hasAudio": "true"
+  },
+  {
+    "number": "70",
+    "title": "Dance With Me",
+    "label": "Chapter 70: Dance With Me",
+    "audio": "audio/070_Dance_With_Me/episode_small.mp3",
+    "image": "",
+    "duration": "9:28",
+    "hasAudio": "true"
+  },
+  {
+    "number": "71",
+    "title": "Two Riders",
+    "label": "Chapter 71: Two Riders",
+    "audio": "audio/071_Two_Riders/episode_small.mp3",
+    "image": "",
+    "duration": "7:34",
+    "hasAudio": "true"
+  },
+  {
+    "number": "72",
+    "title": "Wisdom",
+    "label": "Chapter 72: Wisdom",
+    "audio": "audio/072_Wisdom/episode_small.mp3",
+    "image": "",
+    "duration": "6:01",
+    "hasAudio": "true"
+  },
+  {
+    "number": "73",
+    "title": "The Truce",
+    "label": "Chapter 73: The Truce",
+    "audio": "audio/073_The_Truce/episode_small.mp3",
+    "image": "",
+    "duration": "3:08",
+    "hasAudio": "true"
+  },
+  {
+    "number": "74",
+    "title": "Practice",
+    "label": "Chapter 74: Practice",
+    "audio": "audio/074_Practice/episode_small.mp3",
+    "image": "",
+    "duration": "9:34",
+    "hasAudio": "true"
+  },
+  {
+    "number": "75",
+    "title": "Anger",
+    "label": "Chapter 75: Anger",
+    "audio": "audio/075_Anger/episode_small.mp3",
+    "image": "",
+    "duration": "5:18",
+    "hasAudio": "true"
+  },
+  {
+    "number": "76",
+    "title": "Neither a Warrior Nor a Wizard",
+    "label": "Chapter 76: Neither a Warrior Nor a Wizard",
+    "audio": "audio/076_Neither_a_Warrior_Nor_a_Wizard/episode_small.mp3",
+    "image": "",
+    "duration": "11:27",
+    "hasAudio": "true"
+  },
+  {
+    "number": "77",
+    "title": "The Froud",
+    "label": "Chapter 77: The Froud",
+    "audio": "audio/077_The_Froud/episode_small.mp3",
+    "image": "",
+    "duration": "9:21",
+    "hasAudio": "true"
+  },
+  {
+    "number": "78",
+    "title": "Playing with Horses",
+    "label": "Chapter 78: Playing with Horses",
+    "audio": "audio/078_Playing_with_Horses/episode_small.mp3",
+    "image": "",
+    "duration": "5:11",
+    "hasAudio": "true"
+  },
+  {
+    "number": "79",
+    "title": "The Garden",
+    "label": "Chapter 79: The Garden",
+    "audio": "audio/079_The_Garden/episode_small.mp3",
+    "image": "",
+    "duration": "4:58",
+    "hasAudio": "true"
+  },
+  {
+    "number": "80",
+    "title": "Words of War",
+    "label": "Chapter 80: Words of War",
+    "audio": "audio/080_Words_of_War/episode_small.mp3",
+    "image": "",
+    "duration": "14:55",
+    "hasAudio": "true"
+  },
+  {
+    "number": "81",
+    "title": "We Will Need Their Help",
+    "label": "Chapter 81: We Will Need Their Help",
+    "audio": "audio/081_We_Will_Need_Their_Help/episode_small.mp3",
+    "image": "",
+    "duration": "7:58",
+    "hasAudio": "true"
+  },
+  {
+    "number": "82",
+    "title": "Rangers",
+    "label": "Chapter 82: Rangers",
+    "audio": "audio/082_Rangers/episode_small.mp3",
+    "image": "",
+    "duration": "6:39",
+    "hasAudio": "true"
+  },
+  {
+    "number": "83",
+    "title": "I am a Queen",
+    "label": "Chapter 83: I am a Queen",
+    "audio": "audio/083_I_am_a_Queen/episode_small.mp3",
+    "image": "",
+    "duration": "7:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "84",
+    "title": "Seeds",
+    "label": "Chapter 84: Seeds",
+    "audio": "audio/084_Seeds/episode_small.mp3",
+    "image": "",
+    "duration": "8:58",
+    "hasAudio": "true"
+  },
+  {
+    "number": "85",
+    "title": "The Oubliette",
+    "label": "Chapter 85: The Oubliette",
+    "audio": "audio/085_The_Oubliette/episode_small.mp3",
+    "image": "",
+    "duration": "8:19",
+    "hasAudio": "true"
+  },
+  {
+    "number": "86",
+    "title": "The Fool",
+    "label": "Chapter 86: The Fool",
+    "audio": "audio/086_The_Fool/episode_small.mp3",
+    "image": "",
+    "duration": "4:08",
+    "hasAudio": "true"
+  },
+  {
+    "number": "87",
+    "title": "Twelve Barrels",
+    "label": "Chapter 87: Twelve Barrels",
+    "audio": "audio/087_Twelve_Barrels/episode_small.mp3",
+    "image": "",
+    "duration": "2:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "88",
+    "title": "The Yearling Colt and a Horse",
+    "label": "Chapter 88: The Yearling Colt and a Horse",
+    "audio": "audio/088_The_Yearling_Colt_and_a_Horse/episode_small.mp3",
+    "image": "",
+    "duration": "6:15",
+    "hasAudio": "true"
+  },
+  {
+    "number": "89",
+    "title": "No Mistakes",
+    "label": "Chapter 89: No Mistakes",
+    "audio": "audio/089_No_Mistakes/episode_small.mp3",
+    "image": "",
+    "duration": "2:35",
+    "hasAudio": "true"
+  },
+  {
+    "number": "90",
+    "title": "Death Blade",
+    "label": "Chapter 90: Death Blade",
+    "audio": "audio/090_Death_Blade/episode_small.mp3",
+    "image": "",
+    "duration": "5:22",
+    "hasAudio": "true"
+  },
+  {
+    "number": "91",
+    "title": "Healer Protector",
+    "label": "Chapter 91: Healer Protector",
+    "audio": "audio/091_Healer_Protector/episode_small.mp3",
+    "image": "",
+    "duration": "2:02",
+    "hasAudio": "true"
+  },
+  {
+    "number": "92",
+    "title": "To Laugh",
+    "label": "Chapter 92: To Laugh",
+    "audio": "audio/092_To_Laugh/episode_small.mp3",
+    "image": "",
+    "duration": "4:10",
+    "hasAudio": "true"
+  },
+  {
+    "number": "93",
+    "title": "Glak and Otak Promise",
+    "label": "Chapter 93: Glak and Otak Promise",
+    "audio": "audio/093_Glak_and_Otak_Promise/episode_small.mp3",
+    "image": "",
+    "duration": "11:27",
+    "hasAudio": "true"
+  },
+  {
+    "number": "94",
+    "title": "Vande'he Rangers",
+    "label": "Chapter 94: Vande'he Rangers",
+    "audio": "audio/094_Vandehe_Rangers/episode_small.mp3",
+    "image": "",
+    "duration": "1:38",
+    "hasAudio": "true"
+  },
+  {
+    "number": "95",
+    "title": "Made Him Swear Not to Leave",
+    "label": "Chapter 95: Made Him Swear Not to Leave",
+    "audio": "audio/095_Made_Him_Swear_Not_to_Leave/episode_small.mp3",
+    "image": "",
+    "duration": "1:36",
+    "hasAudio": "true"
+  },
+  {
+    "number": "96",
+    "title": "The Rite of the War Bone",
+    "label": "Chapter 96: The Rite of the War Bone",
+    "audio": "audio/096_The_Rite_of_the_War_Bone/episode_small.mp3",
+    "image": "",
+    "duration": "4:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "97",
+    "title": "Bleating Goat's Udder",
+    "label": "Chapter 97: Bleating Goat's Udder",
+    "audio": "audio/097_Bleating_Goats_Udder/episode_small.mp3",
+    "image": "",
+    "duration": "6:25",
+    "hasAudio": "true"
+  },
+  {
+    "number": "98",
+    "title": "The Alliance - Kaleb Smiled",
+    "label": "Chapter 98: The Alliance - Kaleb Smiled",
+    "audio": "audio/098_The_Alliance_-_Kaleb_Smiled/episode_small.mp3",
+    "image": "",
+    "duration": "6:59",
+    "hasAudio": "true"
+  },
+  {
+    "number": "99",
+    "title": "The Greater Evil",
+    "label": "Chapter 99: The Greater Evil",
+    "audio": "audio/099_The_Greater_Evil/episode_small.mp3",
+    "image": "",
+    "duration": "5:24",
+    "hasAudio": "true"
+  },
+  {
+    "number": "100",
+    "title": "The Mirror",
+    "label": "Chapter 100: The Mirror",
+    "audio": "audio/100_The_Mirror/episode_small.mp3",
+    "image": "",
+    "duration": "5:01",
+    "hasAudio": "true"
+  },
+  {
+    "number": "101",
+    "title": "The Bridge",
+    "label": "Chapter 101: The Bridge",
+    "audio": "audio/101_The_Bridge/episode_small.mp3",
+    "image": "",
+    "duration": "6:24",
+    "hasAudio": "true"
+  },
+  {
+    "number": "102",
+    "title": "The Sprite",
+    "label": "Chapter 102: The Sprite",
+    "audio": "audio/102_The_Sprite/episode_small.mp3",
+    "image": "",
+    "duration": "6:05",
+    "hasAudio": "true"
+  },
+  {
+    "number": "103",
+    "title": "To Kill a Snake",
+    "label": "Chapter 103: To Kill a Snake",
+    "audio": "audio/103_To_Kill_a_Snake/episode_small.mp3",
+    "image": "",
+    "duration": "4:19",
+    "hasAudio": "true"
+  },
+  {
+    "number": "104",
+    "title": "The Bridge of Thrones",
+    "label": "Chapter 104: The Bridge of Thrones",
+    "audio": "audio/104_The_Bridge_of_Thrones/episode_small.mp3",
+    "image": "",
+    "duration": "4:15",
+    "hasAudio": "true"
+  },
+  {
+    "number": "105",
+    "title": "The End",
+    "label": "Chapter 105: The End",
+    "audio": "audio/105_The_End/episode_small.mp3",
+    "image": "",
+    "duration": "0:03",
+    "hasAudio": "true"
+  }
+];
+    const select = document.getElementById("chapterSelect");
+    const chapterNumber = document.getElementById("chapterNumber");
+    const chapterDuration = document.getElementById("chapterDuration");
+    const imageFrame = document.getElementById("imageFrame");
+    const chapterImage = document.getElementById("chapterImage");
+    const featureAudio = document.getElementById("featureAudio");
+    const imageDownload = document.getElementById("imageDownload");
+    const playButton = document.getElementById("playButton");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+    const panelNote = document.getElementById("panelNote");
+    const imageViewer = document.getElementById("imageViewer");
+    const viewerImage = document.getElementById("viewerImage");
+    const viewerClose = document.getElementById("viewerClose");
+    const viewerImageWrap = document.getElementById("viewerImageWrap");
+
+    let currentIndex = 0;
+    const allPlayers = Array.from(document.querySelectorAll("audio"));
+
+    function pauseOtherPlayers(active) {
+      allPlayers.forEach((player) => {
+        if (player !== active) {
+          player.pause();
+        }
+      });
+    }
+
+    function openImageViewer() {
+      const chapter = chapters[currentIndex];
+      if (!chapter || !chapter.image) {
+        return;
+      }
+      viewerImage.src = chapter.image;
+      viewerImage.alt = chapter.label + " full-size illustration";
+      imageViewer.hidden = false;
+      document.body.classList.add("viewer-open");
+      viewerClose.focus();
+    }
+
+    function closeImageViewer() {
+      imageViewer.hidden = true;
+      document.body.classList.remove("viewer-open");
+      viewerImage.removeAttribute("src");
+      if (imageFrame.classList.contains("is-zoomable")) {
+        imageFrame.focus();
+      }
+    }
+
+    function setChapter(index) {
+      currentIndex = Math.max(0, Math.min(chapters.length - 1, index));
+      const chapter = chapters[currentIndex];
+      select.value = String(currentIndex);
+      chapterNumber.textContent = "Chapter " + chapter.number;
+      chapterDuration.textContent = chapter.duration || "";
+      featureAudio.src = chapter.audio;
+      playButton.textContent = "Play chapter";
+
+      if (chapter.image) {
+        imageFrame.innerHTML = "";
+        chapterImage.src = chapter.image;
+        chapterImage.alt = chapter.label + " illustration";
+        imageFrame.appendChild(chapterImage);
+        imageFrame.classList.add("is-zoomable");
+        imageFrame.tabIndex = 0;
+        imageFrame.setAttribute("role", "button");
+        imageFrame.setAttribute("aria-label", "Open full-size " + chapter.label + " illustration");
+        imageDownload.href = chapter.image;
+        imageDownload.hidden = false;
+        panelNote.textContent = "Download the chapter image or listen here. The full audio list remains available below.";
+      } else {
+        imageFrame.innerHTML = '<div class="image-empty">Illustration coming for ' + chapter.label + '.</div>';
+        imageFrame.classList.remove("is-zoomable");
+        imageFrame.removeAttribute("tabindex");
+        imageFrame.removeAttribute("role");
+        imageFrame.removeAttribute("aria-label");
+        imageDownload.hidden = true;
+        panelNote.textContent = "No chapter image is attached yet. The narration is ready.";
+      }
+    }
+
+    select.addEventListener("change", () => setChapter(Number(select.value)));
+    prevButton.addEventListener("click", () => setChapter(currentIndex - 1));
+    nextButton.addEventListener("click", () => setChapter(currentIndex + 1));
+    imageFrame.addEventListener("click", openImageViewer);
+    imageFrame.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openImageViewer();
+      }
+    });
+    viewerClose.addEventListener("click", closeImageViewer);
+    imageViewer.addEventListener("click", (event) => {
+      if (event.target === imageViewer || event.target === viewerImageWrap) {
+        closeImageViewer();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !imageViewer.hidden) {
+        closeImageViewer();
+      }
+    });
+    playButton.addEventListener("click", async () => {
+      if (featureAudio.paused) {
+        pauseOtherPlayers(featureAudio);
+        await featureAudio.play();
+      } else {
+        featureAudio.pause();
+      }
+    });
+
+    allPlayers.forEach((player) => {
+      player.addEventListener("play", () => {
+        pauseOtherPlayers(player);
+        if (player === featureAudio) {
+          playButton.textContent = "Pause chapter";
+        }
+      });
+      player.addEventListener("pause", () => {
+        if (player === featureAudio) {
+          playButton.textContent = "Play chapter";
+        }
+      });
+      player.addEventListener("ended", () => {
+        if (player === featureAudio) {
+          setChapter(currentIndex + 1);
+        }
+      });
+    });
+
+    const firstIllustrated = chapters.findIndex((chapter) => chapter.image);
+    setChapter(firstIllustrated >= 0 ? firstIllustrated : 0);
+  </script>
+</body>
+</html>
