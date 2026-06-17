@@ -1,5 +1,23 @@
 # Shape-Azoid Releases
 
+## v0.7.19 runtime telemetry and line diagnostics - 2026-06-16
+
+Diagnostic hardening build for finding late-game slowdowns, online stalls, and Line-card placement failures during real play.
+
+- Added JSONL runtime logs under the game `logs` folder.
+- Logs now record run start/end, periodic play-state snapshots, slow frames, online command timing, WebSocket health, and shutdown status.
+- Line-card attempts now record click position, nearest shared wall, wall distance, open/closed state, tolerance result, and connected piece IDs.
+- Online Line-card commands preserve matching server-side line diagnostics in success and failure responses.
+- Added a telemetry probe that verifies a real line attempt is written to the run log.
+- Verified source and packaged telemetry, stress WebSocket, Online UI, startup online, online AI, network-file join, background tick, HTTP multiplayer, room-service, and core import probes.
+- Published build marker `v0.7.19-20260616-2259`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.19.zip`
+
 ## v0.7.18 late-game online stability - 2026-06-16
 
 Follow-up to the WebSocket live-state build after a real multiplayer run was faster and mostly stable but still stuck later in the game.
