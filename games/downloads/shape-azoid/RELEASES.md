@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.20 frame phase telemetry - 2026-06-18
+
+Diagnostic build to identify which part of a frame causes slowdown during online or late-game play.
+
+- Slow-frame and periodic play-state logs now include frame phase timing: events, update/network, drawing, AI, display flip, total work, and frame wait.
+- Added `tools/shape_azoid_log_report.py` to summarize runtime logs into slow-frame, Line-card, online command, WebSocket, and max-board-state sections.
+- The telemetry probe now verifies that phase timing is written to a real run log.
+- Verified source and packaged telemetry, Online UI, WebSocket stress, HTTP multiplayer, room-service, and core import probes.
+- Published build marker `v0.7.20-20260618-0800`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.20.zip`
+
 ## v0.7.19 runtime telemetry and line diagnostics - 2026-06-16
 
 Diagnostic hardening build for finding late-game slowdowns, online stalls, and Line-card placement failures during real play.
