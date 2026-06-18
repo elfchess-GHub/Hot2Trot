@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Use this for book comments, audiobook notes, chapter reactions, typo notes, confusing passages, or reader questions.
+        If you do not want to use GitHub, you can email elfchess@gmail.com.
   - type: dropdown
     id: work
     attributes:

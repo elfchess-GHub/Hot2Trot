@@ -6,6 +6,7 @@ body:
     attributes:
       value: |
         Use this form for bugs, broken downloads, launcher problems, crashes, multiplayer problems, or website problems.
+        If you do not want to use GitHub, you can email elfchess@gmail.com.
   - type: dropdown
     id: game
     attributes:
