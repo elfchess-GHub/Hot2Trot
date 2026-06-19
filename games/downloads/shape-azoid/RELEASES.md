@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.21 smoother online ball motion - 2026-06-18
+
+Playability repair after an online run showed very jerky ball movement even though command timing and frame timing were mostly healthy.
+
+- Increased the live WebSocket room stream from 12 FPS to 30 FPS.
+- Online clients now ease matching Zoid/Penta-Zoid positions toward server positions instead of hard-snapping every live packet.
+- Large server/client position gaps still snap back to authority so the display cannot drift forever.
+- Verified source and packaged Online UI, WebSocket movement, WebSocket stress, telemetry, HTTP multiplayer, and core import probes.
+- Published build marker `v0.7.21-20260618-1902`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.21.zip`
+
 ## v0.7.20 frame phase telemetry - 2026-06-18
 
 Diagnostic build to identify which part of a frame causes slowdown during online or late-game play.
