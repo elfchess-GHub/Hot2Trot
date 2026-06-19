@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.22 online UFO visibility - 2026-06-19
+
+Online visual repair after the UFO effect happened on the server but clients only saw the tile disappear.
+
+- Online clients now apply server UFO countdown, flight, beam, and explosion state from live snapshots.
+- Server-time UFO events are converted to the local Pygame clock so the client can draw the UFO at the correct point in its flight.
+- Added Online UI probe coverage that applies a server-style UFO snapshot and verifies the client keeps active UFO/explosion state before drawing.
+- Verified source and packaged Online UI, WebSocket stress, HTTP multiplayer, room-service, and core import probes.
+- Published build marker `v0.7.22-20260619-0831`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.22.zip`
+
 ## v0.7.21 smoother online ball motion - 2026-06-18
 
 Playability repair after an online run showed very jerky ball movement even though command timing and frame timing were mostly healthy.
