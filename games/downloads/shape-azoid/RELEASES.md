@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.25 opened-wall gap and live UFO stream proof - 2026-06-19
+
+Follow-up after `v0.7.24` made the opened walls look worse and still did not prove the UFO through the real live server path.
+
+- Opened shared walls now draw as board-colored gaps instead of a hard color seam.
+- The WebSocket probe now forces a UFO launch on the server and verifies the real live stream emits active UFO state.
+- Kept the online play UFO draw fix so UFO drawing is allowed in both `playing` and `online_playing`.
+- Verified wall visual, WebSocket, Online UI, and room-service probes.
+- Published build marker `v0.7.25-20260619-1534`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.25.zip`
+
 ## v0.7.24 online UFO draw and opened-wall seam cleanup - 2026-06-19
 
 Follow-up repair after online play still had active UFO events that did not visibly draw, and opened walls still looked too much like walls.
