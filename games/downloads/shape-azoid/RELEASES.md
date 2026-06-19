@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.23 opened-wall visuals - 2026-06-19
+
+Visual repair after Line cards opened a wall in collision/physics, but the board still looked like the wall was present.
+
+- Opened shared walls now hide the center circuit spokes as well as the shared edge wall.
+- Closed shared walls still draw normally, so the visual difference between closed and opened walls is clear.
+- Added a focused wall visual probe that verifies a closed shared wall draws two center spokes and an opened shared wall draws none.
+- Verified source wall-visual, Online UI, and room-service probes.
+- Published build marker `v0.7.23-20260619-1059`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.23.zip`
+
 ## v0.7.22 online UFO visibility - 2026-06-19
 
 Online visual repair after the UFO effect happened on the server but clients only saw the tile disappear.
