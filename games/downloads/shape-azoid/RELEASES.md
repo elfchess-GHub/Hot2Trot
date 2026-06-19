@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.24 online UFO draw and opened-wall seam cleanup - 2026-06-19
+
+Follow-up repair after online play still had active UFO events that did not visibly draw, and opened walls still looked too much like walls.
+
+- UFO countdown, flight, beam, and explosion drawing now runs in both local `playing` and `online_playing` modes.
+- The Online UI probe now asserts that an active online UFO event actually reaches the draw path.
+- Opened shared walls now use a soft blended seam instead of leaving a hard wall-looking boundary.
+- Verified source wall-visual, Online UI, and room-service probes.
+- Published build marker `v0.7.24-20260619-1441`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.24.zip`
+
 ## v0.7.23 opened-wall visuals - 2026-06-19
 
 Visual repair after Line cards opened a wall in collision/physics, but the board still looked like the wall was present.
