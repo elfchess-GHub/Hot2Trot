@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.27 UFO overlay and opened-wall connection cleanup - 2026-06-19
+
+Follow-up after online ball motion improved, but UFOs were still not visible and opened wall connections still appeared.
+
+- UFO/countdown drawing now happens after the board, sidebar, top status, and gear so the play UI cannot cover it.
+- Added a draw-order probe that fails if UFO drawing moves behind the play UI again.
+- Opened shared walls now erase the center-to-edge connection lines on both adjacent shapes, not only the shared border seam.
+- Verified draw-order, wall visual, online loop, WebSocket/UFO, Online UI, and room-service probes.
+- Published build marker `v0.7.27-20260619-2220`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.27.zip`
+
 ## v0.7.26 online physics authority and wider wall gaps - 2026-06-19
 
 Repair after `v0.7.25` still had visible wall remnants and online balls continued to jitter.
