@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.26 online physics authority and wider wall gaps - 2026-06-19
+
+Repair after `v0.7.25` still had visible wall remnants and online balls continued to jitter.
+
+- Online play no longer runs local client-side Zoid physics each frame; the client now uses the server/WebSocket snapshots as the single physics authority.
+- Added an online loop probe that fails if `online_playing` starts running local Zoid physics again.
+- Opened shared walls now draw a wider board-colored doorway over the shared edge instead of a narrow seam.
+- Verified online loop, wall visual, WebSocket/UFO, Online UI, and room-service probes.
+- Published build marker `v0.7.26-20260619-2129`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.26.zip`
+
 ## v0.7.25 opened-wall gap and live UFO stream proof - 2026-06-19
 
 Follow-up after `v0.7.24` made the opened walls look worse and still did not prove the UFO through the real live server path.
