@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.28 opened-wall visual rollback and UFO timing repair - 2026-06-20
+
+Repair after `v0.7.27` still left visible opened-wall marks and did not make the UFO visible in online play.
+
+- Removed the bad opened-wall paint-over. Open walls are now invisible by skipping their shared wall and center-spoke drawing instead of drawing a fake board-colored eraser over layered themes.
+- Fixed online UFO timestamp units. The server now sends monotonic milliseconds, matching the headless UFO event timestamps, and the client accepts millisecond snapshots without multiplying them again.
+- Strengthened the wall visual probe so it fails if an open wall draws either a shared edge or fake eraser marks.
+- Strengthened the WebSocket probe so it checks that active UFO snapshots use millisecond server timing.
+- Verified the rebuilt installed folder, not only the source folder.
+- Published build marker `v0.7.28-20260620-1610`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.28.zip`
+
 ## v0.7.27 UFO overlay and opened-wall connection cleanup - 2026-06-19
 
 Follow-up after online ball motion improved, but UFOs were still not visible and opened wall connections still appeared.
