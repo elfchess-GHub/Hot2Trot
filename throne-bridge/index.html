@@ -2369,6 +2369,7 @@
     const viewerImageWrap = document.getElementById("viewerImageWrap");
 
     let currentIndex = 0;
+    let nextTrackTimer = null;
     const allPlayers = Array.from(document.querySelectorAll("audio"));
 
     function pauseOtherPlayers(active) {
@@ -2377,6 +2378,13 @@
           player.pause();
         }
       });
+    }
+
+    function clearNextTrackTimer() {
+      if (nextTrackTimer) {
+        window.clearTimeout(nextTrackTimer);
+        nextTrackTimer = null;
+      }
     }
 
     function openImageViewer() {
@@ -2464,6 +2472,7 @@
 
     allPlayers.forEach((player) => {
       player.addEventListener("play", () => {
+        clearNextTrackTimer();
         pauseOtherPlayers(player);
         if (player === featureAudio) {
           playButton.textContent = "Pause chapter";
@@ -2476,7 +2485,25 @@
       });
       player.addEventListener("ended", () => {
         if (player === featureAudio) {
-          setChapter(currentIndex + 1);
+          const nextIndex = currentIndex + 1;
+          if (nextIndex < chapters.length) {
+            nextTrackTimer = window.setTimeout(() => {
+              setChapter(nextIndex);
+              featureAudio.play().catch(() => {
+                featureAudio.scrollIntoView({ behavior: "smooth", block: "center" });
+              });
+            }, 1800);
+          }
+          return;
+        }
+
+        const nextPlayer = allPlayers[allPlayers.indexOf(player) + 1];
+        if (nextPlayer) {
+          nextTrackTimer = window.setTimeout(() => {
+            nextPlayer.play().catch(() => {
+              nextPlayer.scrollIntoView({ behavior: "smooth", block: "center" });
+            });
+          }, 1800);
         }
       });
     });

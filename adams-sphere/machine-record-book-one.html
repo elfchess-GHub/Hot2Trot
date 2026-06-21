@@ -538,20 +538,28 @@
 
   <script>
     const players = Array.from(document.querySelectorAll("audio"));
-    players.forEach((player) => {
+    let nextTrackTimer = null;
+
+    players.forEach((player, index) => {
       player.addEventListener("play", () => {
+        if (nextTrackTimer) {
+          window.clearTimeout(nextTrackTimer);
+          nextTrackTimer = null;
+        }
         players.forEach((other) => {
           if (other !== player) other.pause();
         });
       });
 
       player.addEventListener("ended", () => {
-        const nextPlayer = players[players.indexOf(player) + 1];
-        if (nextPlayer) {
+        const nextPlayer = players[index + 1];
+        if (!nextPlayer) return;
+
+        nextTrackTimer = window.setTimeout(() => {
           nextPlayer.play().catch(() => {
-            nextPlayer.controls = true;
+            nextPlayer.scrollIntoView({ behavior: "smooth", block: "center" });
           });
-        }
+        }, 1800);
       });
     });
   </script>
