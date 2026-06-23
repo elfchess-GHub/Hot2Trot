@@ -1,5 +1,24 @@
 # Shape-Azoid Releases
 
+## v0.7.29 reference shell package - 2026-06-22
+
+First pass at the shared Elfchess game shell standard using Shape-Azoid as the reference game.
+
+- Added real `settings.json` persistence for music volume, sound effects volume, display mode, theme, player count, AI seats, sound key, and button instruments.
+- Added a generated game-specific icon at `assets/icons/shape-azoid.ico`.
+- Embedded the icon into the rebuilt `Shape-Azoid.exe` and the player-facing `Play Shape-Azoid.exe`.
+- Added `Uninstall Shape-Azoid.cmd` to the package root.
+- Corrected the README so `Play Shape-Azoid.exe` is clearly the normal player entry point.
+- Kept `Shape-Azoid Support\.venv` in this release because same-Wi-Fi hosting still depends on the support Python runtime.
+- Verified static import gate, core import probe, settings persistence, live network smoke, ZIP layout, and local player launcher start.
+- Published build marker `v0.7.29-20260622-2145`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.29.zip`
+
 ## v0.7.28 opened-wall visual rollback and UFO timing repair - 2026-06-20
 
 Repair after `v0.7.27` still left visible opened-wall marks and did not make the UFO visible in online play.
