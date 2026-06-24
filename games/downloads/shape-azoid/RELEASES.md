@@ -1,5 +1,25 @@
 # Shape-Azoid Releases
 
+## v0.7.30 real Windows installer and uninstaller - 2026-06-23
+
+Correction to the shell-standard package after `v0.7.29` only shipped a folder-level uninstall helper.
+
+- Added `Install Shape-Azoid.exe`.
+- Added `Uninstall Shape-Azoid.exe`.
+- `Install Shape-Azoid.exe` installs to the user's local app folder and writes the Windows Installed Apps uninstall registry entry.
+- `Uninstall Shape-Azoid.exe` removes the Windows uninstall entry and removes the installed game folder.
+- Removed `Uninstall Shape-Azoid.cmd` from the standard package.
+- Kept portable play through `Play Shape-Azoid.exe`.
+- Verified Windows uninstall registration with `DisplayName: Shape-Azoid`, `DisplayVersion: v0.7.30-20260623-1726`, and a real `UninstallString`.
+- Verified installed launcher start, uninstall registry removal, installed folder removal, static import gate, core import probe, network smoke, and ZIP layout.
+- Published build marker `v0.7.30-20260623-1726`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.30.zip`
+
 ## v0.7.29 reference shell package - 2026-06-22
 
 First pass at the shared Elfchess game shell standard using Shape-Azoid as the reference game.
