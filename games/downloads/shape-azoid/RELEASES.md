@@ -1,5 +1,19 @@
 # Shape-Azoid Releases
 
+## v0.7.31 wall identity package refresh - 2026-06-24
+
+Wall identity package refresh.
+
+- Rebuilt from the repaired source that preserves exact shared-wall identity through snapshots instead of rounding wall endpoints to integers.
+- Verified source, package, and installed AppData copies with wall identity, wall visual, command seam, and online UI probes.
+- Updated the installed-player package and public build marker to `v0.7.31-20260624-2223`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.31.zip`
+
 ## v0.7.30 real Windows installer and uninstaller - 2026-06-23
 
 Correction to the shell-standard package after `v0.7.29` only shipped a folder-level uninstall helper.
