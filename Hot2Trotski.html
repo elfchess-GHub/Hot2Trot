@@ -205,9 +205,9 @@
       font-size:12px;
       text-align:center;
       overflow:hidden;
-      filter:grayscale(1);
+      filter:none;
     }
-    .photo img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.06)}
+    .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.06);z-index:0}
     .thought-balloon{position:absolute;left:50%;bottom:calc(100% - 18px);z-index:80;width:min(270px,92vw);padding:12px 14px;border-radius:26px 24px 26px 10px;background:rgba(255,252,238,.97);color:#080a0f;border:3px solid rgba(8,10,15,.9);box-shadow:0 4px 0 rgba(216,175,85,.9),0 18px 40px rgba(0,0,0,.42);font-family:"Comic Sans MS","Comic Sans",cursive;font-size:15px;font-weight:700;line-height:1.25;text-align:center;opacity:0;transform:translate(-50%,8px) rotate(-1deg) scale(.96);pointer-events:none;transition:opacity .18s ease,transform .18s ease;filter:none}
     .thought-balloon::after{content:"";position:absolute;left:28px;bottom:-12px;width:20px;height:20px;background:rgba(255,252,238,.97);border-right:3px solid rgba(8,10,15,.9);border-bottom:3px solid rgba(8,10,15,.9);transform:rotate(45deg)}
     .thought-balloon.caption{background:rgba(10,14,21,.96);color:var(--ivory);border-color:rgba(47,116,208,.78)}
@@ -223,7 +223,7 @@
     .card.red{border-left-color:var(--red)}.card.black{border-left-color:#050505}
     .card .photo{height:180px;border-width:0 0 1px 0}
     .photo-link{display:block;color:inherit;text-decoration:none}
-    .card-body{padding:14px}
+    .card-body{position:relative;z-index:1;padding:14px}
     .card h3{font-size:23px;margin-bottom:5px}.meta{font-family:Inter,sans-serif;color:var(--soft);font-size:13px;font-weight:700}.hook{color:var(--ivory);font-style:italic;margin:8px 0}
     .card h3 a{color:inherit;text-decoration:none}.card h3 a:hover{text-decoration:underline}
     .quote-needed{border-left:3px solid var(--accent);padding-left:10px;color:var(--muted);font-style:italic;margin:10px 0}
