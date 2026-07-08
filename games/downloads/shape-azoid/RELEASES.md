@@ -1,5 +1,22 @@
 # Shape-Azoid Releases
 
+## v0.7.32 installer safety proof - 2026-07-08
+
+Installer/uninstaller safety refresh.
+
+- Added hidden installer/uninstaller test arguments so release checks can use a disposable install root and disposable Windows uninstall key without touching Jeremy's real installed copy.
+- Verified the disposable installer copied the full package, wrote the disposable uninstall entry, and generated an uninstall string with the disposable root/key arguments.
+- Verified the disposable uninstaller removed the disposable registry key and temp install folder.
+- Verified Jeremy's real installed copy remained intact at `v0.7.31-20260624-2223`.
+- Verified source/package probes: wall identity `2/2`, wall visual `2/2`, command seam `3/3`, online UI `12/12`, and live network smoke `13/13`.
+- Updated the public package and build marker to `v0.7.32-20260708-1311`.
+
+Published files:
+
+- `latest.zip`
+- `latest-build.txt`
+- `shape-azoid-v0.7.32.zip`
+
 ## v0.7.31 wall identity package refresh - 2026-06-24
 
 Wall identity package refresh.
