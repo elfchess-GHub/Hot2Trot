@@ -1,0 +1,7 @@
+DubiouSDungeons v0.1.99
+Build: d7c17f033d7ae1371cfe106a64d684707f58e855ec51eb87f246d386b5e81dc3
+ZIP SHA-256: 076e7a613c439a5f3e1565042257f298cccb27506c5378b5babc097dc73c2b56
+
+Production phase-two LAN/private-hosting security build generated from the runtime allowlist.
+latest-build.txt contains the build ID, app version, and latest.zip SHA-256.
+Saved games, local environments, logs, and local server configuration are not included.
