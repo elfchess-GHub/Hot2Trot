@@ -141,10 +141,7 @@ Jeremy authorized the same cleanup pattern for SphinxLite after the Shape-Azoid 
 Kept:
 
 - `latest.zip`
-- `latest-update.json`
 - `latest-release-notes.txt`
-- `SphinxLite2-Windows-Setup-1.4.8.exe`
-- `SphinxLite2-v1.4.8-windows-20260829.zip`
 - `SphinxLite2-v1.4.7-windows-20260815.zip`
 - release-note text files
 
@@ -161,8 +158,8 @@ Removed from the current repo state:
 Result:
 
 - Removed 7 old SphinxLite binary archives/installers from the working tree/index.
-- SphinxLite download folder now contains 14 files totaling about 1,076.9 MB.
-- Current SphinxLite page/update links still point to `latest.zip` and `SphinxLite2-Windows-Setup-1.4.8.exe`.
+- SphinxLite download folder now contains 10 files in the cleanup worktree.
+- Current SphinxLite page link points to `latest.zip`; the old dead installer button was removed.
 - Remaining references to removed ZIP names are release-note history text only.
 - This reduces the current branch size after commit/push, but it does not by itself purge already-uploaded GitHub LFS objects from remote storage.
 
