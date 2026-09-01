@@ -1,5 +1,21 @@
 # Shape-Azoid Releases
 
+## v0.7.33 engine repair and release-storage recovery - 2026-08-31
+
+- Repaired radius-aware corner collision, fixed-step local physics, wall rendering, open-wall circuits, rendering caches, and stable online Zoid identity.
+- Removed the development-machine `.venv` from the player package. Host setup now creates a valid local environment on the player's own computer.
+- Moved the full game archive out of Git LFS history and into one immutable GitHub Release asset with SHA-256 verification.
+- Added `latest-release.json` for normal installed-player updates.
+- Replaced legacy `latest.zip` with a 17.1 MB one-time bridge so existing v0.7.32 launchers can migrate without downloading another full LFS package.
+- Added package ownership inventory so obsolete packaged files are removed while settings, custom music, and local `.venv` files are preserved.
+
+Published files:
+
+- GitHub Release asset `Shape-Azoid-v0.7.33.zip`
+- `latest-release.json`
+- `latest-build.txt`
+- Compatibility bridge `latest.zip`
+
 ## v0.7.32 installer safety proof - 2026-07-08
 
 Installer/uninstaller safety refresh.
