@@ -1,0 +1,380 @@
+{
+  "source_directory": "C:\\cardgameJ\\Hot2Trot\\light-of-attention\\podcasts",
+  "episode_count": 53,
+  "total_wav_bytes": 2461484332,
+  "total_mp3_bytes": 410282112,
+  "total_saved_bytes": 2051202220,
+  "episodes": [
+    {
+      "episode": "episode-001",
+      "wav_bytes": 34305644,
+      "mp3_bytes": 5718336,
+      "saved_bytes": 28587308,
+      "mp3": "episode-001.mp3"
+    },
+    {
+      "episode": "episode-002",
+      "wav_bytes": 36744044,
+      "mp3_bytes": 6124608,
+      "saved_bytes": 30619436,
+      "mp3": "episode-002.mp3"
+    },
+    {
+      "episode": "episode-003",
+      "wav_bytes": 31768844,
+      "mp3_bytes": 5295552,
+      "saved_bytes": 26473292,
+      "mp3": "episode-003.mp3"
+    },
+    {
+      "episode": "episode-004",
+      "wav_bytes": 30438044,
+      "mp3_bytes": 5073600,
+      "saved_bytes": 25364444,
+      "mp3": "episode-004.mp3"
+    },
+    {
+      "episode": "episode-005",
+      "wav_bytes": 29080844,
+      "mp3_bytes": 4847424,
+      "saved_bytes": 24233420,
+      "mp3": "episode-005.mp3"
+    },
+    {
+      "episode": "episode-006",
+      "wav_bytes": 28504844,
+      "mp3_bytes": 4751424,
+      "saved_bytes": 23753420,
+      "mp3": "episode-006.mp3"
+    },
+    {
+      "episode": "episode-007",
+      "wav_bytes": 26564444,
+      "mp3_bytes": 4428096,
+      "saved_bytes": 22136348,
+      "mp3": "episode-007.mp3"
+    },
+    {
+      "episode": "episode-008",
+      "wav_bytes": 26598044,
+      "mp3_bytes": 4433664,
+      "saved_bytes": 22164380,
+      "mp3": "episode-008.mp3"
+    },
+    {
+      "episode": "episode-009",
+      "wav_bytes": 30948044,
+      "mp3_bytes": 5158656,
+      "saved_bytes": 25789388,
+      "mp3": "episode-009.mp3"
+    },
+    {
+      "episode": "episode-010",
+      "wav_bytes": 26740844,
+      "mp3_bytes": 4457472,
+      "saved_bytes": 22283372,
+      "mp3": "episode-010.mp3"
+    },
+    {
+      "episode": "episode-011",
+      "wav_bytes": 51298844,
+      "mp3_bytes": 8550528,
+      "saved_bytes": 42748316,
+      "mp3": "episode-011.mp3"
+    },
+    {
+      "episode": "episode-012",
+      "wav_bytes": 45318044,
+      "mp3_bytes": 7553664,
+      "saved_bytes": 37764380,
+      "mp3": "episode-012.mp3"
+    },
+    {
+      "episode": "episode-013",
+      "wav_bytes": 40616444,
+      "mp3_bytes": 6770112,
+      "saved_bytes": 33846332,
+      "mp3": "episode-013.mp3"
+    },
+    {
+      "episode": "episode-014",
+      "wav_bytes": 42327644,
+      "mp3_bytes": 7055232,
+      "saved_bytes": 35272412,
+      "mp3": "episode-014.mp3"
+    },
+    {
+      "episode": "episode-015",
+      "wav_bytes": 42150044,
+      "mp3_bytes": 7025664,
+      "saved_bytes": 35124380,
+      "mp3": "episode-015.mp3"
+    },
+    {
+      "episode": "episode-016",
+      "wav_bytes": 43297244,
+      "mp3_bytes": 7216896,
+      "saved_bytes": 36080348,
+      "mp3": "episode-016.mp3"
+    },
+    {
+      "episode": "episode-017",
+      "wav_bytes": 36854444,
+      "mp3_bytes": 6143040,
+      "saved_bytes": 30711404,
+      "mp3": "episode-017.mp3"
+    },
+    {
+      "episode": "episode-018",
+      "wav_bytes": 38630444,
+      "mp3_bytes": 6439104,
+      "saved_bytes": 32191340,
+      "mp3": "episode-018.mp3"
+    },
+    {
+      "episode": "episode-019",
+      "wav_bytes": 45046844,
+      "mp3_bytes": 7508544,
+      "saved_bytes": 37538300,
+      "mp3": "episode-019.mp3"
+    },
+    {
+      "episode": "episode-020",
+      "wav_bytes": 43308044,
+      "mp3_bytes": 7218624,
+      "saved_bytes": 36089420,
+      "mp3": "episode-020.mp3"
+    },
+    {
+      "episode": "episode-021",
+      "wav_bytes": 41899244,
+      "mp3_bytes": 6983808,
+      "saved_bytes": 34915436,
+      "mp3": "episode-021.mp3"
+    },
+    {
+      "episode": "episode-022",
+      "wav_bytes": 48363644,
+      "mp3_bytes": 8061312,
+      "saved_bytes": 40302332,
+      "mp3": "episode-022.mp3"
+    },
+    {
+      "episode": "episode-023",
+      "wav_bytes": 45098444,
+      "mp3_bytes": 7516992,
+      "saved_bytes": 37581452,
+      "mp3": "episode-023.mp3"
+    },
+    {
+      "episode": "episode-024",
+      "wav_bytes": 48087644,
+      "mp3_bytes": 8015232,
+      "saved_bytes": 40072412,
+      "mp3": "episode-024.mp3"
+    },
+    {
+      "episode": "episode-025",
+      "wav_bytes": 44682044,
+      "mp3_bytes": 7447680,
+      "saved_bytes": 37234364,
+      "mp3": "episode-025.mp3"
+    },
+    {
+      "episode": "episode-026",
+      "wav_bytes": 49032044,
+      "mp3_bytes": 8172672,
+      "saved_bytes": 40859372,
+      "mp3": "episode-026.mp3"
+    },
+    {
+      "episode": "episode-027",
+      "wav_bytes": 44665244,
+      "mp3_bytes": 7444800,
+      "saved_bytes": 37220444,
+      "mp3": "episode-027.mp3"
+    },
+    {
+      "episode": "episode-028",
+      "wav_bytes": 52176044,
+      "mp3_bytes": 8696640,
+      "saved_bytes": 43479404,
+      "mp3": "episode-028.mp3"
+    },
+    {
+      "episode": "episode-029",
+      "wav_bytes": 44534444,
+      "mp3_bytes": 7423104,
+      "saved_bytes": 37111340,
+      "mp3": "episode-029.mp3"
+    },
+    {
+      "episode": "episode-030",
+      "wav_bytes": 52524044,
+      "mp3_bytes": 8754624,
+      "saved_bytes": 43769420,
+      "mp3": "episode-030.mp3"
+    },
+    {
+      "episode": "episode-031",
+      "wav_bytes": 51112124,
+      "mp3_bytes": 8519424,
+      "saved_bytes": 42592700,
+      "mp3": "episode-031.mp3"
+    },
+    {
+      "episode": "episode-032",
+      "wav_bytes": 60925724,
+      "mp3_bytes": 10154880,
+      "saved_bytes": 50770844,
+      "mp3": "episode-032.mp3"
+    },
+    {
+      "episode": "episode-033",
+      "wav_bytes": 71219324,
+      "mp3_bytes": 11870592,
+      "saved_bytes": 59348732,
+      "mp3": "episode-033.mp3"
+    },
+    {
+      "episode": "episode-034",
+      "wav_bytes": 60030764,
+      "mp3_bytes": 10005696,
+      "saved_bytes": 50025068,
+      "mp3": "episode-034.mp3"
+    },
+    {
+      "episode": "episode-035",
+      "wav_bytes": 64446284,
+      "mp3_bytes": 10741632,
+      "saved_bytes": 53704652,
+      "mp3": "episode-035.mp3"
+    },
+    {
+      "episode": "episode-036",
+      "wav_bytes": 67751324,
+      "mp3_bytes": 11292480,
+      "saved_bytes": 56458844,
+      "mp3": "episode-036.mp3"
+    },
+    {
+      "episode": "episode-037",
+      "wav_bytes": 60608444,
+      "mp3_bytes": 10102080,
+      "saved_bytes": 50506364,
+      "mp3": "episode-037.mp3"
+    },
+    {
+      "episode": "episode-038",
+      "wav_bytes": 94459484,
+      "mp3_bytes": 15744000,
+      "saved_bytes": 78715484,
+      "mp3": "episode-038.mp3"
+    },
+    {
+      "episode": "episode-039",
+      "wav_bytes": 69166604,
+      "mp3_bytes": 11528448,
+      "saved_bytes": 57638156,
+      "mp3": "episode-039.mp3"
+    },
+    {
+      "episode": "episode-040",
+      "wav_bytes": 64584044,
+      "mp3_bytes": 10764672,
+      "saved_bytes": 53819372,
+      "mp3": "episode-040.mp3"
+    },
+    {
+      "episode": "episode-041",
+      "wav_bytes": 66923804,
+      "mp3_bytes": 11154624,
+      "saved_bytes": 55769180,
+      "mp3": "episode-041.mp3"
+    },
+    {
+      "episode": "episode-042",
+      "wav_bytes": 44988524,
+      "mp3_bytes": 7498752,
+      "saved_bytes": 37489772,
+      "mp3": "episode-042.mp3"
+    },
+    {
+      "episode": "episode-043",
+      "wav_bytes": 46311404,
+      "mp3_bytes": 7719168,
+      "saved_bytes": 38592236,
+      "mp3": "episode-043.mp3"
+    },
+    {
+      "episode": "episode-044",
+      "wav_bytes": 5690684,
+      "mp3_bytes": 949056,
+      "saved_bytes": 4741628,
+      "mp3": "episode-044.mp3"
+    },
+    {
+      "episode": "episode-045",
+      "wav_bytes": 57687164,
+      "mp3_bytes": 9615168,
+      "saved_bytes": 48071996,
+      "mp3": "episode-045.mp3"
+    },
+    {
+      "episode": "episode-046",
+      "wav_bytes": 55200524,
+      "mp3_bytes": 9200832,
+      "saved_bytes": 45999692,
+      "mp3": "episode-046.mp3"
+    },
+    {
+      "episode": "episode-047",
+      "wav_bytes": 53991404,
+      "mp3_bytes": 8999232,
+      "saved_bytes": 44992172,
+      "mp3": "episode-047.mp3"
+    },
+    {
+      "episode": "episode-048",
+      "wav_bytes": 46692764,
+      "mp3_bytes": 7782720,
+      "saved_bytes": 38910044,
+      "mp3": "episode-048.mp3"
+    },
+    {
+      "episode": "episode-049",
+      "wav_bytes": 52381484,
+      "mp3_bytes": 8730816,
+      "saved_bytes": 43650668,
+      "mp3": "episode-049.mp3"
+    },
+    {
+      "episode": "episode-050",
+      "wav_bytes": 42340124,
+      "mp3_bytes": 7057344,
+      "saved_bytes": 35282780,
+      "mp3": "episode-050.mp3"
+    },
+    {
+      "episode": "episode-051",
+      "wav_bytes": 42677324,
+      "mp3_bytes": 7113600,
+      "saved_bytes": 35563724,
+      "mp3": "episode-051.mp3"
+    },
+    {
+      "episode": "episode-052",
+      "wav_bytes": 41935244,
+      "mp3_bytes": 6989952,
+      "saved_bytes": 34945292,
+      "mp3": "episode-052.mp3"
+    },
+    {
+      "episode": "episode-053",
+      "wav_bytes": 38755244,
+      "mp3_bytes": 6459840,
+      "saved_bytes": 32295404,
+      "mp3": "episode-053.mp3"
+    }
+  ]
+}
