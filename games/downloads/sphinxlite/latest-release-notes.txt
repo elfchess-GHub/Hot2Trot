@@ -1,17 +1,18 @@
-SphinxLite2 v1.4.7 Windows build
+Sphinx: A Philosophy Card Game - v1.4.11 Windows update
 
 Files:
-- SphinxLite2-v1.4.7-windows-20260815.zip
+- SphinxLite2-Windows-Setup-1.4.11.exe
 - latest.zip is matched to this build.
 
-Package privacy fix:
-- Removed local development paths from packaged documentation and accepted layout records.
-- Original source documentation and layout records were preserved unchanged; sanitization was applied only to staged package copies.
+Changes:
+- Fixed gameplay Help looking in the wrong folder in installed builds.
+- Installed Help opens the included page without rewriting it.
+- New Trickster characters use Name the Need instead of Bait the Boast for more opening opportunities. Slip the Hook remains in the eight-card starter.
+- Existing saved decks remain unchanged.
+- Updated the game and download version labels to 1.4.11.
+- The consequence-encounter expansion is not included in this update.
 
-Verification:
-- Recursive archive privacy scanning passed, including nested archives and checks for local project roots, user-profile paths, and owner identifiers.
-- Generic third-party runtime strings were distinguished from personal or project-local paths.
-- A bounded packaged startup check passed and the test process was terminated afterward.
-- Full gameplay testing was not performed for this packaging-only release.
-- Package size: 290987291 bytes
-- Package SHA-256: D3F00B81334D5908E9E4D003428B797739D8A6F2456904F0E978A68196E3579D
+Updating:
+- Existing installed players: start Play SphinxLite2.exe normally to check for the update.
+- New players: use the Windows installer. The portable ZIP remains available.
+- Keep your saved characters; routine updates do not require deleting or reinstalling the game folder.
