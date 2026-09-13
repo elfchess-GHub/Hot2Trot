@@ -1,6 +1,6 @@
 {
-  "version": "1.4.12",
-  "installer_url": "https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/sphinxlite/SphinxLite2-Windows-Setup-1.4.12.exe",
-  "installer_sha256": "4A0BC5871451C61BF7A3490857E95E263E52292AD87E143E92C6C6BEC451E890",
-  "installer_size": 256228974
+  "version": "1.4.13",
+  "installer_url": "https://github.com/elfchess-GHub/Hot2Trot/raw/main/games/downloads/sphinxlite/SphinxLite2-Windows-Setup-1.4.13.exe",
+  "installer_sha256": "00A95AEEDA25EE043EB122519470CE43A36E913A80AFF388914D52E3BFE67F82",
+  "installer_size": 256217080
 }
