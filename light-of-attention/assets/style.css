@@ -814,3 +814,10 @@ th {
     grid-template-columns: minmax(0, .56fr) minmax(0, 1fr) minmax(0, .56fr);
   }
 }
+
+@media (max-width: 640px) {
+  .podcast-page .paper-panel > h1,
+  .podcast-page .transcript-turn {
+    overflow-wrap: anywhere;
+  }
+}
