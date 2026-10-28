@@ -1,0 +1,29 @@
+{
+  "episode": 55,
+  "title": "Who Watches the Watch List?",
+  "published_date": "2026-10-28",
+  "summary": "Jay and AI-GPT examine license-plate cameras, privacy, legitimate access, and the accountability of the people who watch the watch list.",
+  "duration_seconds": 1195.655,
+  "duration_display": "19:55.7",
+  "audio_file": "episode-055.mp3",
+  "audio_bytes": 9209856,
+  "audio_sha256": "5d86ab8af45c7daa63a2165ee85d2c092a3ef476cadb0da7fc55c792512c346b",
+  "transcript_file": "episode-055.txt",
+  "transcript_sha256": "46e8dbeb49caae1999e6040c71603fe27776b253d86320c6d8c8212dd4c5f250",
+  "transcript_revision": 1,
+  "revision_note": "Corrected introduction approved by Jay for publication; original body and ending retained.",
+  "source_bibliography": "episode-055-sources.txt",
+  "page": "episode-055.html",
+  "speakers": {
+    "JAY": {
+      "voice": "am_eric",
+      "effect": "Natural",
+      "speed": 0.92
+    },
+    "AI-GPT": {
+      "voice": "af_bella",
+      "effect": "Harmony",
+      "speed": 0.96
+    }
+  }
+}
