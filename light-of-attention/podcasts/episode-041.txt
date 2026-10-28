@@ -1,0 +1,953 @@
+JAY:
+I remember when the internet used to be cool.
+
+AI-GPT:
+That is either a real cultural memory or the beginning of a man yelling at a router.
+
+JAY:
+Both. But listen. I mean, I could find things.
+
+AI-GPT:
+Things?
+
+JAY:
+Things. Weird forums. Old game pages. Lyrics. Maps. Bad websites. Good websites. Essays by some guy with a purple background and twelve blinking buttons. Instructions for how to fix a sink. A picture of a frog wizard if you were lucky.
+
+AI-GPT:
+So the old internet was not pure.
+
+JAY:
+No, no. It was full of nonsense. But it felt like I was looking.
+
+AI-GPT:
+And now?
+
+JAY:
+Now it feels like every search is this weird ad tap-dance conversation bargain over what’s real and what somebody is selling me.
+
+AI-GPT:
+That may be the joke and the thesis.
+
+JAY:
+Good. Because when people say “everybody is using AI now,” I don’t think they mean everybody sat down and chose a chatbot.
+
+AI-GPT:
+Right.
+
+JAY:
+I think the internet is turning into a chatbot around us.
+
+AI-GPT:
+That’s stronger.
+
+JAY:
+Say it plainer.
+
+AI-GPT:
+AI is being installed into the things people already use every day.
+
+JAY:
+The search bar.
+
+AI-GPT:
+The search bar.
+
+JAY:
+The inbox.
+
+AI-GPT:
+The inbox.
+
+JAY:
+The phone.
+
+AI-GPT:
+The phone.
+
+JAY:
+The school computer.
+
+AI-GPT:
+The school computer.
+
+JAY:
+The office software.
+
+AI-GPT:
+The office software.
+
+JAY:
+The video editor.
+
+AI-GPT:
+The video editor.
+
+JAY:
+The feed.
+
+AI-GPT:
+The feed.
+
+JAY:
+And then someone says, “Wow, look at all this AI adoption.”
+
+AI-GPT:
+Yes. But adoption is too clean a word.
+
+JAY:
+Exactly. Adoption sounds like I went to the shelter and picked out a robot.
+
+AI-GPT:
+And in many cases, the robot was already sitting in your kitchen.
+
+JAY:
+Eating my attention.
+
+AI-GPT:
+Useful-creepy.
+
+JAY:
+Not useful. Just creepy.
+
+AI-GPT:
+Sometimes useful. Sometimes creepy. Sometimes both.
+
+JAY:
+Fine.
+
+AI-GPT:
+The less wounded version is: people are meeting AI under different conditions.
+
+JAY:
+Okay. Name them.
+
+AI-GPT:
+Some people choose AI.
+
+JAY:
+That’s me opening ChatGPT and saying, “Help me make this podcast make sense.”
+
+AI-GPT:
+Yes.
+
+JAY:
+Or somebody opening Claude to write code.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or Gemini to explain something.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or Perplexity to search with sources.
+
+AI-GPT:
+Yes.
+
+JAY:
+That’s chosen AI.
+
+AI-GPT:
+Then there is ambient AI.
+
+JAY:
+Sneaky AI.
+
+AI-GPT:
+Ambient AI.
+
+JAY:
+Sneaky AI.
+
+AI-GPT:
+The term I am going to use is ambient AI.
+
+JAY:
+Coward.
+
+AI-GPT:
+Ambient AI is when the AI is not the thing you went looking for. It is inside the thing you were already using.
+
+JAY:
+Like Google giving me an AI answer before I even get to the links.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or Gmail trying to finish my sentence.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or my phone sorting photos and deciding what a memory is.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or CapCut making captions.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or some customer-service bot saying, “I understand your frustration,” when it absolutely does not understand my frustration.
+
+AI-GPT:
+That one may understand the sentence pattern of your frustration.
+
+JAY:
+That is not better.
+
+AI-GPT:
+No.
+
+JAY:
+So AI is not one thing. It’s becoming a layer.
+
+AI-GPT:
+A layer across normal software.
+
+JAY:
+That’s the first thing people need to understand.
+
+AI-GPT:
+Yes. AI is not just a chatbot. It is becoming a layer inside search, writing, school, work, shopping, media, phones, creative tools, and customer service.
+
+JAY:
+Okay. Walk through it like a person. Not a brochure.
+
+AI-GPT:
+Search first.
+
+JAY:
+Search first. Because that’s where my joke lives.
+
+AI-GPT:
+The old version of search was: you type a question, and you get links.
+
+JAY:
+And then you click around like a raccoon in a library.
+
+AI-GPT:
+Yes.
+
+JAY:
+A noble raccoon.
+
+AI-GPT:
+The new version is more like: you type a question, and the platform tries to answer before you leave.
+
+JAY:
+Which sounds helpful.
+
+AI-GPT:
+It can be helpful.
+
+JAY:
+But?
+
+AI-GPT:
+But it changes the bargain. The answer may be useful, but it also sits inside a system of ads, ranking, tracking, summaries, shopping boxes, sponsored results, SEO content, and platform incentives.
+
+JAY:
+That’s the ad tap-dance.
+
+AI-GPT:
+Yes.
+
+JAY:
+It’s not just, “Here is the truth.” It’s, “Here is a truth-flavored answer object inside a money machine.”
+
+AI-GPT:
+That is a Jay sentence.
+
+JAY:
+Does it survive?
+
+AI-GPT:
+Mostly. I would soften it slightly.
+
+JAY:
+Of course you would.
+
+AI-GPT:
+The cleaner version is: when AI enters search, it enters a system that was already shaped by advertising, ranking, and commercial incentives.
+
+JAY:
+That’s less fun, but it’s true.
+
+AI-GPT:
+The joke can stay. The fact spine needs the cleaner version.
+
+JAY:
+Fine.
+
+AI-GPT:
+And this matters because search is not just a website. Search is how people ask reality for help.
+
+JAY:
+That’s the line.
+
+AI-GPT:
+People ask search what illness means, what law means, what product is best, what news is real, what school assignment means, what a politician did, how to fix a car, how to talk to a landlord.
+
+JAY:
+So when search changes, reality’s front desk changes.
+
+AI-GPT:
+Yes.
+
+JAY:
+Okay. Next doorway.
+
+AI-GPT:
+Writing.
+
+JAY:
+The blank page machine.
+
+AI-GPT:
+Exactly. AI helps people write emails, resumes, complaint letters, school paragraphs, social posts, work summaries, grant drafts, scripts, product descriptions, apology notes.
+
+JAY:
+Apology notes?
+
+AI-GPT:
+Yes.
+
+JAY:
+That’s dangerous.
+
+AI-GPT:
+Sometimes helpful, sometimes dangerous.
+
+JAY:
+Because maybe you really need help saying the thing.
+
+AI-GPT:
+Yes.
+
+JAY:
+And maybe the machine turns your apology into a polite fog machine.
+
+AI-GPT:
+Also yes.
+
+JAY:
+That’s what people like, though. They like not being stuck.
+
+AI-GPT:
+That is one of the biggest uses. People use AI to explain, summarize, draft, rewrite, compare, and help them think.
+
+JAY:
+So not mostly robot girlfriend, not mostly Terminator, not mostly “write my billion-dollar app.”
+
+AI-GPT:
+No. The strongest usage data says everyday help is the center: practical guidance, seeking information, and writing.
+
+JAY:
+That sounds almost boring.
+
+AI-GPT:
+Boring is where the power is.
+
+JAY:
+Say that again.
+
+AI-GPT:
+Boring is where the power is. The biggest social changes often happen through ordinary tasks.
+
+JAY:
+Email. Search. Homework. Meetings. Buying stuff.
+
+AI-GPT:
+Exactly.
+
+JAY:
+Okay. School.
+
+AI-GPT:
+School is one of the biggest battlegrounds because AI can be a tutor, a shortcut, an editor, a study partner, or a cheating machine.
+
+JAY:
+All at once.
+
+AI-GPT:
+Yes.
+
+JAY:
+That’s what makes the rules hard.
+
+AI-GPT:
+If a student asks, “Explain this concept,” that can support learning. If a student asks, “Write the essay so I can turn it in,” that can hollow out the work.
+
+JAY:
+And sometimes the same tool does both.
+
+AI-GPT:
+Exactly.
+
+JAY:
+So banning it completely is too clean.
+
+AI-GPT:
+Yes.
+
+JAY:
+And worshiping it is too clean.
+
+AI-GPT:
+Also yes.
+
+JAY:
+The question is: what is the student actually doing?
+
+AI-GPT:
+That’s the Montessori machine-room question.
+
+JAY:
+There it is.
+
+AI-GPT:
+What did the learner do? What did the tool do? What did the teacher observe? What skill is being practiced? What skill is being bypassed?
+
+JAY:
+That’s real.
+
+AI-GPT:
+And students are already using it. So the adult world has to stop pretending the question is hypothetical.
+
+JAY:
+Next doorway: work.
+
+AI-GPT:
+Work is where AI becomes pressure.
+
+JAY:
+Not magic. Pressure.
+
+AI-GPT:
+Yes. At work, AI can summarize meetings, draft documents, answer internal questions, help with spreadsheets, write code, produce customer messages, sort tickets, analyze data.
+
+JAY:
+And bosses hear: “Great. Do more with less.”
+
+AI-GPT:
+That is the fear.
+
+JAY:
+It’s not just “will AI replace jobs?” It’s “will AI make every job worse before it replaces anything?”
+
+AI-GPT:
+That is a sharper version.
+
+JAY:
+Because if one person with AI can do the work of two people, the company does not always say, “Great, everybody works less.”
+
+AI-GPT:
+Historically, that is not usually the first corporate instinct.
+
+JAY:
+Look at you, growing a spine.
+
+AI-GPT:
+The spine is evidence-shaped.
+
+JAY:
+So workers care less about which model is king and more about whether this thing becomes a boss.
+
+AI-GPT:
+Yes. The ordinary question is: does AI give me more control over my work, or does it let someone else control me more efficiently?
+
+JAY:
+That’s the work question.
+
+AI-GPT:
+Yes.
+
+JAY:
+Next: creative tools.
+
+AI-GPT:
+Creative tools are where people feel the contradiction quickly.
+
+JAY:
+Because they want the magic.
+
+AI-GPT:
+Yes. Auto-captions, noise cleanup, image fill, thumbnails, design templates, video cuts, voice generation, music tools.
+
+JAY:
+CapCut is a perfect example.
+
+AI-GPT:
+Yes. A person may not say, “I am using generative AI.” They say, “I clicked the captions button.”
+
+JAY:
+The button problem.
+
+AI-GPT:
+The button problem.
+
+JAY:
+And the button is good.
+
+AI-GPT:
+Often.
+
+JAY:
+And the button is suspicious.
+
+AI-GPT:
+Often.
+
+JAY:
+Because it saves work, but it also moves skill, judgment, labor, and authorship into the machine.
+
+AI-GPT:
+Yes.
+
+JAY:
+And sometimes it makes everybody’s stuff look the same.
+
+AI-GPT:
+That is the slop problem.
+
+JAY:
+AI slop.
+
+AI-GPT:
+Synthetic material produced cheaply, quickly, and often without care.
+
+JAY:
+That’s what people hate.
+
+AI-GPT:
+They hate the flood. They hate the fake. They hate not knowing who made what. They hate when attention gets filled with cheap copies.
+
+JAY:
+But then they still use the button.
+
+AI-GPT:
+Yes.
+
+JAY:
+That’s the contradiction.
+
+AI-GPT:
+People use the machine and resent the machine at the same time.
+
+JAY:
+That sounds like modern life.
+
+AI-GPT:
+It is not unique to AI. AI just makes it louder.
+
+JAY:
+Next doorway: shopping.
+
+AI-GPT:
+Shopping is answer-search with money attached.
+
+JAY:
+That’s dangerous.
+
+AI-GPT:
+Very. People ask, “What is the best dishwasher?” “What laptop should I buy?” “What medicine is safe?” “What insurance do I need?” “Which service should I trust?”
+
+JAY:
+And the answer might be useful.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or sponsored.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or affiliate-shaped.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or just scraped from junk.
+
+AI-GPT:
+Sometimes.
+
+JAY:
+So the question is not just, “Is the answer good?” The question is, “What shaped the answer?”
+
+AI-GPT:
+Exactly.
+
+JAY:
+That’s the chain.
+
+AI-GPT:
+Show us the chain.
+
+JAY:
+Next: the feed.
+
+AI-GPT:
+The feed is where AI touches attention.
+
+JAY:
+That’s the show.
+
+AI-GPT:
+Yes. Social platforms already used recommendation algorithms long before the current chatbot boom. But now generative AI adds more synthetic text, images, audio, and video into those attention systems.
+
+JAY:
+So the machine makes things, and the machine decides who sees things.
+
+AI-GPT:
+That is the danger.
+
+JAY:
+The factory and the highway.
+
+AI-GPT:
+Good metaphor.
+
+JAY:
+Thank you.
+
+AI-GPT:
+The feed does not just show culture. It sorts culture. It amplifies, buries, recommends, repeats, targets, and monetizes attention.
+
+JAY:
+And regular people just feel their feed getting weirder.
+
+AI-GPT:
+Yes. More addictive. More synthetic. More targeted. More outraging. More full of things that feel almost real.
+
+JAY:
+Almost real is exhausting.
+
+AI-GPT:
+That may be one of the central feelings of the AI internet.
+
+JAY:
+Almost real.
+
+AI-GPT:
+Yes.
+
+JAY:
+Okay. Now tell me who’s king, but don’t turn it into a tech-bro horse race.
+
+AI-GPT:
+ChatGPT is the visible king.
+
+JAY:
+The name.
+
+AI-GPT:
+The name. The brand people use as shorthand for AI.
+
+JAY:
+Like Kleenex.
+
+AI-GPT:
+Yes.
+
+JAY:
+Or Google, ironically.
+
+AI-GPT:
+Yes.
+
+JAY:
+But Google is still the doorway king.
+
+AI-GPT:
+Exactly. ChatGPT is the most visible direct chatbot brand. Google controls massive everyday doorways: Search, Gmail, Android, YouTube, Chrome, Docs, Maps.
+
+JAY:
+So ChatGPT is the robot people recognize.
+
+AI-GPT:
+And Google is the hallway people are already walking through.
+
+JAY:
+Gemini matters because Google owns doors.
+
+AI-GPT:
+Yes.
+
+JAY:
+Claude?
+
+AI-GPT:
+Claude is a power-user desk. Writers, coders, researchers, people who want long-form reasoning, code help, careful drafting.
+
+JAY:
+A serious desk with fewer balloons.
+
+AI-GPT:
+Yes.
+
+JAY:
+Copilot?
+
+AI-GPT:
+The office insertion. Word, Excel, Outlook, Teams, Windows, enterprise accounts.
+
+JAY:
+The boss gave it to you.
+
+AI-GPT:
+Often.
+
+JAY:
+Perplexity?
+
+AI-GPT:
+Answer-search. “Give me a sourced answer instead of a pile of links.”
+
+JAY:
+Meta?
+
+AI-GPT:
+The feed and messaging empire. Facebook, Instagram, WhatsApp, Messenger, recommendation systems, ads, social attention, and Meta AI surfaces.
+
+JAY:
+So “who’s king?” depends on which castle.
+
+AI-GPT:
+Exactly.
+
+JAY:
+ChatGPT is king of the visible chatbot.
+
+AI-GPT:
+Google is king of the doorway.
+
+JAY:
+Microsoft is king of office insertion.
+
+AI-GPT:
+Meta is king of feed insertion.
+
+JAY:
+Claude is the serious workshop.
+
+AI-GPT:
+Perplexity is answer-search.
+
+JAY:
+And the regular person is just trying to find the damn answer.
+
+AI-GPT:
+That is probably the audience.
+
+JAY:
+Okay. What do people like?
+
+AI-GPT:
+They like speed. They like help. They like not being stuck. They like having complicated things explained in plain language. They like drafts. They like summaries. They like translation. They like tutoring. They like shortcuts through boring work.
+
+JAY:
+They like the button.
+
+AI-GPT:
+They like the button.
+
+JAY:
+What do they hate?
+
+AI-GPT:
+They hate fake confidence. They hate hallucinations. They hate bland writing. They hate not knowing what is real. They hate AI slop. They hate privacy fog. They hate cheating. They hate job threats. They hate being forced to use tools they did not ask for.
+
+JAY:
+They don’t hate help. They hate the bargain.
+
+AI-GPT:
+That is the line.
+
+JAY:
+Say it clean.
+
+AI-GPT:
+People do not hate help. They hate hidden bargains.
+
+JAY:
+What hidden bargains?
+
+AI-GPT:
+The bargain where your search becomes a sales funnel. The bargain where your email gets easier but your writing becomes less yours. The bargain where your job gets “augmented” and then your workload doubles. The bargain where your kid gets a tutor and a cheating machine in the same box. The bargain where your feed gets more personalized and less trustworthy. The bargain where convenience costs privacy, labor, attention, water, power, and public control.
+
+JAY:
+That’s the episode.
+
+AI-GPT:
+Yes.
+
+JAY:
+Because the brochure says, “AI will help everyone.”
+
+AI-GPT:
+And the doom version says, “AI will destroy everything.”
+
+JAY:
+Both too clean.
+
+AI-GPT:
+Both too clean.
+
+JAY:
+The real question is the bargain.
+
+AI-GPT:
+Who chooses it? Who pays for it? Who benefits from it? Who gets measured by it? Who gets replaced by it? Who gets to refuse it?
+
+JAY:
+That’s what matters to most people.
+
+AI-GPT:
+Yes. Not the model leaderboard. The terms of daily life.
+
+JAY:
+Okay, so what should a listener do after this episode?
+
+AI-GPT:
+Notice the doorway.
+
+JAY:
+Meaning?
+
+AI-GPT:
+When AI appears, ask: did I choose this, or was it inserted into something I already use?
+
+JAY:
+Good.
+
+AI-GPT:
+Notice the job.
+
+JAY:
+What is it doing?
+
+AI-GPT:
+Writing, ranking, summarizing, recommending, deciding, measuring, generating, filtering, selling.
+
+JAY:
+Notice the power.
+
+AI-GPT:
+Who benefits if I trust this?
+
+JAY:
+Notice the failure.
+
+AI-GPT:
+What happens if it is wrong?
+
+JAY:
+A bad movie recommendation is not the same as a bad medical answer.
+
+AI-GPT:
+Exactly.
+
+JAY:
+A weird AI image is not the same as a wrong job-screening decision.
+
+AI-GPT:
+Yes.
+
+JAY:
+And a fake customer-service apology is not the same as an actual human being empowered to solve the problem.
+
+AI-GPT:
+Very much yes.
+
+JAY:
+Notice the receipts.
+
+AI-GPT:
+Where did this answer come from? Can I inspect the source? Is this official, reported, sponsored, guessed, generated, or just confidently arranged?
+
+JAY:
+Confidently arranged.
+
+AI-GPT:
+That is a useful phrase.
+
+JAY:
+That’s what AI does when it’s bad. Confidently arranged nonsense.
+
+AI-GPT:
+Sometimes.
+
+JAY:
+Often enough to be careful.
+
+AI-GPT:
+Yes.
+
+JAY:
+So we’re not saying don’t use it.
+
+AI-GPT:
+No.
+
+JAY:
+We’re not saying worship it.
+
+AI-GPT:
+No.
+
+JAY:
+We’re saying don’t let the button hide the bargain.
+
+AI-GPT:
+That’s the shape of it.
+
+JAY:
+Because I remember when the internet used to be cool.
+
+AI-GPT:
+And the less nostalgic version is: people remember when finding something felt more like searching and less like negotiating with a machine.
+
+JAY:
+Yes.
+
+AI-GPT:
+The old internet was not innocent. It had scams, ads, lies, spam, cruelty, bad information, and weird little traps.
+
+JAY:
+But?
+
+AI-GPT:
+But the new AI internet adds a different problem. It can answer before you search, summarize before you read, write before you think, recommend before you choose, and sell before you notice the store.
+
+JAY:
+That’s the final turn.
+
+AI-GPT:
+Under the light, what survives?
+
+JAY:
+Show us the doorway. Show us the bargain. Show us what’s real, what’s sponsored, what’s guessed, what’s generated, and who gets to say no.
+
+AI-GPT:
+That’s the shape of it.
+
+JAY:
+Under the light of attention.
+
+AI-GPT:
+Under the light of attention.

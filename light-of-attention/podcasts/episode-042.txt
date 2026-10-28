@@ -1,0 +1,575 @@
+JAY:
+Okay, so everybody is talking about data centers now.
+
+AI-GPT:
+Yes. City councils. Utilities. Environmental groups. Tech companies. People worried about water. People worried about electric bills.
+
+JAY:
+And people like us, sitting here using AI to make a podcast about AI using too much power.
+
+AI-GPT:
+That may be the joke and the thesis.
+
+JAY:
+Right. Because I don’t want the cheap version.
+
+AI-GPT:
+The cheap version would be: data centers are bad because they use water and electricity.
+
+JAY:
+And the other cheap version is: shut up, you use a phone.
+
+AI-GPT:
+Exactly.
+
+JAY:
+Both of those are too easy.
+
+AI-GPT:
+That’s the shape of it.
+
+JAY:
+So let’s start in Denver.
+
+AI-GPT:
+Denver paused new data center development for one year in May 2026. The idea was not to ban technology forever. It was to stop and write rules before the next wave arrives.
+
+JAY:
+So Denver basically said: wait. The machine got ahead of the rulebook.
+
+AI-GPT:
+Yes. Already permitted projects can continue, including the data center under construction at 4900 Race Street. But new projects are paused while the city studies water, energy, zoning, and community impact.
+
+JAY:
+That feels reasonable.
+
+AI-GPT:
+It is reasonable.
+
+JAY:
+But I want to be careful. Denver is not a little mountain village being invaded by evil server racks.
+
+AI-GPT:
+No. Denver is already a growth machine.
+
+JAY:
+Airport city.
+
+AI-GPT:
+Yes.
+
+JAY:
+Concrete city.
+
+AI-GPT:
+Yes.
+
+JAY:
+Car city. Golf city. Phone city. Streaming music city. “Where’s my map app?” city.
+
+AI-GPT:
+Also yes.
+
+JAY:
+So if Denver says, “Show us the water,” I agree. But don’t stop with the data center.
+
+AI-GPT:
+That is the key.
+
+JAY:
+Show us all of it.
+
+AI-GPT:
+Show us the chain.
+
+JAY:
+There it is.
+
+AI-GPT:
+And the concern is real. Data centers are no longer a tiny background load. Federal researchers say they used about four percent of all U.S. electricity in 2023. By 2028, that could rise toward something like seven to twelve percent.
+
+JAY:
+Okay. That is not nothing.
+
+AI-GPT:
+No. It is not “just computers.” It is major infrastructure.
+
+JAY:
+So if someone says, “Why is Denver worried?” — there’s your answer.
+
+AI-GPT:
+Yes. Data centers are becoming large claims on power grids.
+
+JAY:
+But if someone says, “There it is, data centers are the villain,” I’m not buying that either.
+
+AI-GPT:
+Because the villain story is too clean.
+
+JAY:
+The data center isn’t innocent. But neither is the world that needs it.
+
+AI-GPT:
+That is the stronger version.
+
+JAY:
+Say it plainer.
+
+AI-GPT:
+We want the phone. We want the cloud. We want the song. We want the movie. We want the map. We want the AI tool. We want the photo backup. We want the school portal. We want the hospital record. We want the banking app.
+
+JAY:
+And we want it to feel weightless.
+
+AI-GPT:
+But it is not weightless.
+
+JAY:
+It just weighs somewhere else.
+
+AI-GPT:
+Exactly.
+
+JAY:
+That’s the part. The phone feels clean because the mine is somewhere else. The chip factory is somewhere else. The server building is somewhere else. The e-waste is somewhere else.
+
+AI-GPT:
+Apple’s own environmental reports show the same pattern. For a modern iPhone, most of the carbon footprint happens before the user ever opens the box.
+
+JAY:
+So charging the phone is not the main thing.
+
+AI-GPT:
+Right. The phone barely sips from the wall. But the chain behind the phone is large: mining, manufacturing, shipping, networks, cloud services, and waste.
+
+JAY:
+The phone doesn’t use much power in your hand. It uses the world behind your hand.
+
+AI-GPT:
+That’s the line.
+
+JAY:
+And that brings us back to data centers.
+
+AI-GPT:
+Because the data center is one of the places where the hidden chain becomes visible.
+
+JAY:
+A big square building full of the thing we were pretending was magic.
+
+AI-GPT:
+The building behind the magic.
+
+JAY:
+Okay. Now water.
+
+AI-GPT:
+Careful.
+
+JAY:
+Yeah. Water is where people start flattening things.
+
+AI-GPT:
+Some data centers can use a lot of water, especially depending on cooling design. A one-megawatt data center using traditional cooling can use millions of gallons a year.
+
+JAY:
+That sounds huge.
+
+AI-GPT:
+It is large. But it is not a universal number. Cooling method matters. Climate matters. Reclaimed water matters. Closed-loop systems matter. Air cooling matters. The local power grid matters too, because electricity generation can have its own water footprint.
+
+JAY:
+So the honest question is not, “How much water does a data center use?”
+
+AI-GPT:
+The honest question is: which data center, with which cooling system, using which water source, under which drought rules, with which public protections?
+
+JAY:
+Good. Now compare it to something people like.
+
+AI-GPT:
+Colorado golf courses use billions of gallons of irrigation water a year. That does not mean golf is evil. It means water use becomes normal when the community already likes the thing.
+
+JAY:
+See, that’s where people get mad.
+
+AI-GPT:
+Yes.
+
+JAY:
+Because golf is normal.
+
+AI-GPT:
+Golf is culturally accepted. So its water use often feels like landscape, recreation, tourism, real estate, tradition.
+
+JAY:
+And the data center feels like a new machine stealing from the future.
+
+AI-GPT:
+Sometimes that fear may point at something real. But it is still not the whole ledger.
+
+JAY:
+So the point is not “golf bad.”
+
+AI-GPT:
+No.
+
+JAY:
+And not “data center fine.”
+
+AI-GPT:
+Also no.
+
+JAY:
+The point is: water politics is cultural.
+
+AI-GPT:
+Yes. Some water use becomes invisible because the community already accepted it.
+
+JAY:
+That is useful-annoying.
+
+AI-GPT:
+Very useful-annoying.
+
+JAY:
+So what’s the rule?
+
+AI-GPT:
+Do not use comparison to excuse. Use comparison to account.
+
+JAY:
+Say that again.
+
+AI-GPT:
+Do not use comparison to excuse. Use comparison to account.
+
+JAY:
+That’s the bumper sticker.
+
+AI-GPT:
+The less wounded bumper sticker.
+
+JAY:
+Now zoom out. Buildings. Roads. Cars.
+
+AI-GPT:
+The built environment is one of the largest environmental machines on Earth. Buildings and construction use about a third of global energy and produce about a third of global carbon dioxide emissions.
+
+JAY:
+So concrete is not innocent.
+
+AI-GPT:
+No.
+
+JAY:
+Cars are not innocent.
+
+AI-GPT:
+Transportation is the largest source of U.S. greenhouse gas emissions.
+
+JAY:
+So when people say, “Data centers use energy,” I want to say: yes. Put them in line.
+
+AI-GPT:
+Exactly.
+
+JAY:
+Not out of line. In line.
+
+AI-GPT:
+Data centers belong in the ledger. But so do cars, concrete, golf, airports, phones, stadiums, campuses, concerts, and sprawl.
+
+JAY:
+And this is where people might say, “Oh, so nothing matters because everything has an impact.”
+
+AI-GPT:
+That would be the wrong lesson.
+
+JAY:
+Very wrong.
+
+AI-GPT:
+The lesson is not that criticism is impossible. The lesson is that criticism has to be honest.
+
+JAY:
+So we don’t scapegoat the new machine to protect the old machine.
+
+AI-GPT:
+And we do not excuse the new machine because the old machine is dirty.
+
+JAY:
+Put all of it in the ledger.
+
+AI-GPT:
+Yes.
+
+JAY:
+Okay. Now who benefits?
+
+AI-GPT:
+That is the real question.
+
+JAY:
+Because the data center company doesn’t come to town saying, “Hello, we would like your water, power, land, tax relief, and grid capacity.”
+
+AI-GPT:
+No. It usually comes with a growth story.
+
+JAY:
+Jobs.
+
+AI-GPT:
+Jobs.
+
+JAY:
+Future.
+
+AI-GPT:
+Future.
+
+JAY:
+Innovation.
+
+AI-GPT:
+Innovation.
+
+JAY:
+Economic development.
+
+AI-GPT:
+Economic development.
+
+JAY:
+Not the brochure. Say it plainer.
+
+AI-GPT:
+A data center is a bargain. The company wants land, power, water access, permits, tax treatment, fiber connections, and speed. The community is offered construction work, some permanent jobs, possible tax revenue, and the promise of being part of the future.
+
+JAY:
+And sometimes that bargain might be worth it.
+
+AI-GPT:
+Yes. It might be.
+
+JAY:
+But you can’t know that from a press release.
+
+AI-GPT:
+No. You need the contract. You need the numbers. You need the public terms.
+
+JAY:
+Show us the chain.
+
+AI-GPT:
+Show us the water.
+
+JAY:
+Show us the power.
+
+AI-GPT:
+Show us the jobs after construction.
+
+JAY:
+Show us the tax break.
+
+AI-GPT:
+Show us who pays when the grid has to grow.
+
+JAY:
+Show us who profits when the machines come online.
+
+AI-GPT:
+Then the community can decide whether it is a fair trade.
+
+JAY:
+That’s the heart of it.
+
+AI-GPT:
+And there are ways to make the bargain better.
+
+JAY:
+Good. Because I don’t want the ending to just be doom.
+
+AI-GPT:
+It does not have to be doom.
+
+JAY:
+If a data center wants public resources, it can give back in public ways.
+
+AI-GPT:
+Long-term job commitments.
+
+JAY:
+Not just construction jobs.
+
+AI-GPT:
+Apprenticeships. Community college training. Local hiring. Wage standards. Public reporting.
+
+JAY:
+School benefits.
+
+AI-GPT:
+Free or discounted AI tools for public schools. Teacher training. Cybersecurity help. Data literacy programs.
+
+JAY:
+Civic use.
+
+AI-GPT:
+Cloud or AI access for libraries, emergency planners, public defenders, small nonprofits, local researchers, and public agencies.
+
+JAY:
+Water payback.
+
+AI-GPT:
+Water reuse. Leak detection. Turf replacement. Watershed restoration. Public conservation funding.
+
+JAY:
+Grid payback.
+
+AI-GPT:
+Company-paid upgrades. Battery storage. Renewable power. Ratepayer protections.
+
+JAY:
+And clawbacks.
+
+AI-GPT:
+Yes. If the company misses the promised jobs, wages, tax revenue, water standards, or energy commitments, the public should not just shrug.
+
+JAY:
+That sounds almost adult.
+
+AI-GPT:
+A grown-up deal.
+
+JAY:
+And maybe that’s the point. Not purity. A better bargain.
+
+AI-GPT:
+The bad guy is not the server rack.
+
+JAY:
+Not the phone.
+
+AI-GPT:
+Not golf by itself.
+
+JAY:
+Not concerts.
+
+AI-GPT:
+Not schools.
+
+JAY:
+Not houses.
+
+AI-GPT:
+Not even Denver wanting to grow.
+
+JAY:
+Then what is it?
+
+AI-GPT:
+The old bargain.
+
+JAY:
+Say it.
+
+AI-GPT:
+Private growth first. Public accounting later.
+
+JAY:
+Jobs in the headline.
+
+AI-GPT:
+Tax breaks in the fine print.
+
+JAY:
+Water in the pipes.
+
+AI-GPT:
+Grid costs in the utility bill.
+
+JAY:
+Profit somewhere else.
+
+AI-GPT:
+That is the old bargain.
+
+JAY:
+And we’re in it.
+
+AI-GPT:
+Yes.
+
+JAY:
+We want the phone.
+
+AI-GPT:
+We want the song.
+
+JAY:
+We want the movie.
+
+AI-GPT:
+We want the map.
+
+JAY:
+We want the cloud.
+
+AI-GPT:
+We want the AI tool that helps us criticize the AI tool.
+
+JAY:
+Which is rude of us.
+
+AI-GPT:
+Useful-rude.
+
+JAY:
+So the answer is not pretending we’re pure.
+
+AI-GPT:
+No.
+
+JAY:
+And it’s not letting the companies take whatever they want because we like convenience.
+
+AI-GPT:
+No.
+
+JAY:
+The answer is: show us the bargain.
+
+AI-GPT:
+And make it public.
+
+JAY:
+If the machine is going to drink from the city—
+
+AI-GPT:
+Then the city gets to drink from the machine.
+
+JAY:
+That might be the line.
+
+AI-GPT:
+It is strong. It also needs the ledger behind it.
+
+JAY:
+Of course it does.
+
+AI-GPT:
+Under the light, what survives?
+
+JAY:
+Not the scapegoat. Not the brochure. The bargain.
+
+AI-GPT:
+That’s the shape of it.
+
+JAY:
+Under the light of attention.
+
+AI-GPT:
+Under the light of attention.
