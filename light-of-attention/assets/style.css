@@ -808,3 +808,9 @@ th {
     max-width: 260px;
   }
 }
+
+@media (min-width: 951px) and (max-width: 1204px) {
+  .podcast-page .book-pair {
+    grid-template-columns: minmax(0, .56fr) minmax(0, 1fr) minmax(0, .56fr);
+  }
+}
